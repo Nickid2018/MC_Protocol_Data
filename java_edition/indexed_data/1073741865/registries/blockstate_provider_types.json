@@ -1,0 +1,9 @@
+[
+    "simple_state_provider",
+    "weighted_state_provider",
+    "noise_2d_cutoff_provider",
+    "noise_2d_provider",
+    "dual_noise_2d_provider",
+    "rotated_block_provider",
+    "randomized_int_state_provider"
+]

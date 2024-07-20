@@ -1,0 +1,15 @@
+[
+    "dummy",
+    "nearest_items",
+    "nearest_living_entities",
+    "nearest_players",
+    "interactable_doors",
+    "nearest_bed",
+    "hurt_by",
+    "villager_hostiles",
+    "villager_babies",
+    "secondary_pois",
+    "golem_last_seen",
+    "piglin_specific_sensor",
+    "hoglin_specific_sensor"
+]

@@ -1,0 +1,10 @@
+[
+    "chat",
+    "system",
+    "game_info",
+    "say_command",
+    "msg_command",
+    "team_msg_command",
+    "emote_command",
+    "tellraw_command"
+]

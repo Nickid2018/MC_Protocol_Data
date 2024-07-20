@@ -1,0 +1,19 @@
+[
+    "dummy",
+    "nearest_items",
+    "nearest_living_entities",
+    "nearest_players",
+    "nearest_bed",
+    "hurt_by",
+    "villager_hostiles",
+    "villager_babies",
+    "secondary_pois",
+    "golem_detected",
+    "piglin_specific_sensor",
+    "piglin_brute_specific_sensor",
+    "hoglin_specific_sensor",
+    "nearest_adult",
+    "axolotl_attackables",
+    "axolotl_temptations",
+    "goat_temptations"
+]
