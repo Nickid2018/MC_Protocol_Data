@@ -1,7 +1,8 @@
 {
-    "version": "1.0",
-    "protocols": true,
+    "entity_sync_datas": false,
+    "events": false,
     "packet_names": true,
-    "entity_sync_datas": true,
-    "events": true
+    "protocols": true,
+    "registries": false,
+    "version": "1.0"
 }

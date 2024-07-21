@@ -1,6 +1,0 @@
-[
-    "simple_state_provider",
-    "weighted_state_provider",
-    "plain_flower_provider",
-    "forest_flower_provider"
-]
