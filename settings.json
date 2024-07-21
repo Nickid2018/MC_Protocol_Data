@@ -1,5 +1,6 @@
 {
     "entity_sync_datas": false,
+    "entities": false,
     "events": false,
     "packet_names": true,
     "protocols": true,
