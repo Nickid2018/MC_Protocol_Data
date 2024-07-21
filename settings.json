@@ -1,8 +1,9 @@
 {
     "entity_sync_datas": true,
+    "entities": true,
     "events": true,
     "packet_names": true,
     "protocols": true,
-    "registries": true,
+    "registries": false,
     "version": "1.0"
 }
