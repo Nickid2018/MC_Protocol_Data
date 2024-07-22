@@ -7229,8 +7229,33 @@
                     "container",
                     [
                         {
-                            "name": "registryData",
-                            "type": "nbt"
+                            "name": "registryName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "entries",
+                            "type": [
+                                "array",
+                                {
+                                    "countType": "varint",
+                                    "type": [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "id",
+                                                "type": "string"
+                                            },
+                                            {
+                                                "name": "data",
+                                                "type": [
+                                                    "option",
+                                                    "nbt"
+                                                ]
+                                            }
+                                        ]
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 ],

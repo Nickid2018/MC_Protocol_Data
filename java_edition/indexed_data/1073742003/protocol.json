@@ -96,7 +96,7 @@
                     "type": "i8"
                 },
                 {
-                    "anon": true,
+                    "name": "itemData",
                     "type": [
                         "switch",
                         {
@@ -126,20 +126,38 @@
                                                     {
                                                         "name": "dataComponents",
                                                         "type": [
-                                                            "array",
+                                                            "switch",
                                                             {
-                                                                "count": "dataComponentCount",
-                                                                "type": "data_component"
+                                                                "compareTo": "dataComponentCount",
+                                                                "fields": {
+                                                                    "0": "void",
+                                                                    "default": [
+                                                                        "array",
+                                                                        {
+                                                                            "count": "dataComponentCount",
+                                                                            "type": "data_component"
+                                                                        }
+                                                                    ]
+                                                                }
                                                             }
                                                         ]
                                                     },
                                                     {
                                                         "name": "voidComponents",
                                                         "type": [
-                                                            "array",
+                                                            "switch",
                                                             {
-                                                                "count": "voidComponentCount",
-                                                                "type": "data_component"
+                                                                "compareTo": "voidComponentCount",
+                                                                "fields": {
+                                                                    "0": "void",
+                                                                    "default": [
+                                                                        "array",
+                                                                        {
+                                                                            "count": "voidComponentCount",
+                                                                            "type": "data_component"
+                                                                        }
+                                                                    ]
+                                                                }
                                                             }
                                                         ]
                                                     }
@@ -460,7 +478,7 @@
                                                             },
                                                             {
                                                                 "name": "uuid",
-                                                                "type": "uuid"
+                                                                "type": "UUID"
                                                             },
                                                             {
                                                                 "name": "name",
@@ -970,7 +988,7 @@
                                         },
                                         {
                                             "name": "uuid",
-                                            "type": "uuid"
+                                            "type": "UUID"
                                         },
                                         {
                                             "name": "properties",
@@ -8248,8 +8266,33 @@
                     "container",
                     [
                         {
-                            "name": "registryData",
-                            "type": "nbt"
+                            "name": "registryName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "entries",
+                            "type": [
+                                "array",
+                                {
+                                    "countType": "varint",
+                                    "type": [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "id",
+                                                "type": "string"
+                                            },
+                                            {
+                                                "name": "data",
+                                                "type": [
+                                                    "option",
+                                                    "nbt"
+                                                ]
+                                            }
+                                        ]
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 ],
