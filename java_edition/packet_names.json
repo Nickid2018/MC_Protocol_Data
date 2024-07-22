@@ -132,7 +132,9 @@
         "debug_sample": "Client Debug Sample",
         "select_known_packs": "Client Select Known Packs",
         "reset_chat": "Client Reset Chat",
-        "projectile_power": "Client Projectile Power"
+        "projectile_power": "Client Projectile Power",
+        "custom_report_details": "Client Custom Report Details",
+        "server_links": "Client Server Links"
     },
     "toServer": {
         "login_start": "Server Hello",
