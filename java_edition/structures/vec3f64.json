@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "f64"
+        },
+        {
+            "name": "y",
+            "type": "f64"
+        },
+        {
+            "name": "z",
+            "type": "f64"
+        }
+    ]
+]

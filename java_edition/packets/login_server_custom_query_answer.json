@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "transactionId",
+            "type": "varint"
+        },
+        {
+            "name": "payload",
+            "type": [
+                "option",
+                "rest_buffer"
+            ]
+        }
+    ]
+]
