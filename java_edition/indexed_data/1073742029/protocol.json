@@ -361,6 +361,10 @@
             "name": "Client Move Entity Position & Rotation"
         },
         {
+            "key": "move_minecart_along_track",
+            "name": "Client Move Minecart Along Track"
+        },
+        {
             "key": "move_entity_rot",
             "name": "Client Move Entity Rotation"
         },
@@ -502,16 +506,16 @@
             "name": "Client Set Camera"
         },
         {
-            "key": "set_carried_item",
-            "name": "Client Set Carried Item"
-        },
-        {
             "key": "set_chunk_cache_center",
             "name": "Client Set Chunk Cache Center"
         },
         {
             "key": "set_chunk_cache_radius",
             "name": "Client Set Chunk Cache Radius"
+        },
+        {
+            "key": "set_cursor_item",
+            "name": "Client Set Cursor Item"
         },
         {
             "key": "set_default_spawn_position",
@@ -546,12 +550,20 @@
             "name": "Client Set Health"
         },
         {
+            "key": "set_held_slot",
+            "name": "CLient Set Held Slot"
+        },
+        {
             "key": "set_objective",
             "name": "Client Set Objective"
         },
         {
             "key": "set_passengers",
             "name": "Client Set Passengers"
+        },
+        {
+            "key": "set_player_inventory",
+            "name": "Client Set Player Inventory"
         },
         {
             "key": "set_player_team",
@@ -677,6 +689,14 @@
         {
             "key": "block_entity_tag_query",
             "name": "Server Block Entity Tag Query"
+        },
+        {
+            "key": "bundle_item_selected",
+            "name": "Server Bundle Item Selected"
+        },
+        {
+            "key": "client_tick_end",
+            "value": "Server Client Tick End"
         },
         {
             "key": "change_difficulty",

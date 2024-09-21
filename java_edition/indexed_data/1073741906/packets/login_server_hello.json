@@ -1,0 +1,32 @@
+[
+    "container",
+    [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "publicKey",
+            "type": [
+                "option",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "expires_at",
+                            "type": "string"
+                        },
+                        {
+                            "name": "key",
+                            "type": "string"
+                        },
+                        {
+                            "name": "signature",
+                            "type": "string"
+                        }
+                    ]
+                ]
+            ]
+        }
+    ]
+]

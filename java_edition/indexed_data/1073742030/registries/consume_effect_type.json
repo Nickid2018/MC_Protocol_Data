@@ -1,0 +1,7 @@
+[
+    "apply_effects",
+    "remove_effects",
+    "clear_all_effects",
+    "teleport_randomly",
+    "play_sound"
+]

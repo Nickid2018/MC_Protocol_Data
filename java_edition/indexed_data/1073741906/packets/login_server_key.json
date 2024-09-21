@@ -1,0 +1,42 @@
+[
+    "container",
+    [
+        {
+            "name": "keybytes",
+            "type": "buffer"
+        },
+        {
+            "name": "nonceOrSaltSignatureEither",
+            "type": [
+                "save",
+                "bool",
+                "left"
+            ]
+        },
+        {
+            "name": "nonceOrSaltSignature",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "left",
+                    "fields": {
+                        "true": "buffer",
+                        "false": [
+                            "container",
+                            [
+                                {
+                                    "name": "salt",
+                                    "type": "i64"
+                                },
+                                {
+                                    "name": "signature",
+                                    "type": "buffer"
+                                }
+                            ]
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+]

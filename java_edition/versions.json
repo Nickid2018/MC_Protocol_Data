@@ -1,5 +1,45 @@
 [
     {
+        "version": "24w38a",
+        "protocol_version": 1073742034,
+        "data_version": 4066
+    },
+    {
+        "version": "24w37a",
+        "protocol_version": 1073742033,
+        "data_version": 4065
+    },
+    {
+        "version": "24w36a",
+        "protocol_version": 1073742032,
+        "data_version": 4063
+    },
+    {
+        "version": "24w35a",
+        "protocol_version": 1073742031,
+        "data_version": 4062
+    },
+    {
+        "version": "24w34a",
+        "protocol_version": 1073742030,
+        "data_version": 4060
+    },
+    {
+        "version": "24w33a",
+        "protocol_version": 1073742029,
+        "data_version": 4058
+    },
+    {
+        "version": "1.21.1",
+        "protocol_version": 767,
+        "data_version": 3955
+    },
+    {
+        "version": "1.21.1-rc1",
+        "protocol_version": 1073742028,
+        "data_version": 3954
+    },
+    {
         "version": "1.21",
         "protocol_version": 767,
         "data_version": 3953

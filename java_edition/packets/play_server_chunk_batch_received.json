@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "desiredChunksPerTick",
+            "type": "f32"
+        }
+    ]
+]
