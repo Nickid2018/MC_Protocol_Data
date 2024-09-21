@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "action",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Successfully Loaded",
+                        "1": "Declined",
+                        "2": "Failed Download",
+                        "3": "Accepted"
+                    }
+                }
+            ]
+        }
+    ]
+]

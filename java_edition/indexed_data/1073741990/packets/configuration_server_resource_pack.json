@@ -1,0 +1,28 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "uuid"
+        },
+        {
+            "name": "action",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Successfully Loaded",
+                        "1": "Declined",
+                        "2": "Failed Download",
+                        "3": "Accepted",
+                        "4": "Downloaded",
+                        "5": "Invalid URL",
+                        "6": "Failed Reload",
+                        "7": "Discarded"
+                    }
+                }
+            ]
+        }
+    ]
+]

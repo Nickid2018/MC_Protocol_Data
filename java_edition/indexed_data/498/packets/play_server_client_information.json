@@ -1,0 +1,92 @@
+[
+    "container",
+    [
+        {
+            "name": "language",
+            "type": "string"
+        },
+        {
+            "name": "viewDistance",
+            "type": "i8"
+        },
+        {
+            "name": "chatVisibility",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Full",
+                        "1": "System",
+                        "2": "Hidden"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "chatColors",
+            "type": "bool"
+        },
+        {
+            "name": "modelCustomisation",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "hat",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "right_pants_leg",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "left_pants_leg",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "right_sleeve",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "left_sleeve",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "jacket",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "cape",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "mainHand",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Left",
+                        "1": "Right"
+                    }
+                }
+            ]
+        }
+    ]
+]

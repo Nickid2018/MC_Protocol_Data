@@ -1,0 +1,33 @@
+[
+    "container",
+    [
+        {
+            "name": "blockTags",
+            "type": [
+                "reference",
+                "tags"
+            ]
+        },
+        {
+            "name": "itemTags",
+            "type": [
+                "reference",
+                "tags"
+            ]
+        },
+        {
+            "name": "fluidTags",
+            "type": [
+                "reference",
+                "tags"
+            ]
+        },
+        {
+            "name": "entityTags",
+            "type": [
+                "reference",
+                "tags"
+            ]
+        }
+    ]
+]
