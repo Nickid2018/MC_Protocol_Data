@@ -7,12 +7,12 @@
                 "bitfield",
                 [
                     {
-                        "name": "invulnerable",
-                        "size": 1,
+                        "name": "unused",
+                        "size": 4,
                         "signed": false
                     },
                     {
-                        "name": "isFlying",
+                        "name": "instabuild",
                         "size": 1,
                         "signed": false
                     },
@@ -22,13 +22,13 @@
                         "signed": false
                     },
                     {
-                        "name": "instabuild",
+                        "name": "isFlying",
                         "size": 1,
                         "signed": false
                     },
                     {
-                        "name": "unused",
-                        "size": 4,
+                        "name": "invulnerable",
+                        "size": 1,
                         "signed": false
                     }
                 ]

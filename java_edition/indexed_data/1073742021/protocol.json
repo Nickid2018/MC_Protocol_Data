@@ -12,8 +12,7 @@
             "key": "login_finished",
             "name": "Client Login Success",
             "stateNext": "configuration",
-            "stateSide": "client",
-            "type": "void"
+            "stateSide": "client"
         },
         {
             "key": "login_compression",
