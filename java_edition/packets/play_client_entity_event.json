@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "i32"
+        },
+        {
+            "name": "eventId",
+            "type": [
+                "mapper",
+                {
+                    "type": "i8",
+                    "source": "entity_event"
+                }
+            ]
+        }
+    ]
+]

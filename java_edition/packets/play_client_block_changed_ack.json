@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "sequence",
+            "type": "varint"
+        }
+    ]
+]

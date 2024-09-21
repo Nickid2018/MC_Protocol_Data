@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "resetTimes",
+            "type": "bool"
+        }
+    ]
+]

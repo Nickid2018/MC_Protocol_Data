@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "chunkX",
+            "type": "i32"
+        },
+        {
+            "name": "chunkZ",
+            "type": "i32"
+        }
+    ]
+]

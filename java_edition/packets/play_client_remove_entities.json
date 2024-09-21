@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "entityIds",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "varint"
+                }
+            ]
+        }
+    ]
+]

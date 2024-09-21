@@ -1,0 +1,46 @@
+[
+    "container",
+    [
+        {
+            "name": "flags",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "invulnerable",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "isFlying",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "canFly",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "instabuild",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "unused",
+                        "size": 4,
+                        "signed": false
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "flyingSpeed",
+            "type": "f32"
+        },
+        {
+            "name": "walkingSpeed",
+            "type": "f32"
+        }
+    ]
+]

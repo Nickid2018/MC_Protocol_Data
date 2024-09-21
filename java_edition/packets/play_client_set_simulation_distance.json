@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "simulationDistance",
+            "type": "varint"
+        }
+    ]
+]

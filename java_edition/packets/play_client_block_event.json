@@ -1,0 +1,27 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "paramA",
+            "type": "u8"
+        },
+        {
+            "name": "paramB",
+            "type": "u8"
+        },
+        {
+            "name": "block",
+            "type": [
+                "registry",
+                "block"
+            ]
+        }
+    ]
+]

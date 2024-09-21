@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": [
+                "option",
+                "uuid"
+            ]
+        }
+    ]
+]

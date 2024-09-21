@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "size",
+            "type": "f64"
+        }
+    ]
+]

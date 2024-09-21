@@ -1,0 +1,33 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "varint"
+        },
+        {
+            "name": "x",
+            "type": "f64"
+        },
+        {
+            "name": "y",
+            "type": "f64"
+        },
+        {
+            "name": "z",
+            "type": "f64"
+        },
+        {
+            "name": "yRot",
+            "type": "i8"
+        },
+        {
+            "name": "xRot",
+            "type": "i8"
+        },
+        {
+            "name": "onGround",
+            "type": "bool"
+        }
+    ]
+]

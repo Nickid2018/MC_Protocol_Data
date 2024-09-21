@@ -169,7 +169,8 @@
     "play_client": [
         {
             "key": "bundle",
-            "name": "Client Bundle Delimter"
+            "name": "Client Bundle Delimter",
+            "type": "void"
         },
         {
             "key": "add_entity",
@@ -221,7 +222,8 @@
         },
         {
             "key": "chunk_batch_start",
-            "name": "Client Chunk Batch Start"
+            "name": "Client Chunk Batch Start",
+            "type": "void"
         },
         {
             "key": "chunks_biomes",
@@ -405,7 +407,8 @@
         },
         {
             "key": "player_combat_enter",
-            "name": "Client Player Combat Enter"
+            "name": "Client Player Combat Enter",
+            "type": "void"
         },
         {
             "key": "player_combat_kill",
@@ -591,7 +594,8 @@
             "key": "start_configuration",
             "name": "Client Start Configuration",
             "stateNext": "configuration",
-            "stateSide": "client"
+            "stateSide": "client",
+            "type": "void"
         },
         {
             "key": "stop_sound",
