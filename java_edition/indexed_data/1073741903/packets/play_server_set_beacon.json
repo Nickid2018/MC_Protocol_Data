@@ -1,0 +1,25 @@
+[
+    "container",
+    [
+        {
+            "name": "primary",
+            "type": [
+                "option",
+                [
+                    "registry",
+                    "mob_effect"
+                ]
+            ]
+        },
+        {
+            "name": "secondary",
+            "type": [
+                "option",
+                [
+                    "registry",
+                    "mob_effect"
+                ]
+            ]
+        }
+    ]
+]

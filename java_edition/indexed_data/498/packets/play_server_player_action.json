@@ -1,0 +1,47 @@
+[
+    "container",
+    [
+        {
+            "name": "action",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Start Destroy Block",
+                        "1": "Abort Destroy Block",
+                        "2": "Stop Destroy Block",
+                        "3": "Drop All Items",
+                        "4": "Drop Item",
+                        "5": "Release Use Item",
+                        "6": "Swap Item with Offhand"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "direction",
+            "type": [
+                "mapper",
+                {
+                    "type": "i8",
+                    "mappings": {
+                        "0": "Down",
+                        "1": "Up",
+                        "2": "North",
+                        "3": "South",
+                        "4": "West",
+                        "5": "East"
+                    }
+                }
+            ]
+        }
+    ]
+]

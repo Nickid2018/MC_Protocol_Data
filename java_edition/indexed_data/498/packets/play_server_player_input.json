@@ -1,0 +1,36 @@
+[
+    "container",
+    [
+        {
+            "name": "xxa",
+            "type": "f32"
+        },
+        {
+            "name": "zza",
+            "type": "f32"
+        },
+        {
+            "name": "flags",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 6,
+                        "signed": false
+                    },
+                    {
+                        "name": "sneaking",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "jumping",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        }
+    ]
+]

@@ -1,0 +1,36 @@
+[
+    "container",
+    [
+        {
+            "name": "yRot",
+            "type": "f32"
+        },
+        {
+            "name": "xRot",
+            "type": "f32"
+        },
+        {
+            "name": "flag",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 6,
+                        "signed": false
+                    },
+                    {
+                        "name": "horizontalCollision",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "onGround",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        }
+    ]
+]

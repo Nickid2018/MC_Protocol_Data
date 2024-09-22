@@ -1,0 +1,69 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "action",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "type": "varint",
+                        "mappings": {
+                            "0": "Interact",
+                            "1": "Attack",
+                            "2": "Interact At"
+                        }
+                    }
+                ],
+                "action"
+            ]
+        },
+        {
+            "name": "location",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "Interact At": [
+                            "reference",
+                            "vec3f"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "hand",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "Attack": "void"
+                    },
+                    "default": [
+                        "mapper",
+                        {
+                            "type": "varint",
+                            "mappings": {
+                                "0": "Mainhand",
+                                "1": "Offhand"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "usingSecondaryAction",
+            "type": "bool"
+        }
+    ]
+]

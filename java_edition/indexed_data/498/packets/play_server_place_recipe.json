@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "i8"
+        },
+        {
+            "name": "recipe",
+            "type": "bool"
+        },
+        {
+            "name": "shiftDown",
+            "type": "bool"
+        }
+    ]
+]

@@ -28,7 +28,10 @@
                             },
                             {
                                 "name": "value",
-                                "type": "buffer"
+                                "type": [
+                                    "fix_buffer",
+                                    256
+                                ]
                             }
                         ]
                     ]

@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "lines",
+            "type": [
+                "array",
+                {
+                    "count": 4,
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+]

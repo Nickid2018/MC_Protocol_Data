@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "slot",
+            "type": "varint"
+        },
+        {
+            "name": "pages",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "title",
+            "type": [
+                "option",
+                "string"
+            ]
+        }
+    ]
+]

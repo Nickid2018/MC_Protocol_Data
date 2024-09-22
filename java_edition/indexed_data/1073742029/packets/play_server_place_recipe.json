@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "varint"
+        },
+        {
+            "name": "recipe",
+            "type": "bool"
+        },
+        {
+            "name": "useMaxItems",
+            "type": "bool"
+        }
+    ]
+]

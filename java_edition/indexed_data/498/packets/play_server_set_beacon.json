@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "primary",
+            "type": "varint"
+        },
+        {
+            "name": "secondary",
+            "type": "varint"
+        }
+    ]
+]
