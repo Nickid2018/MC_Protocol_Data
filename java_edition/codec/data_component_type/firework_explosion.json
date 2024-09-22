@@ -1,0 +1,49 @@
+[
+    "container",
+    [
+        {
+            "name": "shape",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Small Ball",
+                        "1": "Large Ball",
+                        "2": "Star",
+                        "3": "Creeper",
+                        "4": "Burst"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "colors",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "i32"
+                }
+            ]
+        },
+        {
+            "name": "fadeColors",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "i32"
+                }
+            ]
+        },
+        {
+            "name": "hasTrail",
+            "type": "bool"
+        },
+        {
+            "name": "hasTwinkle",
+            "type": "bool"
+        }
+    ]
+]

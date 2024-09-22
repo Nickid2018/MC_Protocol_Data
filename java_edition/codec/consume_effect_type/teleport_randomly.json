@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "diameter",
+            "type": "f32"
+        }
+    ]
+]

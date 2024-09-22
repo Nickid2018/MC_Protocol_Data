@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "sound",
+            "type": [
+                "reference",
+                "sound_event"
+            ]
+        }
+    ]
+]

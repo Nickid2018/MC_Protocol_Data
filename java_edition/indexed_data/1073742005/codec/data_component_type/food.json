@@ -1,0 +1,46 @@
+[
+    "container",
+    [
+        {
+            "name": "nutrition",
+            "type": "varint"
+        },
+        {
+            "name": "saturation",
+            "type": "f32"
+        },
+        {
+            "name": "canAlwaysEat",
+            "type": "bool"
+        },
+        {
+            "name": "eatSeconds",
+            "type": "f32"
+        },
+        {
+            "name": "effects",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "effect",
+                                "type": [
+                                    "registry",
+                                    "mob_effect"
+                                ]
+                            },
+                            {
+                                "name": "probability",
+                                "type": "f32"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

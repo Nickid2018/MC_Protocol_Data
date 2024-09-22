@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "rgb",
+            "type": "i32"
+        },
+        {
+            "name": "showInTooltip",
+            "type": "bool"
+        }
+    ]
+]

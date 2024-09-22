@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "seconds",
+            "type": "f32"
+        },
+        {
+            "name": "cooldownGroup",
+            "type": [
+                "option",
+                "string"
+            ]
+        }
+    ]
+]

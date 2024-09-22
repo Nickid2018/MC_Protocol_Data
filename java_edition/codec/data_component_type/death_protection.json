@@ -1,0 +1,30 @@
+[
+    "array",
+    {
+        "countType": "varint",
+        "type": [
+            "container",
+            [
+                {
+                    "name": "consumeEffectType",
+                    "type": [
+                        "save",
+                        [
+                            "registry",
+                            "consume_effect_type"
+                        ],
+                        "consumeEffectType"
+                    ]
+                },
+                {
+                    "name": "consumeEffectData",
+                    "type": [
+                        "codec",
+                        "consume_effect_type",
+                        "consumeEffectType"
+                    ]
+                }
+            ]
+        ]
+    }
+]

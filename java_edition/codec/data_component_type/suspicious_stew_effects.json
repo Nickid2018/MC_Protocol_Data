@@ -1,0 +1,22 @@
+[
+    "array",
+    {
+        "countType": "varint",
+        "type": [
+            "container",
+            [
+                {
+                    "name": "effect",
+                    "type": [
+                        "registry",
+                        "mob_effect"
+                    ]
+                },
+                {
+                    "name": "duration",
+                    "type": "varint"
+                }
+            ]
+        ]
+    }
+]

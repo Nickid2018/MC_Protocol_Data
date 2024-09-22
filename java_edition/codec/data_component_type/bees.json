@@ -1,0 +1,23 @@
+[
+    "array",
+    {
+        "countType": "varint",
+        "type": [
+            "container",
+            [
+                {
+                    "name": "entityData",
+                    "type": "nbt"
+                },
+                {
+                    "name": "ticksInHive",
+                    "type": "varint"
+                },
+                {
+                    "name": "minTicksInHive",
+                    "type": "varint"
+                }
+            ]
+        ]
+    }
+]

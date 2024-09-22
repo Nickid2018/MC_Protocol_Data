@@ -1,0 +1,37 @@
+[
+    "container",
+    [
+        {
+            "name": "effects",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "effect",
+                                "type": [
+                                    "registry",
+                                    "mob_effect"
+                                ]
+                            },
+                            {
+                                "name": "detail",
+                                "type": [
+                                    "reference",
+                                    "mob_effect_detail"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "probability",
+            "type": "f32"
+        }
+    ]
+]

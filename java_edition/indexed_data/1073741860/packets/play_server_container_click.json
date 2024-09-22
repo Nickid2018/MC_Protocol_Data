@@ -1,0 +1,71 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "i8"
+        },
+        {
+            "name": "stateId",
+            "type": "varint"
+        },
+        {
+            "name": "slotNum",
+            "type": "i16"
+        },
+        {
+            "name": "buttonNum",
+            "type": "i8"
+        },
+        {
+            "name": "clickType",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Pickup",
+                        "1": "Quick Move",
+                        "2": "Swap",
+                        "3": "Clone",
+                        "4": "Throw",
+                        "5": "Quick Craft",
+                        "6": "Pickup All"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "changedSlots",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "slot",
+                                "type": "i16"
+                            },
+                            {
+                                "name": "item",
+                                "type": [
+                                    "reference",
+                                    "item_stack"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "carriedItem",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

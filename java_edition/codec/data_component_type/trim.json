@@ -1,0 +1,149 @@
+[
+    "container",
+    [
+        {
+            "name": "material",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "materialId",
+                        "type": [
+                            "save",
+                            [
+                                "registry",
+                                "trim_material",
+                                "-1"
+                            ],
+                            "materialId"
+                        ]
+                    },
+                    {
+                        "name": "directMaterial",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "materialId",
+                                "fields": {
+                                    "<Unknown Registry Entry>": [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "assetName",
+                                                "type": "string"
+                                            },
+                                            {
+                                                "name": "ingredient",
+                                                "type": [
+                                                    "registry",
+                                                    "item"
+                                                ]
+                                            },
+                                            {
+                                                "name": "itemModelIndex",
+                                                "type": "f32"
+                                            },
+                                            {
+                                                "name": "overrideArmorMaterials",
+                                                "type": [
+                                                    "array",
+                                                    {
+                                                        "countType": "varint",
+                                                        "type": [
+                                                            "container",
+                                                            [
+                                                                {
+                                                                    "name": "key",
+                                                                    "type": "string"
+                                                                },
+                                                                {
+                                                                    "name": "value",
+                                                                    "type": "string"
+                                                                }
+                                                            ]
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "description",
+                                                "type": [
+                                                    "reference",
+                                                    "component"
+                                                ]
+                                            }
+                                        ]
+                                    ]
+                                },
+                                "default": "void"
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "pattern",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "patternId",
+                        "type": [
+                            "save",
+                            [
+                                "registry",
+                                "trim_pattern",
+                                "-1"
+                            ],
+                            "patternId"
+                        ]
+                    },
+                    {
+                        "name": "directPattern",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "patternId",
+                                "fields": {
+                                    "<Unknown Registry Entry>": [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "assetId",
+                                                "type": "string"
+                                            },
+                                            {
+                                                "name": "templateItem",
+                                                "type": [
+                                                    "registry",
+                                                    "item"
+                                                ]
+                                            },
+                                            {
+                                                "name": "description",
+                                                "type": [
+                                                    "reference",
+                                                    "component"
+                                                ]
+                                            },
+                                            {
+                                                "name": "decal",
+                                                "type": "bool"
+                                            }
+                                        ]
+                                    ]
+                                },
+                                "default": "void"
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "showInTooltip",
+            "type": "bool"
+        }
+    ]
+]

@@ -1,0 +1,91 @@
+[
+    "container",
+    [
+        {
+            "name": "slot",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Mainhand",
+                        "1": "Feet",
+                        "2": "Legs",
+                        "3": "Chest",
+                        "4": "Head",
+                        "5": "Offhand",
+                        "6": "Body"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "equipSound",
+            "type": [
+                "reference",
+                "sound_event"
+            ]
+        },
+        {
+            "name": "model",
+            "type": [
+                "option",
+                "string"
+            ]
+        },
+        {
+            "name": "allowedEntities",
+            "type": [
+                "option",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "count",
+                            "type": [
+                                "save",
+                                "varint",
+                                "count"
+                            ]
+                        },
+                        {
+                            "name": "set",
+                            "type": [
+                                "switch",
+                                {
+                                    "compareTo": "count",
+                                    "fields": {
+                                        "0": "string"
+                                    },
+                                    "default": [
+                                        "array",
+                                        {
+                                            "count": "count",
+                                            "offset": "-1",
+                                            "type": [
+                                                "registry",
+                                                "entity_type"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "dispensable",
+            "type": "bool"
+        },
+        {
+            "name": "swappable",
+            "type": "bool"
+        },
+        {
+            "name": "damageOnHurt",
+            "type": "bool"
+        }
+    ]
+]

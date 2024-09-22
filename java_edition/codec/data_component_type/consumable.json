@@ -1,0 +1,74 @@
+[
+    "container",
+    [
+        {
+            "name": "consumeSeconds",
+            "type": "f32"
+        },
+        {
+            "name": "animation",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "None",
+                        "1": "Eat",
+                        "2": "Drink",
+                        "3": "Block",
+                        "4": "Bow",
+                        "5": "Spear",
+                        "6": "Crossbow",
+                        "7": "Spyglass",
+                        "8": "Toot Horn",
+                        "9": "Brush"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "sound",
+            "type": [
+                "reference",
+                "sound_event"
+            ]
+        },
+        {
+            "name": "hasConsumeParticles",
+            "type": "bool"
+        },
+        {
+            "name": "onConsumeEffects",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "consumeEffectType",
+                                "type": [
+                                    "save",
+                                    [
+                                        "registry",
+                                        "consume_effect_type"
+                                    ],
+                                    "consumeEffectType"
+                                ]
+                            },
+                            {
+                                "name": "consumeEffectData",
+                                "type": [
+                                    "codec",
+                                    "consume_effect_type",
+                                    "consumeEffectType"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]
