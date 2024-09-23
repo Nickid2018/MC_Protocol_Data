@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "messageSignature",
+            "type": "buffer"
+        }
+    ]
+]

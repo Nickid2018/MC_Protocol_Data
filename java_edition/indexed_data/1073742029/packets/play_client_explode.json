@@ -1,0 +1,36 @@
+[
+    "container",
+    [
+        {
+            "name": "center",
+            "type": [
+                "reference",
+                "vec3f64"
+            ]
+        },
+        {
+            "name": "playerKnockback",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "vec3f64"
+                ]
+            ]
+        },
+        {
+            "name": "explosionParticle",
+            "type": [
+                "reference",
+                "particle"
+            ]
+        },
+        {
+            "name": "explosionSound",
+            "type": [
+                "reference",
+                "sound_event"
+            ]
+        }
+    ]
+]

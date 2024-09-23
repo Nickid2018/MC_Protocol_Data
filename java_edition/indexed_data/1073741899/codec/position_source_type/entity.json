@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "sourceEntityId",
+            "type": "varint"
+        },
+        {
+            "name": "yOffset",
+            "type": "f32"
+        }
+    ]
+]

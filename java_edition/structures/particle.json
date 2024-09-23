@@ -1,0 +1,24 @@
+[
+    "container",
+    [
+        {
+            "name": "particleType",
+            "type": [
+                "save",
+                [
+                    "registry",
+                    "particle_type"
+                ],
+                "particle_type"
+            ]
+        },
+        {
+            "name": "particleData",
+            "type": [
+                "codec",
+                "particle_type",
+                "particle_type"
+            ]
+        }
+    ]
+]

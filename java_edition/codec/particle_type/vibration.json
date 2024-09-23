@@ -1,0 +1,36 @@
+[
+    "container",
+    [
+        {
+            "name": "destination",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "positionSourceType",
+                        "type": [
+                            "save",
+                            [
+                                "registry",
+                                "position_source_type"
+                            ],
+                            "position_source_type"
+                        ]
+                    },
+                    {
+                        "name": "positionSourceData",
+                        "type": [
+                            "codec",
+                            "position_source_type",
+                            "position_source_type"
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "arrivalInTicks",
+            "type": "varint"
+        }
+    ]
+]

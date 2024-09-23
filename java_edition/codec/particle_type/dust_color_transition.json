@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "fromColor",
+            "type": [
+                "reference",
+                "vec3f"
+            ]
+        },
+        {
+            "name": "toColor",
+            "type": [
+                "reference",
+                "vec3f"
+            ]
+        }
+    ]
+]

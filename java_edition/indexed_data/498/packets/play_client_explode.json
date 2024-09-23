@@ -1,0 +1,59 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "f32"
+        },
+        {
+            "name": "y",
+            "type": "f32"
+        },
+        {
+            "name": "z",
+            "type": "f32"
+        },
+        {
+            "name": "power",
+            "type": "f32"
+        },
+        {
+            "name": "toBlow",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "offsetX",
+                                "type": "i8"
+                            },
+                            {
+                                "name": "offsetY",
+                                "type": "i8"
+                            },
+                            {
+                                "name": "offsetZ",
+                                "type": "i8"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "knockbackX",
+            "type": "f32"
+        },
+        {
+            "name": "knockbackY",
+            "type": "f32"
+        },
+        {
+            "name": "knockbackZ",
+            "type": "f32"
+        }
+    ]
+]

@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "u8"
+        },
+        {
+            "name": "size",
+            "type": "varint"
+        },
+        {
+            "name": "entityId",
+            "type": "i32"
+        }
+    ]
+]

@@ -1,0 +1,37 @@
+[
+    "container",
+    [
+        {
+            "name": "messageSignature",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "id",
+                        "type": [
+                            "save",
+                            "varint",
+                            "id"
+                        ]
+                    },
+                    {
+                        "name": "signature",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "id",
+                                "fields": {
+                                    "0": "void"
+                                },
+                                "default": [
+                                    "fix_buffer",
+                                    256
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

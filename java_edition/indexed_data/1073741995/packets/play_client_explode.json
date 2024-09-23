@@ -1,0 +1,95 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "f64"
+        },
+        {
+            "name": "y",
+            "type": "f64"
+        },
+        {
+            "name": "z",
+            "type": "f64"
+        },
+        {
+            "name": "power",
+            "type": "f32"
+        },
+        {
+            "name": "toBlow",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "offsetX",
+                                "type": "i8"
+                            },
+                            {
+                                "name": "offsetY",
+                                "type": "i8"
+                            },
+                            {
+                                "name": "offsetZ",
+                                "type": "i8"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "knockbackX",
+            "type": "f32"
+        },
+        {
+            "name": "knockbackY",
+            "type": "f32"
+        },
+        {
+            "name": "knockbackZ",
+            "type": "f32"
+        },
+        {
+            "name": "blockInteraction",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Keep",
+                        "1": "Destroy",
+                        "2": "Destroy with Decay",
+                        "3": "Trigger Block"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "smallExplosionParticles",
+            "type": [
+                "reference",
+                "particle"
+            ]
+        },
+        {
+            "name": "largeExplosionParticles",
+            "type": [
+                "reference",
+                "particle"
+            ]
+        },
+        {
+            "name": "explosionSound",
+            "type": [
+                "reference",
+                "sound_event"
+            ]
+        }
+    ]
+]
