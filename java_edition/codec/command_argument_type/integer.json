@@ -1,0 +1,56 @@
+[
+    "container",
+    [
+        {
+            "name": "flags",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 6,
+                        "signed": false
+                    },
+                    {
+                        "name": "numberHasMax",
+                        "saveName": "max",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "numberHasMin",
+                        "saveName": "min",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "min",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "min",
+                    "fields": {
+                        "1": "i32"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "max",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "max",
+                    "fields": {
+                        "1": "i32"
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

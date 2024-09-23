@@ -12,7 +12,10 @@
                         [
                             {
                                 "name": "chunkPos",
-                                "type": "position"
+                                "type": [
+                                    "reference",
+                                    "chunk_pos"
+                                ]
                             },
                             {
                                 "name": "buffer",

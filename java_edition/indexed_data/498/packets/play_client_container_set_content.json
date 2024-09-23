@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "u8"
+        },
+        {
+            "name": "items",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "item_stack"
+                    ]
+                }
+            ]
+        }
+    ]
+]

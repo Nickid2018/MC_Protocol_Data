@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "type",
+            "type": [
+                "registry",
+                "block_entity_type"
+            ]
+        },
+        {
+            "name": "tag",
+            "type": "nbt"
+        }
+    ]
+]

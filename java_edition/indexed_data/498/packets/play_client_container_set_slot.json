@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "i8"
+        },
+        {
+            "name": "slot",
+            "type": "i16"
+        },
+        {
+            "name": "itemStack",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "registry",
+            "type": "string"
+        }
+    ]
+]

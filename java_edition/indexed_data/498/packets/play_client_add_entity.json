@@ -1,0 +1,71 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": [
+                "save",
+                "varint",
+                "entity_id"
+            ]
+        },
+        {
+            "name": "uuid",
+            "type": "uuid"
+        },
+        {
+            "name": "type",
+            "type": [
+                "save",
+                [
+                    "registry",
+                    "entity_type"
+                ],
+                "entity_type"
+            ]
+        },
+        {
+            "name": "<unnamed>",
+            "type": [
+                "func",
+                "record_entity_id"
+            ]
+        },
+        {
+            "name": "x",
+            "type": "f64"
+        },
+        {
+            "name": "y",
+            "type": "f64"
+        },
+        {
+            "name": "z",
+            "type": "f64"
+        },
+        {
+            "name": "xRot",
+            "type": "i8"
+        },
+        {
+            "name": "yRot",
+            "type": "i8"
+        },
+        {
+            "name": "data",
+            "type": "i32"
+        },
+        {
+            "name": "xa",
+            "type": "i16"
+        },
+        {
+            "name": "ya",
+            "type": "i16"
+        },
+        {
+            "name": "za",
+            "type": "i16"
+        }
+    ]
+]
