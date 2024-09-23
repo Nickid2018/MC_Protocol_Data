@@ -1,0 +1,113 @@
+[
+    "container",
+    [
+        {
+            "name": "playerId",
+            "type": "i32"
+        },
+        {
+            "name": "gameMode",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 4,
+                        "signed": false
+                    },
+                    {
+                        "name": "hardcore",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "gameType",
+                        "saveName": "game_type",
+                        "size": 3,
+                        "signed": false
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "gameType",
+            "type": [
+                "mapper",
+                {
+                    "var": "game_type",
+                    "mappings": {
+                        "0": "Survival",
+                        "1": "Creative",
+                        "2": "Adventure",
+                        "3": "Spectator"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "previousGameType",
+            "type": [
+                "mapper",
+                {
+                    "type": "i8",
+                    "mappings": {
+                        "0": "Survival",
+                        "1": "Creative",
+                        "2": "Adventure",
+                        "3": "Spectator"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "levels",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "registryHolder",
+            "type": "nbt"
+        },
+        {
+            "name": "dimensionType",
+            "type": "string"
+        },
+        {
+            "name": "dimension",
+            "type": "string"
+        },
+        {
+            "name": "seed",
+            "type": "i64"
+        },
+        {
+            "name": "maxPlayers",
+            "type": "u8"
+        },
+        {
+            "name": "chunkRadius",
+            "type": "varint"
+        },
+        {
+            "name": "reducedDebugInfo",
+            "type": "bool"
+        },
+        {
+            "name": "showDeathScreen",
+            "type": "bool"
+        },
+        {
+            "name": "isDebug",
+            "type": "bool"
+        },
+        {
+            "name": "isFlat",
+            "type": "bool"
+        }
+    ]
+]

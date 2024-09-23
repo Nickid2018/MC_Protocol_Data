@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "duration",
+            "type": "varint"
+        }
+    ]
+]

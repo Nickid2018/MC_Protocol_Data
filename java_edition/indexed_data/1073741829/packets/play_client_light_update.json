@@ -1,0 +1,37 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "varint"
+        },
+        {
+            "name": "z",
+            "type": "varint"
+        },
+        {
+            "name": "trustEdges",
+            "type": "bool"
+        },
+        {
+            "name": "skyYMask",
+            "type": "varlong"
+        },
+        {
+            "name": "blockYMask",
+            "type": "varlong"
+        },
+        {
+            "name": "emptySkyYMask",
+            "type": "varlong"
+        },
+        {
+            "name": "emptyBlockYMask",
+            "type": "varlong"
+        },
+        {
+            "name": "updates",
+            "type": "rest_buffer"
+        }
+    ]
+]

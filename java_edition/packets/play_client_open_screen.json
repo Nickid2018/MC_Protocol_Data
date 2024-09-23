@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "varint"
+        },
+        {
+            "name": "type",
+            "type": [
+                "registry",
+                "menu"
+            ]
+        },
+        {
+            "name": "title",
+            "type": [
+                "reference",
+                "component"
+            ]
+        }
+    ]
+]

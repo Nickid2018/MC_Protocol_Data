@@ -1,0 +1,75 @@
+[
+    "container",
+    [
+        {
+            "name": "signedContent",
+            "type": [
+                "reference",
+                "component"
+            ]
+        },
+        {
+            "name": "unsignedContent",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "component"
+                ]
+            ]
+        },
+        {
+            "name": "typeId",
+            "type": "varint"
+        },
+        {
+            "name": "sender",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "uuid",
+                        "type": "uuid"
+                    },
+                    {
+                        "name": "name",
+                        "type": [
+                            "reference",
+                            "component"
+                        ]
+                    },
+                    {
+                        "name": "teamName",
+                        "type": [
+                            "option",
+                            [
+                                "reference",
+                                "component"
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "timestamp",
+            "type": "i64"
+        },
+        {
+            "name": "saltSignature",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "salt",
+                        "type": "i64"
+                    },
+                    {
+                        "name": "signature",
+                        "type": "buffer"
+                    }
+                ]
+            ]
+        }
+    ]
+]

@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "varint"
+        },
+        {
+            "name": "recipe",
+            "type": "string"
+        }
+    ]
+]

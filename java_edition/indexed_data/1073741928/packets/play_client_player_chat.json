@@ -1,0 +1,168 @@
+[
+    "container",
+    [
+        {
+            "name": "sender",
+            "type": "uuid"
+        },
+        {
+            "name": "index",
+            "type": "varint"
+        },
+        {
+            "name": "signature",
+            "type": [
+                "option",
+                [
+                    "fix_buffer",
+                    256
+                ]
+            ]
+        },
+        {
+            "name": "body",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "content",
+                        "type": "string"
+                    },
+                    {
+                        "name": "timeStamp",
+                        "type": "i64"
+                    },
+                    {
+                        "name": "salt",
+                        "type": "i64"
+                    },
+                    {
+                        "name": "lastSeen",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "id",
+                                            "type": [
+                                                "save",
+                                                "varint",
+                                                "id"
+                                            ]
+                                        },
+                                        {
+                                            "name": "fullSignature",
+                                            "type": [
+                                                "switch",
+                                                {
+                                                    "compareTo": "id",
+                                                    "fields": {
+                                                        "0": [
+                                                            "fix_buffer",
+                                                            256
+                                                        ]
+                                                    },
+                                                    "default": "void"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "unsignedContent",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "component"
+                ]
+            ]
+        },
+        {
+            "name": "filterMask",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "type",
+                        "type": [
+                            "save",
+                            [
+                                "mapper",
+                                {
+                                    "type": "varint",
+                                    "mappings": {
+                                        "0": "Pass Through",
+                                        "1": "Fully Filtered",
+                                        "2": "Partially Filtered"
+                                    }
+                                }
+                            ],
+                            "type"
+                        ]
+                    },
+                    {
+                        "name": "mask",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "type",
+                                "fields": {
+                                    "Partially Filtered": [
+                                        "array",
+                                        {
+                                            "countType": "varint",
+                                            "type": "i64"
+                                        }
+                                    ]
+                                },
+                                "default": "void"
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "chatType",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "chatType",
+                        "type": [
+                            "registry",
+                            "chat_type"
+                        ]
+                    },
+                    {
+                        "name": "name",
+                        "type": [
+                            "reference",
+                            "component"
+                        ]
+                    },
+                    {
+                        "name": "targetName",
+                        "type": [
+                            "option",
+                            [
+                                "reference",
+                                "component"
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

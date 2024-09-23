@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "playerId",
+            "type": "varint"
+        },
+        {
+            "name": "killerId",
+            "type": "i32"
+        },
+        {
+            "name": "message",
+            "type": [
+                "reference",
+                "component"
+            ]
+        }
+    ]
+]

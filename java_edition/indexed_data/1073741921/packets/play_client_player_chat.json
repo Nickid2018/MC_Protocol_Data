@@ -1,0 +1,120 @@
+[
+    "container",
+    [
+        {
+            "name": "message",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "signedHeader",
+                        "type": [
+                            "container",
+                            [
+                                {
+                                    "name": "previousSignature",
+                                    "type": "buffer"
+                                },
+                                {
+                                    "name": "sender",
+                                    "type": "uuid"
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "name": "headerSignature",
+                        "type": "buffer"
+                    },
+                    {
+                        "name": "signedBody",
+                        "type": [
+                            "container",
+                            [
+                                {
+                                    "name": "content",
+                                    "type": [
+                                        "reference",
+                                        "component"
+                                    ]
+                                },
+                                {
+                                    "name": "timeStamp",
+                                    "type": "i64"
+                                },
+                                {
+                                    "name": "salt",
+                                    "type": "i64"
+                                },
+                                {
+                                    "name": "lastSeen",
+                                    "type": [
+                                        "array",
+                                        {
+                                            "countType": "varint",
+                                            "type": [
+                                                "container",
+                                                [
+                                                    {
+                                                        "name": "profileId",
+                                                        "type": "uuid"
+                                                    },
+                                                    {
+                                                        "name": "lastSignature",
+                                                        "type": "buffer"
+                                                    }
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "name": "unsignedContent",
+                        "type": [
+                            "option",
+                            [
+                                "reference",
+                                "component"
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "chatType",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "chatType",
+                        "type": [
+                            "registry",
+                            "chat_type"
+                        ]
+                    },
+                    {
+                        "name": "name",
+                        "type": [
+                            "reference",
+                            "component"
+                        ]
+                    },
+                    {
+                        "name": "targetName",
+                        "type": [
+                            "option",
+                            [
+                                "reference",
+                                "component"
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

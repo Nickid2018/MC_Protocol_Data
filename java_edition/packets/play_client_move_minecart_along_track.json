@@ -1,0 +1,49 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "lerpSteps",
+            "type": [
+                "array",
+                {
+                    "countType":  "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "position",
+                                "type": [
+                                    "reference",
+                                    "vec3f"
+                                ]
+                            },
+                            {
+                                "name": "movement",
+                                "type": [
+                                    "reference",
+                                    "vec3f"
+                                ]
+                            },
+                            {
+                                "name": "yRot",
+                                "type": "i8"
+                            },
+                            {
+                                "name": "xRot",
+                                "type": "i8"
+                            },
+                            {
+                                "name": "weight",
+                                "type": "f32"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]
