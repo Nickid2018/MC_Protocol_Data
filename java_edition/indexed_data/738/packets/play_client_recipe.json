@@ -1,0 +1,116 @@
+[
+    "container",
+    [
+        {
+            "name": "state",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "type": "varint",
+                        "mappings": {
+                            "0": "Init",
+                            "1": "Add",
+                            "2": "Remove"
+                        }
+                    }
+                ],
+                "state"
+            ]
+        },
+        {
+            "name": "crafting",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "guiOpen",
+                        "type": "bool"
+                    },
+                    {
+                        "name": "filteringCraftable",
+                        "type": "bool"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "furnace",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "guiOpen",
+                        "type": "bool"
+                    },
+                    {
+                        "name": "filteringCraftable",
+                        "type": "bool"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "blastFurnace",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "guiOpen",
+                        "type": "bool"
+                    },
+                    {
+                        "name": "filteringCraftable",
+                        "type": "bool"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "smoker",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "guiOpen",
+                        "type": "bool"
+                    },
+                    {
+                        "name": "filteringCraftable",
+                        "type": "bool"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "recipes",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "toHighlight",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "state",
+                    "fields": {
+                        "Init": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

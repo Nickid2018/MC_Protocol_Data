@@ -1,0 +1,68 @@
+[
+    "container",
+    [
+        {
+            "name": "state",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "type": "varint",
+                        "mappings": {
+                            "0": "Init",
+                            "1": "Add",
+                            "2": "Remove"
+                        }
+                    }
+                ],
+                "state"
+            ]
+        },
+        {
+            "name": "guiOpen",
+            "type": "bool"
+        },
+        {
+            "name": "filteringCraftable",
+            "type": "bool"
+        },
+        {
+            "name": "furnaceGuiOpen",
+            "type": "bool"
+        },
+        {
+            "name": "furnaceFilteringCraftable",
+            "type": "bool"
+        },
+        {
+            "name": "recipes",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "toHighlight",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "state",
+                    "fields": {
+                        "Init": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

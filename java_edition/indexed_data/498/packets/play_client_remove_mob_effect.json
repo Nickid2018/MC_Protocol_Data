@@ -1,0 +1,25 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "effectId",
+            "type": [
+                "save",
+                "u8",
+                "id"
+            ]
+        },
+        {
+            "name": "effect",
+            "type": [
+                "registry",
+                "mob_effect",
+                "id"
+            ]
+        }
+    ]
+]

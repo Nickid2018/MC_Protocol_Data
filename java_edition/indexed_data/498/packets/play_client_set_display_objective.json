@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "slot",
+            "type": "i8"
+        },
+        {
+            "name": "objectiveName",
+            "type": "string"
+        }
+    ]
+]

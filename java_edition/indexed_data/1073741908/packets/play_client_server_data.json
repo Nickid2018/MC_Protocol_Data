@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "motd",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "component"
+                ]
+            ]
+        },
+        {
+            "name": "iconBase64",
+            "type": [
+                "option",
+                "string"
+            ]
+        },
+        {
+            "name": "previewsChat",
+            "type": "bool"
+        }
+    ]
+]

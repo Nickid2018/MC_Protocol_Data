@@ -3,7 +3,18 @@
     [
         {
             "name": "playerId",
-            "type": "i32"
+            "type": [
+                "save",
+                "i32",
+                "entity_id"
+            ]
+        },
+        {
+            "name": "<unnamed>",
+            "type": [
+                "func",
+                "record_entity_id_player"
+            ]
         },
         {
             "name": "hardcore",

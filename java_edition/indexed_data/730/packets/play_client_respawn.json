@@ -1,0 +1,59 @@
+[
+    "container",
+    [
+        {
+            "name": "dimensionType",
+            "type": "string"
+        },
+        {
+            "name": "dimension",
+            "type": "string"
+        },
+        {
+            "name": "seed",
+            "type": "i64"
+        },
+        {
+            "name": "playerGameType",
+            "type": [
+                "mapper",
+                {
+                    "type": "u8",
+                    "mappings": {
+                        "0": "Survival",
+                        "1": "Creative",
+                        "2": "Adventure",
+                        "3": "Spectator"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "previousPlayerGameType",
+            "type": [
+                "mapper",
+                {
+                    "type": "u8",
+                    "mappings": {
+                        "0": "Survival",
+                        "1": "Creative",
+                        "2": "Adventure",
+                        "3": "Spectator"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "isDebug",
+            "type": "bool"
+        },
+        {
+            "name": "isFlat",
+            "type": "bool"
+        },
+        {
+            "name": "keepAllPlayerData",
+            "type": "bool"
+        }
+    ]
+]

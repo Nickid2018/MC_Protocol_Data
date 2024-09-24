@@ -1,0 +1,38 @@
+[
+    "container",
+    [
+        {
+            "name": "dimension",
+            "type": [
+                "mapper",
+                {
+                    "type": "i32",
+                    "mappings": {
+                        "0": "the_nether",
+                        "1": "overworld",
+                        "2": "the_end"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "playerGameType",
+            "type": [
+                "mapper",
+                {
+                    "type": "u8",
+                    "mappings": {
+                        "0": "Survival",
+                        "1": "Creative",
+                        "2": "Adventure",
+                        "3": "Spectator"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "levelType",
+            "type": "string"
+        }
+    ]
+]

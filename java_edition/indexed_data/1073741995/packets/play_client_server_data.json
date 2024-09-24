@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "motd",
+            "type": [
+                "reference",
+                "component"
+            ]
+        },
+        {
+            "name": "iconBytes",
+            "type": [
+                "option",
+                "buffer"
+            ]
+        }
+    ]
+]

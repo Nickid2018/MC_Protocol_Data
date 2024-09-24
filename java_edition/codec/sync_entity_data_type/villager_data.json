@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "type",
+            "type": [
+                "registry",
+                "villager_type"
+            ]
+        },
+        {
+            "name": "profession",
+            "type": [
+                "registry",
+                "villager_profession"
+            ]
+        },
+        {
+            "name": "level",
+            "type": "varint"
+        }
+    ]
+]

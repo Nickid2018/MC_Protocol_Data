@@ -1,0 +1,71 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "f64"
+        },
+        {
+            "name": "y",
+            "type": "f64"
+        },
+        {
+            "name": "z",
+            "type": "f64"
+        },
+        {
+            "name": "yRot",
+            "type": "f32"
+        },
+        {
+            "name": "xRot",
+            "type": "f32"
+        },
+        {
+            "name": "relativeArguments",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 3,
+                        "signed": false
+                    },
+                    {
+                        "name": "xRot",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "yRot",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "z",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "y",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "x",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "id",
+            "type": "varint"
+        },
+        {
+            "name": "dismountVehicle",
+            "type": "bool"
+        }
+    ]
+]
