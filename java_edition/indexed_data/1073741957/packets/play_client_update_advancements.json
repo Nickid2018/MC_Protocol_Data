@@ -1,0 +1,229 @@
+[
+    "container",
+    [
+        {
+            "name": "reset",
+            "type": "bool"
+        },
+        {
+            "name": "added",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "key",
+                                "type": "string"
+                            },
+                            {
+                                "name": "value",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "parentId",
+                                            "type": [
+                                                "option",
+                                                "string"
+                                            ]
+                                        },
+                                        {
+                                            "name": "display",
+                                            "type": [
+                                                "option",
+                                                [
+                                                    "container",
+                                                    [
+                                                        {
+                                                            "name": "title",
+                                                            "type": [
+                                                                "reference",
+                                                                "component"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "description",
+                                                            "type": [
+                                                                "reference",
+                                                                "component"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "icon",
+                                                            "type": [
+                                                                "reference",
+                                                                "item_stack"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "type",
+                                                            "type": [
+                                                                "mapper",
+                                                                {
+                                                                    "type": "varint",
+                                                                    "mappings": {
+                                                                        "0": "Task",
+                                                                        "1": "Challenge",
+                                                                        "2": "Goal"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "flags",
+                                                            "type": [
+                                                                "bitfield",
+                                                                [
+                                                                    {
+                                                                        "name": "unused",
+                                                                        "size": 29,
+                                                                        "signed": false
+                                                                    },
+                                                                    {
+                                                                        "name": "hidden",
+                                                                        "size": 1,
+                                                                        "signed": false
+                                                                    },
+                                                                    {
+                                                                        "name": "showToast",
+                                                                        "size": 1,
+                                                                        "signed": false
+                                                                    },
+                                                                    {
+                                                                        "name": "background",
+                                                                        "saveName": "background",
+                                                                        "size": 1,
+                                                                        "signed": false
+                                                                    }
+                                                                ]
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "background",
+                                                            "type": [
+                                                                "switch",
+                                                                {
+                                                                    "compareTo": "background",
+                                                                    "fields": {
+                                                                        "1": "string"
+                                                                    },
+                                                                    "default": "void"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "x",
+                                                            "type": "f32"
+                                                        },
+                                                        {
+                                                            "name": "y",
+                                                            "type": "f32"
+                                                        }
+                                                    ]
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            "name": "criteria",
+                                            "type": [
+                                                "array",
+                                                {
+                                                    "countType": "varint",
+                                                    "type": [
+                                                        "container",
+                                                        [
+                                                            {
+                                                                "name": "key",
+                                                                "type": "string"
+                                                            }
+                                                        ]
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "requirements",
+                                            "type": [
+                                                "array",
+                                                {
+                                                    "countType": "varint",
+                                                    "type": [
+                                                        "array",
+                                                        {
+                                                            "countType": "varint",
+                                                            "type": "string"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "sendsTelemetryEvent",
+                                            "type": "bool"
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "removed",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "progress",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "key",
+                                "type": "string"
+                            },
+                            {
+                                "name": "value",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": [
+                                            "container",
+                                            [
+                                                {
+                                                    "name": "key",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "type": [
+                                                        "option",
+                                                        "i64"
+                                                    ]
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

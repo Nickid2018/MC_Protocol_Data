@@ -1,0 +1,70 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "attributes",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "attribute",
+                                "type": [
+                                    "registry",
+                                    "attribute"
+                                ]
+                            },
+                            {
+                                "name": "base",
+                                "type": "f64"
+                            },
+                            {
+                                "name": "modifiers",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": [
+                                            "container",
+                                            [
+                                                {
+                                                    "name": "id",
+                                                    "type": "uuid"
+                                                },
+                                                {
+                                                    "name": "amount",
+                                                    "type": "f64"
+                                                },
+                                                {
+                                                    "name": "operation",
+                                                    "type": [
+                                                        "mapper",
+                                                        {
+                                                            "type": "varint",
+                                                            "mappings": {
+                                                                "0": "Add Value",
+                                                                "1": "Add Multiplied Base",
+                                                                "2": "Add Multiplied Total"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

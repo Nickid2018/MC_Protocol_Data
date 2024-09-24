@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "content",
+            "type": [
+                "reference",
+                "component"
+            ]
+        },
+        {
+            "name": "type",
+            "type": [
+                "mapper",
+                {
+                    "type": "i8",
+                    "mappings": {
+                        "0": "Chat",
+                        "1": "System",
+                        "2": "Game Info"
+                    }
+                }
+            ]
+        }
+    ]
+]
