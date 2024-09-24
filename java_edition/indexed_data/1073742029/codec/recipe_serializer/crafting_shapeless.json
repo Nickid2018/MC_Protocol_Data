@@ -1,0 +1,44 @@
+[
+    "container",
+    [
+        {
+            "name": "group",
+            "type": "string"
+        },
+        {
+            "name": "category",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Building",
+                        "1": "Redstone",
+                        "2": "Equipment",
+                        "3": "Misc"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        },
+        {
+            "name": "ingredients",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "ingredient"
+                    ]
+                }
+            ]
+        }
+    ]
+]

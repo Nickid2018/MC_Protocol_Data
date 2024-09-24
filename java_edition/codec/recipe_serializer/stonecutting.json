@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "group",
+            "type": "string"
+        },
+        {
+            "name": "ingredient",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

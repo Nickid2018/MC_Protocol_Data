@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "group",
+            "type": "string"
+        },
+        {
+            "name": "ingredients",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "ingredient"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

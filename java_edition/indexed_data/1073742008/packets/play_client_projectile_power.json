@@ -1,0 +1,21 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "varint"
+        },
+        {
+            "name": "xPower",
+            "type": "f64"
+        },
+        {
+            "name": "yPower",
+            "type": "f64"
+        },
+        {
+            "name": "zPower",
+            "type": "f64"
+        }
+    ]
+]

@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "group",
+            "type": "string"
+        },
+        {
+            "name": "ingredient",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        },
+        {
+            "name": "experience",
+            "type": "f32"
+        },
+        {
+            "name": "cookingTime",
+            "type": "varint"
+        }
+    ]
+]
