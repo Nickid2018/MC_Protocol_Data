@@ -1,0 +1,55 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": [
+                "save",
+                "varint",
+                "entity_id"
+            ]
+        },
+        {
+            "name": "<unnamed>",
+            "type": [
+                "func",
+                "record_entity_id_painting"
+            ]
+        },
+        {
+            "name": "uuid",
+            "type": "uuid"
+        },
+        {
+            "name": "motive",
+            "type": [
+                "registry",
+                "motive"
+            ]
+        },
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "direction",
+            "type": [
+                "mapper",
+                {
+                    "type": "i8",
+                    "mappings": {
+                        "0": "Down",
+                        "1": "Up",
+                        "2": "North",
+                        "3": "South",
+                        "4": "West",
+                        "5": "East"
+                    }
+                }
+            ]
+        }
+    ]
+]

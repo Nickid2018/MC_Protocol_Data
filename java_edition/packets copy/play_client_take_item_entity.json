@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "itemId",
+            "type": "varint"
+        },
+        {
+            "name": "playerId",
+            "type": "varint"
+        },
+        {
+            "name": "amount",
+            "type": "varint"
+        }
+    ]
+]

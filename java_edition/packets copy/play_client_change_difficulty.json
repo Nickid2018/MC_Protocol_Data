@@ -1,0 +1,24 @@
+[
+    "container",
+    [
+        {
+            "name": "difficulty",
+            "type": [
+                "mapper",
+                {
+                    "type": "u8",
+                    "mappings": {
+                        "0": "peaceful",
+                        "1": "easy",
+                        "2": "normal",
+                        "3": "hard"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "locked",
+            "type": "bool"
+        }
+    ]
+]

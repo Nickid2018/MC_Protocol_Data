@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "transactionId",
+            "type": "varint"
+        },
+        {
+            "name": "tag",
+            "type": "nbt"
+        }
+    ]
+]

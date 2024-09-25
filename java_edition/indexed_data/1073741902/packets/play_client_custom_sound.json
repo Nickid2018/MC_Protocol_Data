@@ -1,0 +1,50 @@
+[
+    "container",
+    [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "source",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Master",
+                        "1": "Music",
+                        "2": "Record",
+                        "3": "Weather",
+                        "4": "Block",
+                        "5": "Hostile",
+                        "6": "Neutral",
+                        "7": "Player",
+                        "8": "Ambient",
+                        "9": "Voice"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "x",
+            "type": "i32"
+        },
+        {
+            "name": "y",
+            "type": "i32"
+        },
+        {
+            "name": "z",
+            "type": "i32"
+        },
+        {
+            "name": "volume",
+            "type": "f32"
+        },
+        {
+            "name": "pitch",
+            "type": "f32"
+        }
+    ]
+]

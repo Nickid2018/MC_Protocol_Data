@@ -1,0 +1,131 @@
+[
+    "container",
+    [
+        {
+            "name": "type",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "type": "varint",
+                        "mappings": {
+                            "0": "Set Size",
+                            "1": "Lerp Size",
+                            "2": "Set Center",
+                            "3": "Initialize",
+                            "4": "Set Warning Time",
+                            "5": "Set Warning Blocks"
+                        }
+                    }
+                ],
+                "type"
+            ]
+        },
+        {
+            "name": "data",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "type",
+                    "fields": {
+                        "Set Size": [
+                            "container",
+                            [
+                                {
+                                    "name": "newSize",
+                                    "type": "f64"
+                                }
+                            ]
+                        ],
+                        "Lerp Size": [
+                            "container",
+                            [
+                                {
+                                    "name": "oldSize",
+                                    "type": "f64"
+                                },
+                                {
+                                    "name": "newSize",
+                                    "type": "f64"
+                                },
+                                {
+                                    "name": "lerpTime",
+                                    "type": "varlong"
+                                }
+                            ]
+                        ],
+                        "Set Center": [
+                            "container",
+                            [
+                                {
+                                    "name": "newCenterX",
+                                    "type": "f64"
+                                },
+                                {
+                                    "name": "newCenterZ",
+                                    "type": "f64"
+                                }
+                            ]
+                        ],
+                        "Set Warning Time": [
+                            "container",
+                            [
+                                {
+                                    "name": "warningTime",
+                                    "type": "varint"
+                                }
+                            ]
+                        ],
+                        "Set Warning Blocks": [
+                            "container",
+                            [
+                                {
+                                    "name": "warningBlocks",
+                                    "type": "varint"
+                                }
+                            ]
+                        ],
+                        "Initialize": [
+                            "container",
+                            [
+                                {
+                                    "name": "newCenterX",
+                                    "type": "f64"
+                                },
+                                {
+                                    "name": "newCenterZ",
+                                    "type": "f64"
+                                },
+                                {
+                                    "name": "oldSize",
+                                    "type": "f64"
+                                },
+                                {
+                                    "name": "newSize",
+                                    "type": "f64"
+                                },
+                                {
+                                    "name": "lerpTime",
+                                    "type": "varlong"
+                                },
+                                {
+                                    "name": "newAbsoluteMaxSize",
+                                    "type": "varint"
+                                },
+                                {
+                                    "name": "warningBlocks",
+                                    "type": "varint"
+                                },
+                                {
+                                    "name": "warningTime",
+                                    "type": "varint"
+                                }
+                            ]
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,34 @@
+[
+    "container",
+    [
+        {
+            "name": "event",
+            "type": [
+                "mapper",
+                {
+                    "type": "u8",
+                    "mappings": {
+                        "0": "No Respawn Block Available",
+                        "1": "Start Raining",
+                        "2": "Stop Raining",
+                        "3": "Change Game Mode",
+                        "4": "Win Game",
+                        "5": "Demo Event",
+                        "6": "Arrow Hit Player",
+                        "7": "Rain Level Change",
+                        "8": "Thunder Level Change",
+                        "9": "Pufferfish Sting",
+                        "10": "Guardian Elder Effect",
+                        "11": "Immediate Respawn",
+                        "12": "Limited Crafting",
+                        "13": "Level Chunks Load Start"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "param",
+            "type": "f32"
+        }
+    ]
+]

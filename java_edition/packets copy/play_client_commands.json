@@ -1,0 +1,154 @@
+[
+    "container",
+    [
+        {
+            "name": "entries",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "flags",
+                                "type": [
+                                    "bitfield",
+                                    [
+                                        {
+                                            "name": "unused",
+                                            "size": 3,
+                                            "signed": false
+                                        },
+                                        {
+                                            "name": "customSuggestions",
+                                            "saveName": "custom_suggestions",
+                                            "size": 1,
+                                            "signed": false
+                                        },
+                                        {
+                                            "name": "redirect",
+                                            "saveName": "redirect",
+                                            "size": 1,
+                                            "signed": false
+                                        },
+                                        {
+                                            "name": "executable",
+                                            "size": 1,
+                                            "signed": false
+                                        },
+                                        {
+                                            "name": "type",
+                                            "saveName": "type",
+                                            "size": 2,
+                                            "signed": false
+                                        }
+                                    ]
+                                ]
+                            },
+                            {
+                                "name": "type",
+                                "type": [
+                                    "save",
+                                    [
+                                        "mapper",
+                                        {
+                                            "var": "type",
+                                            "mappings": {
+                                                "0": "Root",
+                                                "1": "Literal",
+                                                "2": "Argument"
+                                            }
+                                        }
+                                    ],
+                                    "type_str"
+                                ]
+                            },
+                            {
+                                "name": "children",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": "varint"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "redirect",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "redirect",
+                                        "fields": {
+                                            "1": "varint"
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "stub",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "type_str",
+                                        "fields": {
+                                            "Root": "void",
+                                            "Literal": "string",
+                                            "Argument": [
+                                                "container",
+                                                [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "name": "argumentType",
+                                                        "type": [
+                                                            "save",
+                                                            [
+                                                                "registry",
+                                                                "command_argument_type"
+                                                            ],
+                                                            "argument_type"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "argumentStubInfo",
+                                                        "type": [
+                                                            "codec",
+                                                            "command_argument_type",
+                                                            "argument_type"
+                                                        ]
+                                                    }
+                                                ]
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "suggestionId",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "custom_suggestions",
+                                        "fields": {
+                                            "1": "string"
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "rootIndex",
+            "type": "varint"
+        }
+    ]
+]

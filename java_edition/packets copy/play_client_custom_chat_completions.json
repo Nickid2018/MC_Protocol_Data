@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "action",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "add",
+                        "1": "remove",
+                        "2": "set"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "entries",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+]

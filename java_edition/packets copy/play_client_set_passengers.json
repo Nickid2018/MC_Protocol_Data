@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "vehicle",
+            "type": "varint"
+        },
+        {
+            "name": "passengers",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "varint"
+                }
+            ]
+        }
+    ]
+]

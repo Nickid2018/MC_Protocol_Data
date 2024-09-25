@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "left",
+            "type": "bool"
+        },
+        {
+            "name": "right",
+            "type": "bool"
+        }
+    ]
+]

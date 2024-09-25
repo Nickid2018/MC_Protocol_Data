@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+]

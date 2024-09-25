@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "experienceProgress",
+            "type": "f32"
+        },
+        {
+            "name": "experienceLevel",
+            "type": "varint"
+        },
+        {
+            "name": "totalExperience",
+            "type": "varint"
+        }
+    ]
+]

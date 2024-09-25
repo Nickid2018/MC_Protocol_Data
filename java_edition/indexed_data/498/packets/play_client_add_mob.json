@@ -1,0 +1,119 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": [
+                "save",
+                "varint",
+                "entity_id"
+            ]
+        },
+        {
+            "name": "uuid",
+            "type": "uuid"
+        },
+        {
+            "name": "type",
+            "type": [
+                "save",
+                [
+                    "registry",
+                    "entity_type"
+                ],
+                "entity_type"
+            ]
+        },
+        {
+            "name": "<unnamed>",
+            "type": [
+                "func",
+                "record_entity_id"
+            ]
+        },
+        {
+            "name": "x",
+            "type": "f64"
+        },
+        {
+            "name": "y",
+            "type": "f64"
+        },
+        {
+            "name": "z",
+            "type": "f64"
+        },
+        {
+            "name": "yRot",
+            "type": "i8"
+        },
+        {
+            "name": "xRot",
+            "type": "i8"
+        },
+        {
+            "name": "yHeadRot",
+            "type": "i8"
+        },
+        {
+            "name": "xd",
+            "type": "i16"
+        },
+        {
+            "name": "yd",
+            "type": "i16"
+        },
+        {
+            "name": "zd",
+            "type": "i16"
+        },
+        {
+            "name": "unpack",
+            "type": [
+                "entity_metadata_loop",
+                {
+                    "endVal": 255,
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "id",
+                                "type": [
+                                    "save",
+                                    "u8",
+                                    "sync_id"
+                                ]
+                            },
+                            {
+                                "name": "syncName",
+                                "type": [
+                                    "func",
+                                    "sync_entity_data"
+                                ]
+                            },
+                            {
+                                "name": "serializerType",
+                                "type": [
+                                    "save",
+                                    [
+                                        "registry",
+                                        "sync_entity_data_type"
+                                    ],
+                                    "type"
+                                ]
+                            },
+                            {
+                                "name": "syncData",
+                                "type": [
+                                    "codec",
+                                    "sync_entity_data_type",
+                                    "type"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

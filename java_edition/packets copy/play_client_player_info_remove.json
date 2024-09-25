@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "profileIds",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "uuid"
+                }
+            ]
+        }
+    ]
+]

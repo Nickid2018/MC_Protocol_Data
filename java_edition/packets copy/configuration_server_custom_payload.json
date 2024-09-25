@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "payload",
+            "type": "rest_buffer"
+        }
+    ]
+]

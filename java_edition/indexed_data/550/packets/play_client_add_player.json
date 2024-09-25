@@ -1,0 +1,44 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": [
+                "save",
+                "varint",
+                "entity_id"
+            ]
+        },
+        {
+            "name": "playerId",
+            "type": "uuid"
+        },
+        {
+            "name": "<unnamed>",
+            "type": [
+                "func",
+                "record_entity_id_player"
+            ]
+        },
+        {
+            "name": "x",
+            "type": "f64"
+        },
+        {
+            "name": "y",
+            "type": "f64"
+        },
+        {
+            "name": "z",
+            "type": "f64"
+        },
+        {
+            "name": "yRot",
+            "type": "i8"
+        },
+        {
+            "name": "xRot",
+            "type": "i8"
+        }
+    ]
+]

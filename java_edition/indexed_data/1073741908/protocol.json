@@ -1,0 +1,663 @@
+{
+    "login_client": [
+        {
+            "key": "login_disconnect",
+            "name": "Client Login Disconnect"
+        },
+        {
+            "key": "hello",
+            "name": "Client Hello"
+        },
+        {
+            "key": "game_profile",
+            "name": "Client Login Success",
+            "stateNext": "play",
+            "stateSide": "all"
+        },
+        {
+            "key": "login_compression",
+            "name": "Client Compression",
+            "specialMark": "compress"
+        },
+        {
+            "key": "custom_query",
+            "name": "Client Custom Query"
+        }
+    ],
+    "login_server": [
+        {
+            "key": "hello",
+            "name": "Server Hello"
+        },
+        {
+            "key": "key",
+            "name": "Server Key",
+            "specialMark": "encrypt"
+        },
+        {
+            "key": "custom_query_answer",
+            "name": "Server Custom Query Answer"
+        }
+    ],
+    "play_client": [
+        {
+            "key": "add_entity",
+            "name": "Client Add Entity"
+        },
+        {
+            "key": "add_experience_orb",
+            "name": "Client Add Experience Orb"
+        },
+        {
+            "key": "add_player",
+            "name": "Client Add Player"
+        },
+        {
+            "key": "animate",
+            "name": "Client Animation"
+        },
+        {
+            "key": "award_stats",
+            "name": "Client Award Statistics"
+        },
+        {
+            "key": "block_changed_ack",
+            "name": "Client Block Changed ACK"
+        },
+        {
+            "key": "block_destruction",
+            "name": "Client Block Destruction"
+        },
+        {
+            "key": "block_entity_data",
+            "name": "Client Block Entity Data"
+        },
+        {
+            "key": "block_event",
+            "name": "Client Block Event"
+        },
+        {
+            "key": "block_update",
+            "name": "Client Block Update"
+        },
+        {
+            "key": "boss_event",
+            "name": "Client Boss Event"
+        },
+        {
+            "key": "change_difficulty",
+            "name": "Client Change Difficulty"
+        },
+        {
+            "key": "chat_preview",
+            "name": "Client Chat Preview"
+        },
+        {
+            "key": "clear_titles",
+            "name": "Client Clear Titles"
+        },
+        {
+            "key": "command_suggestions",
+            "name": "Client Command Suggestions"
+        },
+        {
+            "key": "commands",
+            "name": "Client Commands"
+        },
+        {
+            "key": "container_close",
+            "name": "Client Container Close"
+        },
+        {
+            "key": "container_set_content",
+            "name": "Client Container Set Content"
+        },
+        {
+            "key": "container_set_data",
+            "name": "Client Container Set Data"
+        },
+        {
+            "key": "container_set_slot",
+            "name": "Client Container Set Slot"
+        },
+        {
+            "key": "cooldown",
+            "name": "Client Cooldown"
+        },
+        {
+            "key": "custom_payload",
+            "name": "Client Custom Payload"
+        },
+        {
+            "key": "custom_sound",
+            "name": "Client Custom Sound"
+        },
+        {
+            "key": "disconnect",
+            "name": "Client Disconnect"
+        },
+        {
+            "key": "entity_event",
+            "name": "Client Entity Event"
+        },
+        {
+            "key": "explode",
+            "name": "Client Explode"
+        },
+        {
+            "key": "forget_level_chunk",
+            "name": "Client Forget Level Chunk"
+        },
+        {
+            "key": "game_event",
+            "name": "Client Game Event"
+        },
+        {
+            "key": "horse_screen_open",
+            "name": "Client Horse Screen Open"
+        },
+        {
+            "key": "initialize_border",
+            "name": "Client Initialize Border"
+        },
+        {
+            "key": "keep_alive",
+            "name": "Client Keep Alive"
+        },
+        {
+            "key": "level_chunk_with_light",
+            "name": "Client Level Chunk with Light"
+        },
+        {
+            "key": "level_event",
+            "name": "Client Level Event"
+        },
+        {
+            "key": "level_particles",
+            "name": "Client Level Particles"
+        },
+        {
+            "key": "light_update",
+            "name": "Client Light Update"
+        },
+        {
+            "key": "login",
+            "name": "Client Login"
+        },
+        {
+            "key": "map_item_data",
+            "name": "Client Map Item Data"
+        },
+        {
+            "key": "merchant_offers",
+            "name": "Client Merchant Offers"
+        },
+        {
+            "key": "move_entity_pos",
+            "name": "Client Move Entity Position"
+        },
+        {
+            "key": "move_entity_pos_rot",
+            "name": "Client Move Entity Position & Rotation"
+        },
+        {
+            "key": "move_entity_rot",
+            "name": "Client Move Entity Rotation"
+        },
+        {
+            "key": "move_vehicle",
+            "name": "Client Move Vehicle"
+        },
+        {
+            "key": "open_book",
+            "name": "Client Open Book"
+        },
+        {
+            "key": "open_screen",
+            "name": "Client Open Screen"
+        },
+        {
+            "key": "open_sign_editor",
+            "name": "Client Open Sign Editor"
+        },
+        {
+            "key": "ping",
+            "name": "Client Ping"
+        },
+        {
+            "key": "place_ghost_recipe",
+            "name": "Client Place Ghost Recipe"
+        },
+        {
+            "key": "player_abilities",
+            "name": "Client Player Abilities"
+        },
+        {
+            "key": "player_chat",
+            "name": "Client Player Chat"
+        },
+        {
+            "key": "player_combat_end",
+            "name": "Client Player Combat End"
+        },
+        {
+            "key": "player_combat_enter",
+            "name": "Client Player Combat Enter",
+            "type": "void"
+        },
+        {
+            "key": "player_combat_kill",
+            "name": "Client Player Combat Kill"
+        },
+        {
+            "key": "player_info",
+            "name": "Client Player Info"
+        },
+        {
+            "key": "player_look_at",
+            "name": "Client Player Look at"
+        },
+        {
+            "key": "player_position",
+            "name": "Client Player Position"
+        },
+        {
+            "key": "recipe",
+            "name": "Client Recipe"
+        },
+        {
+            "key": "remove_entities",
+            "name": "Client Remove Entities"
+        },
+        {
+            "key": "remove_mob_effect",
+            "name": "Client Remove Mob Effect"
+        },
+        {
+            "key": "resource_pack",
+            "name": "Client Resource Pack"
+        },
+        {
+            "key": "respawn",
+            "name": "Client Respawn"
+        },
+        {
+            "key": "rotate_head",
+            "name": "Client Rotate Head"
+        },
+        {
+            "key": "section_blocks_update",
+            "name": "Client Section Blocks Update"
+        },
+        {
+            "key": "select_advancements_tab",
+            "name": "Client Select Advancement Tab"
+        },
+        {
+            "key": "server_data",
+            "name": "Client Server Data"
+        },
+        {
+            "key": "set_action_bar_text",
+            "name": "Client Set Action Bar Text"
+        },
+        {
+            "key": "set_border_center",
+            "name": "Client Set Border Center"
+        },
+        {
+            "key": "set_border_lerp_size",
+            "name": "Client Set Border Lerp Size"
+        },
+        {
+            "key": "set_border_size",
+            "name": "Client Set Border Size"
+        },
+        {
+            "key": "set_border_warning_delay",
+            "name": "Client Set Border Warning Delay"
+        },
+        {
+            "key": "set_border_warning_distance",
+            "name": "Client Set Border Warning Distance"
+        },
+        {
+            "key": "set_camera",
+            "name": "Client Set Camera"
+        },
+        {
+            "key": "set_carried_item",
+            "name": "Client Set Carried Item"
+        },
+        {
+            "key": "set_chunk_cache_center",
+            "name": "Client Set Chunk Cache Center"
+        },
+        {
+            "key": "set_chunk_cache_radius",
+            "name": "Client Set Chunk Cache Radius"
+        },
+        {
+            "key": "set_default_spawn_position",
+            "name": "Client Set Default Spawn Position"
+        },
+        {
+            "key": "set_display_objective",
+            "name": "Client Set Display Objective"
+        },
+        {
+            "key": "set_entity_data",
+            "name": "Client Set Entity Data"
+        },
+        {
+            "key": "set_entity_link",
+            "name": "Client Set Entity Link"
+        },
+        {
+            "key": "set_entity_motion",
+            "name": "Client Set Entity Motion"
+        },
+        {
+            "key": "set_equipment",
+            "name": "Client Set Equipment"
+        },
+        {
+            "key": "set_experience",
+            "name": "Client Set Experience"
+        },
+        {
+            "key": "set_health",
+            "name": "Client Set Health"
+        },
+        {
+            "key": "set_objective",
+            "name": "Client Set Objective"
+        },
+        {
+            "key": "set_passengers",
+            "name": "Client Set Passengers"
+        },
+        {
+            "key": "set_player_team",
+            "name": "Client Set Player Team"
+        },
+        {
+            "key": "set_score",
+            "name": "Client Set Score"
+        },
+        {
+            "key": "set_simulation_distance",
+            "name": "Client Set Simulation Distance"
+        },
+        {
+            "key": "set_subtitle_text",
+            "name": "Client Set Subtitle Text"
+        },
+        {
+            "key": "set_time",
+            "name": "Client Set Time"
+        },
+        {
+            "key": "set_title_text",
+            "name": "Client Set Title Text"
+        },
+        {
+            "key": "set_titles_animation",
+            "name": "Client Set Titles Animation"
+        },
+        {
+            "key": "sound_entity",
+            "name": "Client Sound Entity"
+        },
+        {
+            "key": "sound",
+            "name": "Client Sound"
+        },
+        {
+            "key": "stop_sound",
+            "name": "Client Stop Sound"
+        },
+        {
+            "key": "system_chat",
+            "name": "Client System Chat"
+        },
+        {
+            "key": "tab_list",
+            "name": "Client Tab List"
+        },
+        {
+            "key": "tag_query",
+            "name": "Client Tag Query"
+        },
+        {
+            "key": "take_item_entity",
+            "name": "Client Take Item Entity"
+        },
+        {
+            "key": "teleport_entity",
+            "name": "Client Teleport Entity"
+        },
+        {
+            "key": "update_advancements",
+            "name": "Client Update Advancements"
+        },
+        {
+            "key": "update_attributes",
+            "name": "Client Update Attributes"
+        },
+        {
+            "key": "update_mob_effect",
+            "name": "Client Update Mob Effect"
+        },
+        {
+            "key": "update_recipes",
+            "name": "Client Update Recipes"
+        },
+        {
+            "key": "update_tags",
+            "name": "Client Update Tags"
+        }
+    ],
+    "play_server": [
+        {
+            "key": "accept_teleportation",
+            "name": "Server Accept Teleportation"
+        },
+        {
+            "key": "block_entity_tag_query",
+            "name": "Server Block Entity Tag Query"
+        },
+        {
+            "key": "change_difficulty",
+            "name": "Server Change Difficulty"
+        },
+        {
+            "key": "chat_command",
+            "name": "Server Chat Command"
+        },
+        {
+            "key": "chat",
+            "name": "Server Chat"
+        },
+        {
+            "key": "chat_preview",
+            "name": "Server Chat Preview"
+        },
+        {
+            "key": "client_command",
+            "name": "Server Client Command"
+        },
+        {
+            "key": "client_information",
+            "name": "Server Client Information"
+        },
+        {
+            "key": "command_suggestion",
+            "name": "Server Command Suggestion"
+        },
+        {
+            "key": "container_button_click",
+            "name": "Server Container Button Click"
+        },
+        {
+            "key": "container_click",
+            "name": "Server Container Click"
+        },
+        {
+            "key": "container_close",
+            "name": "Server Container Close"
+        },
+        {
+            "key": "custom_payload",
+            "name": "Server Custom Payload"
+        },
+        {
+            "key": "edit_book",
+            "name": "Server Edit Book"
+        },
+        {
+            "key": "entity_tag_query",
+            "name": "Server Entity Tag Query"
+        },
+        {
+            "key": "interact",
+            "name": "Server Interact"
+        },
+        {
+            "key": "jigsaw_generate",
+            "name": "Server Jigsaw Generate"
+        },
+        {
+            "key": "keep_alive",
+            "name": "Server Keep Alive"
+        },
+        {
+            "key": "lock_difficulty",
+            "name": "Server Lock Difficulty"
+        },
+        {
+            "key": "move_player_pos",
+            "name": "Server Move Player Position"
+        },
+        {
+            "key": "move_player_pos_rot",
+            "name": "Server Move Player Position & Rotation"
+        },
+        {
+            "key": "move_player_rot",
+            "name": "Server Move Player Rotation"
+        },
+        {
+            "key": "move_player_status_only",
+            "name": "Server Move Player Status-Only"
+        },
+        {
+            "key": "move_vehicle",
+            "name": "Server Move Vehicle"
+        },
+        {
+            "key": "paddle_boat",
+            "name": "Server Paddle Boat"
+        },
+        {
+            "key": "pick_item",
+            "name": "Server Pick Item"
+        },
+        {
+            "key": "place_recipe",
+            "name": "Server Place Recipe"
+        },
+        {
+            "key": "player_abilities",
+            "name": "Server Player Abilities"
+        },
+        {
+            "key": "player_action",
+            "name": "Server Player Action"
+        },
+        {
+            "key": "player_command",
+            "name": "Server Player Command"
+        },
+        {
+            "key": "player_input",
+            "name": "Server Player Input"
+        },
+        {
+            "key": "pong",
+            "name": "Server Pong"
+        },
+        {
+            "key": "recipe_book_change_settings",
+            "name": "Server Recipe Book Change Settings"
+        },
+        {
+            "key": "recipe_book_seen_recipe",
+            "name": "Server Recipe Book Seen Recipe"
+        },
+        {
+            "key": "rename_item",
+            "name": "Server Rename Item"
+        },
+        {
+            "key": "resource_pack",
+            "name": "Server Resource Pack"
+        },
+        {
+            "key": "seen_advancements",
+            "name": "Server Seen Advancements"
+        },
+        {
+            "key": "select_trade",
+            "name": "Server Select Trade"
+        },
+        {
+            "key": "set_beacon",
+            "name": "Server Set Beacon"
+        },
+        {
+            "key": "set_carried_item",
+            "name": "Server Set Carried Item"
+        },
+        {
+            "key": "set_command_block",
+            "name": "Server Set Command Block"
+        },
+        {
+            "key": "set_command_minecart",
+            "name": "Server Set Command Minecart"
+        },
+        {
+            "key": "set_creative_mode_slot",
+            "name": "Server Set Creative Mode Slot"
+        },
+        {
+            "key": "set_jigsaw_block",
+            "name": "Server Set Jigsaw Block"
+        },
+        {
+            "key": "set_structure_block",
+            "name": "Server Set Structure Block"
+        },
+        {
+            "key": "sign_update",
+            "name": "Server Sign Update"
+        },
+        {
+            "key": "swing",
+            "name": "Server Swing"
+        },
+        {
+            "key": "teleport_to_entity",
+            "name": "Server Teleport To Entity"
+        },
+        {
+            "key": "use_item_on",
+            "name": "Server Use Item on"
+        },
+        {
+            "key": "use_item",
+            "name": "Server Use Item"
+        }
+    ]
+}

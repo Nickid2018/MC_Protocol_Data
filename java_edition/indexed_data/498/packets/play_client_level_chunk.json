@@ -1,0 +1,39 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "i32"
+        },
+        {
+            "name": "z",
+            "type": "i32"
+        },
+        {
+            "name": "fullChunk",
+            "type": "bool"
+        },
+        {
+            "name": "availableSections",
+            "type": "varint"
+        },
+        {
+            "name": "heightmaps",
+            "type": "nbt"
+        },
+        {
+            "name": "buffer",
+            "type": "buffer"
+        },
+        {
+            "name": "blockEntitiesTags",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "nbt"
+                }
+            ]
+        }
+    ]
+]

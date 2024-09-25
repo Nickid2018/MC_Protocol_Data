@@ -1,0 +1,80 @@
+[
+    "container",
+    [
+        {
+            "name": "event",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "type": "varint",
+                        "mappings": {
+                            "0": "Enter Combat",
+                            "1": "End Combat",
+                            "2": "Entity Died"
+                        }
+                    }
+                ],
+                "event"
+            ]
+        },
+        {
+            "name": "endCombat",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "event",
+                    "fields": {
+                        "Enter Combat": [
+                            "container",
+                            [
+                                {
+                                    "name": "duration",
+                                    "type": "varint"
+                                },
+                                {
+                                    "name": "killerId",
+                                    "type": "i32"
+                                }
+                            ]
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "entityDied",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "event",
+                    "fields": {
+                        "Entity Died": [
+                            "container",
+                            [
+                                {
+                                    "name": "playerId",
+                                    "type": "varint"
+                                },
+                                {
+                                    "name": "killerId",
+                                    "type": "i32"
+                                },
+                                {
+                                    "name": "message",
+                                    "type": [
+                                        "reference",
+                                        "component"
+                                    ]
+                                }
+                            ]
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

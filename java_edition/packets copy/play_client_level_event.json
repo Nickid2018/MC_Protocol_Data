@@ -1,0 +1,30 @@
+[
+    "container",
+    [
+        {
+            "name": "type",
+            "type": [
+                "mapper",
+                {
+                    "type": "i32",
+                    "source": "level_event"
+                }
+            ]
+        },
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "data",
+            "type": "i32"
+        },
+        {
+            "name": "globalEvent",
+            "type": "bool"
+        }
+    ]
+]

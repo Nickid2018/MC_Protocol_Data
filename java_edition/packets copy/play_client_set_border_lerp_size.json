@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "oldSize",
+            "type": "f64"
+        },
+        {
+            "name": "newSize",
+            "type": "f64"
+        },
+        {
+            "name": "lerpTime",
+            "type": "varlong"
+        }
+    ]
+]

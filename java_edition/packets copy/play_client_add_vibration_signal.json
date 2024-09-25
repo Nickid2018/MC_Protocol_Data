@@ -1,0 +1,51 @@
+[
+    "container",
+    [
+        {
+            "name": "origin",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "destination",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "resourceLocation",
+                        "type": [
+                            "save",
+                            "string",
+                            "type"
+                        ]
+                    },
+                    {
+                        "name": "data",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "type",
+                                "fields": {
+                                    "minecraft:block": [
+                                        "option",
+                                        [
+                                            "reference",
+                                            "block_pos"
+                                        ]
+                                    ],
+                                    "minecraft:entity": "varint"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "arrivalInTicks",
+            "type": "varint"
+        }
+    ]
+]

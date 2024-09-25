@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "yHeadRot",
+            "type": "i8"
+        }
+    ]
+]

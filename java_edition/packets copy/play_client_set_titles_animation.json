@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "fadeIn",
+            "type": "i32"
+        },
+        {
+            "name": "stay",
+            "type": "i32"
+        },
+        {
+            "name": "fadeOut",
+            "type": "i32"
+        }
+    ]
+]
