@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "slotId",
+            "type": "varint"
+        },
+        {
+            "name": "containerId",
+            "type": "varint"
+        },
+        {
+            "name": "newState",
+            "type": "bool"
+        }
+    ]
+]

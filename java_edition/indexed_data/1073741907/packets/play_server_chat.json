@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "message",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "i64"
+        },
+        {
+            "name": "saltSignature",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "salt",
+                        "type": "i64"
+                    },
+                    {
+                        "name": "signature",
+                        "type": "buffer"
+                    }
+                ]
+            ]
+        }
+    ]
+]

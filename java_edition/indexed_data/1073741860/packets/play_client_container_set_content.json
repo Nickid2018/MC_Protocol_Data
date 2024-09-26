@@ -1,0 +1,33 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "u8"
+        },
+        {
+            "name": "stateId",
+            "type": "varint"
+        },
+        {
+            "name": "items",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "item_stack"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "carriedItem",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

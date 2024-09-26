@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "gameProfile",
+            "type": [
+                "reference",
+                "game_profile"
+            ]
+        }
+    ]
+]

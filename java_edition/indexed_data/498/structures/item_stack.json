@@ -1,0 +1,45 @@
+[
+    "container",
+    [
+        {
+            "name": "present",
+            "type": [
+                "save",
+                "bool",
+                "present"
+            ]
+        },
+        {
+            "name": "itemStack",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "present",
+                    "fields": {
+                        "false": "void",
+                        "true": [
+                            "container",
+                            [
+                                {
+                                    "name": "id",
+                                    "type": [
+                                        "registry",
+                                        "item"
+                                    ]
+                                },
+                                {
+                                    "name": "count",
+                                    "type": "i8"
+                                },
+                                {
+                                    "name": "tag",
+                                    "type": "optional_nbt"
+                                }
+                            ]
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+]

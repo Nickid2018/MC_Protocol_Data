@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "newCenterX",
+            "type": "f64"
+        },
+        {
+            "name": "newCenterZ",
+            "type": "f64"
+        }
+    ]
+]

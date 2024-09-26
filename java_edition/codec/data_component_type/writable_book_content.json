@@ -1,0 +1,22 @@
+[
+    "array",
+    {
+        "countType": "varint",
+        "type": [
+            "container",
+            [
+                {
+                    "name": "raw",
+                    "type": "string"
+                },
+                {
+                    "name": "filtered",
+                    "type": [
+                        "option",
+                        "string"
+                    ]
+                }
+            ]
+        ]
+    }
+]

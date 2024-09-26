@@ -1,0 +1,57 @@
+[
+    "container",
+    [
+        {
+            "name": "potion",
+            "type": [
+                "option",
+                [
+                    "registry",
+                    "potion"
+                ]
+            ]
+        },
+        {
+            "name": "customColor",
+            "type": [
+                "option",
+                "i32"
+            ]
+        },
+        {
+            "name": "customEffects",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "effect",
+                                "type": [
+                                    "registry",
+                                    "mob_effect"
+                                ]
+                            },
+                            {
+                                "name": "detail",
+                                "type": [
+                                    "reference",
+                                    "mob_effect_detail"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "customName",
+            "type": [
+                "option",
+                "string"
+            ]
+        }
+    ]
+]

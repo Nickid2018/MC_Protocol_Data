@@ -1,0 +1,15 @@
+[
+    "mapper",
+    {
+        "type": "varint",
+        "mappings": {
+            "0": "Idling",
+            "1": "Feeling Happy",
+            "2": "Scenting",
+            "3": "Sniffing",
+            "4": "Searching",
+            "5": "Digging",
+            "6": "Rising"
+        }
+    }
+]

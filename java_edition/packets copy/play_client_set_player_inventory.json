@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "slot",
+            "type": "varint"
+        },
+        {
+            "name": "contents",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

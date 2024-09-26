@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "cameraId",
+            "type": "varint"
+        }
+    ]
+]

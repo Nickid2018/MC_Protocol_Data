@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "min",
+            "type": "i32"
+        }
+    ]
+]

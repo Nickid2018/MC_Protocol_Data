@@ -1,0 +1,56 @@
+[
+    "container",
+    [
+        {
+            "name": "group",
+            "type": "string"
+        },
+        {
+            "name": "category",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Building",
+                        "1": "Redstone",
+                        "2": "Equipment",
+                        "3": "Misc"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "width",
+            "type": "varint"
+        },
+        {
+            "name": "height",
+            "type": "varint"
+        },
+        {
+            "name": "ingredients",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "ingredient"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        },
+        {
+            "name": "showNotification",
+            "type": "bool"
+        }
+    ]
+]

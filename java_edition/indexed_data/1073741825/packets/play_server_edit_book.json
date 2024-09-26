@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "book",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        },
+        {
+            "name": "signing",
+            "type": "bool"
+        },
+        {
+            "name": "slot",
+            "type": "varint"
+        }
+    ]
+]

@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "u8"
+        },
+        {
+            "name": "id",
+            "type": "i16"
+        },
+        {
+            "name": "data",
+            "type": "i16"
+        }
+    ]
+]

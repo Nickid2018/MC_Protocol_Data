@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "url",
+            "type": "string"
+        },
+        {
+            "name": "hash",
+            "type": "string"
+        },
+        {
+            "name": "required",
+            "type": "bool"
+        }
+    ]
+]

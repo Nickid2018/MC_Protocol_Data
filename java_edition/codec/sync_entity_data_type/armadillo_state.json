@@ -1,0 +1,12 @@
+[
+    "mapper",
+    {
+        "type": "varint",
+        "mappings": {
+            "0": "Idling",
+            "1": "Rolling",
+            "2": "Scared",
+            "3": "Unrolling"
+        }
+    }
+]

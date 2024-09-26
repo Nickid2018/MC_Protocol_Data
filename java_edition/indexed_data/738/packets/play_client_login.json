@@ -1,0 +1,104 @@
+[
+    "container",
+    [
+        {
+            "name": "playerId",
+            "type": [
+                "save",
+                "i32",
+                "entity_id"
+            ]
+        },
+        {
+            "name": "<unnamed>",
+            "type": [
+                "func",
+                "record_entity_id_player"
+            ]
+        },
+        {
+            "name": "hardcore",
+            "type": "bool"
+        },
+        {
+            "name": "gameType",
+            "type": [
+                "mapper",
+                {
+                    "type": "i8",
+                    "mappings": {
+                        "0": "Survival",
+                        "1": "Creative",
+                        "2": "Adventure",
+                        "3": "Spectator"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "previousGameType",
+            "type": [
+                "mapper",
+                {
+                    "type": "i8",
+                    "mappings": {
+                        "0": "Survival",
+                        "1": "Creative",
+                        "2": "Adventure",
+                        "3": "Spectator"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "levels",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "registryHolder",
+            "type": "nbt"
+        },
+        {
+            "name": "dimensionType",
+            "type": "string"
+        },
+        {
+            "name": "dimension",
+            "type": "string"
+        },
+        {
+            "name": "seed",
+            "type": "i64"
+        },
+        {
+            "name": "maxPlayers",
+            "type": "varint"
+        },
+        {
+            "name": "chunkRadius",
+            "type": "varint"
+        },
+        {
+            "name": "reducedDebugInfo",
+            "type": "bool"
+        },
+        {
+            "name": "showDeathScreen",
+            "type": "bool"
+        },
+        {
+            "name": "isDebug",
+            "type": "bool"
+        },
+        {
+            "name": "isFlat",
+            "type": "bool"
+        }
+    ]
+]

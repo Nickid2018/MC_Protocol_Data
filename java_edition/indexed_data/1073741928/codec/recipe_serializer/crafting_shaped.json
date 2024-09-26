@@ -1,0 +1,66 @@
+[
+    "container",
+    [
+        {
+            "name": "width",
+            "type": [
+                "save",
+                "varint",
+                "width"
+            ]
+        },
+        {
+            "name": "height",
+            "type": [
+                "save",
+                "varint",
+                "height"
+            ]
+        },
+        {
+            "name": "group",
+            "type": "string"
+        },
+        {
+            "name": "category",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Building",
+                        "1": "Redstone",
+                        "2": "Equipment",
+                        "3": "Misc"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "recipeItems",
+            "type": [
+                "array",
+                {
+                    "count": "height",
+                    "type": [
+                        "array",
+                        {
+                            "count": "width",
+                            "type": [
+                                "reference",
+                                "ingredient"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

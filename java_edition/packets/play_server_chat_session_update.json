@@ -1,0 +1,21 @@
+[
+    "container",
+    [
+        {
+            "name": "sessionId",
+            "type": "uuid"
+        },
+        {
+            "name": "expiresAt",
+            "type": "i64"
+        },
+        {
+            "name": "key",
+            "type": "buffer"
+        },
+        {
+            "name": "keySignature",
+            "type": "buffer"
+        }
+    ]
+]

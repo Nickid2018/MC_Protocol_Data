@@ -1,0 +1,138 @@
+[
+    "container",
+    [
+        {
+            "name": "message",
+            "type": [
+                "reference",
+                "component"
+            ]
+        },
+        {
+            "name": "bound",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "chatTypeId",
+                        "type": [
+                            "save",
+                            [
+                                "registry",
+                                "chat_type",
+                                "-1"
+                            ],
+                            "chatTypeId"
+                        ]
+                    },
+                    {
+                        "name": "directChatType",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "chatTypeId",
+                                "fields": {
+                                    "<Unknown Registry Entry>": [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "chat",
+                                                "type": [
+                                                    "container",
+                                                    [
+                                                        {
+                                                            "name": "translationKey",
+                                                            "type": "string"
+                                                        },
+                                                        {
+                                                            "name": "parameters",
+                                                            "type": [
+                                                                "array",
+                                                                {
+                                                                    "countType": "varint",
+                                                                    "type": [
+                                                                        "mapper",
+                                                                        {
+                                                                            "type": "varint",
+                                                                            "mappings": {
+                                                                                "0": "Sender",
+                                                                                "1": "Target",
+                                                                                "2": "Content"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "style",
+                                                            "type": "nbt"
+                                                        }
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "name": "narration",
+                                                "type": [
+                                                    "container",
+                                                    [
+                                                        {
+                                                            "name": "translationKey",
+                                                            "type": "string"
+                                                        },
+                                                        {
+                                                            "name": "parameters",
+                                                            "type": [
+                                                                "array",
+                                                                {
+                                                                    "countType": "varint",
+                                                                    "type": [
+                                                                        "mapper",
+                                                                        {
+                                                                            "type": "varint",
+                                                                            "mappings": {
+                                                                                "0": "Sender",
+                                                                                "1": "Target",
+                                                                                "2": "Content"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "style",
+                                                            "type": "nbt"
+                                                        }
+                                                    ]
+                                                ]
+                                            }
+                                        ]
+                                    ]
+                                },
+                                "default": "void"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "name",
+                        "type": [
+                            "reference",
+                            "component"
+                        ]
+                    },
+                    {
+                        "name": "targetName",
+                        "type": [
+                            "option",
+                            [
+                                "reference",
+                                "component"
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

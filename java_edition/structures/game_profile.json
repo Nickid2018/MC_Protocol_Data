@@ -1,0 +1,42 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "uuid"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "properties",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "name": "value",
+                                "type": "string"
+                            },
+                            {
+                                "name": "signature",
+                                "type": [
+                                    "option",
+                                    "string"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

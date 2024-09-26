@@ -1,0 +1,54 @@
+[
+    "container",
+    [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "chatSession",
+            "type": [
+                "option",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "sessionId",
+                            "type": "uuid"
+                        },
+                        {
+                            "name": "profilePublicKey",
+                            "type": [
+                                "option",
+                                [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "expires_at",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "key",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "signature",
+                                            "type": "string"
+                                        }
+                                    ]
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "profileId",
+            "type": [
+                "option",
+                "uuid"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,28 @@
+[
+    "container",
+    [
+        {
+            "name": "flags",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 6,
+                        "signed": false
+                    },
+                    {
+                        "name": "isFlying",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "unused",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        }
+    ]
+]

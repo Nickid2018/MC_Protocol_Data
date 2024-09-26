@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "blockState",
+            "type": [
+                "registry",
+                "block_states"
+            ]
+        }
+    ]
+]

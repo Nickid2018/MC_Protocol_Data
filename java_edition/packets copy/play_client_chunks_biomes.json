@@ -1,0 +1,30 @@
+[
+    "container",
+    [
+        {
+            "name": "biomes",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "chunkPos",
+                                "type": [
+                                    "reference",
+                                    "chunk_pos"
+                                ]
+                            },
+                            {
+                                "name": "buffer",
+                                "type": "buffer"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "message",
+            "type": "string"
+        }
+    ]
+]

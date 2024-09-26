@@ -4,5 +4,6 @@
     "packet_names": true,
     "protocols": true,
     "registries": true,
-    "version": "1.0"
+    "registry_codec_support": true,
+    "version": "2.0"
 }

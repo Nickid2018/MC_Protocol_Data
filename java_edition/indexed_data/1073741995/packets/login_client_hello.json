@@ -1,0 +1,21 @@
+[
+    "container",
+    [
+        {
+            "name": "serverId",
+            "type": "string"
+        },
+        {
+            "name": "publicKey",
+            "type": "buffer"
+        },
+        {
+            "name": "challenge",
+            "type": "buffer"
+        },
+        {
+            "name": "shouldAuthenticate",
+            "type": "bool"
+        }
+    ]
+]

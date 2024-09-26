@@ -1,0 +1,37 @@
+[
+    "container",
+    [
+        {
+            "name": "newCenterX",
+            "type": "f64"
+        },
+        {
+            "name": "newCenterZ",
+            "type": "f64"
+        },
+        {
+            "name": "oldSize",
+            "type": "f64"
+        },
+        {
+            "name": "newSize",
+            "type": "f64"
+        },
+        {
+            "name": "lerpTime",
+            "type": "varlong"
+        },
+        {
+            "name": "newAbsoluteMaxSize",
+            "type": "varint"
+        },
+        {
+            "name": "warningBlocks",
+            "type": "varint"
+        },
+        {
+            "name": "warningTime",
+            "type": "varint"
+        }
+    ]
+]

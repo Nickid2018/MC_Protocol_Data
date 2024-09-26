@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "entity",
+            "type": "varint"
+        },
+        {
+            "name": "command",
+            "type": "string"
+        },
+        {
+            "name": "trackOutput",
+            "type": "bool"
+        }
+    ]
+]

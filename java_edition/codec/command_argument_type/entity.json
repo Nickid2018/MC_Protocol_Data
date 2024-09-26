@@ -1,0 +1,20 @@
+[
+    "bitfield",
+    [
+        {
+            "name": "unused",
+            "size": 6,
+            "signed": false
+        },
+        {
+            "name": "playersOnly",
+            "size": 1,
+            "signed": false
+        },
+        {
+            "name": "single",
+            "size": 1,
+            "signed": false
+        }
+    ]
+]

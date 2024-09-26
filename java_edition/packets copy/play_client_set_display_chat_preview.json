@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "enabled",
+            "type": "bool"
+        }
+    ]
+]

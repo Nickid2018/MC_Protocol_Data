@@ -1,0 +1,65 @@
+[
+    "container",
+    [
+        {
+            "name": "objectiveName",
+            "type": "string"
+        },
+        {
+            "name": "method",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "type": "i8",
+                        "mappings": {
+                            "0": "Add",
+                            "1": "Remove",
+                            "2": "Change"
+                        }
+                    }
+                ],
+                "method"
+            ]
+        },
+        {
+            "name": "displayName",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "method",
+                    "fields": {
+                        "Remove": "void"
+                    },
+                    "default": [
+                        "reference",
+                        "component"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "renderType",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "method",
+                    "fields": {
+                        "Remove": "void"
+                    },
+                    "default": [
+                        "mapper",
+                        {
+                            "type": "varint",
+                            "mappings": {
+                                "0": "Integer",
+                                "1": "Hearts"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

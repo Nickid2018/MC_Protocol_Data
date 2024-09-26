@@ -1,0 +1,24 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "attachementType",
+            "type": "string"
+        },
+        {
+            "name": "targetPool",
+            "type": "string"
+        },
+        {
+            "name": "finalState",
+            "type": "string"
+        }
+    ]
+]

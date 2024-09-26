@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "slot",
+            "type": "varint"
+        }
+    ]
+]

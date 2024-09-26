@@ -1,0 +1,11 @@
+[
+    "mapper",
+    {
+        "type": "varint",
+        "mappings": {
+            "0": "Single Word",
+            "1": "Quotable Phrase",
+            "2": "Greedy Phrase"
+        }
+    }
+]

@@ -1,0 +1,67 @@
+[
+    "container",
+    [
+        {
+            "name": "type",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "type": "varint",
+                        "mappings": {
+                            "0": "Title",
+                            "1": "Subtitle",
+                            "2": "Action Bar",
+                            "3": "Times",
+                            "4": "Clear",
+                            "5": "Reset"
+                        }
+                    }
+                ],
+                "type"
+            ]
+        },
+        {
+            "name": "data",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "type",
+                    "fields": {
+                        "Title": [
+                            "reference",
+                            "component"
+                        ],
+                        "Subtitle": [
+                            "reference",
+                            "component"
+                        ],
+                        "Action Bar": [
+                            "reference",
+                            "component"
+                        ],
+                        "Times": [
+                            "container",
+                            [
+                                {
+                                    "name": "fadeInTime",
+                                    "type": "i32"
+                                },
+                                {
+                                    "name": "stayTime",
+                                    "type": "i32"
+                                },
+                                {
+                                    "name": "fadeOutTime",
+                                    "type": "i32"
+                                }
+                            ]
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

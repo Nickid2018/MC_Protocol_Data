@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "item",
+            "type": [
+                "registry",
+                "item"
+            ]
+        },
+        {
+            "name": "duration",
+            "type": "varint"
+        }
+    ]
+]

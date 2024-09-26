@@ -1,0 +1,25 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "varint"
+        },
+        {
+            "name": "action",
+            "type": [
+                "mapper",
+                {
+                    "type": "u8",
+                    "mappings": {
+                        "0": "Swing Mainhand",
+                        "1": "Wakr Up",
+                        "2": "Swing Offhand",
+                        "3": "Critical Hit",
+                        "4": "Magic Critical Hit"
+                    }
+                }
+            ]
+        }
+    ]
+]

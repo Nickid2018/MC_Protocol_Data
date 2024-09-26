@@ -1,0 +1,43 @@
+[
+    "container",
+    [
+        {
+            "name": "owner",
+            "type": "string"
+        },
+        {
+            "name": "method",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "type": "varint",
+                        "mappings": {
+                            "0": "Change",
+                            "1": "Remove"
+                        }
+                    }
+                ],
+                "method"
+            ]
+        },
+        {
+            "name": "objectiveName",
+            "type": "string"
+        },
+        {
+            "name": "score",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "method",
+                    "fields": {
+                        "Change": "varint"
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

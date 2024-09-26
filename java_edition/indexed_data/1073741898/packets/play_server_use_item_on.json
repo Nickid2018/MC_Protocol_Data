@@ -1,0 +1,70 @@
+[
+    "container",
+    [
+        {
+            "name": "hand",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Mainhand",
+                        "1": "Offhand"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "blockHit",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "blockPos",
+                        "type": [
+                            "reference",
+                            "block_pos"
+                        ]
+                    },
+                    {
+                        "name": "direction",
+                        "type": [
+                            "mapper",
+                            {
+                                "type": "i8",
+                                "mappings": {
+                                    "0": "Down",
+                                    "1": "Up",
+                                    "2": "North",
+                                    "3": "South",
+                                    "4": "West",
+                                    "5": "East"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "hitOffsetX",
+                        "type": "f32"
+                    },
+                    {
+                        "name": "hitOffsetY",
+                        "type": "f32"
+                    },
+                    {
+                        "name": "hitOffsetZ",
+                        "type": "f32"
+                    },
+                    {
+                        "name": "isInside",
+                        "type": "bool"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "sequence",
+            "type": "varint"
+        }
+    ]
+]

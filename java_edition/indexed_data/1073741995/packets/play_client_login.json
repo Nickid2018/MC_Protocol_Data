@@ -1,0 +1,139 @@
+[
+    "container",
+    [
+        {
+            "name": "playerId",
+            "type": [
+                "save",
+                "i32",
+                "entity_id"
+            ]
+        },
+        {
+            "name": "<unnamed>",
+            "type": [
+                "func",
+                "record_entity_id_player"
+            ]
+        },
+        {
+            "name": "hardcore",
+            "type": "bool"
+        },
+        {
+            "name": "levels",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "maxPlayers",
+            "type": "varint"
+        },
+        {
+            "name": "chunkRadius",
+            "type": "varint"
+        },
+        {
+            "name": "simulationDistance",
+            "type": "varint"
+        },
+        {
+            "name": "reducedDebugInfo",
+            "type": "bool"
+        },
+        {
+            "name": "showDeathScreen",
+            "type": "bool"
+        },
+        {
+            "name": "doLimitedCrafting",
+            "type": "bool"
+        },
+        {
+            "name": "dimensionType",
+            "type": "string"
+        },
+        {
+            "name": "dimension",
+            "type": "string"
+        },
+        {
+            "name": "seed",
+            "type": "i64"
+        },
+        {
+            "name": "gameType",
+            "type": [
+                "mapper",
+                {
+                    "type": "i8",
+                    "mappings": {
+                        "0": "Survival",
+                        "1": "Creative",
+                        "2": "Adventure",
+                        "3": "Spectator"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "previousGameType",
+            "type": [
+                "mapper",
+                {
+                    "type": "i8",
+                    "mappings": {
+                        "-1": "[null]",
+                        "0": "Survival",
+                        "1": "Creative",
+                        "2": "Adventure",
+                        "3": "Spectator"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "isDebug",
+            "type": "bool"
+        },
+        {
+            "name": "isFlat",
+            "type": "bool"
+        },
+        {
+            "name": "lastDeathLocation",
+            "type": [
+                "option",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "dimension",
+                            "type": "string"
+                        },
+                        {
+                            "name": "pos",
+                            "type": [
+                                "reference",
+                                "block_pos"
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "portalCooldown",
+            "type": "varint"
+        },
+        {
+            "name": "enforcesSecureChat",
+            "type": "bool"
+        }
+    ]
+]

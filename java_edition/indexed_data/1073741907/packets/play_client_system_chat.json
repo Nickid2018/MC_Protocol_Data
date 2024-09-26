@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "content",
+            "type": [
+                "reference",
+                "component"
+            ]
+        },
+        {
+            "name": "type",
+            "type": [
+                "registry",
+                "chat_type"
+            ]
+        }
+    ]
+]

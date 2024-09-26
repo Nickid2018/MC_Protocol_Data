@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+]

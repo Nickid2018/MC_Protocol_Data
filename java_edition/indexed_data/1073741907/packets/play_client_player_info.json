@@ -1,0 +1,171 @@
+[
+    "container",
+    [
+        {
+            "name": "action",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "type": "varint",
+                        "mappings": {
+                            "0": "Add Player",
+                            "1": "Update Game Mode",
+                            "2": "Update Latency",
+                            "3": "Update Display Name",
+                            "4": "Remove Player"
+                        }
+                    }
+                ],
+                "action"
+            ]
+        },
+        {
+            "name": "entries",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "switch",
+                        {
+                            "compareTo": "action",
+                            "fields": {
+                                "Add Player": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "gameProfile",
+                                            "type": [
+                                                "reference",
+                                                "game_profile"
+                                            ]
+                                        },
+                                        {
+                                            "name": "gameMode",
+                                            "type": [
+                                                "mapper",
+                                                {
+                                                    "type": "varint",
+                                                    "mappings": {
+                                                        "0": "Survival",
+                                                        "1": "Creative",
+                                                        "2": "Adventure",
+                                                        "3": "Spectator"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "latency",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "name": "displayName",
+                                            "type": [
+                                                "option",
+                                                [
+                                                    "reference",
+                                                    "component"
+                                                ]
+                                            ]
+                                        },
+                                        {
+                                            "name": "profilePublicKey",
+                                            "type": [
+                                                "option",
+                                                [
+                                                    "container",
+                                                    [
+                                                        {
+                                                            "name": "expiresAt",
+                                                            "type": "i64"
+                                                        },
+                                                        {
+                                                            "name": "key",
+                                                            "type": "buffer"
+                                                        },
+                                                        {
+                                                            "name": "keySignature",
+                                                            "type": "buffer"
+                                                        }
+                                                    ]
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                ],
+                                "Update Game Mode": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "uuid",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "name": "gameMode",
+                                            "type": [
+                                                "mapper",
+                                                {
+                                                    "type": "varint",
+                                                    "mappings": {
+                                                        "0": "Survival",
+                                                        "1": "Creative",
+                                                        "2": "Adventure",
+                                                        "3": "Spectator"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ],
+                                "Update Latency": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "uuid",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "name": "latency",
+                                            "type": "varint"
+                                        }
+                                    ]
+                                ],
+                                "Update Display Name": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "uuid",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "name": "displayName",
+                                            "type": [
+                                                "option",
+                                                [
+                                                    "reference",
+                                                    "component"
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                ],
+                                "Remove Player": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "uuid",
+                                            "type": "uuid"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

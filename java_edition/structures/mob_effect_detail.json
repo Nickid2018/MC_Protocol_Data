@@ -1,0 +1,32 @@
+[
+    "container",
+    [
+        {
+            "name": "amplifier",
+            "type": "varint"
+        },
+        {
+            "name": "duration",
+            "type": "varint"
+        },
+        {
+            "name": "ambient",
+            "type": "bool"
+        },
+        {
+            "name": "showParticles",
+            "type": "bool"
+        },
+        {
+            "name": "showIcon",
+            "type": "bool"
+        },
+        {
+            "name": "hiddenEffect",
+            "type": [
+                "option",
+                "recursive"
+            ]
+        }
+    ]
+]

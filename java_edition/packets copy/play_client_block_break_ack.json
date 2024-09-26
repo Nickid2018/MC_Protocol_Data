@@ -1,0 +1,41 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "state",
+            "type": [
+                "registry",
+                "block_states"
+            ]
+        },
+        {
+            "name": "action",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Start Destroy Block",
+                        "1": "Abort Destroy Block",
+                        "2": "Stop Destroy Block",
+                        "3": "Drop All Items",
+                        "4": "Drop Item",
+                        "5": "Release Use Item",
+                        "6": "Swap Item with Offhand"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "allGood",
+            "type": "bool"
+        }
+    ]
+]

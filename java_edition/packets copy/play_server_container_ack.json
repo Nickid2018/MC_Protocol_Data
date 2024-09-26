@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "u8"
+        },
+        {
+            "name": "uid",
+            "type": "i16"
+        },
+        {
+            "name": "accepted",
+            "type": "bool"
+        }
+    ]
+]

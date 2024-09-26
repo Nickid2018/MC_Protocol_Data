@@ -1,0 +1,57 @@
+[
+    "container",
+    [
+        {
+            "name": "owner",
+            "type": "string"
+        },
+        {
+            "name": "objectiveName",
+            "type": "string"
+        },
+        {
+            "name": "score",
+            "type": "varint"
+        },
+        {
+            "name": "display",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "component"
+                ]
+            ]
+        },
+        {
+            "name": "numberFormat",
+            "type": [
+                "option",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "numberFormatType",
+                            "type": [
+                                "save",
+                                [
+                                    "registry",
+                                    "number_format_type"
+                                ],
+                                "number_format_type"
+                            ]
+                        },
+                        {
+                            "name": "numberFormatData",
+                            "type": [
+                                "codec",
+                                "number_format_type",
+                                "number_format_type"
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        }
+    ]
+]

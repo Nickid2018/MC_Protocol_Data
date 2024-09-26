@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "levels",
+            "type": "varint"
+        },
+        {
+            "name": "keepJigsaws",
+            "type": "bool"
+        }
+    ]
+]

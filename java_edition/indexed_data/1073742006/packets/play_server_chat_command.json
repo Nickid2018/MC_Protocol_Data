@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "command",
+            "type": "string"
+        }
+    ]
+]

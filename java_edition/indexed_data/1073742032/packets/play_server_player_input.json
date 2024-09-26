@@ -1,0 +1,53 @@
+[
+    "container",
+    [
+        {
+            "name": "flags",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "sprint",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "shift",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "jump",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "right",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "left",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "backward",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "forward",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        }
+    ]
+]

@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "isFrontText",
+            "type": "bool"
+        }
+    ]
+]

@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "tickSteps",
+            "type": "varint"
+        }
+    ]
+]

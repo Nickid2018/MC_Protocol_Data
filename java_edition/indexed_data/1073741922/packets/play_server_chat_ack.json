@@ -1,0 +1,46 @@
+[
+    "container",
+    [
+        {
+            "name": "entries",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "profileId",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "lastSignature",
+                                "type": "buffer"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "lastReceived",
+            "type": [
+                "option",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "profileId",
+                            "type": "uuid"
+                        },
+                        {
+                            "name": "lastSignature",
+                            "type": "buffer"
+                        }
+                    ]
+                ]
+            ]
+        }
+    ]
+]

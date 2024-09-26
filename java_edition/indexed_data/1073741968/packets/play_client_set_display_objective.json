@@ -1,0 +1,39 @@
+[
+    "container",
+    [
+        {
+            "name": "slot",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "list",
+                        "1": "sidebar",
+                        "2": "below_name",
+                        "3": "sidebar.team.black",
+                        "4": "sidebar.team.dark_blue",
+                        "5": "sidebar.team.dark_green",
+                        "6": "sidebar.team.dark_aqua",
+                        "7": "sidebar.team.dark_red",
+                        "8": "sidebar.team.dark_purple",
+                        "9": "sidebar.team.gold",
+                        "10": "sidebar.team.gray",
+                        "11": "sidebar.team.dark_gray",
+                        "12": "sidebar.team.blue",
+                        "13": "sidebar.team.green",
+                        "14": "sidebar.team.aqua",
+                        "15": "sidebar.team.red",
+                        "16": "sidebar.team.light_purple",
+                        "17": "sidebar.team.yellow",
+                        "18": "sidebar.team.white"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "objectiveName",
+            "type": "string"
+        }
+    ]
+]

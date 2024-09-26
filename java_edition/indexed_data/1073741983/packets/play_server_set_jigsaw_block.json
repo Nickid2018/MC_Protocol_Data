@@ -1,0 +1,40 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "target",
+            "type": "string"
+        },
+        {
+            "name": "pool",
+            "type": "string"
+        },
+        {
+            "name": "finalState",
+            "type": "string"
+        },
+        {
+            "name": "joint",
+            "type": "string"
+        },
+        {
+            "name": "selectionPriority",
+            "type": "varint"
+        },
+        {
+            "name": "placementPriority",
+            "type": "varint"
+        }
+    ]
+]

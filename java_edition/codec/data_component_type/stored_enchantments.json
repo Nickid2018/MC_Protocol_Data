@@ -1,0 +1,34 @@
+[
+    "container",
+    [
+        {
+            "name": "enchantments",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "enchantment",
+                                "type": [
+                                    "registry",
+                                    "enchantment"
+                                ]
+                            },
+                            {
+                                "name": "level",
+                                "type": "varint"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "showInTooltip",
+            "type": "bool"
+        }
+    ]
+]

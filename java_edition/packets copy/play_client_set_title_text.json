@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "text",
+            "type": [
+                "reference",
+                "component"
+            ]
+        }
+    ]
+]

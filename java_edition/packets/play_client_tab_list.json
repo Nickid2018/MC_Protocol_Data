@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "header",
+            "type": [
+                "reference",
+                "component"
+            ]
+        },
+        {
+            "name": "footer",
+            "type": [
+                "reference",
+                "component"
+            ]
+        }
+    ]
+]

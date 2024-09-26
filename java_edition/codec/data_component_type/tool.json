@@ -1,0 +1,80 @@
+[
+    "container",
+    [
+        {
+            "name": "rules",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "blocks",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "count",
+                                            "type": [
+                                                "save",
+                                                "varint",
+                                                "count"
+                                            ]
+                                        },
+                                        {
+                                            "name": "set",
+                                            "type": [
+                                                "switch",
+                                                {
+                                                    "compareTo": "count",
+                                                    "fields": {
+                                                        "0": "string"
+                                                    },
+                                                    "default": [
+                                                        "array",
+                                                        {
+                                                            "count": "count",
+                                                            "offset": "-1",
+                                                            "type": [
+                                                                "registry",
+                                                                "block"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            },
+                            {
+                                "name": "speed",
+                                "type": [
+                                    "option",
+                                    "f32"
+                                ]
+                            },
+                            {
+                                "name": "correctForDrops",
+                                "type": [
+                                    "option",
+                                    "bool"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "defaultMiningSpeed",
+            "type": "f32"
+        },
+        {
+            "name": "damagePerBlock",
+            "type": "varint"
+        }
+    ]
+]

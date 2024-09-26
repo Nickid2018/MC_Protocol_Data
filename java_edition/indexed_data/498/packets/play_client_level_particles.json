@@ -1,0 +1,69 @@
+[
+    "container",
+    [
+        {
+            "name": "particleTypeId",
+            "type": [
+                "save",
+                "i32",
+                "id"
+            ]
+        },
+        {
+            "name": "particleType",
+            "type": [
+                "save",
+                [
+                    "registry",
+                    "particle_type",
+                    "id"
+                ],
+                "particle_type"
+            ]
+        },
+        {
+            "name": "overrideLimiter",
+            "type": "bool"
+        },
+        {
+            "name": "x",
+            "type": "f32"
+        },
+        {
+            "name": "y",
+            "type": "f32"
+        },
+        {
+            "name": "z",
+            "type": "f32"
+        },
+        {
+            "name": "xDist",
+            "type": "f32"
+        },
+        {
+            "name": "yDist",
+            "type": "f32"
+        },
+        {
+            "name": "zDist",
+            "type": "f32"
+        },
+        {
+            "name": "maxSpeed",
+            "type": "f32"
+        },
+        {
+            "name": "count",
+            "type": "i32"
+        },
+        {
+            "name": "particleData",
+            "type": [
+                "codec",
+                "particle_type",
+                "particle_type"
+            ]
+        }
+    ]
+]

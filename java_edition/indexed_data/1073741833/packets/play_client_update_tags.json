@@ -1,0 +1,30 @@
+[
+    "container",
+    [
+        {
+            "name": "tags",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "tagType",
+                                "type": "string"
+                            },
+                            {
+                                "name": "tags",
+                                "type": [
+                                    "reference",
+                                    "tags"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

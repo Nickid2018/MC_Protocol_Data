@@ -1,0 +1,67 @@
+[
+    "container",
+    [
+        {
+            "name": "title",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "raw",
+                        "type": "string"
+                    },
+                    {
+                        "name": "filtered",
+                        "type": [
+                            "option",
+                            "string"
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "author",
+            "type": "string"
+        },
+        {
+            "name": "generation",
+            "type": "varint"
+        },
+        {
+            "name": "pages",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "raw",
+                                "type": [
+                                    "reference",
+                                    "component"
+                                ]
+                            },
+                            {
+                                "name": "filtered",
+                                "type": [
+                                    "option",
+                                    [
+                                        "reference",
+                                        "component"
+                                    ]
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "resolved",
+            "type": "bool"
+        }
+    ]
+]

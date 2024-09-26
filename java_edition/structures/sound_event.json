@@ -1,0 +1,45 @@
+[
+    "container",
+    [
+        {
+            "name": "soundEventId",
+            "type": [
+                "save",
+                [
+                    "registry",
+                    "sound_event",
+                    "-1"
+                ],
+                "soundEventId"
+            ]
+        },
+        {
+            "name": "directSoundEvent",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "soundEventId",
+                    "fields": {
+                        "<Unknown Registry Entry>": [
+                            "container",
+                            [
+                                {
+                                    "name": "location",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "fixedRange",
+                                    "type": [
+                                        "option",
+                                        "f32"
+                                    ]
+                                }
+                            ]
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

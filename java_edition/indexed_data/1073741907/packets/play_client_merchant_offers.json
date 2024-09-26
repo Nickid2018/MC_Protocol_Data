@@ -1,0 +1,88 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "varint"
+        },
+        {
+            "name": "offers",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "baseCostA",
+                                "type": [
+                                    "reference",
+                                    "item_stack"
+                                ]
+                            },
+                            {
+                                "name": "result",
+                                "type": [
+                                    "reference",
+                                    "item_stack"
+                                ]
+                            },
+                            {
+                                "name": "baseCostB",
+                                "type": [
+                                    "reference",
+                                    "item_stack"
+                                ]
+                            },
+                            {
+                                "name": "outOfStock",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "uses",
+                                "type": "i32"
+                            },
+                            {
+                                "name": "maxUses",
+                                "type": "i32"
+                            },
+                            {
+                                "name": "xp",
+                                "type": "i32"
+                            },
+                            {
+                                "name": "specialPriceDiff",
+                                "type": "i32"
+                            },
+                            {
+                                "name": "priceMultiplier",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "demand",
+                                "type": "i32"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "villagerLevel",
+            "type": "varint"
+        },
+        {
+            "name": "villagerXp",
+            "type": "varint"
+        },
+        {
+            "name": "showProgress",
+            "type": "bool"
+        },
+        {
+            "name": "canRestock",
+            "type": "bool"
+        }
+    ]
+]

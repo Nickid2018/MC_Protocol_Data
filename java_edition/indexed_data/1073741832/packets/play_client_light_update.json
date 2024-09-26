@@ -1,0 +1,77 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "varint"
+        },
+        {
+            "name": "z",
+            "type": "varint"
+        },
+        {
+            "name": "trustEdges",
+            "type": "bool"
+        },
+        {
+            "name": "skyYMask",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "i64"
+                }
+            ]
+        },
+        {
+            "name": "blockYMask",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "i64"
+                }
+            ]
+        },
+        {
+            "name": "emptySkyYMask",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "i64"
+                }
+            ]
+        },
+        {
+            "name": "emptyBlockYMask",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "i64"
+                }
+            ]
+        },
+        {
+            "name": "skyUpdates",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "buffer"
+                }
+            ]
+        },
+        {
+            "name": "blockUpdates",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "buffer"
+                }
+            ]
+        }
+    ]
+]

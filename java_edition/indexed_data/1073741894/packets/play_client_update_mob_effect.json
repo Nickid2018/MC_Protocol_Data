@@ -1,0 +1,52 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "effect",
+            "type": [
+                "registry",
+                "mob_effect"
+            ]
+        },
+        {
+            "name": "effectAmplifier",
+            "type": "i8"
+        },
+        {
+            "name": "effectDurationTicks",
+            "type": "varint"
+        },
+        {
+            "name": "flags",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 5,
+                        "signed": false
+                    },
+                    {
+                        "name": "showIcon",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "isVisible",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "isAmbient",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        }
+    ]
+]

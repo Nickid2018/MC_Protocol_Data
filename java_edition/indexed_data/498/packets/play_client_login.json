@@ -1,0 +1,89 @@
+[
+    "container",
+    [
+        {
+            "name": "playerId",
+            "type": [
+                "save",
+                "i32",
+                "entity_id"
+            ]
+        },
+        {
+            "name": "<unnamed>",
+            "type": [
+                "func",
+                "record_entity_id_player"
+            ]
+        },
+        {
+            "name": "gameMode",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 4,
+                        "signed": false
+                    },
+                    {
+                        "name": "hardcore",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "gameType",
+                        "saveName": "game_type",
+                        "size": 3,
+                        "signed": false
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "gameType",
+            "type": [
+                "mapper",
+                {
+                    "var": "game_type",
+                    "mappings": {
+                        "0": "Survival",
+                        "1": "Creative",
+                        "2": "Adventure",
+                        "3": "Spectator"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "dimensionId",
+            "type": [
+                "mapper",
+                {
+                    "type": "i32",
+                    "mappings": {
+                        "0": "the_nether",
+                        "1": "overworld",
+                        "2": "the_end"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "maxPlayers",
+            "type": "u8"
+        },
+        {
+            "name": "levelType",
+            "type": "string"
+        },
+        {
+            "name": "chunkRadius",
+            "type": "varint"
+        },
+        {
+            "name": "reducedDebugInfo",
+            "type": "bool"
+        }
+    ]
+]

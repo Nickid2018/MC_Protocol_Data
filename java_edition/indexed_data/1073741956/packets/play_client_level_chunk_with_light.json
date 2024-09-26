@@ -1,0 +1,130 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "i32"
+        },
+        {
+            "name": "z",
+            "type": "i32"
+        },
+        {
+            "name": "chunkData",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "heightmaps",
+                        "type": "nbt"
+                    },
+                    {
+                        "name": "buffer",
+                        "type": "buffer"
+                    },
+                    {
+                        "name": "blockEntitiesData",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "packedXZ",
+                                            "type": "i8"
+                                        },
+                                        {
+                                            "name": "y",
+                                            "type": "i16"
+                                        },
+                                        {
+                                            "name": "type",
+                                            "type": [
+                                                "registry",
+                                                "block_entity_type"
+                                            ]
+                                        },
+                                        {
+                                            "name": "tag",
+                                            "type": "nbt"
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "lightData",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "skyYMask",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "i64"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "blockYMask",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "i64"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "emptySkyYMask",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "i64"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "emptyBlockYMask",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "i64"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "skyUpdates",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "buffer"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "blockUpdates",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "buffer"
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "owner",
+            "type": "string"
+        },
+        {
+            "name": "objectiveName",
+            "type": [
+                "option",
+                "string"
+            ]
+        }
+    ]
+]

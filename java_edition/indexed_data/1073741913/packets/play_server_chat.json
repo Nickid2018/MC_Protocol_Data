@@ -1,0 +1,82 @@
+[
+    "container",
+    [
+        {
+            "name": "message",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "i64"
+        },
+        {
+            "name": "saltSignature",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "salt",
+                        "type": "i64"
+                    },
+                    {
+                        "name": "signature",
+                        "type": "buffer"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "signedPreview",
+            "type": "bool"
+        },
+        {
+            "name": "lastSeenMessages",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "entries",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "profileId",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "name": "lastSignature",
+                                            "type": "buffer"
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lastReceived",
+                        "type": [
+                            "option",
+                            [
+                                "container",
+                                [
+                                    {
+                                        "name": "profileId",
+                                        "type": "uuid"
+                                    },
+                                    {
+                                        "name": "lastSignature",
+                                        "type": "buffer"
+                                    }
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

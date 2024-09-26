@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "key",
+            "type": "string"
+        },
+        {
+            "name": "payload",
+            "type": [
+                "option",
+                "buffer"
+            ]
+        }
+    ]
+]

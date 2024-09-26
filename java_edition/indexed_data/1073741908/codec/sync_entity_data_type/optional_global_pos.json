@@ -1,0 +1,19 @@
+[
+    "option",
+    [
+        "container",
+        [
+            {
+                "name": "dimension",
+                "type": "string"
+            },
+            {
+                "name": "pos",
+                "type": [
+                    "reference",
+                    "block_pos"
+                ]
+            }
+        ]
+    ]
+]

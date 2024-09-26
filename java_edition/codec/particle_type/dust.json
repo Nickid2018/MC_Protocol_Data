@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "color",
+            "type": [
+                "reference",
+                "vec3f"
+            ]
+        },
+        {
+            "name": "scale",
+            "type": "f32"
+        }
+    ]
+]

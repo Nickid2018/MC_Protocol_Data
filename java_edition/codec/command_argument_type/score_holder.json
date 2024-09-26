@@ -1,0 +1,15 @@
+[
+    "bitfield",
+    [
+        {
+            "name": "unused",
+            "size": 7,
+            "signed": false
+        },
+        {
+            "name": "multiple",
+            "size": 1,
+            "signed": false
+        }
+    ]
+]

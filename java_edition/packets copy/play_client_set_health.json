@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "health",
+            "type": "f32"
+        },
+        {
+            "name": "food",
+            "type": "varint"
+        },
+        {
+            "name": "saturation",
+            "type": "f32"
+        }
+    ]
+]

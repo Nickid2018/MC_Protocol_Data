@@ -1,0 +1,44 @@
+[
+    "container",
+    [
+        {
+            "name": "message",
+            "type": [
+                "reference",
+                "component"
+            ]
+        },
+        {
+            "name": "bound",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "chatType",
+                        "type": [
+                            "registry",
+                            "chat_type"
+                        ]
+                    },
+                    {
+                        "name": "name",
+                        "type": [
+                            "reference",
+                            "component"
+                        ]
+                    },
+                    {
+                        "name": "targetName",
+                        "type": [
+                            "option",
+                            [
+                                "reference",
+                                "component"
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

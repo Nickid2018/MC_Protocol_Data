@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "transactionId",
+            "type": "varint"
+        },
+        {
+            "name": "identifier",
+            "type": "string"
+        },
+        {
+            "name": "data",
+            "type": "rest_buffer"
+        }
+    ]
+]

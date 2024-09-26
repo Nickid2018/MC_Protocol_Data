@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "gameTime",
+            "type": "i64"
+        },
+        {
+            "name": "dayTime",
+            "type": "i64"
+        },
+        {
+            "name": "tickDayTime",
+            "type": "bool"
+        }
+    ]
+]

@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "i8"
+        },
+        {
+            "name": "recipe",
+            "type": "string"
+        }
+    ]
+]

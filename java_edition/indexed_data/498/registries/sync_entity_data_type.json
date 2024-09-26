@@ -1,0 +1,21 @@
+[
+    "byte",
+    "int",
+    "float",
+    "string",
+    "component",
+    "optional_component",
+    "item_stack",
+    "boolean",
+    "rotations",
+    "block_pos",
+    "optional_block_pos",
+    "direction",
+    "optional_uuid",
+    "block_state",
+    "compound_tag",
+    "particle",
+    "villager_data",
+    "optional_unsigned_int",
+    "pose"
+]

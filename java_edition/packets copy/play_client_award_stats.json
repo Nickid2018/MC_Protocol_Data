@@ -1,0 +1,34 @@
+[
+    "container",
+    [
+        {
+            "name": "entries",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "statType",
+                                "type": [
+                                    "registry",
+                                    "stat_type"
+                                ]
+                            },
+                            {
+                                "name": "statId",
+                                "type": "varint"
+                            },
+                            {
+                                "name": "value",
+                                "type": "varint"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

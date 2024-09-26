@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "sectionPos",
+            "type": [
+                "reference",
+                "section_pos"
+            ]
+        },
+        {
+            "name": "records",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "varint"
+                }
+            ]
+        }
+    ]
+]

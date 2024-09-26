@@ -1,0 +1,254 @@
+[
+    "container",
+    [
+        {
+            "name": "actions",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "updateListOrder",
+                        "saveName": "update_list_order",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "updateDisplayName",
+                        "saveName": "update_display_name",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "updateLatency",
+                        "saveName": "update_latency",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "updateListed",
+                        "saveName": "update_listed",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "updateGameMode",
+                        "saveName": "update_game_mode",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "initializeChat",
+                        "saveName": "initialize_chat",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "addPlayer",
+                        "saveName": "add_player",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "entries",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "profileId",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "profile",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "add_player",
+                                        "fields": {
+                                            "1": [
+                                                "container",
+                                                [
+                                                    {
+                                                        "name": "name",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "name": "properties",
+                                                        "type": [
+                                                            "array",
+                                                            {
+                                                                "countType": "varint",
+                                                                "type": [
+                                                                    "container",
+                                                                    [
+                                                                        {
+                                                                            "name": "name",
+                                                                            "type": "string"
+                                                                        },
+                                                                        {
+                                                                            "name": "value",
+                                                                            "type": "string"
+                                                                        },
+                                                                        {
+                                                                            "name": "signature",
+                                                                            "type": [
+                                                                                "option",
+                                                                                "string"
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            ]
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "chatSession",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "initialize_chat",
+                                        "fields": {
+                                            "1": [
+                                                "option",
+                                                [
+                                                    "container",
+                                                    [
+                                                        {
+                                                            "name": "sessionId",
+                                                            "type": "uuid"
+                                                        },
+                                                        {
+                                                            "name": "profilePublicKey",
+                                                            "type": [
+                                                                "container",
+                                                                [
+                                                                    {
+                                                                        "name": "expiresAt",
+                                                                        "type": "i64"
+                                                                    },
+                                                                    {
+                                                                        "name": "key",
+                                                                        "type": "buffer"
+                                                                    },
+                                                                    {
+                                                                        "name": "keySignature",
+                                                                        "type": "buffer"
+                                                                    }
+                                                                ]
+                                                            ]
+                                                        }
+                                                    ]
+                                                ]
+                                            ]
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "gameMode",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "update_game_mode",
+                                        "fields": {
+                                            "1": [
+                                                "mapper",
+                                                {
+                                                    "type": "varint",
+                                                    "mappings": {
+                                                        "0": "Survival",
+                                                        "1": "Creative",
+                                                        "2": "Adventure",
+                                                        "3": "Spectator"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "listed",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "update_listed",
+                                        "fields": {
+                                            "1": "bool"
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "latency",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "update_latency",
+                                        "fields": {
+                                            "1": "varint"
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "displayName",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "update_display_name",
+                                        "fields": {
+                                            "1": [
+                                                "option",
+                                                [
+                                                    "reference",
+                                                    "component"
+                                                ]
+                                            ]
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "listOrder",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "update_list_order",
+                                        "fields": {
+                                            "1": "varint"
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

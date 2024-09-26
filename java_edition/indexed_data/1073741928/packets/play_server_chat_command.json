@@ -1,0 +1,72 @@
+[
+    "container",
+    [
+        {
+            "name": "command",
+            "type": "string"
+        },
+        {
+            "name": "timestamp",
+            "type": "i64"
+        },
+        {
+            "name": "salt",
+            "type": "i64"
+        },
+        {
+            "name": "signatures",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "key",
+                                "type": "string"
+                            },
+                            {
+                                "name": "value",
+                                "type": [
+                                    "fix_buffer",
+                                    256
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "lastSeenMessages",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "offset",
+                        "type": "varint"
+                    },
+                    {
+                        "name": "acknowledged",
+                        "type": [
+                            "bitfield",
+                            [
+                                {
+                                    "name": "unused",
+                                    "size": 4,
+                                    "signed": false
+                                },
+                                {
+                                    "name": "acknowledgedBitSet",
+                                    "size": 20,
+                                    "signed": false
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

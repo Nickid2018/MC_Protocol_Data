@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "target",
+            "type": [
+                "option",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "dimension",
+                            "type": "string"
+                        },
+                        {
+                            "name": "pos",
+                            "type": [
+                                "reference",
+                                "block_pos"
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "tracked",
+            "type": "bool"
+        }
+    ]
+]

@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "yRot",
+            "type": "f32"
+        },
+        {
+            "name": "xRot",
+            "type": "f32"
+        },
+        {
+            "name": "onGround",
+            "type": "bool"
+        }
+    ]
+]

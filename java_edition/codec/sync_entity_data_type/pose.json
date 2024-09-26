@@ -1,0 +1,7 @@
+[
+    "mapper",
+    {
+        "type": "varint",
+        "source": "pose"
+    }
+]

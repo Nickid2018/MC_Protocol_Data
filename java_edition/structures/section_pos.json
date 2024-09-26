@@ -1,0 +1,20 @@
+[
+    "bitfield",
+    [
+        {
+            "name": "x",
+            "size": 22,
+            "signed": true
+        },
+        {
+            "name": "z",
+            "size": 22,
+            "signed": true
+        },
+        {
+            "name": "y",
+            "size": 20,
+            "signed": true
+        }
+    ]
+]

@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "sourceTypeId",
+            "type": [
+                "registry",
+                "damage_type"
+            ]
+        },
+        {
+            "name": "sourceCauseId",
+            "type": "varint"
+        },
+        {
+            "name": "sourceDirectId",
+            "type": "varint"
+        },
+        {
+            "name": "sourcePosition",
+            "type": [
+                "option",
+                "vec3f64"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,36 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": [
+                "save",
+                "varint",
+                "entity_id"
+            ]
+        },
+        {
+            "name": "x",
+            "type": "f64"
+        },
+        {
+            "name": "y",
+            "type": "f64"
+        },
+        {
+            "name": "z",
+            "type": "f64"
+        },
+        {
+            "name": "value",
+            "type": "i16"
+        },
+        {
+            "name": "<unnamed>",
+            "type": [
+                "func",
+                "record_entity_id_experience_orb"
+            ]
+        }
+    ]
+]

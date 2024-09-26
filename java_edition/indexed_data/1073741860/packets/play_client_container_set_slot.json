@@ -1,0 +1,24 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "i8"
+        },
+        {
+            "name": "stateId",
+            "type": "varint"
+        },
+        {
+            "name": "slot",
+            "type": "i16"
+        },
+        {
+            "name": "itemStack",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

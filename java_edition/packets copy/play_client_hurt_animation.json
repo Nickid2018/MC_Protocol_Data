@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "varint"
+        },
+        {
+            "name": "yaw",
+            "type": "f32"
+        }
+    ]
+]

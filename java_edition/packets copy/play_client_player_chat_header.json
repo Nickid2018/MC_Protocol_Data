@@ -1,0 +1,32 @@
+[
+    "container",
+    [
+        {
+            "name": "header",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "previousSignature",
+                        "type": [
+                            "option",
+                            "buffer"
+                        ]
+                    },
+                    {
+                        "name": "sender",
+                        "type": "uuid"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "headerSignature",
+            "type": "buffer"
+        },
+        {
+            "name": "bodyDigest",
+            "type": "buffer"
+        }
+    ]
+]

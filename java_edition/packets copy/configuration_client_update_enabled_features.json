@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "features",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+]

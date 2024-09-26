@@ -1,0 +1,49 @@
+[
+    "container",
+    [
+        {
+            "name": "sound",
+            "type": [
+                "registry",
+                "sound_event"
+            ]
+        },
+        {
+            "name": "source",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Master",
+                        "1": "Music",
+                        "2": "Record",
+                        "3": "Weather",
+                        "4": "Block",
+                        "5": "Hostile",
+                        "6": "Neutral",
+                        "7": "Player",
+                        "8": "Ambient",
+                        "9": "Voice"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "type": "varint"
+        },
+        {
+            "name": "volume",
+            "type": "f32"
+        },
+        {
+            "name": "pitch",
+            "type": "f32"
+        },
+        {
+            "name": "seed",
+            "type": "i64"
+        }
+    ]
+]

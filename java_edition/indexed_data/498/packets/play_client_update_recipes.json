@@ -1,0 +1,39 @@
+[
+    "container",
+    [
+        {
+            "name": "recipes",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "serializer",
+                                "type": [
+                                    "save",
+                                    "string",
+                                    "serializer"
+                                ]
+                            },
+                            {
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "name": "data",
+                                "type": [
+                                    "codec",
+                                    "recipe_serializer",
+                                    "serializer"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,27 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "amount",
+            "type": "f64"
+        },
+        {
+            "name": "operation",
+            "type":[
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Add Value",
+                        "1": "Add Multiplied Base",
+                        "2": "Add Multiplied Total"
+                    }
+                }
+            ]
+        }
+    ]
+]

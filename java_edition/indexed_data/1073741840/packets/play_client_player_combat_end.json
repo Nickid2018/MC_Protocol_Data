@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "duration",
+            "type": "varint"
+        },
+        {
+            "name": "killerId",
+            "type": "i32"
+        }
+    ]
+]

@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "uuid"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        }
+    ]
+]

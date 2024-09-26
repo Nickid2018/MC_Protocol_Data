@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "cooldownGroup",
+            "type": "string"
+        },
+        {
+            "name": "duration",
+            "type": "varint"
+        }
+    ]
+]

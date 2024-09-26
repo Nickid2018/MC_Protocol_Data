@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "reason",
+            "type": [
+                "reference",
+                "component"
+            ]
+        }
+    ]
+]

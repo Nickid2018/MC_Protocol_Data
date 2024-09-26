@@ -1,0 +1,65 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "i32"
+        },
+        {
+            "name": "z",
+            "type": "i32"
+        },
+        {
+            "name": "fullChunk",
+            "type": [
+                "save",
+                "bool",
+                "full_chunk"
+            ]
+        },
+        {
+            "name": "availableSections",
+            "type": "varint"
+        },
+        {
+            "name": "heightmaps",
+            "type": "nbt"
+        },
+        {
+            "name": "biomes",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "full_chunk",
+                    "fields": {
+                        "false": "void",
+                        "true": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": [
+                                    "registry",
+                                    "biome"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "buffer",
+            "type": "buffer"
+        },
+        {
+            "name": "blockEntitiesTags",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "nbt"
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,25 @@
+[
+    "array",
+    {
+        "countType": "varint",
+        "type": [
+            "container",
+            [
+                {
+                    "name": "tagName",
+                    "type": "string"
+                },
+                {
+                    "name": "entries",
+                    "type": [
+                        "array",
+                        {
+                            "countType": "varint",
+                            "type": "varint"
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+]

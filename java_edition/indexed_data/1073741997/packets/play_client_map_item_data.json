@@ -1,0 +1,123 @@
+[
+    "container",
+    [
+        {
+            "name": "mapId",
+            "type": "varint"
+        },
+        {
+            "name": "scale",
+            "type": "i8"
+        },
+        {
+            "name": "locked",
+            "type": "bool"
+        },
+        {
+            "name": "decorations",
+            "type": [
+                "option",
+                [
+                    "array",
+                    {
+                        "countType": "varint",
+                        "type": [
+                            "container",
+                            [
+                                {
+                                    "name": "type",
+                                    "type": [
+                                        "registry",
+                                        "map_decoration_type"
+                                    ]
+                                },
+                                {
+                                    "name": "x",
+                                    "type": "i8"
+                                },
+                                {
+                                    "name": "y",
+                                    "type": "i8"
+                                },
+                                {
+                                    "name": "rot",
+                                    "type": "i8"
+                                },
+                                {
+                                    "name": "name",
+                                    "type": [
+                                        "option",
+                                        [
+                                            "reference",
+                                            "component"
+                                        ]
+                                    ]
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "width",
+            "type": [
+                "save",
+                "u8",
+                "width"
+            ]
+        },
+        {
+            "name": "height",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "width",
+                    "fields": {
+                        "0": "void"
+                    },
+                    "default": "u8"
+                }
+            ]
+        },
+        {
+            "name": "startX",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "width",
+                    "fields": {
+                        "0": "void"
+                    },
+                    "default": "u8"
+                }
+            ]
+        },
+        {
+            "name": "startY",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "width",
+                    "fields": {
+                        "0": "void"
+                    },
+                    "default": "u8"
+                }
+            ]
+        },
+        {
+            "name": "mapColors",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "width",
+                    "fields": {
+                        "0": "void"
+                    },
+                    "default": "buffer"
+                }
+            ]
+        }
+    ]
+]

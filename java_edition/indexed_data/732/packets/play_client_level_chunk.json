@@ -1,0 +1,83 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "i32"
+        },
+        {
+            "name": "z",
+            "type": "i32"
+        },
+        {
+            "name": "fullChunk",
+            "type": [
+                "save",
+                "bool",
+                "full_chunk"
+            ]
+        },
+        {
+            "name": "forgetOldData",
+            "type": "bool"
+        },
+        {
+            "name": "availableSections",
+            "type": "varint"
+        },
+        {
+            "name": "heightmaps",
+            "type": "nbt"
+        },
+        {
+            "name": "biomes",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "full_chunk",
+                    "fields": {
+                        "false": "void",
+                        "true": [
+                            "array",
+                            {
+                                "count": 4096,
+                                "type": [
+                                    {
+                                        "name": "biomeId",
+                                        "type": [
+                                            "save",
+                                            "i32",
+                                            "biome_id"
+                                        ]
+                                    },
+                                    {
+                                        "name": "biome",
+                                        "type": [
+                                            "registry",
+                                            "biome",
+                                            "biome_id"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "buffer",
+            "type": "buffer"
+        },
+        {
+            "name": "blockEntitiesTags",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "nbt"
+                }
+            ]
+        }
+    ]
+]

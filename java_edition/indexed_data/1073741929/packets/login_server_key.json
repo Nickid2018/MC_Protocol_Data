@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "keybytes",
+            "type": "buffer"
+        },
+        {
+            "name": "encryptedChallenge",
+            "type": "buffer"
+        }
+    ]
+]

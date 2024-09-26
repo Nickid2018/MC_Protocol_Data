@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "isFrontText",
+            "type": "bool"
+        },
+        {
+            "name": "lines",
+            "type": [
+                "array",
+                {
+                    "count": 4,
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+]

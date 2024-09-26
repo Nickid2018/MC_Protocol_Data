@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "nutrition",
+            "type": "varint"
+        },
+        {
+            "name": "saturation",
+            "type": "f32"
+        },
+        {
+            "name": "canAlwaysEat",
+            "type": "bool"
+        }
+    ]
+]

@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "contents",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

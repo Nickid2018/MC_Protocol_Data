@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "sampleType",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Tick Time"
+                    }
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,10 @@
+[
+    "array",
+    {
+        "countType": "varint",
+        "type": [
+            "registry",
+            "item"
+        ]
+    }
+]
