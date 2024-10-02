@@ -1,0 +1,64 @@
+[
+    "container",
+    [
+        {
+            "name": "itemSets",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "name": "propertySet",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": [
+                                            "registry",
+                                            "item"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "stonecutterRecipes",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "input",
+                                "type": [
+                                    "reference",
+                                    "ingredient"
+                                ]
+                            },
+                            {
+                                "name": "recipe",
+                                "type": [
+                                    "reference",
+                                    "slot_display"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,93 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "varint"
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3f64"
+            ]
+        },
+        {
+            "name": "deltaMovement",
+            "type": [
+                "reference",
+                "vec3f64"
+            ]
+        },
+        {
+            "name": "yRot",
+            "type": "f32"
+        },
+        {
+            "name": "xRot",
+            "type": "f32"
+        },
+        {
+            "name": "relativeArguments",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 23,
+                        "signed": false
+                    },
+                    {
+                        "name": "rotateDelta",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "deltaZ",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "deltaY",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "deltaX",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "xRot",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "yRot",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "z",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "y",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "x",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "onGround",
+            "type": "bool"
+        }
+    ]
+]

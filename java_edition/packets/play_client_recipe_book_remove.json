@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "recipes",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "varint"
+                }
+            ]
+        }
+    ]
+]

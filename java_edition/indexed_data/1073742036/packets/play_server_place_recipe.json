@@ -7,7 +7,7 @@
         },
         {
             "name": "recipe",
-            "type": "string"
+            "type": "varint"
         },
         {
             "name": "useMaxItems",

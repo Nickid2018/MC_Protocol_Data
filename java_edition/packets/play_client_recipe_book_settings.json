@@ -1,0 +1,69 @@
+[
+    "container",
+    [
+        {
+            "name": "crafting",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "guiOpen",
+                        "type": "bool"
+                    },
+                    {
+                        "name": "filteringCraftable",
+                        "type": "bool"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "furnace",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "guiOpen",
+                        "type": "bool"
+                    },
+                    {
+                        "name": "filteringCraftable",
+                        "type": "bool"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "blastFurnace",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "guiOpen",
+                        "type": "bool"
+                    },
+                    {
+                        "name": "filteringCraftable",
+                        "type": "bool"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "smoker",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "guiOpen",
+                        "type": "bool"
+                    },
+                    {
+                        "name": "filteringCraftable",
+                        "type": "bool"
+                    }
+                ]
+            ]
+        }
+    ]
+]

@@ -1,0 +1,24 @@
+[
+    "container",
+    [
+        {
+            "name": "slotDisplayType",
+            "type": [
+                "save",
+                [
+                    "registry",
+                    "slot_display"
+                ],
+                "slot_display_type"
+            ]
+        },
+        {
+            "name": "slotDisplayData",
+            "type": [
+                "codec",
+                "slot_display",
+                "slot_display_type"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "recipe",
+            "type": "varint"
+        }
+    ]
+]

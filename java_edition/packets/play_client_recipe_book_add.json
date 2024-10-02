@@ -1,0 +1,117 @@
+[
+    "container",
+    [
+        {
+            "name": "entries",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "contents",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "id",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "name": "displayType",
+                                            "type": [
+                                                "save",
+                                                [
+                                                    "registry",
+                                                    "recipe_display"
+                                                ],
+                                                "display_type"
+                                            ]
+                                        },
+                                        {
+                                            "name": "displayData",
+                                            "type": [
+                                                "codec",
+                                                "recipe_display",
+                                                "display_type"
+                                            ]
+                                        },
+                                        {
+                                            "name": "group",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "name": "category",
+                                            "type": [
+                                                "mapper",
+                                                {
+                                                    "type": "varint",
+                                                    "mappings": {
+                                                        "0": "Crafting Building Blocks",
+                                                        "1": "Crafting Redstone",
+                                                        "2": "Crafting Equipment",
+                                                        "3": "Crafting Misc",
+                                                        "4": "Furnace Food",
+                                                        "5": "Furnace Blocks",
+                                                        "6": "Furnace Misc",
+                                                        "7": "Blast Furnace Blocks",
+                                                        "8": "Blast Furnace Misc",
+                                                        "9": "Smoker Food",
+                                                        "10": "Stonecutter",
+                                                        "11": "Smithing",
+                                                        "12": "Campfire"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "craftingRequirements",
+                                            "type": [
+                                                "option",
+                                                [
+                                                    "array",
+                                                    {
+                                                        "countType": "varint",
+                                                        "type": [
+                                                            "reference",
+                                                            "ingredient"
+                                                        ]
+                                                    }
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            },
+                            {
+                                "name": "flags",
+                                "type": [
+                                    "bitfield",
+                                    [
+                                        {
+                                            "name": "unused",
+                                            "size": 6,
+                                            "signed": false
+                                        },
+                                        {
+                                            "name": "highlight",
+                                            "size": 1,
+                                            "signed": false
+                                        },
+                                        {
+                                            "name": "notification",
+                                            "size": 1,
+                                            "signed": false
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

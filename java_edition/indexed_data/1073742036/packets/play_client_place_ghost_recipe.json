@@ -1,0 +1,36 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "varint"
+        },
+        {
+            "name": "recipeDisplay",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "displayType",
+                        "type": [
+                            "save",
+                            [
+                                "registry",
+                                "recipe_display"
+                            ],
+                            "display_type"
+                        ]
+                    },
+                    {
+                        "name": "displayData",
+                        "type": [
+                            "codec",
+                            "recipe_display",
+                            "display_type"
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

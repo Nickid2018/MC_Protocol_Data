@@ -1,0 +1,43 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "varint"
+        },
+        {
+            "name": "values",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "position",
+                        "type": [
+                            "reference",
+                            "vec3f64"
+                        ]
+                    },
+                    {
+                        "name": "deltaMovement",
+                        "type": [
+                            "reference",
+                            "vec3f64"
+                        ]
+                    },
+                    {
+                        "name": "yRot",
+                        "type": "f32"
+                    },
+                    {
+                        "name": "xRot",
+                        "type": "f32"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "onGround",
+            "type": "bool"
+        }
+    ]
+]
