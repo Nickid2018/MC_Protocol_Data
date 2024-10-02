@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "warningBlocks",
-            "type": "varint"
-        }
-    ]
-]

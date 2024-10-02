@@ -1,0 +1,103 @@
+{
+    "handshaking_server": [
+        {
+            "key": "intention",
+            "name": "Server Intention",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "protocolVersion",
+                        "type": [
+                            "save",
+                            "varint",
+                            "protocol_version"
+                        ]
+                    },
+                    {
+                        "name": "versionName",
+                        "type": [
+                            "func",
+                            "display_protocol_version"
+                        ]
+                    },
+                    {
+                        "name": "hostName",
+                        "type": "string"
+                    },
+                    {
+                        "name": "port",
+                        "type": "i16"
+                    },
+                    {
+                        "name": "intention",
+                        "type": [
+                            "save",
+                            [
+                                "mapper",
+                                {
+                                    "type": "varint",
+                                    "mappings": {
+                                        "1": "Status",
+                                        "2": "Login",
+                                        "3": "Transfer"
+                                    }
+                                }
+                            ],
+                            "intention"
+                        ]
+                    }
+                ]
+            ],
+            "specialMark": "intention"
+        }
+    ],
+    "status_client": [
+        {
+            "key": "status_response",
+            "name": "Client Status Response",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "status",
+                        "type": "string"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "pong_response",
+            "name": "Client Pong Response",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "time",
+                        "type": "i64"
+                    }
+                ]
+            ]
+        }
+    ],
+    "status_server": [
+        {
+            "key": "status_request",
+            "name": "Server Status Request",
+            "type": "void"
+        },
+        {
+            "key": "ping_request",
+            "name": "Server Ping Request",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "time",
+                        "type": "i64"
+                    }
+                ]
+            ]
+        }
+    ]
+}

@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "entityId",
-            "type": "varint"
-        }
-    ]
-]

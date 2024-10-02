@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "onGround",
-            "type": "bool"
-        }
-    ]
-]

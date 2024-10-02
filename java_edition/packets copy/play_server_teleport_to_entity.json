@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "uuid",
-            "type": "uuid"
-        }
-    ]
-]

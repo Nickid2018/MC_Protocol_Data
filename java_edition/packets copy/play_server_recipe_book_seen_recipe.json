@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "recipe",
-            "type": "string"
-        }
-    ]
-]

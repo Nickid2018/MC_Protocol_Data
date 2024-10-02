@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "warningDelay",
-            "type": "varint"
-        }
-    ]
-]

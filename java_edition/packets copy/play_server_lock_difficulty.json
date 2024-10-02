@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "locked",
-            "type": "bool"
-        }
-    ]
-]

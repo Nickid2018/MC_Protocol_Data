@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "key",
-            "type": "string"
-        }
-    ]
-]

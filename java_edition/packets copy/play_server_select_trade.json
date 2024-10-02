@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "item",
-            "type": "varint"
-        }
-    ]
-]

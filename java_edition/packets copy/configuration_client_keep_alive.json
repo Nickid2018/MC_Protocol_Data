@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "id",
-            "type": "i64"
-        }
-    ]
-]

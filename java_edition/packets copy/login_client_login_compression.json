@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "compressionThreshold",
-            "type": "varint"
-        }
-    ]
-]

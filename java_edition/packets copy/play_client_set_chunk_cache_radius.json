@@ -1,9 +1,0 @@
-[
-    "container",
-    [
-        {
-            "name": "radius",
-            "type": "varint"
-        }
-    ]
-]
