@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "base",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "material",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "pattern",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "color",
+            "type": "i32"
+        },
+        {
+            "name": "scale",
+            "type": "f32"
+        }
+    ]
+]

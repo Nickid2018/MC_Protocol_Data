@@ -1,0 +1,41 @@
+[
+    "container",
+    [
+        {
+            "name": "ingredient",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "fuel",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "craftingStation",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "duration",
+            "type": "varint"
+        },
+        {
+            "name": "experience",
+            "type": "f32"
+        }
+    ]
+]

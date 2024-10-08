@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "fromColor",
+            "type": "i32"
+        },
+        {
+            "name": "toColor",
+            "type": "i32"
+        }
+    ]
+]

@@ -1,0 +1,104 @@
+[
+    "container",
+    [
+        {
+            "name": "entries",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "contents",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "id",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "name": "displayType",
+                                            "type": [
+                                                "save",
+                                                [
+                                                    "registry",
+                                                    "recipe_display"
+                                                ],
+                                                "display_type"
+                                            ]
+                                        },
+                                        {
+                                            "name": "displayData",
+                                            "type": [
+                                                "codec",
+                                                "recipe_display",
+                                                "display_type"
+                                            ]
+                                        },
+                                        {
+                                            "name": "group",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "name": "category",
+                                            "type": [
+                                                "registry",
+                                                "recipe_book_category"
+                                            ]
+                                        },
+                                        {
+                                            "name": "craftingRequirements",
+                                            "type": [
+                                                "option",
+                                                [
+                                                    "array",
+                                                    {
+                                                        "countType": "varint",
+                                                        "type": [
+                                                            "reference",
+                                                            "ingredient"
+                                                        ]
+                                                    }
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            },
+                            {
+                                "name": "flags",
+                                "type": [
+                                    "bitfield",
+                                    [
+                                        {
+                                            "name": "unused",
+                                            "size": 6,
+                                            "signed": false
+                                        },
+                                        {
+                                            "name": "highlight",
+                                            "size": 1,
+                                            "signed": false
+                                        },
+                                        {
+                                            "name": "notification",
+                                            "size": 1,
+                                            "signed": false
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "replace",
+            "type": "bool"
+        }
+    ]
+]

@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "input",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "craftingStation",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        }
+    ]
+]

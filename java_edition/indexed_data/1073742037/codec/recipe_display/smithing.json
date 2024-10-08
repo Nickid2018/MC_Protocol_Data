@@ -1,0 +1,40 @@
+[
+    "container",
+    [
+        {
+            "name": "template",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "base",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "addition",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "craftingStation",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        }
+    ]
+]
