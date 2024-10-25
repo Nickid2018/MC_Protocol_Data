@@ -1,5 +1,15 @@
 [
     {
+        "version": "1.21.3",
+        "protocol_version": 768,
+        "data_version": 4082
+    },
+    {
+        "version": "1.21.2",
+        "protocol_version": 768,
+        "data_version": 4080
+    },
+    {
         "version": "1.21.2-rc2",
         "protocol_version": 1073742043,
         "data_version": 4079
