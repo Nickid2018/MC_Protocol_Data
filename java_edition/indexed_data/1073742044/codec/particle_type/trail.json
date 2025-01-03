@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "target",
+            "type": [
+                "reference",
+                "vec3f64"
+            ]
+        },
+        {
+            "name": "color",
+            "type": "i32"
+        },
+        {
+            "name": "duration",
+            "type": "varint"
+        }
+    ]
+]

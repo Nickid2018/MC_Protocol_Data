@@ -1,5 +1,55 @@
 [
     {
+        "version": "1.21.4",
+        "protocol_version": 769,
+        "data_version": 4189
+    },
+    {
+        "version": "1.21.4-rc3",
+        "protocol_version": 1073742052,
+        "data_version": 4188
+    },
+    {
+        "version": "1.21.4-rc2",
+        "protocol_version": 1073742051,
+        "data_version": 4186
+    },
+    {
+        "version": "1.21.4-rc1",
+        "protocol_version": 1073742050,
+        "data_version": 4184
+    },
+    {
+        "version": "1.21.4-pre3",
+        "protocol_version": 1073742049,
+        "data_version": 4183
+    },
+    {
+        "version": "1.21.4-pre2",
+        "protocol_version": 1073742048,
+        "data_version": 4182
+    },
+    {
+        "version": "1.21.4-pre1",
+        "protocol_version": 1073742047,
+        "data_version": 4179
+    },
+    {
+        "version": "24w46a",
+        "protocol_version": 1073742046,
+        "data_version": 4178
+    },
+    {
+        "version": "24w45a",
+        "protocol_version": 1073742045,
+        "data_version": 4177
+    },
+    {
+        "version": "24w44a",
+        "protocol_version": 1073742044,
+        "data_version": 4174
+    },
+    {
         "version": "1.21.3",
         "protocol_version": 768,
         "data_version": 4082

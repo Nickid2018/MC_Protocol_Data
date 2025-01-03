@@ -1,0 +1,45 @@
+[
+    "container",
+    [
+        {
+            "name": "floats",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "f32"
+                }
+            ]
+        },
+        {
+            "name": "flags",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "strings",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "colors",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "i32"
+                }
+            ]
+        }
+    ]
+]
