@@ -1,0 +1,13 @@
+[
+    "mapper",
+    {
+        "type": "varint",
+        "mappings": {
+            "0": "Red Blue",
+            "1": "Blue",
+            "2": "Green",
+            "3": "Yellow Blue",
+            "4": "Gray"
+        }
+    }
+]

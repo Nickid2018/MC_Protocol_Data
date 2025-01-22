@@ -1,0 +1,15 @@
+[
+    "mapper",
+    {
+        "type": "varint",
+        "mappings": {
+            "0": "Brown",
+            "1": "Write",
+            "2": "Black",
+            "3": "Write Splotched",
+            "4": "Gold",
+            "5": "Salt",
+            "99": "Evil"
+        }
+    }
+]

@@ -1,0 +1,45 @@
+[
+    "container",
+    [
+        {
+            "name": "group",
+            "type": "string"
+        },
+        {
+            "name": "category",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Building",
+                        "1": "Redstone",
+                        "2": "Equipment",
+                        "3": "Misc"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "input",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "material",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "transmute_result"
+            ]
+        }
+    ]
+]

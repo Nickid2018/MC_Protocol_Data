@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "mode",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Start",
+                        "1": "Log",
+                        "2": "Fail",
+                        "3": "Accept"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "message",
+            "type": "string"
+        }
+    ]
+]

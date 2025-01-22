@@ -1,0 +1,20 @@
+[
+    "mapper",
+    {
+        "type": "varint",
+        "mappings": {
+            "0": "Kob",
+            "1": "Sunstreak",
+            "2": "Snooper",
+            "3": "Dasher",
+            "4": "Brinely",
+            "5": "Spotty",
+            "6": "Flopper",
+            "7": "Stripey",
+            "8": "Glitter",
+            "9": "Blockfish",
+            "10": "Betty",
+            "11": "Clayfish"
+        }
+    }
+]

@@ -1,0 +1,108 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "action",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Init",
+                        "1": "Query",
+                        "2": "Set",
+                        "3": "Reset",
+                        "4": "Save",
+                        "5": "Export",
+                        "6": "Run"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "data",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "test",
+                        "type": [
+                            "option",
+                            "string"
+                        ]
+                    },
+                    {
+                        "name": "size",
+                        "type": [
+                            "container",
+                            [
+                                {
+                                    "name": "x",
+                                    "type": "varint"
+                                },
+                                {
+                                    "name": "y",
+                                    "type": "varint"
+                                },
+                                {
+                                    "name": "z",
+                                    "type": "varint"
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "name": "rotation",
+                        "type": [
+                            "mapper",
+                            {
+                                "type": "varint",
+                                "mappings": {
+                                    "0": "None",
+                                    "1": "Clockwise 90",
+                                    "2": "CLockwise 180",
+                                    "3": "Counterclockwise 90"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ignoreEntities",
+                        "type": "bool"
+                    },
+                    {
+                        "name": "status",
+                        "type": [
+                            "mapper",
+                            {
+                                "type": "varint",
+                                "mappings": {
+                                    "0": "Cleared",
+                                    "1": "Running",
+                                    "2": "Finished"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "errorMessage",
+                        "type": [
+                            "option",
+                            [
+                                "reference",
+                                "component"
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]
