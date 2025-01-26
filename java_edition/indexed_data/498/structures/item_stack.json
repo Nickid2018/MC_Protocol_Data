@@ -33,7 +33,7 @@
                                 },
                                 {
                                     "name": "tag",
-                                    "type": "optional_nbt"
+                                    "type": "nbt"
                                 }
                             ]
                         ]
