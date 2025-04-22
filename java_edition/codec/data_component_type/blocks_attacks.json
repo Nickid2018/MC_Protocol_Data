@@ -1,0 +1,114 @@
+[
+    "container",
+    [
+        {
+            "name": "blockDelaySeconds",
+            "type": "f32"
+        },
+        {
+            "name": "disableCooldownScale",
+            "type": "f32"
+        },
+        {
+            "name": "damageReductions",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "type",
+                                "type": [
+                                    "option",
+                                    [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "count",
+                                                "type": [
+                                                    "save",
+                                                    "varint",
+                                                    "count"
+                                                ]
+                                            },
+                                            {
+                                                "name": "set",
+                                                "type": [
+                                                    "switch",
+                                                    {
+                                                        "compareTo": "count",
+                                                        "fields": {
+                                                            "0": "string"
+                                                        },
+                                                        "default": [
+                                                            "array",
+                                                            {
+                                                                "count": "count",
+                                                                "offset": "-1",
+                                                                "type": [
+                                                                    "registry",
+                                                                    "damage_type"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    ]
+                                ]
+                            },
+                            {
+                                "name": "base",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "factor",
+                                "type": "f32"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "itemDamage",
+            "type": [
+                {
+                    "name": "threshold",
+                    "type": "f32"
+                },
+                {
+                    "name": "base",
+                    "type": "f32"
+                },
+                {
+                    "name": "factor",
+                    "type": "f32"
+                }
+            ]
+        },
+        {
+            "name": "blockSound",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "sound_event"
+                ]
+            ]
+        },
+        {
+            "name": "disableSound",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "sound_event"
+                ]
+            ]
+        }
+    ]
+]

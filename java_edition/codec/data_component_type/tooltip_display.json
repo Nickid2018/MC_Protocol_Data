@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "hideTooltip",
+            "type": "bool"
+        },
+        {
+            "name": "hiddenComponents",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "registry",
+                        "data_component_type"
+                    ]
+                }
+            ]
+        }
+    ]
+]

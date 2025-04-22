@@ -1,0 +1,81 @@
+[
+    "container",
+    [
+        {
+            "name": "pigVariantId",
+            "type": [
+                "save",
+                [
+                    "registry",
+                    "pig_variant",
+                    "-1"
+                ],
+                "pigVariantId"
+            ]
+        },
+        {
+            "name": "directPigVariant",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "pigVariantId",
+                    "fields": {
+                        "<Unknown Registry Entry>": [
+                            "container",
+                            [
+                                {
+                                    "name": "model",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "texture",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "biomes",
+                                    "type": [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "count",
+                                                "type": [
+                                                    "save",
+                                                    "varint",
+                                                    "count"
+                                                ]
+                                            },
+                                            {
+                                                "name": "set",
+                                                "type": [
+                                                    "switch",
+                                                    {
+                                                        "compareTo": "count",
+                                                        "fields": {
+                                                            "0": "string"
+                                                        },
+                                                        "default": [
+                                                            "array",
+                                                            {
+                                                                "count": "count",
+                                                                "offset": "-1",
+                                                                "type": [
+                                                                    "registry",
+                                                                    "biome"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    ]
+                                }
+                            ]
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]
