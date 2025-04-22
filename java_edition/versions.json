@@ -1,5 +1,35 @@
 [
     {
+        "version": "1.21.5",
+        "protocol_version": 770,
+        "data_version": 4325
+    },
+    {
+        "version": "1.21.5-rc2",
+        "protocol_version": 1073742067,
+        "data_version": 4324
+    },
+    {
+        "version": "1.21.5-rc1",
+        "protocol_version": 1073742066,
+        "data_version": 4323
+    },
+    {
+        "version": "1.21.5-pre3",
+        "protocol_version": 1073742065,
+        "data_version": 4322
+    },
+    {
+        "version": "1.21.5-pre2",
+        "protocol_version": 1073742064,
+        "data_version": 4321
+    },
+    {
+        "version": "1.21.5-pre1",
+        "protocol_version": 1073742063,
+        "data_version": 4320
+    },
+    {
         "version": "25w10a",
         "protocol_version": 1073742062,
         "data_version": 4319

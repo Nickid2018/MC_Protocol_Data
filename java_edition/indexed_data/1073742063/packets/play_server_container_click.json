@@ -1,0 +1,190 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": "varint"
+        },
+        {
+            "name": "stateId",
+            "type": "varint"
+        },
+        {
+            "name": "slotNum",
+            "type": "i16"
+        },
+        {
+            "name": "buttonNum",
+            "type": "i8"
+        },
+        {
+            "name": "clickType",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Pickup",
+                        "1": "Quick Move",
+                        "2": "Swap",
+                        "3": "Clone",
+                        "4": "Throw",
+                        "5": "Quick Craft",
+                        "6": "Pickup All"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "changedSlots",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        {
+                            "name": "slot",
+                            "type": "i16"
+                        },
+                        {
+                            "name": "itemStack",
+                            "type": [
+                                "option",
+                                [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "item",
+                                            "type": [
+                                                "registry",
+                                                "item"
+                                            ]
+                                        },
+                                        {
+                                            "name": "count",
+                                            "type": "varint"
+                                        },
+                                        {
+                                            "name": "components",
+                                            "type": [
+                                                "container",
+                                                [
+                                                    {
+                                                        "name": "addedComponents",
+                                                        "type": [
+                                                            "array",
+                                                            {
+                                                                "countType": "varint",
+                                                                "type": [
+                                                                    "container",
+                                                                    [
+                                                                        {
+                                                                            "name": "componentType",
+                                                                            "type": [
+                                                                                "registry",
+                                                                                "data_component_type"
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "hash",
+                                                                            "type": "i32"
+                                                                        }
+                                                                    ]
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "removedComponents",
+                                                        "type": [
+                                                            "array",
+                                                            {
+                                                                "countType": "varint",
+                                                                "type": [
+                                                                    "registry",
+                                                                    "data_component_type"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "carriedItem",
+            "type": [
+                "option",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "item",
+                            "type": [
+                                "registry",
+                                "item"
+                            ]
+                        },
+                        {
+                            "name": "count",
+                            "type": "varint"
+                        },
+                        {
+                            "name": "components",
+                            "type": [
+                                "container",
+                                [
+                                    {
+                                        "name": "addedComponents",
+                                        "type": [
+                                            "array",
+                                            {
+                                                "countType": "varint",
+                                                "type": [
+                                                    "container",
+                                                    [
+                                                        {
+                                                            "name": "componentType",
+                                                            "type": [
+                                                                "registry",
+                                                                "data_component_type"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "hash",
+                                                            "type": "i32"
+                                                        }
+                                                    ]
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "removedComponents",
+                                        "type": [
+                                            "array",
+                                            {
+                                                "countType": "varint",
+                                                "type": [
+                                                    "registry",
+                                                    "data_component_type"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        }
+    ]
+]

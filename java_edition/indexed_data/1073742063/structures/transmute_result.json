@@ -1,0 +1,90 @@
+[
+    "container",
+    [
+        {
+            "name": "item",
+            "type": [
+                "registry",
+                "item"
+            ]
+        },
+        {
+            "name": "count",
+            "type": "varint"
+        },
+        {
+            "name": "components",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "validateLength",
+                        "type": "varint"
+                    },
+                    {
+                        "name": "addComponentPatchesCount",
+                        "type": [
+                            "save",
+                            "varint",
+                            "addComponentPatchesCount"
+                        ]
+                    },
+                    {
+                        "name": "removeComponentPatchesCount",
+                        "type": [
+                            "save",
+                            "varint",
+                            "removeComponentPatchesCount"
+                        ]
+                    },
+                    {
+                        "name": "addComponentPatches",
+                        "type": [
+                            "array",
+                            {
+                                "count": "addComponentPatchesCount",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "componentType",
+                                            "type": [
+                                                "save",
+                                                [
+                                                    "registry",
+                                                    "data_component_type"
+                                                ],
+                                                "componentType"
+                                            ]
+                                        },
+                                        {
+                                            "name": "componentData",
+                                            "type": [
+                                                "codec",
+                                                "data_component_type",
+                                                "componentType"
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "removeComponentPatches",
+                        "type": [
+                            "array",
+                            {
+                                "count": "removeComponentPatchesCount",
+                                "type": [
+                                    "registry",
+                                    "data_component_type"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

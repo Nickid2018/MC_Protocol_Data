@@ -1,0 +1,119 @@
+[
+    "container",
+    [
+        {
+            "name": "slotNum",
+            "type": "i16"
+        },
+        {
+            "name": "itemStack",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "count",
+                        "type": [
+                            "save",
+                            "varint",
+                            "count"
+                        ]
+                    },
+                    {
+                        "name": "itemStack",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "count",
+                                "fields": {
+                                    "0": "void"
+                                },
+                                "default": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "id",
+                                            "type": [
+                                                "registry",
+                                                "item"
+                                            ]
+                                        },
+                                        {
+                                            "name": "dataComponentPatch",
+                                            "type": [
+                                                "container",
+                                                [
+                                                    {
+                                                        "name": "addComponentPatchesCount",
+                                                        "type": [
+                                                            "save",
+                                                            "varint",
+                                                            "addComponentPatchesCount"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "removeComponentPatchesCount",
+                                                        "type": [
+                                                            "save",
+                                                            "varint",
+                                                            "removeComponentPatchesCount"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "addComponentPatches",
+                                                        "type": [
+                                                            "array",
+                                                            {
+                                                                "count": "addComponentPatchesCount",
+                                                                "type": [
+                                                                    "container",
+                                                                    [
+                                                                        {
+                                                                            "name": "componentType",
+                                                                            "type": [
+                                                                                "save",
+                                                                                [
+                                                                                    "registry",
+                                                                                    "data_component_type"
+                                                                                ],
+                                                                                "componentType"
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "name": "componentData",
+                                                                            "type": [
+                                                                                "codec",
+                                                                                "data_component_type",
+                                                                                "componentType"
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                ]
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "removeComponentPatches",
+                                                        "type": [
+                                                            "array",
+                                                            {
+                                                                "count": "removeComponentPatchesCount",
+                                                                "type": [
+                                                                    "registry",
+                                                                    "data_component_type"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]
