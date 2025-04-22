@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "itemDamagePerAttack",
+            "type": "varint"
+        },
+        {
+            "name": "disableBlockingForSeconds",
+            "type": "f32"
+        }
+    ]
+]

@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "either",
+            "type": [
+                "save",
+                "bool",
+                "either"
+            ]
+        },
+        {
+            "name": "variant",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "either",
+                    "fields": {
+                        "false": "string",
+                        "true": [
+                            "registry",
+                            "chicken_variant"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+]

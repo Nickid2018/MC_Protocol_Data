@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "rgb",
+            "type": "i32"
+        }
+    ]
+]
