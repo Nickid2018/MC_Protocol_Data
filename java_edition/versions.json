@@ -1,5 +1,10 @@
 [
     {
+        "version": "25w05a",
+        "protocol_version": 1073742056,
+        "data_version": 4310
+    },
+    {
         "version": "25w04a",
         "protocol_version": 1073742055,
         "data_version": 4308
