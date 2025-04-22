@@ -1,0 +1,165 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "i32"
+        },
+        {
+            "name": "z",
+            "type": "i32"
+        },
+        {
+            "name": "chunkData",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "heightmaps",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": [
+                                    "container",
+                                    {
+                                        "name": "type",
+                                        "type": [
+                                            "mapper",
+                                            {
+                                                "type": "varint",
+                                                "mappings": {
+                                                    "0": "WORLD_SURFACE_WG",
+                                                    "1": "WORLD_SURFACE",
+                                                    "2": "OCEAN_FLOOR_WG",
+                                                    "3": "OCEAN_FLOOR",
+                                                    "4": "MOTION_BLOCKING",
+                                                    "5": "MOTION_BLOCKING_NO_LEAVES"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "data",
+                                        "type": [
+                                            "array",
+                                            {
+                                                "countType": "varint",
+                                                "type": "u8"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "buffer",
+                        "type": "buffer"
+                    },
+                    {
+                        "name": "blockEntitiesData",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "packedXZ",
+                                            "type": "i8"
+                                        },
+                                        {
+                                            "name": "y",
+                                            "type": "i16"
+                                        },
+                                        {
+                                            "name": "type",
+                                            "type": [
+                                                "registry",
+                                                "block_entity_type"
+                                            ]
+                                        },
+                                        {
+                                            "name": "tag",
+                                            "type": "nbt"
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "lightData",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "skyYMask",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "i64"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "blockYMask",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "i64"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "emptySkyYMask",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "i64"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "emptyBlockYMask",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "i64"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "skyUpdates",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "buffer"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "blockUpdates",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "buffer"
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]
