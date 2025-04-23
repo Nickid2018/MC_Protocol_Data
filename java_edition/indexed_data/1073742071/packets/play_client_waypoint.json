@@ -1,0 +1,145 @@
+[
+    "container",
+    [
+        {
+            "name": "operation",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Track",
+                        "1": "Untrack",
+                        "2": "Update"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "waypoint",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "either",
+                        "type": [
+                            "save",
+                            "bool",
+                            "either"
+                        ]
+                    },
+                    {
+                        "name": "identifier",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "either",
+                                "fields": {
+                                    "true": "string",
+                                    "false": "uuid"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "style",
+                        "type": "string"
+                    },
+                    {
+                        "name": "color",
+                        "type": [
+                            "option",
+                            [
+                                "container",
+                                [
+                                    {
+                                        "name": "red",
+                                        "type": "u8"
+                                    },
+                                    {
+                                        "name": "green",
+                                        "type": "u8"
+                                    },
+                                    {
+                                        "name": "blue",
+                                        "type": "u8"
+                                    }
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "name": "type",
+                        "type": [
+                            "save",
+                            [
+                                "mapper",
+                                {
+                                    "type": "varint",
+                                    "mappings": {
+                                        "0": "Empty",
+                                        "1": "Vec3i",
+                                        "2": "Chunk",
+                                        "3": "Azimuth"
+                                    }
+                                }
+                            ],
+                            "type"
+                        ]
+                    },
+                    {
+                        "name": "content",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "type",
+                                "fields": {
+                                    "Empty": "void",
+                                    "Vec3i": [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "x",
+                                                "type": "varint"
+                                            },
+                                            {
+                                                "name": "y",
+                                                "type": "varint"
+                                            },
+                                            {
+                                                "name": "z",
+                                                "type": "varint"
+                                            }
+                                        ]
+                                    ],
+                                    "Chunk": [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "x",
+                                                "type": "varint"
+                                            },
+                                            {
+                                                "name": "z",
+                                                "type": "varint"
+                                            }
+                                        ]
+                                    ],
+                                    "Azimuth": [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "angle",
+                                                "type": "f32"
+                                            }
+                                        ]
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

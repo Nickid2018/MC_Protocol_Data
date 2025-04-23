@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "varint"
+        },
+        {
+            "name": "action",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Stop Sleeping",
+                        "1": "Start Sprinting",
+                        "2": "Stop Sprinting",
+                        "3": "Start Riding Jump",
+                        "4": "Stop Riding Jump",
+                        "5": "Open Inventory",
+                        "6": "Start Fall Flying"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "data",
+            "type": "varint"
+        }
+    ]
+]
