@@ -1,0 +1,43 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/java_edition/**/codec/**/*.json",
+                "/java_edition/**/packets/*.json",
+                "/java_edition/**/structures/*.json",
+            ],
+            "url": "/.schema/base.schema.json"
+        },
+        {
+            "fileMatch": [
+                "/java_edition/**/registries/*.json",
+            ],
+            "url": "/.schema/registry.schema.json"
+        },
+        {
+            "fileMatch": [
+                "/java_edition/**/mappings/*.json",
+            ],
+            "url": "/.schema/mappings.schema.json"
+        },
+        {
+            "fileMatch": [
+                "/java_edition/**/entity_sync_data.json",
+            ],
+            "url": "/.schema/entity_sync.schema.json"
+        },
+        {
+            "fileMatch": [
+                "/java_edition/**/protocol.json",
+                "/java_edition/initial.json",
+            ],
+            "url": "/.schema/protocol.schema.json"
+        },
+        {
+            "fileMatch": [
+                "/java_edition/versions.json",
+            ],
+            "url": "/.schema/versions.schema.json"
+        },
+    ]
+}
