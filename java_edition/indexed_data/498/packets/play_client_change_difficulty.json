@@ -6,7 +6,7 @@
             "type": [
                 "mapper",
                 {
-                    "type": "u8",
+                    "type": "i8",
                     "mappings": {
                         "0": "peaceful",
                         "1": "easy",
@@ -15,6 +15,10 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "locked",
+            "type": "bool"
         }
     ]
 ]

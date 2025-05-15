@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "payload",
+            "type": [
+                "option",
+                "string"
+            ]
+        }
+    ]
+]

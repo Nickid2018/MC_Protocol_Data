@@ -6,7 +6,7 @@
             "type": [
                 "mapper",
                 {
-                    "type": "u8",
+                    "type": "varint",
                     "mappings": {
                         "0": "peaceful",
                         "1": "easy",

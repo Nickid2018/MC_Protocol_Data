@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "difficulty",
+            "type": [
+                "mapper",
+                {
+                    "type": "i8",
+                    "mappings": {
+                        "0": "peaceful",
+                        "1": "easy",
+                        "2": "normal",
+                        "3": "hard"
+                    }
+                }
+            ]
+        }
+    ]
+]

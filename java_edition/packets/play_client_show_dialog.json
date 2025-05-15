@@ -1,0 +1,30 @@
+[
+    "container",
+    [
+        {
+            "name": "dialogId",
+            "type": [
+                "save",
+                [
+                    "registry",
+                    "dialog",
+                    "-1"
+                ],
+                "dialogId"
+            ]
+        },
+        {
+            "name": "directDialog",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "dialogId",
+                    "fields": {
+                        "<Unknown Registry Entry>": "nbt"
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "dialog",
+            "type": "nbt"
+        }
+    ]
+]
