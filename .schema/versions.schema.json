@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "version": {
+                "type": "string",
+                "description": "Minecraft version"
+            },
+            "protocol_version": {
+                "type": "number",
+                "description": "Minecraft protocol version"
+            },
+            "data_version": {
+                "type": "number",
+                "description": "Minecraft data version"
+            }
+        },
+        "required": ["version", "protocol_version", "data_version"]
+    },
+    "description": "Version data"
+}

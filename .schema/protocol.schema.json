@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "patternProperties": {
+        "^(handshaking|status|login|configuration|play)_(client|server)$": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "type": "string",
+                        "description": "Resource location for the packet"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Human-readable name for the packet"
+                    },
+                    "type": {
+                        "$ref": "./base.schema.json"
+                    },
+                    "specialMark": {
+                        "type": "string",
+                        "description": "Builtin marks for dissector"
+                    },
+                    "stateNext": {
+                        "enum": ["login", "configuration", "play"],
+                        "description": "Change state when receive this packet"
+                    },
+                    "stateSide": {
+                        "enum": ["all", "client", "server"],
+                        "description": "Logic peer to change state"
+                    }
+                },
+                "required": ["key", "name"]
+            },
+            "description": "Protocol entries in specified state"
+        }
+    },
+    "unevaluatedProperties": false,
+    "description": "Protocol data"
+}

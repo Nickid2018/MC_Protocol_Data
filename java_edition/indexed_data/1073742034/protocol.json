@@ -696,7 +696,7 @@
         },
         {
             "key": "client_tick_end",
-            "value": "Server Client Tick End"
+            "name": "Server Client Tick End"
         },
         {
             "key": "change_difficulty",

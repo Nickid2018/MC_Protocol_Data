@@ -1,0 +1,395 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$ref": "#/$defs/allCodec",
+    "description": "Data structure",
+    "$defs": {
+        "allCodec": {
+            "anyOf": [
+                { "$ref": "#/$defs/primitiveCodec" },
+                { "$ref": "#/$defs/singletonCodec" },
+                { "$ref": "#/$defs/containerCodec" },
+                { "$ref": "#/$defs/arrayCodec" },
+                { "$ref": "#/$defs/optionCodec" },
+                { "$ref": "#/$defs/mapperCodec" },
+                { "$ref": "#/$defs/switchCodec" },
+                { "$ref": "#/$defs/bitfieldCodec" },
+                { "$ref": "#/$defs/saveCodec" },
+                { "$ref": "#/$defs/globalSaveCodec" },
+                { "$ref": "#/$defs/registryCodec" },
+                { "$ref": "#/$defs/referenceCodec" },
+                { "$ref": "#/$defs/codecCodec" },
+                { "$ref": "#/$defs/fixBufferCodec" },
+                { "$ref": "#/$defs/funcCodec" },
+                { "$ref": "#/$defs/topBitSetTerminatedArrayCodec" },
+                { "$ref": "#/$defs/entityMetadataLoopCodec" }
+            ]
+        },
+        "primitiveCodec": {
+            "anyOf": [
+                { "const": "i8", "$comment": "8-bit signed integer" },
+                { "const": "i16", "$comment": "16-bit signed integer" },
+                { "const": "i32", "$comment": "32-bit signed integer" },
+                { "const": "i64", "$comment": "64-bit signed integer" },
+                { "const": "u8", "$comment": "8-bit unsigned integer" },
+                { "const": "u16", "$comment": "16-bit unsigned integer" },
+                { "const": "u32", "$comment": "32-bit unsigned integer" },
+                { "const": "u64", "$comment": "64-bit unsigned integer" },
+                { "const": "u8_hex", "$comment": "8-bit unsigned integer in hex" },
+                { "const": "u16_hex", "$comment": "16-bit unsigned integer in hex" },
+                { "const": "u32_hex", "$comment": "32-bit unsigned integer in hex" },
+                { "const": "u64_hex", "$comment": "64-bit unsigned integer in hex" },
+                { "const": "f32", "$comment": "32-bit floating point number" },
+                { "const": "f64", "$comment": "64-bit floating point number" },
+                { "const": "varint", "$comment": "Variable length integer" },
+                { "const": "varlong", "$comment": "Variable length long integer" },
+                { "const": "void", "$comment": "Skip this field" },
+                { "const": "bool", "$comment": "Boolean value" },
+                { "const": "string", "$comment": "UTF-8 String" },
+                { "const": "buffer", "$comment": "Byte array" },
+                { "const": "rest_buffer", "$comment": "Rest all bytes" },
+                { "const": "uuid", "$comment": "UUID" },
+                { "const": "nbt", "$comment": "Named Binary Tag" },
+                { "const": "recursive", "$comment": "Recursive the root structure" }
+            ]
+        },
+        "singletonCodec": {
+            "type": "array",
+            "prefixItems": [{ "$ref": "#/$defs/primitiveCodec" }],
+            "items": false
+        },
+        "containerCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "container",
+                    "description": "Container structure, all sub fields will be parsed in array order"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "Name of the field"
+                            },
+                            "type": {
+                                "$ref": "#/$defs/allCodec",
+                                "description": "Type of the field"
+                            }
+                        },
+                        "required": ["name", "type"]
+                    },
+                    "description": "Sub fields"
+                }
+            ],
+            "items": false
+        },
+        "arrayCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "array",
+                    "description": "Array structure, determine array length and iterate"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "count": {
+                            "type": "string",
+                            "description": "Fix length array"
+                        },
+                        "countType": {
+                            "$ref": "#/$defs/allCodec",
+                            "description": "Type of the array length field"
+                        },
+                        "type": {
+                            "$ref": "#/$defs/allCodec",
+                            "description": "Type of the array element"
+                        },
+                        "offset": {
+                            "type": "string",
+                            "description": "Modify read array length"
+                        }
+                    },
+                    "anyOf": [{ "required": ["type", "countType"] }, { "required": ["type", "count"] }]
+                }
+            ],
+            "items": false
+        },
+        "optionCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "option",
+                    "description": "The field is optional"
+                },
+                {
+                    "$ref": "#/$defs/allCodec"
+                }
+            ],
+            "items": false
+        },
+        "mapperCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "mapper",
+                    "description": "Mapping the field value to another value"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "$ref": "#/$defs/allCodec",
+                            "description": "Read source value from field"
+                        },
+                        "var": {
+                            "type": "string",
+                            "description": "Read source value from variable"
+                        },
+                        "mappings": {
+                            "type": "object",
+                            "patternProperties": {
+                                ".+": { "type": "string", "description": "Key and value" }
+                            },
+                            "description": "Specify mappings"
+                        },
+                        "source": {
+                            "type": "string",
+                            "description": "Specify mappings from another file"
+                        }
+                    },
+                    "anyOf": [
+                        { "required": ["type", "mappings"] },
+                        { "required": ["type", "source"] },
+                        { "required": ["var", "mappings"] },
+                        { "required": ["var", "source"] }
+                    ]
+                }
+            ],
+            "items": false
+        },
+        "switchCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "switch",
+                    "description": "Read variable and choose field"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "compareTo": {
+                            "type": "string",
+                            "description": "Variable to read"
+                        },
+                        "fields": {
+                            "type": "object",
+                            "patternProperties": {
+                                ".+": {
+                                    "$ref": "#/$defs/allCodec",
+                                    "description": "Value and field"
+                                }
+                            },
+                            "description": "Switching table for the input"
+                        },
+                        "default": {
+                            "$ref": "#/$defs/allCodec",
+                            "description": "Fallback field for the input"
+                        }
+                    },
+                    "required": ["compareTo", "fields"]
+                }
+            ],
+            "items": false
+        },
+        "bitfieldCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "bitfield",
+                    "description": "Read field in bits"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "Name of the field"
+                            },
+                            "size": {
+                                "type": "number",
+                                "description": "Bit size of the field"
+                            },
+                            "signed": {
+                                "type": "boolean",
+                                "description": "Number is signed"
+                            },
+                            "saveName": {
+                                "type": "string",
+                                "description": "Save the number to a variable"
+                            }
+                        },
+                        "required": ["name", "size"]
+                    }
+                }
+            ],
+            "items": false
+        },
+        "saveCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "save",
+                    "description": "Save a field value to a variable"
+                },
+                {
+                    "$ref": "#/$defs/allCodec"
+                },
+                {
+                    "type": "string",
+                    "description": "Variable name"
+                }
+            ],
+            "items": false
+        },
+        "globalSaveCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "global_save",
+                    "description": "Save a field value to session global variable"
+                },
+                {
+                    "$ref": "#/$defs/allCodec"
+                },
+                {
+                    "type": "string",
+                    "description": "Variable name"
+                }
+            ],
+            "items": false
+        },
+        "registryCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "registry",
+                    "description": "Read a variable integer and map it to registry entry"
+                },
+                {
+                    "type": "string",
+                    "description": "Registry name"
+                }
+            ],
+            "unevaluatedItems": {
+                "type": "string",
+                "description": "Offset the number before reading registry"
+            },
+            "minItems": 2,
+            "maxItems": 3
+        },
+        "referenceCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "reference",
+                    "description": "Reference another structure"
+                },
+                {
+                    "type": "string",
+                    "description": "Structure name"
+                }
+            ],
+            "items": false
+        },
+        "codecCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "codec",
+                    "description": "Use specified codec field to parse data"
+                },
+                {
+                    "type": "string",
+                    "description": "Registry name"
+                },
+                {
+                    "type": "string",
+                    "description": "Variable name"
+                }
+            ],
+            "items": false
+        },
+        "fixBufferCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "fix_buffer",
+                    "description": "Read bytes in specified length"
+                },
+                {
+                    "type": "number",
+                    "description": "Buffer size"
+                }
+            ],
+            "items": false
+        },
+        "funcCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "func",
+                    "description": "Use builtin function"
+                },
+                {
+                    "type": "string",
+                    "description": "Function name"
+                }
+            ],
+            "unevaluatedItems": {
+                "type": "string",
+                "description": "Function argument"
+            }
+        },
+        "topBitSetTerminatedArrayCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "top_bit_set_terminated_array",
+                    "description": "Read until the top bit is zero"
+                },
+                {
+                    "$ref": "#/$defs/allCodec"
+                }
+            ],
+            "items": false
+        },
+        "entityMetadataLoopCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "entity_metadata_loop",
+                    "description": "Read until the end value appears"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "$ref": "#/$defs/allCodec",
+                            "description": "Field inside the loop"
+                        },
+                        "endVal": {
+                            "type": "number",
+                            "description": "End value"
+                        }
+                    }
+                }
+            ],
+            "items": false
+        }
+    }
+}
