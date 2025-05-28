@@ -10,7 +10,7 @@
             "type": [
                 "array",
                 {
-                    "countType": "i32",
+                    "countType": "varint",
                     "type": [
                         "container",
                         [

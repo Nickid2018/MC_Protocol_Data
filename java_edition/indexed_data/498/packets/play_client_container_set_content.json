@@ -10,7 +10,7 @@
             "type": [
                 "array",
                 {
-                    "countType": "varint",
+                    "countType": "i16",
                     "type": [
                         "reference",
                         "item_stack"
