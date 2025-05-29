@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "input",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "remainder",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        }
+    ]
+]

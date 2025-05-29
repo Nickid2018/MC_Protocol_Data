@@ -737,10 +737,6 @@
             "name": "Server Bundle Item Selected"
         },
         {
-            "key": "client_tick_end",
-            "name": "Server Client Tick End"
-        },
-        {
             "key": "change_difficulty",
             "name": "Server Change Difficulty"
         },
@@ -775,6 +771,11 @@
         {
             "key": "client_command",
             "name": "Server Client Command"
+        },
+        {
+            "key": "client_tick_end",
+            "name": "Server Client Tick End",
+            "type": "void"
         },
         {
             "key": "client_information",

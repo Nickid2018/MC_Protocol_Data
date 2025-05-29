@@ -43,6 +43,10 @@
                                                 "container",
                                                 [
                                                     {
+                                                        "name": "validateLength",
+                                                        "type": "varint"
+                                                    },
+                                                    {
                                                         "name": "addComponentPatchesCount",
                                                         "type": [
                                                             "save",

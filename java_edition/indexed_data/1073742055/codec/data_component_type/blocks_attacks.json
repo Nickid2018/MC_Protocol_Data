@@ -76,18 +76,21 @@
         {
             "name": "itemDamage",
             "type": [
-                {
-                    "name": "threshold",
-                    "type": "f32"
-                },
-                {
-                    "name": "base",
-                    "type": "f32"
-                },
-                {
-                    "name": "factor",
-                    "type": "f32"
-                }
+                "container",
+                [
+                    {
+                        "name": "threshold",
+                        "type": "f32"
+                    },
+                    {
+                        "name": "base",
+                        "type": "f32"
+                    },
+                    {
+                        "name": "factor",
+                        "type": "f32"
+                    }
+                ]
             ]
         },
         {

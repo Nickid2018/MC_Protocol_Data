@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "payloadLength",
+            "type": "varint"
+        },
+        {
+            "name": "payload",
+            "type": "nbt"
+        }
+    ]
+]
