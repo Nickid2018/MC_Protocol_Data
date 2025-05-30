@@ -5,56 +5,166 @@
     "$defs": {
         "allCodec": {
             "anyOf": [
-                { "$ref": "#/$defs/primitiveCodec" },
-                { "$ref": "#/$defs/singletonCodec" },
-                { "$ref": "#/$defs/containerCodec" },
-                { "$ref": "#/$defs/arrayCodec" },
-                { "$ref": "#/$defs/optionCodec" },
-                { "$ref": "#/$defs/mapperCodec" },
-                { "$ref": "#/$defs/switchCodec" },
-                { "$ref": "#/$defs/bitfieldCodec" },
-                { "$ref": "#/$defs/saveCodec" },
-                { "$ref": "#/$defs/globalSaveCodec" },
-                { "$ref": "#/$defs/registryCodec" },
-                { "$ref": "#/$defs/referenceCodec" },
-                { "$ref": "#/$defs/codecCodec" },
-                { "$ref": "#/$defs/fixBufferCodec" },
-                { "$ref": "#/$defs/funcCodec" },
-                { "$ref": "#/$defs/topBitSetTerminatedArrayCodec" },
-                { "$ref": "#/$defs/entityMetadataLoopCodec" }
+                {
+                    "$ref": "#/$defs/primitiveCodec"
+                },
+                {
+                    "$ref": "#/$defs/singletonCodec"
+                },
+                {
+                    "$ref": "#/$defs/containerCodec"
+                },
+                {
+                    "$ref": "#/$defs/arrayCodec"
+                },
+                {
+                    "$ref": "#/$defs/optionCodec"
+                },
+                {
+                    "$ref": "#/$defs/mapperCodec"
+                },
+                {
+                    "$ref": "#/$defs/switchCodec"
+                },
+                {
+                    "$ref": "#/$defs/bitfieldCodec"
+                },
+                {
+                    "$ref": "#/$defs/saveCodec"
+                },
+                {
+                    "$ref": "#/$defs/globalSaveCodec"
+                },
+                {
+                    "$ref": "#/$defs/registryCodec"
+                },
+                {
+                    "$ref": "#/$defs/referenceCodec"
+                },
+                {
+                    "$ref": "#/$defs/codecCodec"
+                },
+                {
+                    "$ref": "#/$defs/fixBufferCodec"
+                },
+                {
+                    "$ref": "#/$defs/funcCodec"
+                },
+                {
+                    "$ref": "#/$defs/topBitSetTerminatedArrayCodec"
+                },
+                {
+                    "$ref": "#/$defs/entityMetadataLoopCodec"
+                }
             ]
         },
         "primitiveCodec": {
             "anyOf": [
-                { "const": "i8", "$comment": "8-bit signed integer" },
-                { "const": "i16", "$comment": "16-bit signed integer" },
-                { "const": "i32", "$comment": "32-bit signed integer" },
-                { "const": "i64", "$comment": "64-bit signed integer" },
-                { "const": "u8", "$comment": "8-bit unsigned integer" },
-                { "const": "u16", "$comment": "16-bit unsigned integer" },
-                { "const": "u32", "$comment": "32-bit unsigned integer" },
-                { "const": "u64", "$comment": "64-bit unsigned integer" },
-                { "const": "u8_hex", "$comment": "8-bit unsigned integer in hex" },
-                { "const": "u16_hex", "$comment": "16-bit unsigned integer in hex" },
-                { "const": "u32_hex", "$comment": "32-bit unsigned integer in hex" },
-                { "const": "u64_hex", "$comment": "64-bit unsigned integer in hex" },
-                { "const": "f32", "$comment": "32-bit floating point number" },
-                { "const": "f64", "$comment": "64-bit floating point number" },
-                { "const": "varint", "$comment": "Variable length integer" },
-                { "const": "varlong", "$comment": "Variable length long integer" },
-                { "const": "void", "$comment": "Skip this field" },
-                { "const": "bool", "$comment": "Boolean value" },
-                { "const": "string", "$comment": "UTF-8 String" },
-                { "const": "buffer", "$comment": "Byte array" },
-                { "const": "rest_buffer", "$comment": "Rest all bytes" },
-                { "const": "uuid", "$comment": "UUID" },
-                { "const": "nbt", "$comment": "Named Binary Tag" },
-                { "const": "recursive", "$comment": "Recursive the root structure" }
+                {
+                    "const": "i8",
+                    "$comment": "8-bit signed integer"
+                },
+                {
+                    "const": "i16",
+                    "$comment": "16-bit signed integer"
+                },
+                {
+                    "const": "i32",
+                    "$comment": "32-bit signed integer"
+                },
+                {
+                    "const": "i64",
+                    "$comment": "64-bit signed integer"
+                },
+                {
+                    "const": "u8",
+                    "$comment": "8-bit unsigned integer"
+                },
+                {
+                    "const": "u16",
+                    "$comment": "16-bit unsigned integer"
+                },
+                {
+                    "const": "u32",
+                    "$comment": "32-bit unsigned integer"
+                },
+                {
+                    "const": "u64",
+                    "$comment": "64-bit unsigned integer"
+                },
+                {
+                    "const": "u8_hex",
+                    "$comment": "8-bit unsigned integer in hex"
+                },
+                {
+                    "const": "u16_hex",
+                    "$comment": "16-bit unsigned integer in hex"
+                },
+                {
+                    "const": "u32_hex",
+                    "$comment": "32-bit unsigned integer in hex"
+                },
+                {
+                    "const": "u64_hex",
+                    "$comment": "64-bit unsigned integer in hex"
+                },
+                {
+                    "const": "f32",
+                    "$comment": "32-bit floating point number"
+                },
+                {
+                    "const": "f64",
+                    "$comment": "64-bit floating point number"
+                },
+                {
+                    "const": "varint",
+                    "$comment": "Variable length integer"
+                },
+                {
+                    "const": "varlong",
+                    "$comment": "Variable length long integer"
+                },
+                {
+                    "const": "void",
+                    "$comment": "Skip this field"
+                },
+                {
+                    "const": "bool",
+                    "$comment": "Boolean value"
+                },
+                {
+                    "const": "string",
+                    "$comment": "UTF-8 String"
+                },
+                {
+                    "const": "buffer",
+                    "$comment": "Byte array"
+                },
+                {
+                    "const": "rest_buffer",
+                    "$comment": "Rest all bytes"
+                },
+                {
+                    "const": "uuid",
+                    "$comment": "UUID"
+                },
+                {
+                    "const": "nbt",
+                    "$comment": "Named Binary Tag"
+                },
+                {
+                    "const": "recursive",
+                    "$comment": "Recursive the root structure"
+                }
             ]
         },
         "singletonCodec": {
             "type": "array",
-            "prefixItems": [{ "$ref": "#/$defs/primitiveCodec" }],
+            "prefixItems": [
+                {
+                    "$ref": "#/$defs/primitiveCodec"
+                }
+            ],
             "items": false
         },
         "containerCodec": {
@@ -78,7 +188,10 @@
                                 "description": "Type of the field"
                             }
                         },
-                        "required": ["name", "type"]
+                        "required": [
+                            "name",
+                            "type"
+                        ]
                     },
                     "description": "Sub fields"
                 }
@@ -96,7 +209,14 @@
                     "type": "object",
                     "properties": {
                         "count": {
-                            "type": "string",
+                            "anyOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ],
                             "description": "Fix length array"
                         },
                         "countType": {
@@ -112,7 +232,20 @@
                             "description": "Modify read array length"
                         }
                     },
-                    "anyOf": [{ "required": ["type", "countType"] }, { "required": ["type", "count"] }]
+                    "anyOf": [
+                        {
+                            "required": [
+                                "type",
+                                "countType"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "type",
+                                "count"
+                            ]
+                        }
+                    ]
                 }
             ],
             "items": false
@@ -151,7 +284,10 @@
                         "mappings": {
                             "type": "object",
                             "patternProperties": {
-                                ".+": { "type": "string", "description": "Key and value" }
+                                ".+": {
+                                    "type": "string",
+                                    "description": "Key and value"
+                                }
                             },
                             "description": "Specify mappings"
                         },
@@ -161,10 +297,30 @@
                         }
                     },
                     "anyOf": [
-                        { "required": ["type", "mappings"] },
-                        { "required": ["type", "source"] },
-                        { "required": ["var", "mappings"] },
-                        { "required": ["var", "source"] }
+                        {
+                            "required": [
+                                "type",
+                                "mappings"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "type",
+                                "source"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "var",
+                                "mappings"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "var",
+                                "source"
+                            ]
+                        }
                     ]
                 }
             ],
@@ -199,7 +355,10 @@
                             "description": "Fallback field for the input"
                         }
                     },
-                    "required": ["compareTo", "fields"]
+                    "required": [
+                        "compareTo",
+                        "fields"
+                    ]
                 }
             ],
             "items": false
@@ -233,7 +392,10 @@
                                 "description": "Save the number to a variable"
                             }
                         },
-                        "required": ["name", "size"]
+                        "required": [
+                            "name",
+                            "size"
+                        ]
                     }
                 }
             ],

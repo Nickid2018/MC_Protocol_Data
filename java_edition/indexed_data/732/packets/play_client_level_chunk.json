@@ -42,22 +42,25 @@
                             {
                                 "count": 4096,
                                 "type": [
-                                    {
-                                        "name": "biomeId",
-                                        "type": [
-                                            "save",
-                                            "i32",
-                                            "biome_id"
-                                        ]
-                                    },
-                                    {
-                                        "name": "biome",
-                                        "type": [
-                                            "registry",
-                                            "biome",
-                                            "biome_id"
-                                        ]
-                                    }
+                                    "container",
+                                    [
+                                        {
+                                            "name": "biomeId",
+                                            "type": [
+                                                "save",
+                                                "i32",
+                                                "biome_id"
+                                            ]
+                                        },
+                                        {
+                                            "name": "biome",
+                                            "type": [
+                                                "registry",
+                                                "biome",
+                                                "biome_id"
+                                            ]
+                                        }
+                                    ]
                                 ]
                             }
                         ]
