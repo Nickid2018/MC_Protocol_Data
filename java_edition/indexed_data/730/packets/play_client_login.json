@@ -81,6 +81,13 @@
             ]
         },
         {
+            "name": "<unnamed>",
+            "type": [
+                "func",
+                "legacy_registry_holder"
+            ]
+        },
+        {
             "name": "registryHolder",
             "type": "nbt"
         },

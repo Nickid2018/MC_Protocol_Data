@@ -89,7 +89,8 @@
         },
         {
             "key": "registry_data",
-            "name": "Client Registry Data"
+            "name": "Client Registry Data",
+            "specialMark": "registry"
         },
         {
             "key": "resource_pack_pop",
