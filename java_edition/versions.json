@@ -1,5 +1,10 @@
 [
     {
+        "version": "1.21.6-rc1",
+        "protocol_version": 1073742080,
+        "data_version": 4434
+    },
+    {
         "version": "1.21.6-pre4",
         "protocol_version": 1073742079,
         "data_version": 4433
