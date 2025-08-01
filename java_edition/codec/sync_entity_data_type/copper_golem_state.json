@@ -1,0 +1,13 @@
+[
+    "mapper",
+    {
+        "type": "varint",
+        "mappings": {
+            "0": "Idle",
+            "1": "Getting Item",
+            "2": "Getting no Item",
+            "3": "Dropping Item",
+            "4": "Dropping no Item"
+        }
+    }
+]

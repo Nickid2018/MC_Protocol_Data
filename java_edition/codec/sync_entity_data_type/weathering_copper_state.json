@@ -1,0 +1,12 @@
+[
+    "mapper",
+    {
+        "type": "varint",
+        "mappings": {
+            "0": "Unaffected",
+            "1": "Exposed",
+            "2": "Weathered",
+            "3": "Oxidized"
+        }
+    }
+]
