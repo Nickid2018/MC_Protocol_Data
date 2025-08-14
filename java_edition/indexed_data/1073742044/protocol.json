@@ -6,7 +6,8 @@
         },
         {
             "key": "hello",
-            "name": "Client Hello"
+            "name": "Client Hello",
+            "specialMark": "encrypt_request"
         },
         {
             "key": "login_finished",
