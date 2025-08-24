@@ -1,0 +1,77 @@
+[
+    "container",
+    [
+        {
+            "name": "center",
+            "type": [
+                "reference",
+                "vec3f64"
+            ]
+        },
+        {
+            "name": "radius",
+            "type": "f32"
+        },
+        {
+            "name": "blockCount",
+            "type": "i32"
+        },
+        {
+            "name": "playerKnockback",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "vec3f64"
+                ]
+            ]
+        },
+        {
+            "name": "explosionParticle",
+            "type": [
+                "reference",
+                "particle"
+            ]
+        },
+        {
+            "name": "explosionSound",
+            "type": [
+                "reference",
+                "sound_event"
+            ]
+        },
+        {
+            "name": "blockParticles",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "particle",
+                                "type": [
+                                    "reference",
+                                    "particle"
+                                ]
+                            },
+                            {
+                                "name": "scaling",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "speed",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "weight",
+                                "type": "varint"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

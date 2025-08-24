@@ -1,0 +1,75 @@
+[
+    "container",
+    [
+        {
+            "name": "packedPosPart1",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "packedPosXLow5Bits",
+                        "size": 5,
+                        "signed": false
+                    },
+                    {
+                        "name": "continousBit",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "continousBit"
+                    },
+                    {
+                        "name": "scaleLow2Bits",
+                        "size": 2,
+                        "signed": false,
+                        "saveName": "scaleLow2Bits"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "packedPosPart2",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "scaleLow2Bits",
+                    "fields": {
+                        "0": "void",
+                        "1": [
+                            "bitfield",
+                            [
+                                {
+                                    "name": "packedPosZ",
+                                    "size": 15,
+                                    "signed": false
+                                },
+                                {
+                                    "name": "packedPosY",
+                                    "size": 15,
+                                    "signed": false
+                                },
+                                {
+                                    "name": "packedPosXHigh10Bits",
+                                    "size": 10,
+                                    "signed": false
+                                }
+                            ]
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "scaleHighBits",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "continousBit",
+                    "fields": {
+                        "0": "void",
+                        "1": "varint"
+                    }
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "codeOfConduct",
+            "type": "string"
+        }
+    ]
+]

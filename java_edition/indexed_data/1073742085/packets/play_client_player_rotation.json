@@ -1,0 +1,21 @@
+[
+    "container",
+    [
+        {
+            "name": "yRot",
+            "type": "f32"
+        },
+        {
+            "name": "relativeY",
+            "type": "bool"
+        },
+        {
+            "name": "xRot",
+            "type": "f32"
+        },
+        {
+            "name": "relativeX",
+            "type": "bool"
+        }
+    ]
+]
