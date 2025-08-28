@@ -1,0 +1,18 @@
+[
+    "server/started",
+    "server/stopping",
+    "server/saving",
+    "server/saved",
+    "players/joined",
+    "players/left",
+    "operators/added",
+    "operators/removed",
+    "allowlist/added",
+    "allowlist/removed",
+    "ip_bans/added",
+    "ip_bans/removed",
+    "bans/added",
+    "bans/removed",
+    "gamerules/updated",
+    "server/status"
+]
