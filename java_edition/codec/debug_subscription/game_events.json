@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "event",
+            "type": [
+                "registry",
+                "game_event"
+            ]
+        },
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "vec3f64"
+            ]
+        }
+    ]
+]

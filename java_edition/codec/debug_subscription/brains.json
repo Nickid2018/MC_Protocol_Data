@@ -1,0 +1,103 @@
+[
+    "container",
+    [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "profession",
+            "type": "string"
+        },
+        {
+            "name": "xp",
+            "type": "i32"
+        },
+        {
+            "name": "health",
+            "type": "f32"
+        },
+        {
+            "name": "maxHealth",
+            "type": "f32"
+        },
+        {
+            "name": "inventory",
+            "type": "string"
+        },
+        {
+            "name": "wantsGolem",
+            "type": "bool"
+        },
+        {
+            "name": "angerLevel",
+            "type": "i32"
+        },
+        {
+            "name": "activities",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "behaviors",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "memories",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "gossips",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "pois",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "block_pos"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "potentialPois",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "block_pos"
+                    ]
+                }
+            ]
+        }
+    ]
+]

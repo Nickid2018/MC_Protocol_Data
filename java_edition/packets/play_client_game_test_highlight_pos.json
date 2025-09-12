@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "absolutePos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "relativePos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,111 @@
+[
+    "container",
+    [
+        {
+            "name": "path",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "reached",
+                        "type": "bool"
+                    },
+                    {
+                        "name": "nextNodeIndex",
+                        "type": "i32"
+                    },
+                    {
+                        "name": "target",
+                        "type": [
+                            "reference",
+                            "block_pos"
+                        ]
+                    },
+                    {
+                        "name": "nodes",
+                        "type": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "x",
+                                            "type": "i32"
+                                        },
+                                        {
+                                            "name": "y",
+                                            "type": "i32"
+                                        },
+                                        {
+                                            "name": "z",
+                                            "type": "i32"
+                                        },
+                                        {
+                                            "name": "walkedDistance",
+                                            "type": "f32"
+                                        },
+                                        {
+                                            "name": "walkedDistance",
+                                            "type": "f32"
+                                        },
+                                        {
+                                            "name": "closed",
+                                            "type": "bool"
+                                        },
+                                        {
+                                            "name": "type",
+                                            "type": [
+                                                "mapper",
+                                                {
+                                                    "type": "varint",
+                                                    "mappings": {
+                                                        "0": "Blocked",
+                                                        "1": "Open",
+                                                        "2": "Walkable",
+                                                        "3": "Walkable Door",
+                                                        "4": "Trapdoor",
+                                                        "5": "Powder Snow",
+                                                        "6": "Danger Powder Snow",
+                                                        "7": "Fence",
+                                                        "8": "Lava",
+                                                        "9": "Water",
+                                                        "10": "Water Border",
+                                                        "11": "Rail",
+                                                        "12": "Unpassavle Rail",
+                                                        "13": "Danger Fire",
+                                                        "14": "Damage Fire",
+                                                        "15": "Danger Other",
+                                                        "16": "Damage Other",
+                                                        "17": "Door Open",
+                                                        "18": "Door Wood Closed",
+                                                        "19": "Door Iron Closed",
+                                                        "20": "Breach",
+                                                        "21": "Leaves",
+                                                        "22": "Sticky Honey",
+                                                        "23": "Cocoa",
+                                                        "24": "Damage Cautious",
+                                                        "25": "Danger Trapdoor"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "f",
+                                            "type": "f32"
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "maxNodeDistance",
+            "type": "f32"
+        }
+    ]
+]

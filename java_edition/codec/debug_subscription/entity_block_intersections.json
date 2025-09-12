@@ -1,0 +1,11 @@
+[
+    "mapper",
+    {
+        "type": "varint",
+        "mappings": {
+            "0": "In Block",
+            "1": "In Fluid",
+            "2": "In Air"
+        }
+    }
+]

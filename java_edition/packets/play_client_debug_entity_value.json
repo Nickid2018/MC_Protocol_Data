@@ -1,0 +1,39 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "update",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "type",
+                        "type": [
+                            "save",
+                            [
+                                "registry",
+                                "debug_subscription"
+                            ],
+                            "type"
+                        ]
+                    },
+                    {
+                        "name": "data",
+                        "type": [
+                            "option",
+                            [
+                                "codec",
+                                "debug_subscription",
+                                "type"
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]

@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "attackTarget",
+            "type": [
+                "option",
+                "varint"
+            ]
+        },
+        {
+            "name": "jumpTarget",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "block_pos"
+                ]
+            ]
+        }
+    ]
+]

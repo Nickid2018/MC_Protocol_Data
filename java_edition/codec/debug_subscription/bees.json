@@ -1,0 +1,42 @@
+[
+    "container",
+    [
+        {
+            "name": "hivePos",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "block_pos"
+                ]
+            ]
+        },
+        {
+            "name": "flowerPos",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "block_pos"
+                ]
+            ]
+        },
+        {
+            "name": "travelTicks",
+            "type": "varint"
+        },
+        {
+            "name": "blacklistedHives",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "block_pos"
+                    ]
+                }
+            ]
+        }
+    ]
+]

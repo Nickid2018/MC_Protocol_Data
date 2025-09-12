@@ -1,0 +1,24 @@
+[
+    "container",
+    [
+        {
+            "name": "type",
+            "type": [
+                "registry",
+                "block"
+            ]
+        },
+        {
+            "name": "occupantCount",
+            "type": "varint"
+        },
+        {
+            "name": "honeyLevel",
+            "type": "varint"
+        },
+        {
+            "name": "sedated",
+            "type": "bool"
+        }
+    ]
+]

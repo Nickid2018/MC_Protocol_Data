@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "goals",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "priority",
+                                "type": "varint"
+                            },
+                            {
+                                "name": "isRunning",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "name",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

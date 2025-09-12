@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "poiType",
+            "type": [
+                "registry",
+                "point_of_interest_type"
+            ]
+        },
+        {
+            "name": "freeTicketCount",
+            "type": "varint"
+        }
+    ]
+]

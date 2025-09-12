@@ -1,0 +1,73 @@
+[
+    "array",
+    {
+        "countType": "varint",
+        "type": [
+            "container",
+            [
+                {
+                    "name": "boundingBox",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "min",
+                                "type": [
+                                    "reference",
+                                    "block_pos"
+                                ]
+                            },
+                            {
+                                "name": "max",
+                                "type": [
+                                    "reference",
+                                    "block_pos"
+                                ]
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "name": "pieces",
+                    "type": [
+                        "array",
+                        {
+                            "countType": "varint",
+                            "type": [
+                                "container",
+                                [
+                                    {
+                                        "name": "boundingBox",
+                                        "type": [
+                                            "container",
+                                            [
+                                                {
+                                                    "name": "min",
+                                                    "type": [
+                                                        "reference",
+                                                        "block_pos"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "max",
+                                                    "type": [
+                                                        "reference",
+                                                        "block_pos"
+                                                    ]
+                                                }
+                                            ]
+                                        ]
+                                    },
+                                    {
+                                        "name": "isStart",
+                                        "type": "bool"
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+]
