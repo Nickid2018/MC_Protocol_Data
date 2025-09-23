@@ -1,0 +1,32 @@
+[
+    "container",
+    [
+        {
+            "name": "globalPos",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "dimension",
+                        "type": "string"
+                    },
+                    {
+                        "name": "pos",
+                        "type": [
+                            "reference",
+                            "block_pos"
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "yaw",
+            "type": "f32"
+        },
+        {
+            "name": "pitch",
+            "type": "f32"
+        }
+    ]
+]

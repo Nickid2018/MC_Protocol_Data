@@ -1,5 +1,15 @@
 [
     {
+        "version": "1.21.9-pre2",
+        "protocol_version": 1073742094,
+        "data_version": 4550
+    },
+    {
+        "version": "1.21.9-pre1",
+        "protocol_version": 1073742093,
+        "data_version": 4549
+    },
+    {
         "version": "25w37a",
         "protocol_version": 1073742092,
         "data_version": 4547

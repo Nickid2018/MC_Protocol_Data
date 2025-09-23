@@ -1,0 +1,129 @@
+[
+    "container",
+    [
+        {
+            "name": "unpack",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "profileEither",
+                        "type": [
+                            "save",
+                            "bool",
+                            "profileEither"
+                        ]
+                    },
+                    {
+                        "name": "profile",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "profileEither",
+                                "fields": {
+                                    "true": [
+                                        "reference",
+                                        "game_profile"
+                                    ],
+                                    "false": [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "id",
+                                                "type": [
+                                                    "option",
+                                                    "uuid"
+                                                ]
+                                            },
+                                            {
+                                                "name": "name",
+                                                "type": [
+                                                    "option",
+                                                    "string"
+                                                ]
+                                            },
+                                            {
+                                                "name": "properties",
+                                                "type": [
+                                                    "array",
+                                                    {
+                                                        "countType": "varint",
+                                                        "type": [
+                                                            "container",
+                                                            [
+                                                                {
+                                                                    "name": "name",
+                                                                    "type": "string"
+                                                                },
+                                                                {
+                                                                    "name": "value",
+                                                                    "type": "string"
+                                                                },
+                                                                {
+                                                                    "name": "signature",
+                                                                    "type": [
+                                                                        "option",
+                                                                        "string"
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "skinPatch",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "body",
+                        "type": [
+                            "option",
+                            "string"
+                        ]
+                    },
+                    {
+                        "name": "cape",
+                        "type": [
+                            "option",
+                            "string"
+                        ]
+                    },
+                    {
+                        "name": "elytra",
+                        "type": [
+                            "option",
+                            "string"
+                        ]
+                    },
+                    {
+                        "name": "model",
+                        "type": [
+                            "option",
+                            [
+                                "mapper",
+                                {
+                                    "type": "bool",
+                                    "mappings": {
+                                        "true": "Slim",
+                                        "false": "Wide"
+                                    }
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
+]
