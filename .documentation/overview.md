@@ -3,9 +3,9 @@
 The protocol data should be organized as below:
 - `settings.json`: A profile for the protocol data.
 - `java_edition`: Folder for storing all MCJE protocol data.
-  - `indexed_data`: Data indexed in protocol version. If the data has no changes between all versions, it should not be here. See (this page)[./version.md].
-  - `codec`, `packets`, `structures`: See (this page)[./protocol.md].
-  - `indexes.csv`, `packets.csv`: Indexing files. See (this page)[./version.md].
+  - `indexed_data`: Data indexed in protocol version. If the data has no changes between all versions, it should not be here. See [this page](./version.md).
+  - `codec`, `packets`, `structures`: See [this page](./protocol.md).
+  - `indexes.csv`, `packets.csv`: Indexing files. See [this page](./version.md).
   - `versions.json`: Versions recorded in this protocol data.
   - `initial.json`: Initial protocol.
 
