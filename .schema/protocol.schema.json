@@ -9,7 +9,8 @@
                 "properties": {
                     "key": {
                         "type": "string",
-                        "description": "Resource location for the packet"
+                        "pattern": "^[a-z0-9_]+$",
+                        "description": "Resource location (replace '/' to '_') for the packet"
                     },
                     "name": {
                         "type": "string",
@@ -33,7 +34,7 @@
                 },
                 "required": ["key", "name"]
             },
-            "description": "Protocol entries in specified state"
+            "description": "Protocol entries in specific state"
         }
     },
     "unevaluatedProperties": false,
