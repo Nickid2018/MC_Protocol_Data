@@ -1,0 +1,118 @@
+[
+    "container",
+    [
+        {
+            "name": "minReach",
+            "type": "f32"
+        },
+        {
+            "name": "maxReach",
+            "type": "f32"
+        },
+        {
+            "name": "hitboxMargin",
+            "type": "f32"
+        },
+        {
+            "name": "delayTicks",
+            "type": "varint"
+        },
+        {
+            "name": "dismountConditions",
+            "type": [
+                "option",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "maxDurationTicks",
+                            "type": "varint"
+                        },
+                        {
+                            "name": "minSpeed",
+                            "type": "f32"
+                        },
+                        {
+                            "name": "minRelativeSpeed",
+                            "type": "f32"
+                        }
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "knockbackConditions",
+            "type": [
+                "option",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "maxDurationTicks",
+                            "type": "varint"
+                        },
+                        {
+                            "name": "minSpeed",
+                            "type": "f32"
+                        },
+                        {
+                            "name": "minRelativeSpeed",
+                            "type": "f32"
+                        }
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "damageConditions",
+            "type": [
+                "option",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "maxDurationTicks",
+                            "type": "varint"
+                        },
+                        {
+                            "name": "minSpeed",
+                            "type": "f32"
+                        },
+                        {
+                            "name": "minRelativeSpeed",
+                            "type": "f32"
+                        }
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "forwardMovement",
+            "type": "f32"
+        },
+        {
+            "name": "damageMultiplier",
+            "type": "f32"
+        },
+        {
+            "name": "sound",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "sound_event"
+                ]
+            ]
+        },
+        {
+            "name": "hitSound",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "sound_event"
+                ]
+            ]
+        }
+    ]
+]

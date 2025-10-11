@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "canSprint",
+            "type": "bool"
+        },
+        {
+            "name": "speedMultiplier",
+            "type": "f32"
+        }
+    ]
+]

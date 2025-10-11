@@ -1,0 +1,45 @@
+[
+    "container",
+    [
+        {
+            "name": "minReach",
+            "type": "f32"
+        },
+        {
+            "name": "maxReach",
+            "type": "f32"
+        },
+        {
+            "name": "hitboxMargin",
+            "type": "f32"
+        },
+        {
+            "name": "dealsKnockback",
+            "type": "bool"
+        },
+        {
+            "name": "dismounts",
+            "type": "bool"
+        },
+        {
+            "name": "sound",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "sound_event"
+                ]
+            ]
+        },
+        {
+            "name": "hitSound",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "sound_event"
+                ]
+            ]
+        }
+    ]
+]

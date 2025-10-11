@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "either",
+            "type": [
+                "save",
+                "bool",
+                "either"
+            ]
+        },
+        {
+            "name": "damageType",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "either",
+                    "fields": {
+                        "true": "string",
+                        "false": [
+                            "registry",
+                            "damage_type"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+]
