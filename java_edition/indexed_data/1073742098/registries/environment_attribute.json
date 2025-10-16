@@ -1,0 +1,23 @@
+[
+    "visual/fog_color",
+    "visual/extra_fog",
+    "visual/water_fog_color",
+    "visual/water_fog_radius",
+    "visual/sky_color",
+    "visual/cloud_opacity",
+    "visual/cloud_height",
+    "visual/default_dripstone_particle",
+    "visual/ambient_particles",
+    "audio/background_music",
+    "audio/music_volume",
+    "audio/ambient_sounds",
+    "gameplay/can_start_raid",
+    "gameplay/water_evaporates",
+    "gameplay/bed_rule",
+    "gameplay/respawn_anchor_works",
+    "gameplay/nether_portal_spawns_piglin",
+    "gameplay/fast_lava",
+    "gameplay/increased_fire_burnout",
+    "gameplay/piglins_zombify",
+    "gameplay/snow_golem_melts"
+]

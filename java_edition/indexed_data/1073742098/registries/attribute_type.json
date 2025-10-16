@@ -1,0 +1,10 @@
+[
+    "boolean",
+    "float",
+    "color",
+    "bed_rule",
+    "particle",
+    "ambient_particles",
+    "background_music",
+    "ambient_sounds"
+]
