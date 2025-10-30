@@ -1,0 +1,11 @@
+[
+    "boolean",
+    "float",
+    "rgb_color",
+    "argb_color",
+    "bed_rule",
+    "particle",
+    "ambient_particles",
+    "background_music",
+    "ambient_sounds"
+]
