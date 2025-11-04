@@ -9,57 +9,55 @@
             "name": "slots",
             "type": [
                 "top_bit_set_terminated_array",
-                {
-                    "type": [
-                        "container",
-                        [
-                            {
-                                "name": "head",
-                                "type": [
-                                    "bitfield",
-                                    [
-                                        {
-                                            "name": "hasNext",
-                                            "size": 1,
-                                            "signed": false
-                                        },
-                                        {
-                                            "name": "slotId",
-                                            "saveName": "slot_id",
-                                            "size": 7,
-                                            "signed": false
-                                        }
-                                    ]
-                                ]
-                            },
-                            {
-                                "name": "slot",
-                                "type": [
-                                    "mapper",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "head",
+                            "type": [
+                                "bitfield",
+                                [
                                     {
-                                        "var": "slot_id",
-                                        "mappings": {
-                                            "0": "Mainhand",
-                                            "1": "Offhand",
-                                            "2": "Feet",
-                                            "3": "Legs",
-                                            "4": "Chest",
-                                            "5": "Head",
-                                            "6": "Body"
-                                        }
+                                        "name": "hasNext",
+                                        "size": 1,
+                                        "signed": false
+                                    },
+                                    {
+                                        "name": "slotId",
+                                        "saveName": "slot_id",
+                                        "size": 7,
+                                        "signed": false
                                     }
                                 ]
-                            },
-                            {
-                                "name": "itemStack",
-                                "type": [
-                                    "reference",
-                                    "item_stack"
-                                ]
-                            }
-                        ]
+                            ]
+                        },
+                        {
+                            "name": "slot",
+                            "type": [
+                                "mapper",
+                                {
+                                    "var": "slot_id",
+                                    "mappings": {
+                                        "0": "Mainhand",
+                                        "1": "Offhand",
+                                        "2": "Feet",
+                                        "3": "Legs",
+                                        "4": "Chest",
+                                        "5": "Head",
+                                        "6": "Body"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "itemStack",
+                            "type": [
+                                "reference",
+                                "item_stack"
+                            ]
+                        }
                     ]
-                }
+                ]
             ]
         }
     ]
