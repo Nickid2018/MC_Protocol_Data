@@ -24,7 +24,10 @@
             "name": "sourcePosition",
             "type": [
                 "option",
-                "vec3f64"
+                [
+                    "reference",
+                    "vec3f64"
+                ]
             ]
         }
     ]
