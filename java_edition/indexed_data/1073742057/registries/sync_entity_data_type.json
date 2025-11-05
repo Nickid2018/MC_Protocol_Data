@@ -24,7 +24,6 @@
     "cat_variant",
     "cow_variant",
     "wolf_variant",
-    "wolf_sound_variant",
     "frog_variant",
     "pig_variant",
     "chicken_variant",
@@ -32,8 +31,6 @@
     "painting_variant",
     "sniffer_state",
     "armadillo_state",
-    "copper_golem_state",
-    "weathering_copper_state",
     "vector3",
     "quaternion"
 ]

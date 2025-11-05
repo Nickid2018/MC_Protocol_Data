@@ -32,8 +32,6 @@
     "painting_variant",
     "sniffer_state",
     "armadillo_state",
-    "copper_golem_state",
-    "weathering_copper_state",
     "vector3",
     "quaternion"
 ]

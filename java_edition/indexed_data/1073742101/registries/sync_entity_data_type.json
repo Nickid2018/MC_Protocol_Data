@@ -15,7 +15,6 @@
     "optional_uuid",
     "block_state",
     "optional_block_state",
-    "compound_tag",
     "particle",
     "particles",
     "villager_data",
@@ -28,6 +27,7 @@
     "frog_variant",
     "pig_variant",
     "chicken_variant",
+    "zombie_nautilus_variant",
     "optional_global_pos",
     "painting_variant",
     "sniffer_state",
@@ -35,5 +35,7 @@
     "copper_golem_state",
     "weathering_copper_state",
     "vector3",
-    "quaternion"
+    "quaternion",
+    "resolvable_profile",
+    "humanoid_arm"
 ]
