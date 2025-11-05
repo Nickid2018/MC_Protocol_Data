@@ -47,7 +47,7 @@
                                             "type": "f32"
                                         },
                                         {
-                                            "name": "walkedDistance",
+                                            "name": "costMalus",
                                             "type": "f32"
                                         },
                                         {
