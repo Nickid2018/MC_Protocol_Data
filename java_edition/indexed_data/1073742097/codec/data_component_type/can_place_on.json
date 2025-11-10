@@ -144,13 +144,21 @@
                                                             {
                                                                 "name": "type",
                                                                 "type": [
-                                                                    "registry",
-                                                                    "data_component_type"
+                                                                    "save",
+                                                                    [
+                                                                        "registry",
+                                                                        "data_component_type"
+                                                                    ],
+                                                                    "type"
                                                                 ]
                                                             },
                                                             {
                                                                 "name": "value",
-                                                                "type": "nbt"
+                                                                "type": [
+                                                                    "codec",
+                                                                    "data_component_type",
+                                                                    "type"
+                                                                ]
                                                             }
                                                         ]
                                                     ]
