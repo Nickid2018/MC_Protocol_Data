@@ -1,0 +1,194 @@
+[
+    "container",
+    [
+        {
+            "name": "predicates",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "blocks",
+                                "type": [
+                                    "option",
+                                    [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "count",
+                                                "type": [
+                                                    "save",
+                                                    "varint",
+                                                    "count"
+                                                ]
+                                            },
+                                            {
+                                                "name": "set",
+                                                "type": [
+                                                    "switch",
+                                                    {
+                                                        "compareTo": "count",
+                                                        "fields": {
+                                                            "0": "string"
+                                                        },
+                                                        "default": [
+                                                            "array",
+                                                            {
+                                                                "count": "count",
+                                                                "offset": "-1",
+                                                                "type": [
+                                                                    "registry",
+                                                                    "block"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    ]
+                                ]
+                            },
+                            {
+                                "name": "properties",
+                                "type": [
+                                    "option",
+                                    [
+                                        "array",
+                                        {
+                                            "countType": "varint",
+                                            "type": [
+                                                "container",
+                                                [
+                                                    {
+                                                        "name": "name",
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "name": "valueMatcher",
+                                                        "type": [
+                                                            "container",
+                                                            [
+                                                                {
+                                                                    "name": "either",
+                                                                    "type": [
+                                                                        "save",
+                                                                        "bool",
+                                                                        "either"
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "name": "matcher",
+                                                                    "type": [
+                                                                        "switch",
+                                                                        {
+                                                                            "compareTo": "either",
+                                                                            "fields": {
+                                                                                "true": "string",
+                                                                                "false": [
+                                                                                    "container",
+                                                                                    [
+                                                                                        {
+                                                                                            "name": "minValue",
+                                                                                            "type": [
+                                                                                                "option",
+                                                                                                "string"
+                                                                                            ]
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "maxValue",
+                                                                                            "type": [
+                                                                                                "option",
+                                                                                                "string"
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        ]
+                                                    }
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            },
+                            {
+                                "name": "nbt",
+                                "type": [
+                                    "option",
+                                    "nbt"
+                                ]
+                            },
+                            {
+                                "name": "components",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "exact",
+                                            "type": [
+                                                "array",
+                                                {
+                                                    "countType": "varint",
+                                                    "type": [
+                                                        "container",
+                                                        [
+                                                            {
+                                                                "name": "type",
+                                                                "type": [
+                                                                    "registry",
+                                                                    "data_component_type"
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "type": "nbt"
+                                                            }
+                                                        ]
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "partial",
+                                            "type": [
+                                                "array",
+                                                {
+                                                    "countType": "varint",
+                                                    "type": [
+                                                        "container",
+                                                        [
+                                                            {
+                                                                "name": "predicateType",
+                                                                "type": [
+                                                                    "registry",
+                                                                    "data_component_predicate_type"
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "predicateData",
+                                                                "type": "nbt"
+                                                            }
+                                                        ]
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]
