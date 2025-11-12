@@ -1,3 +1,8 @@
+## Protocol Schema 2.4
+Released in 2025/11/12:
+- Add `either` and `direct_holder`.
+- Fix schema for `top_bit_set_terminated_array`.
+
 ## Protocol Schema 2.3
 Released in 2025/9/13 (minor fix):
 - Replace `/` to `_` for protocol packets id.

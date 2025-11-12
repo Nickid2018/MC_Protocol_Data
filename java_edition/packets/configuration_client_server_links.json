@@ -11,27 +11,14 @@
                         "container",
                         [
                             {
-                                "name": "either",
-                                "type": [
-                                    "save",
-                                    "bool",
-                                    "either"
-                                ]
-                            },
-                            {
                                 "name": "type",
                                 "type": [
-                                    "switch",
-                                    {
-                                        "compareTo": "either",
-                                        "fields": {
-                                            "true": "varint",
-                                            "false": [
-                                                "reference",
-                                                "component"
-                                            ]
-                                        }
-                                    }
+                                    "either",
+                                    "varint",
+                                    [
+                                        "reference",
+                                        "component"
+                                    ]
                                 ]
                             },
                             {

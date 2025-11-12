@@ -1,100 +1,54 @@
 [
-    "container",
+    "either",
+    "string",
     [
-        {
-            "name": "either",
-            "type": [
-                "save",
-                "bool",
-                "either"
-            ]
-        },
-        {
-            "name": "material",
-            "type": [
-                "switch",
+        "direct_holder",
+        "trim_material",
+        [
+            "container",
+            [
                 {
-                    "compareTo": "either",
-                    "fields": {
-                        "true": "string",
-                        "false": [
-                            "container",
-                            [
-                                {
-                                    "name": "materialId",
-                                    "type": [
-                                        "save",
-                                        [
-                                            "registry",
-                                            "trim_material",
-                                            "-1"
-                                        ],
-                                        "materialId"
-                                    ]
-                                },
-                                {
-                                    "name": "directMaterial",
-                                    "type": [
-                                        "switch",
-                                        {
-                                            "compareTo": "materialId",
-                                            "fields": {
-                                                "<Unknown Registry Entry>": [
-                                                    "container",
-                                                    [
-                                                        {
-                                                            "name": "assets",
-                                                            "type": [
-                                                                "container",
-                                                                [
-                                                                    {
-                                                                        "name": "base",
-                                                                        "type": "string"
-                                                                    },
-                                                                    {
-                                                                        "name": "overrides",
-                                                                        "type": [
-                                                                            "array",
-                                                                            {
-                                                                                "countType": "varint",
-                                                                                "type": [
-                                                                                    "container",
-                                                                                    [
-                                                                                        {
-                                                                                            "name": "key",
-                                                                                            "type": "string"
-                                                                                        }, 
-                                                                                        {
-                                                                                            "name": "value",
-                                                                                            "type": "string"
-                                                                                        }
-                                                                                    ]
-                                                                                ]
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                ]
-                                                            ]
-                                                        },
-                                                        {
-                                                            "name": "description",
-                                                            "type": [
-                                                                "reference",
-                                                                "component"
-                                                            ]
-                                                        }
-                                                    ]
-                                                ]
-                                            },
-                                            "default": "void"
-                                        }
-                                    ]
-                                }
-                            ]
+                    "name": "assets",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "base",
+                                "type": "string"
+                            },
+                            {
+                                "name": "overrides",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": [
+                                            "container",
+                                            [
+                                                {
+                                                    "name": "key",
+                                                    "type": "string"
+                                                }, 
+                                                {
+                                                    "name": "value",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
                         ]
-                    }
+                    ]
+                },
+                {
+                    "name": "description",
+                    "type": [
+                        "reference",
+                        "component"
+                    ]
                 }
             ]
-        }
+        ]
     ]
 ]

@@ -1,81 +1,35 @@
 [
-    "container",
+    "either",
+    "string",
     [
-        {
-            "name": "either",
-            "type": [
-                "save",
-                "bool",
-                "either"
-            ]
-        },
-        {
-            "name": "instrument",
-            "type": [
-                "switch",
+        "direct_holder",
+        "instrument",
+        [
+            "container",
+            [
                 {
-                    "compareTo": "either",
-                    "fields": {
-                        "true": "string",
-                        "false": [
-                            "container",
-                            [
-                                {
-                                    "name": "instrumentId",
-                                    "type": [
-                                        "save",
-                                        [
-                                            "registry",
-                                            "instrument",
-                                            "-1"
-                                        ],
-                                        "instrumentId"
-                                    ]
-                                },
-                                {
-                                    "name": "directInstrument",
-                                    "type": [
-                                        "switch",
-                                        {
-                                            "compareTo": "instrumentId",
-                                            "fields": {
-                                                "<Unknown Registry Entry>": [
-                                                    "container",
-                                                    [
-                                                        {
-                                                            "name": "soundEvent",
-                                                            "type": [
-                                                                "reference",
-                                                                "sound_event"
-                                                            ]
-                                                        },
-                                                        {
-                                                            "name": "useDuration",
-                                                            "type": "f32"
-                                                        },
-                                                        {
-                                                            "name": "range",
-                                                            "type": "f32"
-                                                        },
-                                                        {
-                                                            "name": "description",
-                                                            "type": [
-                                                                "reference",
-                                                                "component"
-                                                            ]
-                                                        }
-                                                    ]
-                                                ]
-                                            },
-                                            "default": "void"
-                                        }
-                                    ]
-                                }
-                            ]
-                        ]
-                    }
+                    "name": "soundEvent",
+                    "type": [
+                        "reference",
+                        "sound_event"
+                    ]
+                },
+                {
+                    "name": "useDuration",
+                    "type": "f32"
+                },
+                {
+                    "name": "range",
+                    "type": "f32"
+                },
+                {
+                    "name": "description",
+                    "type": [
+                        "reference",
+                        "component"
+                    ]
                 }
             ]
-        }
+        ]
     ]
 ]

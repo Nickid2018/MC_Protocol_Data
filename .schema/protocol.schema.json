@@ -9,7 +9,7 @@
                 "properties": {
                     "key": {
                         "type": "string",
-                        "pattern": "^[a-z0-9_]+$",
+                        "pattern": "^[a-z0-9_/]+$",
                         "description": "Resource location (replace '/' to '_') for the packet"
                     },
                     "name": {

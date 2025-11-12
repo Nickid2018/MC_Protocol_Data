@@ -55,6 +55,12 @@
                 },
                 {
                     "$ref": "#/$defs/entityMetadataLoopCodec"
+                },
+                {
+                    "$ref": "#/$defs/eitherCodec"
+                },
+                {
+                    "$ref": "#/$defs/directHolderCodec"
                 }
             ]
         },
@@ -549,6 +555,39 @@
                             "description": "End value"
                         }
                     }
+                }
+            ],
+            "items": false
+        },
+        "eitherCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "either",
+                    "description": "Switch two codec"
+                },
+                {
+                    "$ref": "#/$defs/allCodec"
+                },
+                {
+                    "$ref": "#/$defs/allCodec"
+                }
+            ],
+            "items": false
+        },
+        "directHolderCodec": {
+            "type": "array",
+            "prefixItems": [
+                {
+                    "const": "direct_holder",
+                    "description": "Direct holder"
+                },
+                {
+                    "type": "string",
+                    "description": "Registry name"
+                },
+                {
+                    "$ref": "#/$defs/allCodec"
                 }
             ],
             "items": false

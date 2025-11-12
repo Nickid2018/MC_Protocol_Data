@@ -70,47 +70,26 @@
                                                     {
                                                         "name": "valueMatcher",
                                                         "type": [
-                                                            "container",
+                                                            "either",
+                                                            "string",
                                                             [
-                                                                {
-                                                                    "name": "either",
-                                                                    "type": [
-                                                                        "save",
-                                                                        "bool",
-                                                                        "either"
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    "name": "matcher",
-                                                                    "type": [
-                                                                        "switch",
-                                                                        {
-                                                                            "compareTo": "either",
-                                                                            "fields": {
-                                                                                "true": "string",
-                                                                                "false": [
-                                                                                    "container",
-                                                                                    [
-                                                                                        {
-                                                                                            "name": "minValue",
-                                                                                            "type": [
-                                                                                                "option",
-                                                                                                "string"
-                                                                                            ]
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "maxValue",
-                                                                                            "type": [
-                                                                                                "option",
-                                                                                                "string"
-                                                                                            ]
-                                                                                        }
-                                                                                    ]
-                                                                                ]
-                                                                            }
-                                                                        }
-                                                                    ]
-                                                                }
+                                                                "container",
+                                                                [
+                                                                    {
+                                                                        "name": "minValue",
+                                                                        "type": [
+                                                                            "option",
+                                                                            "string"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "maxValue",
+                                                                        "type": [
+                                                                            "option",
+                                                                            "string"
+                                                                        ]
+                                                                    }
+                                                                ]
                                                             ]
                                                         ]
                                                     }
@@ -172,59 +151,38 @@
                                                 {
                                                     "countType": "varint",
                                                     "type": [
-                                                        "container",
+                                                        "either",
                                                         [
-                                                            {
-                                                                "name": "either",
-                                                                "type": [
-                                                                    "save",
-                                                                    "bool",
-                                                                    "either"
-                                                                ]
-                                                            },
-                                                            {
-                                                                "name": "matcher",
-                                                                "type": [
-                                                                    "switch",
-                                                                    {
-                                                                        "compareTo": "either",
-                                                                        "fields": {
-                                                                            "true": [
-                                                                                "container",
-                                                                                [
-                                                                                    {
-                                                                                        "name": "predicateType",
-                                                                                        "type": [
-                                                                                            "registry",
-                                                                                            "data_component_predicate_type"
-                                                                                        ]
-                                                                                    },
-                                                                                    {
-                                                                                        "name": "predicateData",
-                                                                                        "type": "nbt"
-                                                                                    }
-                                                                                ]
-                                                                            ],
-                                                                            "false": [
-                                                                                "container",
-                                                                                [
-                                                                                    {
-                                                                                        "name": "componentType",
-                                                                                        "type": [
-                                                                                            "registry",
-                                                                                            "data_component_type"
-                                                                                        ]
-                                                                                    },
-                                                                                    {
-                                                                                        "name": "componentData",
-                                                                                        "type": "nbt"
-                                                                                    }
-                                                                                ]
-                                                                            ]
-                                                                        }
-                                                                    }
-                                                                ]
-                                                            }
+                                                            "container",
+                                                            [
+                                                                {
+                                                                    "name": "predicateType",
+                                                                    "type": [
+                                                                        "registry",
+                                                                        "data_component_predicate_type"
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "name": "predicateData",
+                                                                    "type": "nbt"
+                                                                }
+                                                            ]
+                                                        ],
+                                                        [
+                                                            "container",
+                                                            [
+                                                                {
+                                                                    "name": "componentType",
+                                                                    "type": [
+                                                                        "registry",
+                                                                        "data_component_type"
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "name": "componentData",
+                                                                    "type": "nbt"
+                                                                }
+                                                            ]
                                                         ]
                                                     ]
                                                 }

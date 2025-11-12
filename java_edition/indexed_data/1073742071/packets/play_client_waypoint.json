@@ -21,24 +21,11 @@
                 "container",
                 [
                     {
-                        "name": "either",
-                        "type": [
-                            "save",
-                            "bool",
-                            "either"
-                        ]
-                    },
-                    {
                         "name": "identifier",
                         "type": [
-                            "switch",
-                            {
-                                "compareTo": "either",
-                                "fields": {
-                                    "true": "string",
-                                    "false": "uuid"
-                                }
-                            }
+                            "either",
+                            "string",
+                            "uuid"
                         ]
                     },
                     {

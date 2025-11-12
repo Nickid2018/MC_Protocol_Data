@@ -8,45 +8,20 @@
                 {
                     "name": "pattern",
                     "type": [
-                        "container",
+                        "direct_holder",
+                        "banner_pattern",
                         [
-                            {
-                                "name": "patternId",
-                                "type": [
-                                    "save",
-                                    [
-                                        "registry",
-                                        "banner_pattern",
-                                        "-1"
-                                    ],
-                                    "patternId"
-                                ]
-                            },
-                            {
-                                "name": "directPattern",
-                                "type": [
-                                    "switch",
-                                    {
-                                        "compareTo": "patternId",
-                                        "fields": {
-                                            "<Unknown Registry Entry>": [
-                                                "container",
-                                                [
-                                                    {
-                                                        "name": "assetId",
-                                                        "type": "string"
-                                                    },
-                                                    {
-                                                        "name": "translationKey",
-                                                        "type": "string"
-                                                    }
-                                                ]
-                                            ]
-                                        },
-                                        "default": "void"
-                                    }
-                                ]
-                            }
+                            "container",
+                            [
+                                {
+                                    "name": "assetId",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "translationKey",
+                                    "type": "string"
+                                }
+                            ]
                         ]
                     ]
                 },

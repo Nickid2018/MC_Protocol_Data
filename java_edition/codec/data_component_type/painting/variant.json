@@ -1,60 +1,35 @@
 [
-    "container",
+    "direct_holder",
+    "painting_variant",
     [
-        {
-            "name": "paintingVariantId",
-            "type": [
-                "save",
-                [
-                    "registry",
-                    "painting_variant",
-                    "-1"
-                ],
-                "paintingVariantId"
-            ]
-        },
-        {
-            "name": "directPaintingVariant",
-            "type": [
-                "switch",
-                {
-                    "compareTo": "paintingVariantId",
-                    "fields": {
-                        "<Unknown Registry Entry>": [
-                            "container",
-                            [
-                                {
-                                    "name": "width",
-                                    "type": "varint"
-                                },
-                                {
-                                    "name": "height",
-                                    "type": "varint"
-                                },
-                                {
-                                    "name": "assetId",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "title",
-                                    "type": [
-                                        "reference",
-                                        "component"
-                                    ]
-                                },
-                                {
-                                    "name": "author",
-                                    "type": [
-                                        "reference",
-                                        "component"
-                                    ]
-                                }
-                            ]
-                        ]
-                    },
-                    "default": "void"
-                }
-            ]
-        }
+        "container",
+        [
+            {
+                "name": "width",
+                "type": "varint"
+            },
+            {
+                "name": "height",
+                "type": "varint"
+            },
+            {
+                "name": "assetId",
+                "type": "string"
+            },
+            {
+                "name": "title",
+                "type": [
+                    "reference",
+                    "component"
+                ]
+            },
+            {
+                "name": "author",
+                "type": [
+                    "reference",
+                    "component"
+                ]
+            }
+        ]
     ]
 ]

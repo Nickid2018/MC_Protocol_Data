@@ -1,0 +1,36 @@
+[
+    "direct_holder",
+    "pig_variant",
+    [
+        "container",
+        [
+            {
+                "name": "model",
+                "type": [
+                    "mapper",
+                    {
+                        "type": "varint",
+                        "mappings": {
+                            "0": "Normal",
+                            "1": "Cold"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "texture",
+                "type": "string"
+            },
+            {
+                "name": "biomes",
+                "type": [
+                    "option",
+                    [
+                        "reference",
+                        "biome_set"
+                    ]
+                ]
+            }
+        ]
+    ]
+]

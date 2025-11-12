@@ -2,82 +2,44 @@
     "container",
     [
         {
-            "name": "songEither",
-            "type": [
-                "save",
-                "bool",
-                "songEither"
-            ]
-        },
-        {
             "name": "song",
             "type": [
-                "switch",
-                {
-                    "compareTo": "songEither",
-                    "fields": {
-                        "true": [
-                            "registry",
-                            "jukebox_song"
-                        ],
-                        "false": [
-                            "container",
-                            [
-                                {
-                                    "name": "jukeboxSongId",
-                                    "type": [
-                                        "save",
-                                        [
-                                            "registry",
-                                            "jukebox_song",
-                                            "-1"
-                                        ],
-                                        "jukeboxSongId"
-                                    ]
-                                },
-                                {
-                                    "name": "directJukeboxSong",
-                                    "type": [
-                                        "switch",
-                                        {
-                                            "compareTo": "jukeboxSongId",
-                                            "fields": {
-                                                "<Unknown Registry Entry>": [
-                                                    "container",
-                                                    [
-                                                        {
-                                                            "name": "soundEvent",
-                                                            "type": [
-                                                                "reference",
-                                                                "sound_event"
-                                                            ]
-                                                        },
-                                                        {
-                                                            "name": "description",
-                                                            "type": [
-                                                                "reference",
-                                                                "component"
-                                                            ]
-                                                        },
-                                                        {
-                                                            "name": "lengthInSeconds",
-                                                            "type": "f32"
-                                                        },
-                                                        {
-                                                            "name": "comparatorOutput",
-                                                            "type": "varint"
-                                                        }
-                                                    ]
-                                                ]
-                                            },
-                                            "default": "void"
-                                        }
-                                    ]
-                                }
-                            ]
+                "either",
+                [
+                    "registry",
+                    "jukebox_song"
+                ],
+                [
+                    "direct_holder",
+                    "jukebox_song",
+                    [
+                        "container",
+                        [
+                            {
+                                "name": "soundEvent",
+                                "type": [
+                                    "reference",
+                                    "sound_event"
+                                ]
+                            },
+                            {
+                                "name": "description",
+                                "type": [
+                                    "reference",
+                                    "component"
+                                ]
+                            },
+                            {
+                                "name": "lengthInSeconds",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "comparatorOutput",
+                                "type": "varint"
+                            }
                         ]
-                    }
-                }
+                    ]
+                ]
             ]
         },
         {

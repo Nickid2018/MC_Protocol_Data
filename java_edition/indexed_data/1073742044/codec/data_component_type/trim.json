@@ -1,0 +1,95 @@
+[
+    "container",
+    [
+        {
+            "name": "material",
+            "type": [
+                "direct_holder",
+                "trim_material",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "assetName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "ingredient",
+                            "type": [
+                                "registry",
+                                "item"
+                            ]
+                        },
+                        {
+                            "name": "overrideArmorMaterials",
+                            "type": [
+                                "array",
+                                {
+                                    "countType": "varint",
+                                    "type": [
+                                        "container",
+                                        [
+                                            {
+                                                "name": "key",
+                                                "type": "string"
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": "string"
+                                            }
+                                        ]
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "description",
+                            "type": [
+                                "reference",
+                                "component"
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "pattern",
+            "type": [
+                "direct_holder",
+                "trim_pattern",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "assetId",
+                            "type": "string"
+                        },
+                        {
+                            "name": "templateItem",
+                            "type": [
+                                "registry",
+                                "item"
+                            ]
+                        },
+                        {
+                            "name": "description",
+                            "type": [
+                                "reference",
+                                "component"
+                            ]
+                        },
+                        {
+                            "name": "decal",
+                            "type": "bool"
+                        }
+                    ]
+                ]
+            ]
+        },
+        {
+            "name": "showInTooltip",
+            "type": "bool"
+        }
+    ]
+]

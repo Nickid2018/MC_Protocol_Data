@@ -33,28 +33,28 @@
                 {
                     "compareTo": "scaleLow2Bits",
                     "fields": {
-                        "0": "void",
-                        "1": [
-                            "bitfield",
-                            [
-                                {
-                                    "name": "packedPosZ",
-                                    "size": 15,
-                                    "signed": false
-                                },
-                                {
-                                    "name": "packedPosY",
-                                    "size": 15,
-                                    "signed": false
-                                },
-                                {
-                                    "name": "packedPosXHigh10Bits",
-                                    "size": 10,
-                                    "signed": false
-                                }
-                            ]
+                        "0": "void"
+                    },
+                    "default": [
+                        "bitfield",
+                        [
+                            {
+                                "name": "packedPosZ",
+                                "size": 15,
+                                "signed": false
+                            },
+                            {
+                                "name": "packedPosY",
+                                "size": 15,
+                                "signed": false
+                            },
+                            {
+                                "name": "packedPosXHigh10Bits",
+                                "size": 10,
+                                "signed": false
+                            }
                         ]
-                    }
+                    ]
                 }
             ]
         },

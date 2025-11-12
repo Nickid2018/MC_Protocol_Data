@@ -1,0 +1,28 @@
+[
+    "direct_holder",
+    "wolf_variant",
+    [
+        "container",
+        [
+            {
+                "name": "wildTexture",
+                "type": "string"
+            },
+            {
+                "name": "tameTexture",
+                "type": "string"
+            },
+            {
+                "name": "angryTexture",
+                "type": "string"
+            },
+            {
+                "name": "biomes",
+                "type": [
+                    "reference",
+                    "biome_set"
+                ]
+            }
+        ]
+    ]
+]

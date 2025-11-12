@@ -70,47 +70,26 @@
                                                     {
                                                         "name": "valueMatcher",
                                                         "type": [
-                                                            "container",
+                                                            "either",
+                                                            "string",
                                                             [
-                                                                {
-                                                                    "name": "either",
-                                                                    "type": [
-                                                                        "save",
-                                                                        "bool",
-                                                                        "either"
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    "name": "matcher",
-                                                                    "type": [
-                                                                        "switch",
-                                                                        {
-                                                                            "compareTo": "either",
-                                                                            "fields": {
-                                                                                "true": "string",
-                                                                                "false": [
-                                                                                    "container",
-                                                                                    [
-                                                                                        {
-                                                                                            "name": "minValue",
-                                                                                            "type": [
-                                                                                                "option",
-                                                                                                "string"
-                                                                                            ]
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "maxValue",
-                                                                                            "type": [
-                                                                                                "option",
-                                                                                                "string"
-                                                                                            ]
-                                                                                        }
-                                                                                    ]
-                                                                                ]
-                                                                            }
-                                                                        }
-                                                                    ]
-                                                                }
+                                                                "container",
+                                                                [
+                                                                    {
+                                                                        "name": "minValue",
+                                                                        "type": [
+                                                                            "option",
+                                                                            "string"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "maxValue",
+                                                                        "type": [
+                                                                            "option",
+                                                                            "string"
+                                                                        ]
+                                                                    }
+                                                                ]
                                                             ]
                                                         ]
                                                     }

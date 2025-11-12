@@ -1,85 +1,60 @@
 [
-    "container",
+    "direct_holder",
+    "wolf_variant",
     [
-        {
-            "name": "wolfVariantId",
-            "type": [
-                "save",
-                [
-                    "registry",
-                    "wolf_variant",
-                    "-1"
-                ],
-                "wolfVariantId"
-            ]
-        },
-        {
-            "name": "directWolfVariant",
-            "type": [
-                "switch",
-                {
-                    "compareTo": "wolfVariantId",
-                    "fields": {
-                        "<Unknown Registry Entry>": [
-                            "container",
-                            [
+        "container",
+        [
+            {
+                "name": "wildTexture",
+                "type": "string"
+            },
+            {
+                "name": "tameTexture",
+                "type": "string"
+            },
+            {
+                "name": "angryTexture",
+                "type": "string"
+            },
+            {
+                "name": "biomes",
+                "type": [
+                    "container",
+                    [
+                        {
+                            "name": "count",
+                            "type": [
+                                "save",
+                                "varint",
+                                "count"
+                            ]
+                        },
+                        {
+                            "name": "set",
+                            "type": [
+                                "switch",
                                 {
-                                    "name": "wildTexture",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "tameTexture",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "angryTexture",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "biomes",
-                                    "type": [
-                                        "container",
-                                        [
-                                            {
-                                                "name": "count",
-                                                "type": [
-                                                    "save",
-                                                    "varint",
-                                                    "count"
-                                                ]
-                                            },
-                                            {
-                                                "name": "set",
-                                                "type": [
-                                                    "switch",
-                                                    {
-                                                        "compareTo": "count",
-                                                        "fields": {
-                                                            "0": "string"
-                                                        },
-                                                        "default": [
-                                                            "array",
-                                                            {
-                                                                "count": "count",
-                                                                "offset": "-1",
-                                                                "type": [
-                                                                    "registry",
-                                                                    "biome"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
+                                    "compareTo": "count",
+                                    "fields": {
+                                        "0": "string"
+                                    },
+                                    "default": [
+                                        "array",
+                                        {
+                                            "count": "count",
+                                            "offset": "-1",
+                                            "type": [
+                                                "registry",
+                                                "biome"
+                                            ]
+                                        }
                                     ]
                                 }
                             ]
-                        ]
-                    },
-                    "default": "void"
-                }
-            ]
-        }
+                        }
+                    ]
+                ]
+            }
+        ]
     ]
 ]

@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "canSprint",
+            "type": "bool"
+        },
+        {
+            "name": "interactVibrations",
+            "type": "bool"
+        },
+        {
+            "name": "speedMultiplier",
+            "type": "f32"
+        }
+    ]
+]
