@@ -1,0 +1,33 @@
+[
+    "container",
+    [
+        {
+            "name": "dealsKnockback",
+            "type": "bool"
+        },
+        {
+            "name": "dismounts",
+            "type": "bool"
+        },
+        {
+            "name": "sound",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "sound_event"
+                ]
+            ]
+        },
+        {
+            "name": "hitSound",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "sound_event"
+                ]
+            ]
+        }
+    ]
+]

@@ -1,0 +1,21 @@
+[
+    "container",
+    [
+        {
+            "name": "minRange",
+            "type": "f32"
+        },
+        {
+            "name": "maxRange",
+            "type": "f32"
+        },
+        {
+            "name": "hitboxMargin",
+            "type": "f32"
+        },
+        {
+            "name": "mobFactor",
+            "type": "f32"
+        }
+    ]
+]
