@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "action",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Perform Respawn",
+                        "1": "Request Stats",
+                        "2": "Request Game Rule Values"
+                    }
+                }
+            ]
+        }
+    ]
+]

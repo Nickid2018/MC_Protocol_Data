@@ -1,0 +1,33 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "hand",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Mainhand",
+                        "1": "Offhand"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "location",
+            "type": [
+                "reference",
+                "lp_vec3"
+            ]
+        },
+        {
+            "name": "usingSecondaryAction",
+            "type": "bool"
+        }
+    ]
+]

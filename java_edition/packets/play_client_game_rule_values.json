@@ -1,0 +1,27 @@
+[
+    "container",
+    [
+        {
+            "name": "values",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "key",
+                                "type": "string"
+                            },
+                            {
+                                "name": "value",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

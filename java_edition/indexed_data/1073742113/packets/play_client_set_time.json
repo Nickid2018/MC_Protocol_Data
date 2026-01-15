@@ -1,0 +1,46 @@
+[
+    "container",
+    [
+        {
+            "name": "gameTime",
+            "type": "i64"
+        },
+        {
+            "name": "clockUpdates",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "clock",
+                                "type": [
+                                    "registry",
+                                    "world_clock"
+                                ]
+                            },
+                            {
+                                "name": "state",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "total_ticks",
+                                            "type": "varlong"
+                                        },
+                                        {
+                                            "name": "paused",
+                                            "type": "bool"
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]
