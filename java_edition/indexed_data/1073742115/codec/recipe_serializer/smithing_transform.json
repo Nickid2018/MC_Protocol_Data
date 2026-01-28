@@ -1,0 +1,37 @@
+[
+    "container",
+    [
+        {
+            "name": "showNotification",
+            "type": "bool"
+        },
+        {
+            "name": "template",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "base",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "addition",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "transmute_result"
+            ]
+        }
+    ]
+]

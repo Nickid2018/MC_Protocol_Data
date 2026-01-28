@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "map",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "material",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "target",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "dye",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "showNotification",
+            "type": "bool"
+        },
+        {
+            "name": "input",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

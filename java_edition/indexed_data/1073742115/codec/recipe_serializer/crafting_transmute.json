@@ -1,0 +1,111 @@
+[
+    "container",
+    [
+        {
+            "name": "showNotification",
+            "type": "bool"
+        },
+        {
+            "name": "category",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Building",
+                        "1": "Redstone",
+                        "2": "Equipment",
+                        "3": "Misc"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "group",
+            "type": "string"
+        },
+        {
+            "name": "input",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "material",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "materialCount",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "flags",
+                        "type": [
+                            "bitfield",
+                            [
+                                {
+                                    "name": "unused",
+                                    "size": 6
+                                },
+                                {
+                                    "name": "hasMax",
+                                    "size": 1,
+                                    "signed": false,
+                                    "saveName": "hasMax"
+                                },
+                                {
+                                    "name": "hasMin",
+                                    "size": 1,
+                                    "signed": false,
+                                    "saveName": "hasMin"
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "name": "min",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "hasMin",
+                                "fields": {
+                                    "1": "i32",
+                                    "0": "void"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "max",
+                        "type": [
+                            "switch",
+                            {
+                                "compareTo": "hasMax",
+                                "fields": {
+                                    "1": "i32",
+                                    "0": "void"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "transmute_result"
+            ]
+        },
+        {
+            "name": "addMaterialCountToResult",
+            "type": "bool"
+        }
+    ]
+]

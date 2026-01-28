@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "source",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "component",
+            "type": [
+                "registry",
+                "data_component_type"
+            ]
+        }
+    ]
+]

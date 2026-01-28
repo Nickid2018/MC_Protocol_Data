@@ -1,0 +1,77 @@
+[
+    "container",
+    [
+        {
+            "name": "shapes",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "key",
+                                "type": [
+                                    "mapper",
+                                    {
+                                        "type": "varint",
+                                        "mappings": {
+                                            "0": "Small Ball",
+                                            "1": "Large Ball",
+                                            "2": "Star",
+                                            "3": "Creeper",
+                                            "4": "Burst"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "value",
+                                "type": [
+                                    "reference",
+                                    "ingredient"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "trail",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "twinkle",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "fuel",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "dye",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

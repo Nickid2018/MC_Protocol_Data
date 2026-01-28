@@ -1,0 +1,40 @@
+[
+    "container",
+    [
+        {
+            "name": "backPattern",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "leftPattern",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "rightPattern",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "frontPattern",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

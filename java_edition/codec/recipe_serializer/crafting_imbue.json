@@ -2,8 +2,8 @@
     "container",
     [
         {
-            "name": "group",
-            "type": "string"
+            "name": "showNotification",
+            "type": "bool"
         },
         {
             "name": "category",
@@ -12,15 +12,27 @@
                 {
                     "type": "varint",
                     "mappings": {
-                        "0": "Food",
-                        "1": "Blocks",
+                        "0": "Building",
+                        "1": "Redstone",
+                        "2": "Equipment",
                         "3": "Misc"
                     }
                 }
             ]
         },
         {
-            "name": "ingredient",
+            "name": "group",
+            "type": "string"
+        },
+        {
+            "name": "source",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "material",
             "type": [
                 "reference",
                 "ingredient"
@@ -32,14 +44,6 @@
                 "reference",
                 "item_stack"
             ]
-        },
-        {
-            "name": "experience",
-            "type": "f32"
-        },
-        {
-            "name": "cookingTime",
-            "type": "varint"
         }
     ]
 ]

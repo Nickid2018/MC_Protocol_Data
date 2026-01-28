@@ -1,0 +1,57 @@
+[
+    "container",
+    [
+        {
+            "name": "showNotification",
+            "type": "bool"
+        },
+        {
+            "name": "template",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "base",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "addition",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "pattern",
+            "type": [
+                "direct_holder",
+                "trim_pattern",
+                [
+                    "container",
+                    [
+                        {
+                            "name": "assetId",
+                            "type": "string"
+                        },
+                        {
+                            "name": "description",
+                            "type": [
+                                "reference",
+                                "component"
+                            ]
+                        },
+                        {
+                            "name": "decal",
+                            "type": "bool"
+                        }
+                    ]
+                ]
+            ]
+        }
+    ]
+]

@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "display",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "dye",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        },
+        {
+            "name": "target",
+            "type": [
+                "reference",
+                "slot_display"
+            ]
+        }
+    ]
+]

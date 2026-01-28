@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "banner",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]

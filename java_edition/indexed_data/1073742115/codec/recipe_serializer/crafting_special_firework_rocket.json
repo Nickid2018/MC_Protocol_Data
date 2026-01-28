@@ -1,0 +1,33 @@
+[
+    "container",
+    [
+        {
+            "name": "shell",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "fuel",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "star",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack"
+            ]
+        }
+    ]
+]
