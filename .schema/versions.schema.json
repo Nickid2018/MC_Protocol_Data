@@ -17,7 +17,7 @@
                 "description": "Minecraft data version"
             }
         },
-        "required": ["version", "protocol_version", "data_version"]
+        "required": ["version", "protocol_version"]
     },
     "description": "Version data"
 }
