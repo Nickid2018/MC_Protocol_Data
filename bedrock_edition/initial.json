@@ -1,0 +1,1030 @@
+{
+    "initial": [
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "login",
+            "name": "Login",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "protcolVersion",
+                        "type": "i32r"
+                    },
+                    {
+                        "name": "request",
+                        "type": "string"
+                    }
+                ]
+            ],
+            "specialMark": "login"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "network_settings",
+            "name": "Network Settings",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "compressionThreshold",
+                        "type": "u16"
+                    },
+                    {
+                        "name": "compressionAlgorithm",
+                        "type": [
+                            "mapper",
+                            {
+                                "type": "u16",
+                                "mappings": {
+                                    "0": "Zlib",
+                                    "1": "Snappy",
+                                    "2": "None"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "clientThrottleEnabled",
+                        "type": "bool"
+                    },
+                    {
+                        "name": "clientThrottleThreshold",
+                        "type": "u8"
+                    },
+                    {
+                        "name": "clientThrottleScalar",
+                        "type": "f32"
+                    }
+                ]
+            ],
+            "specialMark": "network_settings"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "unused",
+            "name": "Unknown Packet",
+            "type": "void"
+        },
+        {
+            "key": "request_network_settings",
+            "name": "Request Network Settings",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "protocolVersion",
+                        "type": "i32r"
+                    }
+                ]
+            ]
+        }
+    ]
+}
