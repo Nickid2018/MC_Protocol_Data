@@ -1,0 +1,115 @@
+[
+    "container",
+    [
+        {
+            "name": "targetActorId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "actor_type",
+            "type": "string"
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "velocity",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "rotation",
+            "type": [
+                "reference",
+                "vec2"
+            ]
+        },
+        {
+            "name": "yHeadRotation",
+            "type": "f32"
+        },
+        {
+            "name": "yBodyRotation",
+            "type": "f32"
+        },
+        {
+            "name": "attributeList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "attributeName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "minValue",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "currentValue",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "maxValue",
+                                "type": "f32"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "actorData",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "data_item"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "syncedProperties",
+            "type": [
+                "reference",
+                "property_sync_data"
+            ]
+        },
+        {
+            "name": "actorLinks",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "refernece",
+                        "actor_link"
+                    ]
+                }
+            ]
+        }
+    ]
+]

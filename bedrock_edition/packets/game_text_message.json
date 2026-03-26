@@ -1,0 +1,83 @@
+[
+    "container",
+    [
+        {
+            "name": "messageType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "text_packet_type",
+                        "type": "i8"
+                    }
+                ],
+                "messageType"
+            ]
+        },
+        {
+            "name": "localize",
+            "type": "bool"
+        },
+        {
+            "name": "playerName",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "messageType",
+                    "fields": {
+                        "Chat": "string",
+                        "Whisper": "string",
+                        "Announcement": "string"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "message",
+            "type": "string"
+        },
+        {
+            "name": "parameterList",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "messageType",
+                    "fields": {
+                        "Translate": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "string"
+                            }
+                        ],
+                        "Popup": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "string"
+                            }
+                        ],
+                        "JukeboxPopup": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "senderXUID",
+            "type": "string"
+        },
+        {
+            "name": "platformId",
+            "type": "string"
+        }
+    ]
+]

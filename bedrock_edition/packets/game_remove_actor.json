@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "targetActorId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,36 @@
+[
+    "container",
+    [
+        {
+            "name": "reason",
+            "type": [
+                "mapper",
+                {
+                    "source": "connection_disconnect_fail_reason",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "skipMessage",
+            "type": [
+                "save",
+                "bool",
+                "skipMessage"
+            ]
+        },
+        {
+            "name": "message",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "skipMessage",
+                    "fields": {
+                        "true": "void",
+                        "false": "string"
+                    }
+                }
+            ]
+        }
+    ]
+]

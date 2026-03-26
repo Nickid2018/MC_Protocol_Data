@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "itemRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "actorRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        }
+    ]
+]

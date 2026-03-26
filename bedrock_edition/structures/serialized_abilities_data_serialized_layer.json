@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "mPlayerPermissions",
+            "type": [
+                "mapper",
+                {
+                    "source": "serialized_abilities_data_serialized_abilities_layer",
+                    "type": "u16"
+                }
+            ]
+        },
+        {
+            "name": "abilitiesSet",
+            "type": "u32"
+        },
+        {
+            "name": "abilitiesValues",
+            "type": "u32"
+        },
+        {
+            "name": "flySpeed",
+            "type": "f32"
+        },
+        {
+            "name": "walkSpeed",
+            "type": "f32"
+        }
+    ]
+]

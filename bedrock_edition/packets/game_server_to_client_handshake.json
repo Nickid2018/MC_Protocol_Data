@@ -2,7 +2,7 @@
     "container",
     [
         {
-            "name": "payload",
+            "name": "handshakeWebToken",
             "type": "string"
         }
     ]

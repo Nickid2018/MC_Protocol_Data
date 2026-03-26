@@ -1,0 +1,49 @@
+[
+    "container",
+    [
+        {
+            "name": "intEntriesList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "propertyIndex",
+                                "type": "varint"
+                            },
+                            {
+                                "name": "data",
+                                "type": "varint"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "floatEntriesList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "propertyIndex",
+                                "type": "varint"
+                            },
+                            {
+                                "name": "data",
+                                "type": "f32"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

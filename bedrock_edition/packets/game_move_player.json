@@ -1,0 +1,85 @@
+[
+    "container",
+    [
+        {
+            "name": "playerRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "rotation",
+            "type": [
+                "reference",
+                "vec2"
+            ]
+        },
+        {
+            "name": "yHeadRotation",
+            "type": "f32"
+        },
+        {
+            "name": "positionMode",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "player_position_mode_component_position_mode",
+                        "type": "i8"
+                    }
+                ],
+                "positionMode"
+            ]
+        },
+        {
+            "name": "onGround",
+            "type": "bool"
+        },
+        {
+            "name": "ridingRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "teleportationCause",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "positionMode",
+                    "fields": {
+                        "Teleport": "i32"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "sourceActorType",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "positionMode",
+                    "fields": {
+                        "Teleport": "i32"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "tick",
+            "type": "varlong"
+        }
+    ]
+]

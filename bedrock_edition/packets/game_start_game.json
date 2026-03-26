@@ -1,0 +1,152 @@
+[
+    "container",
+    [
+        {
+            "name": "targetActorId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "actorGameType",
+            "type": [
+                "mapper",
+                {
+                    "source": "game_type",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "rotation",
+            "type": [
+                "reference",
+                "vec2"
+            ]
+        },
+        {
+            "name": "settings",
+            "type": [
+                "reference",
+                "level_settings"
+            ]
+        },
+        {
+            "name": "levelId",
+            "type": "string"
+        },
+        {
+            "name": "levelName",
+            "type": "string"
+        },
+        {
+            "name": "templateContentIdentity",
+            "type": "string"
+        },
+        {
+            "name": "isTrial",
+            "type": "bool"
+        },
+        {
+            "name": "movementSettings",
+            "type": [
+                "reference",
+                "synced_player_movement_settings"
+            ]
+        },
+        {
+            "name": "currentLevelTime",
+            "type": "u64"
+        },
+        {
+            "name": "enchantmentSeed",
+            "type": "varint"
+        },
+        {
+            "name": "blockProperties",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        {
+                            "name": "blockName",
+                            "type": "string"
+                        },
+                        {
+                            "name": "blockDefinition",
+                            "type": "bnbt"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "itemList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "item_data"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "multiplayerCorrelationId",
+            "type": "string"
+        },
+        {
+            "name": "enableItemStackNetManager",
+            "type": "bool"
+        },
+        {
+            "name": "serverVersion",
+            "type": "string"
+        },
+        {
+            "name": "playerPropertyData",
+            "type": "bnbt"
+        },
+        {
+            "name": "serverBlockTypeRegistryChecksum",
+            "type": "u64"
+        },
+        {
+            "name": "worldTemplateId",
+            "type": "uuid"
+        },
+        {
+            "name": "serverEnabledClientSideGeneration",
+            "type": "bool"
+        },
+        {
+            "name": "blockNetworkIdsAreHashes",
+            "type": "bool"
+        },
+        {
+            "name": "networkPermissions",
+            "type": [
+                "reference",
+                "network_permissions"
+            ]
+        }
+    ]
+]

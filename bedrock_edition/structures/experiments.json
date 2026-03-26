@@ -1,0 +1,39 @@
+[
+    "container",
+    [
+        {
+            "name": "experimentsArray",
+            "type": [
+                "array",
+                {
+                    "countType": "u32",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "toggleName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "alwaysOnName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "enabled",
+                                "type": "bool"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "wereAnyExperimentsEverToggled",
+            "type": "bool"
+        }
+    ]
+]

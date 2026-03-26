@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "itemName",
+            "type": "string"
+        },
+        {
+            "name": "itemName",
+            "type": "i16"
+        },
+        {
+            "name": "isComponentBased",
+            "type": "bool"
+        }
+    ]
+]

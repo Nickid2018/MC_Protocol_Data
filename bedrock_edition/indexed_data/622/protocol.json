@@ -1,0 +1,86 @@
+{
+    "game": [
+        {
+            "key": "_skip",
+            "name": "_skip"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip"
+        },
+        {
+            "key": "play_status",
+            "name": "Play Status"
+        },
+        {
+            "key": "server_to_client_handshake",
+            "name": "Server to Client Handshake",
+            "specialMark": "encrypt"
+        },
+        {
+            "key": "client_to_server_handshake",
+            "name": "Client to Server Handshake",
+            "type": "void"
+        },
+        {
+            "key": "disconnect_player",
+            "name": "Disconnect Player"
+        },
+        {
+            "key": "resource_packs_info",
+            "name": "Resource Packs Info"
+        },
+        {
+            "key": "resource_pack_stack",
+            "name": "Resource Pack Stack"
+        },
+        {
+            "key": "resource_pack_client_response",
+            "name": "Resource Pack Client Response"
+        },
+        {
+            "key": "text_message",
+            "name": "Text Message"
+        },
+        {
+            "key": "set_time",
+            "name": "Set Time"
+        },
+        {
+            "key": "start_game",
+            "name": "Start Game"
+        },
+        {
+            "key": "add_player",
+            "name": "Add Player"
+        },
+        {
+            "key": "add_actor",
+            "name": "Add Actor"
+        },
+        {
+            "key": "remove_actor",
+            "name": "Remove Actor"
+        },
+        {
+            "key": "add_item_actor",
+            "name": "Add Item Actor"
+        },
+        {
+            "key": "server_player_post_move_position",
+            "name": "Server Player Post Move Position"
+        },
+        {
+            "key": "take_item_actor",
+            "name": "Take Item Actor"
+        },
+        {
+            "key": "move_actor_absolute",
+            "name": "Move Actore Absolute"
+        },
+        {
+            "key": "move_player",
+            "name": "Move Player"
+        }
+    ]
+}

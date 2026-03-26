@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "status",
+            "type": [
+                "mapper",
+                {
+                    "source": "play_status",
+                    "type": "i32r"
+                }
+            ]
+        }
+    ]
+]

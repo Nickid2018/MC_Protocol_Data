@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "moveData",
+            "type": [
+                "reference",
+                "move_actor_absolute_data"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,42 @@
+[
+    "container",
+    [
+        {
+            "name": "targetPlayerRawId",
+            "type": "i64"
+        },
+        {
+            "name": "mPlayerPermissions",
+            "type": [
+                "mapper",
+                {
+                    "source": "player_permission_level",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "mCommandPermissions",
+            "type": [
+                "mapper",
+                {
+                    "source": "command_permission_level",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "layers",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "serialized_abilities_data_serialized_layer"
+                    ]
+                }
+            ]
+        }
+    ]
+]

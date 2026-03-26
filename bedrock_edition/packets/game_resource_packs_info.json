@@ -1,0 +1,131 @@
+[
+    "container",
+    [
+        {
+            "name": "resourcePackRequired",
+            "type": "bool"
+        },
+        {
+            "name": "hasAddonPacks",
+            "type": "bool"
+        },
+        {
+            "name": "hasScripts",
+            "type": "bool"
+        },
+        {
+            "name": "forceServerPacksEnabled",
+            "type": "bool"
+        },
+        {
+            "name": "behaviorPacks",
+            "type": [
+                "array",
+                {
+                    "countType": "u16",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "name": "version",
+                                "type": "string"
+                            },
+                            {
+                                "name": "size",
+                                "type": "u64"
+                            },
+                            {
+                                "name": "contentKey",
+                                "type": "string"
+                            },
+                            {
+                                "name": "subPackName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "contentIdentity",
+                                "type": "string"
+                            },
+                            {
+                                "name": "hasScripts",
+                                "type": "bool"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "resourcePacks",
+            "type": [
+                "array",
+                {
+                    "countType": "u16",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "name": "version",
+                                "type": "string"
+                            },
+                            {
+                                "name": "size",
+                                "type": "u64"
+                            },
+                            {
+                                "name": "contentKey",
+                                "type": "string"
+                            },
+                            {
+                                "name": "subPackName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "contentIdentity",
+                                "type": "string"
+                            },
+                            {
+                                "name": "hasScripts",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "isRayTracingCapable",
+                                "type": "bool"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "cdnUrls",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "first",
+                                "type": "string"
+                            },
+                            {
+                                "name": "second",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

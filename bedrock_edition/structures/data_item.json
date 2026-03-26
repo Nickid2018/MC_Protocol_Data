@@ -1,0 +1,55 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": [
+                "mapper",
+                {
+                    "source": "actor_data_ids",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "type",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "data_item_type",
+                        "type": "i8"
+                    }
+                ],
+                "type"
+            ]
+        },
+        {
+            "name": "value",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "type",
+                    "fields": {
+                        "Byte": "i8",
+                        "Short": "i16",
+                        "Int": "varint",
+                        "Float": "f32",
+                        "String": "string",
+                        "CompoundTag": "bnbt",
+                        "Pos": [
+                            "reference",
+                            "block_pos"
+                        ],
+                        "Int64": "varlong",
+                        "Vec3": [
+                            "reference",
+                            "vec3"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+]

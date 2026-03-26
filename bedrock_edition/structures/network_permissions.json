@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "serverAuthSoundEnabled",
+            "type": "bool"
+        }
+    ]
+]

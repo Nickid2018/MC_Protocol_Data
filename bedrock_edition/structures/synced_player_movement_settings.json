@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "authorityMode",
+            "type": [
+                "mapper",
+                {
+                    "source": "server_auth_movement_mode",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "rewindHistorySize",
+            "type": "varint"
+        },
+        {
+            "name": "serverAuthoratativeBlockBreaking",
+            "type": "bool"
+        }
+    ]
+]

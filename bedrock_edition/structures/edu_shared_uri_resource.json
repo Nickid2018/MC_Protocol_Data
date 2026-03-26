@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "buttonName",
+            "type": "string"
+        },
+        {
+            "name": "linkURI",
+            "type": "string"
+        }
+    ]
+]

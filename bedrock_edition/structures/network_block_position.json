@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "varint"
+        },
+        {
+            "name": "y",
+            "type": "varint"
+        },
+        {
+            "name": "z",
+            "type": "varint"
+        }
+    ]
+]

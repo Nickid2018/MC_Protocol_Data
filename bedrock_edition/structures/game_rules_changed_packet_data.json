@@ -1,0 +1,48 @@
+[
+    "array",
+    {
+        "countType": "varint",
+        "type": [
+            "container",
+            [
+                {
+                    "name": "ruleName",
+                    "type": "string"
+                },
+                {
+                    "name": "canBeModifiedByPlayer",
+                    "type": "bool"
+                },
+                {
+                    "name": "ruleType",
+                    "type": [
+                        "save",
+                        [
+                            "mapper",
+                            {
+                                "source": "gamerule_type",
+                                "type": "varint"
+                            }
+                        ],
+                        "ruleType"
+                    ]
+                },
+                {
+                    "name": "ruleValue",
+                    "type": [
+                        "switch",
+                        {
+                            "comaperTo": "ruleType",
+                            "fields": {
+                                "Bool": "bool",
+                                "Int": "varint",
+                                "Float": "f32"
+                            },
+                            "default": "void"
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+]

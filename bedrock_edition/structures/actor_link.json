@@ -1,0 +1,37 @@
+[
+    "container",
+    [
+        {
+            "name": "actorUniqueIdA",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "actorUniqueIdB",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "linkType",
+            "type": [
+                "mapper",
+                {
+                    "source": "actor_link_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "immediate",
+            "type": "bool"
+        },
+        {
+            "name": "passengerInitiated",
+            "type": "bool"
+        }
+    ]
+]

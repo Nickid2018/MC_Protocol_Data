@@ -1,0 +1,75 @@
+[
+    "container",
+    [
+        {
+            "name": "texturePackRequired",
+            "type": "bool"
+        },
+        {
+            "name": "addonList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "name": "version",
+                                "type": "string"
+                            },
+                            {
+                                "name": "subPackName",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "texturePackList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "name": "version",
+                                "type": "string"
+                            },
+                            {
+                                "name": "subPackName",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "baseGameVersion",
+            "type": [
+                "reference",
+                "base_game_version"
+            ]
+        },
+        {
+            "name": "experiments",
+            "type": [
+                "reference",
+                "experiments"
+            ]
+        }
+    ]
+]

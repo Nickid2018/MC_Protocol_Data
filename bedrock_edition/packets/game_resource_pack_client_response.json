@@ -1,0 +1,25 @@
+[
+    "container",
+    [
+        {
+            "name": "response",
+            "type": [
+                "mapper",
+                {
+                    "source": "resource_pack_response",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "downloadingPacks",
+            "type": [
+                "array",
+                {
+                    "countType": "u16",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+]

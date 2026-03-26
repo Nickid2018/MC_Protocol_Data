@@ -1,0 +1,35 @@
+[
+    "container",
+    [
+        {
+            "name": "actorRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "header",
+            "type": "i8"
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "rotationX",
+            "type": "i8"
+        },
+        {
+            "name": "rotationY",
+            "type": "i8"
+        },
+        {
+            "name": "rotationYHead",
+            "type": "i8"
+        }
+    ]
+]

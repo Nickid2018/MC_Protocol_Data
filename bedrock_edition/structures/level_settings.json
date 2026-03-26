@@ -1,0 +1,261 @@
+[
+    "container",
+    [
+        {
+            "name": "seed",
+            "type": "u64"
+        },
+        {
+            "name": "spawnSettings",
+            "type": [
+                "reference",
+                "spawn_settings"
+            ]
+        },
+        {
+            "name": "generatorType",
+            "type": [
+                "mapper",
+                {
+                    "source": "generator_type",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "gameType",
+            "type": [
+                "mapper",
+                {
+                    "source": "game_type",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "gameDifficulty",
+            "type": [
+                "mapper",
+                {
+                    "source": "difficulty",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "defaultSpawnBlockPosition",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "achievementsDisabled",
+            "type": "bool"
+        },
+        {
+            "name": "editorWorldType",
+            "type": [
+                "mapper",
+                {
+                    "source": "editor_world_type",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "isCreatedInEditor",
+            "type": "bool"
+        },
+        {
+            "name": "isExportedFromEditor",
+            "type": "bool"
+        },
+        {
+            "name": "dayCycleStopTime",
+            "type": "varint"
+        },
+        {
+            "name": "educationEditionOffer",
+            "type": [
+                "mapper",
+                {
+                    "source": "education_edition_offer",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "areEducationFeaturesEnabled",
+            "type": "bool"
+        },
+        {
+            "name": "educationProductId",
+            "type": "string"
+        },
+        {
+            "name": "rainLevel",
+            "type": "f32"
+        },
+        {
+            "name": "lightningLevel",
+            "type": "f32"
+        },
+        {
+            "name": "hasConfirmedPlatformLockedContent",
+            "type": "bool"
+        },
+        {
+            "name": "wasMultiplayerIntendedToBeEnabled",
+            "type": "bool"
+        },
+        {
+            "name": "wasLANBroadcastingIntendedToBeEnabled",
+            "type": "bool"
+        },
+        {
+            "name": "xboxLiveBroadcastSetting",
+            "type": [
+                "mapper",
+                {
+                    "source": "social_game_publish_setting",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "platformBroadcastSetting",
+            "type": [
+                "mapper",
+                {
+                    "source": "social_game_publish_setting",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "commandsEnabled",
+            "type": "bool"
+        },
+        {
+            "name": "texturePacksRequired",
+            "type": "bool"
+        },
+        {
+            "name": "ruleData",
+            "type": [
+                "reference",
+                "game_rules_changed_packet_data"
+            ]
+        },
+        {
+            "name": "experiments",
+            "type": [
+                "reference",
+                "experiments"
+            ]
+        },
+        {
+            "name": "hasBonusChestEnabled",
+            "type": "bool"
+        },
+        {
+            "name": "startWithMapEnabled",
+            "type": "bool"
+        },
+        {
+            "name": "playerPermissions",
+            "type": [
+                "mapper",
+                {
+                    "source": "player_permission_level",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "serverChunkTickRange",
+            "type": "i32"
+        },
+        {
+            "name": "hasLockedBehaviorPack",
+            "type": "bool"
+        },
+        {
+            "name": "isFromLockedTemplate",
+            "type": "bool"
+        },
+        {
+            "name": "useMSAGamerTagsOnly",
+            "type": "bool"
+        },
+        {
+            "name": "indicatesIfThisWorldWasCreatedFromATemplate",
+            "type": "bool"
+        },
+        {
+            "name": "indicatesIfThisWorldIsATemplateWithLockedSettings",
+            "type": "bool"
+        },
+        {
+            "name": "onlySpawnV1Villagers",
+            "type": "bool"
+        },
+        {
+            "name": "personaDisabled",
+            "type": "bool"
+        },
+        {
+            "name": "customSkinsDisabled",
+            "type": "bool"
+        },
+        {
+            "name": "emoteChatMuted",
+            "type": "bool"
+        },
+        {
+            "name": "baseGameVersion",
+            "type": [
+                "reference",
+                "base_game_version"
+            ]
+        },
+        {
+            "name": "limitedWorldWidth",
+            "type": "i32"
+        },
+        {
+            "name": "limitedWorldDepth",
+            "type": "i32"
+        },
+        {
+            "name": "netherType",
+            "type": "bool"
+        },
+        {
+            "name": "eduSharedURIResource",
+            "type": [
+                "reference",
+                "edu_shared_uri_resource"
+            ]
+        },
+        {
+            "name": "overrideForceExperimentalGameplayHasValue",
+            "type": "bool"
+        },
+        {
+            "name": "chatRestrictionLevel",
+            "type": [
+                "mapper",
+                {
+                    "source": "chat_restriction_level",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "disablePlayerInteractions",
+            "type": "bool"
+        }
+    ]
+]
