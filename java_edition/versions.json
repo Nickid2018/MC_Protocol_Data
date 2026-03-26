@@ -1,5 +1,35 @@
 [
     {
+        "version": "26.1",
+        "protocol_version": 775,
+        "data_version": 4786
+    },
+    {
+        "version": "26.1-rc-3",
+        "protocol_version": 1073742127,
+        "data_version": 4785
+    },
+    {
+        "version": "26.1-rc-2",
+        "protocol_version": 1073742126,
+        "data_version": 4784
+    },
+    {
+        "version": "26.1-rc-1",
+        "protocol_version": 1073742125,
+        "data_version": 4783
+    },
+    {
+        "version": "26.1-pre-3",
+        "protocol_version": 1073742124,
+        "data_version": 4782
+    },
+    {
+        "version": "26.1-pre-2",
+        "protocol_version": 1073742123,
+        "data_version": 4781
+    },
+    {
         "version": "26.1-pre-1",
         "protocol_version": 1073742122,
         "data_version": 4780
