@@ -2,16 +2,16 @@
     "container",
     [
         {
-            "name": "x",
+            "name": "cause",
             "type": "zigzag32"
         },
         {
-            "name": "y",
+            "name": "damage",
             "type": "zigzag32"
         },
         {
-            "name": "z",
-            "type": "zigzag32"
+            "name": "armorSlots",
+            "type": "varlong"
         }
     ]
 ]

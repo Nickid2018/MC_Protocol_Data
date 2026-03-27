@@ -1,0 +1,34 @@
+[
+    "container",
+    [
+        {
+            "name": "targetActorId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "direction",
+            "type": "zigzag32"
+        },
+        {
+            "name": "motif",
+            "type": "string"
+        }
+    ]
+]

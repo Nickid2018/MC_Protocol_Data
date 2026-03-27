@@ -1,0 +1,67 @@
+[
+    "container",
+    [
+        {
+            "name": "rawId",
+            "type": [
+                "save",
+                "zigzag32",
+                "rawId"
+            ]
+        },
+        {
+            "name": "legacySetItemSlots",
+            "type": [
+                "switch",
+                {
+                    "compareTO": "rawId",
+                    "fields": {
+                        "0": "void"
+                    },
+                    "default": [
+                        "array",
+                        {
+                            "countType": "varint",
+                            "type": [
+                                "container",
+                                [
+                                    {
+                                        "name": "containerEnum",
+                                        "type": "i8"
+                                    },
+                                    {
+                                        "name": "slotVector",
+                                        "type": [
+                                            "array",
+                                            {
+                                                "countType": "varint",
+                                                "type": "i8"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "transcationType",
+            "type": [
+                "mapper",
+                {
+                    "source": "complex_transcation_type",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "mTranscation",
+            "type": [
+                "reference",
+                "inventory_transcation"
+            ]
+        }
+    ]
+]

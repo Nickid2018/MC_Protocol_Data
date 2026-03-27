@@ -1,0 +1,40 @@
+[
+    "container",
+    [
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "head",
+            "type": [
+                "reference",
+                "network_item_stack_descriptor"
+            ]
+        },
+        {
+            "name": "torso",
+            "type": [
+                "reference",
+                "network_item_stack_descriptor"
+            ]
+        },
+        {
+            "name": "legs",
+            "type": [
+                "reference",
+                "network_item_stack_descriptor"
+            ]
+        },
+        {
+            "name": "feet",
+            "type": [
+                "reference",
+                "network_item_stack_descriptor"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "blockPosition",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "eventType",
+            "type": "zigzag32"
+        },
+        {
+            "name": "eventValue",
+            "type": "zigzag32"
+        }
+    ]
+]

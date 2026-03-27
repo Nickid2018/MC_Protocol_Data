@@ -1,0 +1,40 @@
+[
+    "container",
+    [
+        {
+            "name": "playerRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "action",
+            "type": [
+                "mapper",
+                {
+                    "source": "player_action_type",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "blockPosition",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "resultPos",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "face",
+            "type": "zigzag32"
+        }
+    ]
+]

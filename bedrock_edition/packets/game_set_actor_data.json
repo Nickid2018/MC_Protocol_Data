@@ -1,0 +1,36 @@
+[
+    "container",
+    [
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "actorData",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "data_item"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "syncedProperties",
+            "type": [
+                "reference",
+                "property_sync_data"
+            ]
+        },
+        {
+            "name": "tick",
+            "type": "varlong"
+        }
+    ]
+]

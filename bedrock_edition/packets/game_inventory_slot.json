@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_id",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "slot",
+            "type": "varint"
+        },
+        {
+            "name": "item",
+            "type": [
+                "reference",
+                "network_item_stack_descriptor"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,40 @@
+[
+    "container",
+    [
+        {
+            "name": "action",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "animate_packet_action",
+                        "type": "zigzag32"
+                    }
+                ],
+                "action"
+            ]
+        },
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "rowingTime",
+            "type": [
+                "switch",
+                {
+                    "comapreTo": "action",
+                    "fields": {
+                        "RowRight": "f32",
+                        "RowLeft": "f32"
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

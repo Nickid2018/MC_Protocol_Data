@@ -1,0 +1,100 @@
+[
+    "container",
+    [
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "attributeList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "minValue",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "maxValue",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "currentValue",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "defaultValue",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "attributeName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "attributeModifier",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": [
+                                            "container",
+                                            [
+                                                {
+                                                    "name": "id",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "name",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "amount",
+                                                    "type": "f32"
+                                                },
+                                                {
+                                                    "name": "operation",
+                                                    "type": [
+                                                        "mapper",
+                                                        {
+                                                            "source": "attribute_modifier_operation",
+                                                            "type": "i32"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "operand",
+                                                    "type": [
+                                                        "mapper",
+                                                        {
+                                                            "source": "attribute_operands",
+                                                            "type": "i32"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "isSerializable",
+                                                    "type": "bool"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "countOfTicksSinceSimulationStarted",
+            "type": "varlong"
+        }
+    ]
+]

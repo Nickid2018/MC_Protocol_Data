@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "eventId",
+            "type": [
+                "mapper",
+                {
+                    "source": "actor_event",
+                    "type": "u8"
+                }
+            ]
+        },
+        {
+            "name": "data",
+            "type": "zigzag32"
+        }
+    ]
+]

@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "eventId",
+            "type": [
+                "mapper",
+                {
+                    "source": "level_event",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "data",
+            "type": "zigzag32"
+        }
+    ]
+]

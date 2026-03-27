@@ -1,0 +1,30 @@
+[
+    "container",
+    [
+        {
+            "name": "source",
+            "type": [
+                "reference",
+                "inventory_source"
+            ]
+        },
+        {
+            "name": "slot",
+            "type": "varint"
+        },
+        {
+            "name": "fromItemDescriptor",
+            "type": [
+                "reference",
+                "network_item_stack_descriptor"
+            ]
+        },
+        {
+            "name": "toItemDescriptor",
+            "type": [
+                "reference",
+                "network_item_stack_descriptor"
+            ]
+        }
+    ]
+]

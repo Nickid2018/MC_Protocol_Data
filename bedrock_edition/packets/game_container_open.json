@@ -1,0 +1,39 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_id",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "containerType",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "targetActorId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        }
+    ]
+]

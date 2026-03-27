@@ -1,0 +1,33 @@
+[
+    "container",
+    [
+        {
+            "name": "spawnPositionType",
+            "type": [
+                "mapper",
+                {
+                    "source": "spawn_position_type",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "blockPosition",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "dimensionType",
+            "type": "zigzag32"
+        },
+        {
+            "name": "spawnBlockPos",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        }
+    ]
+]

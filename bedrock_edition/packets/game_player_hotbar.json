@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "selectedSlot",
+            "type": "varint"
+        },
+        {
+            "name": "containerId",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_id",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "shouldSelectSlot",
+            "type": "bool"
+        }
+    ]
+]

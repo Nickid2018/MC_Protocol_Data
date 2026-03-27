@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "state",
+            "type": [
+                "mapper",
+                {
+                    "source": "player_respawn_state",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "playerRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        }
+    ]
+]

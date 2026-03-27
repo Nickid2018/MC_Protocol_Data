@@ -2,11 +2,13 @@
     "game": [
         {
             "key": "_skip",
-            "name": "_skip"
+            "name": "_skip",
+            "type": "void"
         },
         {
             "key": "_skip",
-            "name": "_skip"
+            "name": "_skip",
+            "type": "void"
         },
         {
             "key": "play_status",
@@ -81,6 +83,131 @@
         {
             "key": "move_player",
             "name": "Move Player"
+        },
+        {
+            "key": "passenger_jump",
+            "name": "Passenger Jump"
+        },
+        {
+            "key": "update_block",
+            "name": "Update Block"
+        },
+        {
+            "key": "add_painting",
+            "name": "Add Painting"
+        },
+        {
+            "key": "tick_sync",
+            "name": "Tick Sync"
+        },
+        {
+            "key": "level_sound_event_v1",
+            "name": "Level Sound Event (v1)"
+        },
+        {
+            "key": "level_event",
+            "name": "Level Event"
+        },
+        {
+            "key": "block_event",
+            "name": "Block Event"
+        },
+        {
+            "key": "actor_event",
+            "name": "Actor Event"
+        },
+        {
+            "key": "mob_effect",
+            "name": "Mob Effect"
+        },
+        {
+            "key": "update_attributes",
+            "name": "Update Attributes"
+        },
+        {
+            "key": "inventory_transcation",
+            "name": "Inventory Transcation"
+        },
+        {
+            "key": "mob_equipment",
+            "name": "Mob Equipment"
+        },
+        {
+            "key": "mob_armor_equipment",
+            "name": "Mob Armor Equipment"
+        },
+        {
+            "key": "interact",
+            "name": "Interact"
+        },
+        {
+            "key": "block_pick_request",
+            "name": "Block Pick Request"
+        },
+        {
+            "key": "actor_pick_request",
+            "name": "Actor Pick Request"
+        },
+        {
+            "key": "player_action",
+            "name": "Player Action"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "hurt_armor",
+            "name": "Hurt Armor"
+        },
+        {
+            "key": "set_actor_data",
+            "name": "Set Actor Data"
+        },
+        {
+            "key": "set_actor_motion",
+            "name": "Set Actor Motion"
+        },
+        {
+            "key": "set_actor_link",
+            "name": "Set Actor Link"
+        },
+        {
+            "key": "set_health",
+            "name": "Set Health"
+        },
+        {
+            "key": "set_spawn_position",
+            "name": "Set Spawn Position"
+        },
+        {
+            "key": "animate_actor",
+            "name": "Animate Actor"
+        },
+        {
+            "key": "respawn",
+            "name": "Respawn"
+        },
+        {
+            "key": "container_open",
+            "name": "Container Open"
+        },
+        {
+            "key": "container_close",
+            "name": "Container Close"
+        },
+        {
+            "key": "player_hotbar",
+            "name": "Player Hotbar"
+        },
+        {
+            "key": "inventory_content",
+            "name": "Inventory Content"
+        },
+        {
+            "key": "inventory_slot",
+            "name": "Inventory Slot"
         }
     ]
 }

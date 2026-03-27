@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "withData",
+            "type": "bool"
+        },
+        {
+            "name": "maxSlots",
+            "type": "i8"
+        }
+    ]
+]

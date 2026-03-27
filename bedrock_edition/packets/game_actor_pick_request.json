@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "actorId",
+            "type": "i64"
+        },
+        {
+            "name": "maxSlots",
+            "type": "i8"
+        },
+        {
+            "name": "withData",
+            "type": "bool"
+        }
+    ]
+]

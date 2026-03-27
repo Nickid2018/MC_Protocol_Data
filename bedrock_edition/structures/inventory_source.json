@@ -1,0 +1,45 @@
+[
+    "container",
+    [
+        {
+            "name": "sourceType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "inventory_source_type",
+                        "type": "varint"
+                    }
+                ],
+                "sourceType"
+            ]
+        },
+        {
+            "name": "containerId",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "sourceType",
+                    "fields": {
+                        "ContainerInventory": "zigzag32"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "bitFlags",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "sourceType",
+                    "fields": {
+                        "WorldInteraction": "varint"
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

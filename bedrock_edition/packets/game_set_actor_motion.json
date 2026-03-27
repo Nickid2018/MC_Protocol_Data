@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "motion",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "serverTick",
+            "type": "varlong"
+        }
+    ]
+]

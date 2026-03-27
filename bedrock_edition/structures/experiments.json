@@ -17,14 +17,6 @@
                             {
                                 "name": "enabled",
                                 "type": "bool"
-                            },
-                            {
-                                "name": "alwaysOnName",
-                                "type": "string"
-                            },
-                            {
-                                "name": "enabled",
-                                "type": "bool"
                             }
                         ]
                     ]

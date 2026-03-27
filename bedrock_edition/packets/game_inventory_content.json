@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "inventoryId",
+            "type": "varint"
+        },
+        {
+            "name": "slots",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "network_item_stack_descriptor"
+                    ]
+                }
+            ]
+        }
+    ]
+]

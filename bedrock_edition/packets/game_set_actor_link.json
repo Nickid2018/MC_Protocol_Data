@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "link",
+            "type": [
+                "reference",
+                "actor_link"
+            ]
+        }
+    ]
+]

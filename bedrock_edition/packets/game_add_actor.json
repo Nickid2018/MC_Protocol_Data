@@ -105,7 +105,7 @@
                 {
                     "countType": "varint",
                     "type": [
-                        "refernece",
+                        "reference",
                         "actor_link"
                     ]
                 }

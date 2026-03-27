@@ -1,0 +1,72 @@
+[
+    "container",
+    [
+        {
+            "name": "action",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "interact_packet_action",
+                        "type": "i8"
+                    }
+                ],
+                "action"
+            ]
+        },
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "InteractUpdate": [
+                            "container",
+                            [
+                                {
+                                    "name": "positionX",
+                                    "type": "f32"
+                                },
+                                {
+                                    "name": "positionY",
+                                    "type": "f32"
+                                },
+                                {
+                                    "name": "positionZ",
+                                    "type": "f32"
+                                }
+                            ]
+                        ],
+                        "StopRiding": [
+                            "container",
+                            [
+                                {
+                                    "name": "positionX",
+                                    "type": "f32"
+                                },
+                                {
+                                    "name": "positionY",
+                                    "type": "f32"
+                                },
+                                {
+                                    "name": "positionZ",
+                                    "type": "f32"
+                                }
+                            ]
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

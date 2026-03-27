@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_id",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "serverInitiatedClose",
+            "type": "bool"
+        }
+    ]
+]

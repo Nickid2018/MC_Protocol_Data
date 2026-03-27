@@ -1,0 +1,24 @@
+[
+    "container",
+    [
+        {
+            "name": "blockPosition",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "blockRuntimeId",
+            "type": "varint"
+        },
+        {
+            "name": "flags",
+            "type": "varint"
+        },
+        {
+            "name": "layer",
+            "type": "varint"
+        }
+    ]
+]

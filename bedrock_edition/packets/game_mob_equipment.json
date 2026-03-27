@@ -1,0 +1,37 @@
+[
+    "container",
+    [
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "item",
+            "type": [
+                "reference",
+                "network_item_stack_descriptor"
+            ]
+        },
+        {
+            "name": "slot",
+            "type": "i8"
+        },
+        {
+            "name": "selectedSlot",
+            "type": "i8"
+        },
+        {
+            "name": "containerId",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_id",
+                    "type": "i8"
+                }
+            ]
+        }
+    ]
+]

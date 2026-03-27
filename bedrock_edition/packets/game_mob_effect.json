@@ -1,0 +1,42 @@
+[
+    "container",
+    [
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "eventId",
+            "type": [
+                "mapper",
+                {
+                    "source": "mob_effect_packet_event",
+                    "type": "u8"
+                }
+            ]
+        },
+        {
+            "name": "effectId",
+            "type": "zigzag32"
+        },
+        {
+            "name": "effectAmplifier",
+            "type": "zigzag32"
+        },
+        {
+            "name": "showParticles",
+            "type": "bool"
+        },
+        {
+            "name": "effectDurationTicks",
+            "type": "zigzag32"
+        },
+        {
+            "name": "tick",
+            "type": "u64"
+        }
+    ]
+]

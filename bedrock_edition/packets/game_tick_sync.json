@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "clientRequestTimestamp",
+            "type": "i64"
+        },
+        {
+            "name": "serverReceptionResponseTimestamp",
+            "type": "i64"
+        }
+    ]
+]
