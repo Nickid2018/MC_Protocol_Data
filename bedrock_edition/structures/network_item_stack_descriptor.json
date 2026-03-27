@@ -5,7 +5,7 @@
             "name": "id",
             "type": [
                 "save",
-                "varint",
+                "zigzag32",
                 "id"
             ]
         },
@@ -55,7 +55,7 @@
                             },
                             {
                                 "name": "blockRuntimeId",
-                                "type": "varint"
+                                "type": "zigzag32"
                             },
                             {
                                 "name": "userDataBuffer",

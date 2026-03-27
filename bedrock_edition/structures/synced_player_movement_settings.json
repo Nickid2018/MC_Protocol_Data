@@ -13,7 +13,7 @@
         },
         {
             "name": "rewindHistorySize",
-            "type": "varint"
+            "type": "zigzag32"
         },
         {
             "name": "serverAuthoratativeBlockBreaking",

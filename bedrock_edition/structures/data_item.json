@@ -34,7 +34,7 @@
                     "fields": {
                         "Byte": "i8",
                         "Short": "i16",
-                        "Int": "varint",
+                        "Int": "zigzag32",
                         "Float": "f32",
                         "String": "string",
                         "CompoundTag": "bnbt",
@@ -42,7 +42,7 @@
                             "reference",
                             "block_pos"
                         ],
-                        "Int64": "varlong",
+                        "Int64": "zigzag64",
                         "Vec3": [
                             "reference",
                             "vec3"

@@ -131,6 +131,14 @@
                     "$comment": "Variable length long integer"
                 },
                 {
+                    "const": "zigzag32",
+                    "$comment": "Variable length integer / Zigzag"
+                },
+                {
+                    "const": "zigzag64",
+                    "$comment": "Variable length long integer / Zigzag"
+                },
+                {
                     "const": "void",
                     "$comment": "Skip this field"
                 },

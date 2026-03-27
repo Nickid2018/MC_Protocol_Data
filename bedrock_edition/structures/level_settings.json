@@ -18,7 +18,7 @@
                 "mapper",
                 {
                     "source": "generator_type",
-                    "type": "varint"
+                    "type": "zigzag32"
                 }
             ]
         },
@@ -28,7 +28,7 @@
                 "mapper",
                 {
                     "source": "game_type",
-                    "type": "varint"
+                    "type": "zigzag32"
                 }
             ]
         },
@@ -38,7 +38,7 @@
                 "mapper",
                 {
                     "source": "difficulty",
-                    "type": "varint"
+                    "type": "zigzag32"
                 }
             ]
         },
@@ -59,7 +59,7 @@
                 "mapper",
                 {
                     "source": "editor_world_type",
-                    "type": "varint"
+                    "type": "zigzag32"
                 }
             ]
         },
@@ -73,7 +73,7 @@
         },
         {
             "name": "dayCycleStopTime",
-            "type": "varint"
+            "type": "zigzag32"
         },
         {
             "name": "educationEditionOffer",
@@ -81,7 +81,7 @@
                 "mapper",
                 {
                     "source": "education_edition_offer",
-                    "type": "varint"
+                    "type": "zigzag32"
                 }
             ]
         },
@@ -119,7 +119,7 @@
                 "mapper",
                 {
                     "source": "social_game_publish_setting",
-                    "type": "varint"
+                    "type": "zigzag32"
                 }
             ]
         },
@@ -129,7 +129,7 @@
                 "mapper",
                 {
                     "source": "social_game_publish_setting",
-                    "type": "varint"
+                    "type": "zigzag32"
                 }
             ]
         },

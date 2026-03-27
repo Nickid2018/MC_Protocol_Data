@@ -35,7 +35,7 @@
                             "comaperTo": "ruleType",
                             "fields": {
                                 "Bool": "bool",
-                                "Int": "varint",
+                                "Int": "zigzag32",
                                 "Float": "f32"
                             },
                             "default": "void"

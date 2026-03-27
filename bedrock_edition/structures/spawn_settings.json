@@ -26,7 +26,7 @@
                         "2": "The End",
                         "-1": "Undefined"
                     },
-                    "type": "varint"
+                    "type": "zigzag32"
                 }
             ]
         }

@@ -3,7 +3,7 @@
     [
         {
             "name": "time",
-            "type": "varint"
+            "type": "zigzag32"
         }
     ]
 ]

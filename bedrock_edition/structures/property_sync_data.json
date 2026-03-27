@@ -16,7 +16,7 @@
                             },
                             {
                                 "name": "data",
-                                "type": "varint"
+                                "type": "zigzag32"
                             }
                         ]
                     ]

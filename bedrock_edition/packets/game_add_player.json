@@ -58,7 +58,7 @@
                 "mapper",
                 {
                     "source": "game_type",
-                    "type": "varint"
+                    "type": "zigzag32"
                 }
             ]
         },

@@ -7,7 +7,7 @@
                 "mapper",
                 {
                     "source": "connection_disconnect_fail_reason",
-                    "type": "varint"
+                    "type": "zigzag32"
                 }
             ]
         },

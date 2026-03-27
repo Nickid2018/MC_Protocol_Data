@@ -3,7 +3,7 @@
     [
         {
             "name": "x",
-            "type": "varint"
+            "type": "zigzag32"
         },
         {
             "name": "y",
@@ -11,7 +11,7 @@
         },
         {
             "name": "z",
-            "type": "varint"
+            "type": "zigzag32"
         }
     ]
 ]
