@@ -1,0 +1,56 @@
+[
+    "container",
+    [
+        {
+            "name": "recipeUniqueId",
+            "type": "string"
+        },
+        {
+            "name": "recipeWidth",
+            "type": "zigzag32"
+        },
+        {
+            "name": "recipeHeight",
+            "type": "zigzag32"
+        },
+        {
+            "name": "ingredientGrid",
+            "__comment": "FIXME: length",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "recipe_ingredient"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "productionList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "network_item_instance_descriptor"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "recipeId",
+            "type": "uuid"
+        },
+        {
+            "name": "recipeTag",
+            "type": "string"
+        },
+        {
+            "name": "priority",
+            "type": "zigzag32"
+        }
+    ]
+]

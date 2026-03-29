@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_id",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "type": "zigzag32"
+        },
+        {
+            "name": "value",
+            "type": "zigzag32"
+        }
+    ]
+]

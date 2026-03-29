@@ -1,0 +1,46 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": [
+                "save",
+                "zigzag32",
+                "id"
+            ]
+        },
+        {
+            "name": "itemData",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "id",
+                    "fields": {
+                        "0": "void"
+                    },
+                    "default": [
+                        "container",
+                        [
+                            {
+                                "name": "stackSize",
+                                "type": "u16"
+                            },
+                            {
+                                "name": "auxValue",
+                                "type": "varint"
+                            },
+                            {
+                                "name": "blockRuntimeId",
+                                "type": "zigzag32"
+                            },
+                            {
+                                "name": "userDataBuffer",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

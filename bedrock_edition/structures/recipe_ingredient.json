@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "internalType",
+            "type": [
+                "mapper",
+                {
+                    "source": "item_descriptor_internal_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "stackSize",
+            "type": "zigzag32"
+        }
+    ]
+]

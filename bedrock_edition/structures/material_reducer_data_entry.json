@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "fromItem",
+            "type": "zigzag32"
+        },
+        {
+            "name": "itemIdsAndCounts",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "itemId",
+                                "type": "zigzag32"
+                            },
+                            {
+                                "name": "itemCount",
+                                "type": "zigzag32"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

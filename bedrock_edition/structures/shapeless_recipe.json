@@ -1,0 +1,47 @@
+[
+    "container",
+    [
+        {
+            "name": "recipeUniqueId",
+            "type": "string"
+        },
+        {
+            "name": "ingredientList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "recipe_ingredient"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "productionList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "network_item_instance_descriptor"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "recipeId",
+            "type": "uuid"
+        },
+        {
+            "name": "recipeTag",
+            "type": "string"
+        },
+        {
+            "name": "priority",
+            "type": "zigzag32"
+        }
+    ]
+]

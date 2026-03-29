@@ -1,0 +1,229 @@
+[
+    "container",
+    [
+        {
+            "name": "craftingType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "crafting_data_entry_type",
+                        "type": "zigzag32"
+                    }
+                ],
+                "craftingType"
+            ]
+        },
+        {
+            "name": "shapelessRecipe",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "craftingType",
+                    "fields": {
+                        "ShapelessRecipe": [
+                            "reference",
+                            "shapeless_recipe"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "shapedRecipe",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "craftingType",
+                    "fields": {
+                        "ShapelessRecipe": [
+                            "reference",
+                            "shaped_recipe"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "furnaceRecipe",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "craftingType",
+                    "fields": {
+                        "FurnaceRecipe": [
+                            "container",
+                            [
+                                {
+                                    "name": "itemData",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "resultItem",
+                                    "type": [
+                                        "reference",
+                                        "network_item_instance_descriptor"
+                                    ]
+                                },
+                                {
+                                    "name": "recipeTag",
+                                    "type": "string"
+                                }
+                            ]
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "furnaceAuxRecipe",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "craftingType",
+                    "fields": {
+                        "FurnaceAuxRecipe": [
+                            "container",
+                            [
+                                {
+                                    "name": "itemData",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "auxiliaryItemData",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "resultItem",
+                                    "type": [
+                                        "reference",
+                                        "network_item_instance_descriptor"
+                                    ]
+                                },
+                                {
+                                    "name": "recipeTag",
+                                    "type": "string"
+                                }
+                            ]
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "multiRecipe",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "craftingType",
+                    "fields": {
+                        "MultiRecipe": "uuid"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "shulkerBoxRecipe",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "craftingType",
+                    "fields": {
+                        "ShulkerBoxRecipe": [
+                            "reference",
+                            "shulker_box_recipe"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "shapelessChemistryRecipe",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "craftingType",
+                    "fields": {
+                        "ShapelessChemistryRecipe": [
+                            "reference",
+                            "shapeless_chemistry_recipe"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "shapedChemistryRecipe",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "craftingType",
+                    "fields": {
+                        "ShapedChemistryRecipe": [
+                            "reference",
+                            "shaped_chemistry_recipe"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "smithingTransformRecipe",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "craftingType",
+                    "fields": {
+                        "SmithingTransformRecipe": [
+                            "reference",
+                            "smithing_transform_recipe"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "smithingTrimRecipe",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "craftingType",
+                    "fields": {
+                        "SmithingTrimRecipe": [
+                            "reference",
+                            "smithing_trim_recipe"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "netId",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "craftingType",
+                    "fields": {
+                        "FurnaceRecipe": "void",
+                        "FurnaceAuxRecipe": "void"
+                    },
+                    "default": [
+                        "reference",
+                        "typed_server_net_id"
+                    ]
+                }
+            ]
+        }
+    ]
+]

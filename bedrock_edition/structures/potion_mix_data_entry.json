@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "inputPotionId",
+            "type": "zigzag32"
+        },
+        {
+            "name": "fromItemAux",
+            "type": "zigzag32"
+        },
+        {
+            "name": "reagentItemId",
+            "type": "zigzag32"
+        },
+        {
+            "name": "reagentItemAux",
+            "type": "zigzag32"
+        },
+        {
+            "name": "toPotionId",
+            "type": "zigzag32"
+        },
+        {
+            "name": "toItemAux",
+            "type": "zigzag32"
+        }
+    ]
+]

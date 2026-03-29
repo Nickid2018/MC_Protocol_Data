@@ -1,0 +1,34 @@
+[
+    "container",
+    [
+        {
+            "name": "recipeId",
+            "type": "string"
+        },
+        {
+            "name": "templateIngredient",
+            "type": [
+                "reference",
+                "recipe_ingredient"
+            ]
+        },
+        {
+            "name": "baseIngredient",
+            "type": [
+                "reference",
+                "recipe_ingredient"
+            ]
+        },
+        {
+            "name": "additionIngredient",
+            "type": [
+                "reference",
+                "recipe_ingredient"
+            ]
+        },
+        {
+            "name": "tag",
+            "type": "string"
+        }
+    ]
+]

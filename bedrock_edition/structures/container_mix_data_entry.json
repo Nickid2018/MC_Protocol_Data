@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "inputItemId",
+            "type": "zigzag32"
+        },
+        {
+            "name": "reagentItemId",
+            "type": "zigzag32"
+        },
+        {
+            "name": "toItemId",
+            "type": "zigzag32"
+        }
+    ]
+]

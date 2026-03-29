@@ -1,0 +1,61 @@
+[
+    "container",
+    [
+        {
+            "name": "craftingEntries",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "crafting_data_entry"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "potionMixes",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "potion_mix_data_entry"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "containerMixes",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "container_mix_data_entry"
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"materialReducers",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "material_reducer_data_entry"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "clearRecipes",
+            "type": "bool"
+        }
+    ]
+]

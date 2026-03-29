@@ -208,6 +208,14 @@
         {
             "key": "inventory_slot",
             "name": "Inventory Slot"
+        },
+        {
+            "key": "container_set_data",
+            "name": "Container Set Data"
+        },
+        {
+            "key": "crafting_data",
+            "name": "Crafting Data"
         }
     ]
 }
