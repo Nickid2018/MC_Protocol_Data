@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "blockPosition",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "actorDataTags",
+            "type": "bnbt"
+        }
+    ]
+]

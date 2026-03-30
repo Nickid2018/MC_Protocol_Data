@@ -84,14 +84,17 @@
                 {
                     "countType": "varint",
                     "type": [
-                        {
-                            "name": "blockName",
-                            "type": "string"
-                        },
-                        {
-                            "name": "blockDefinition",
-                            "type": "bnbt"
-                        }
+                        "container",
+                        [
+                            {
+                                "name": "blockName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "blockDefinition",
+                                "type": "bnbt"
+                            }
+                        ]
                     ]
                 }
             ]

@@ -216,6 +216,32 @@
         {
             "key": "crafting_data",
             "name": "Crafting Data"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "gui_data_pick_item",
+            "name": "GUI Data Pick Item"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "block_actor_data",
+            "name": "Block Actor Data"
+        },
+        {
+            "key": "player_input",
+            "name": "Player Input"
+        },
+        {
+            "key": "level_chunk",
+            "name": "Level Chunk"
         }
     ]
 }

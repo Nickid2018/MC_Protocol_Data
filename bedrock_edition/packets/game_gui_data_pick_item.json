@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "itemName",
+            "type": "string"
+        },
+        {
+            "name": "itemEffectName",
+            "type": "string"
+        },
+        {
+            "name": "slot",
+            "type": "i32"
+        }
+    ]
+]

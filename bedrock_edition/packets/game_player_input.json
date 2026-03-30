@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "moveVector",
+            "type": [
+                "reference",
+                "vec2"
+            ]
+        },
+        {
+            "name": "jumping",
+            "type": "bool"
+        },
+        {
+            "name": "sneaking",
+            "type": "bool"
+        }
+    ]
+]

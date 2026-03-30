@@ -1,0 +1,69 @@
+[
+    "container",
+    [
+        {
+            "name": "chunkPosition",
+            "type": [
+                "reference",
+                "chunk_pos"
+            ]
+        },
+        {
+            "name": "dimensionId",
+            "type": "zigzag32"
+        },
+        {
+            "name": "subChunksCount",
+            "type": [
+                "save",
+                "varint",
+                "subChunksCount"
+            ]
+        },
+        {
+            "name": "clientRequestSubChunkLimit",
+            "__comment": "FIXME: compare number < 0",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "subChunksCount",
+                    "fields": {
+                        "0": "void"
+                    },
+                    "default": "u16"
+                }
+            ]
+        },
+        {
+            "name": "cachedEnabled",
+            "type": [
+                "save",
+                "bool",
+                "cachedEnabled"
+            ]
+        },
+        {
+            "name": "cacheBlobs",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "cachedEnabled",
+                    "fields": {
+                        "true": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "u64"
+                            }
+                        ],
+                        "false": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "serializedChunkData",
+            "type": "string"
+        }
+    ]
+]

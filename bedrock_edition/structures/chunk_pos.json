@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "zigzag32"
+        },
+        {
+            "name": "z",
+            "type": "zigzag32"
+        }
+    ]
+]
