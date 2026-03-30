@@ -7,19 +7,26 @@
         },
         {
             "name": "recipeWidth",
-            "type": "zigzag32"
+            "type": [
+                "save",
+                "zigzag32",
+                "width"
+            ]
         },
         {
             "name": "recipeHeight",
-            "type": "zigzag32"
+            "type": [
+                "save",
+                "zigzag32",
+                "height"
+            ]
         },
         {
             "name": "ingredientGrid",
-            "__comment": "FIXME: length",
             "type": [
                 "array",
                 {
-                    "countType": "varint",
+                    "count": "width height *",
                     "type": [
                         "reference",
                         "recipe_ingredient"

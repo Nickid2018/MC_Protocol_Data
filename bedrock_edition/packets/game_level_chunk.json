@@ -22,13 +22,12 @@
         },
         {
             "name": "clientRequestSubChunkLimit",
-            "__comment": "FIXME: compare number < 0",
             "type": [
                 "switch",
                 {
                     "compareTo": "subChunksCount",
-                    "fields": {
-                        "0": "void"
+                    "ranges": {
+                        "~0": "void"
                     },
                     "default": "u16"
                 }

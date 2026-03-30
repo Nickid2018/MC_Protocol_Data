@@ -38,7 +38,7 @@
                 {
                     "compareTo": "craftingType",
                     "fields": {
-                        "ShapelessRecipe": [
+                        "ShapedRecipe": [
                             "reference",
                             "shaped_recipe"
                         ]
