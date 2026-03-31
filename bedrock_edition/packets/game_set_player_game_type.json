@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "playerGameType",
+            "type": [
+                "mapper",
+                {
+                    "source": "game_type",
+                    "type": "zigzag32"
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "commandsEnabled",
+            "type": "bool"
+        }
+    ]
+]

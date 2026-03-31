@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "difficulty",
+            "type": [
+                "mapper",
+                {
+                    "source": "difficulty",
+                    "type": "varint"
+                }
+            ]
+        }
+    ]
+]

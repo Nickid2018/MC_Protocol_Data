@@ -1,0 +1,197 @@
+[
+    "container",
+    [
+        {
+            "name": "skinId",
+            "type": "string"
+        },
+        {
+            "name": "playFabId",
+            "type": "string"
+        },
+        {
+            "name": "skinResourcePatch",
+            "type": "string"
+        },
+        {
+            "name": "skinImageWidth",
+            "type": "u32"
+        },
+        {
+            "name": "skinImageHeight",
+            "type": "u32"
+        },
+        {
+            "name": "skinImageImageBytes",
+            "type": "string"
+        },
+        {
+            "name": "animations",
+            "type": [
+                "array",
+                {
+                    "countType": "u32",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "imageWidth",
+                                "type": "u32"
+                            },
+                            {
+                                "name": "imgeHeight",
+                                "type": "u32"
+                            },
+                            {
+                                "name": "imageBytes",
+                                "type": "string"
+                            },
+                            {
+                                "name": "animationType",
+                                "type": [
+                                    "mapper",
+                                    {
+                                        "source": "persona_animated_texture_type",
+                                        "type": "u32"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "frameCount",
+                                "type": "f32"
+                            },
+                            {
+                                "name": "animationExpression",
+                                "type": [
+                                    "mapper",
+                                    {
+                                        "source": "persona_animated_expression",
+                                        "type": "u32"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "capeImageWidth",
+            "type": "u32"
+        },
+        {
+            "name": "capeImageHeight",
+            "type": "u32"
+        },
+        {
+            "name": "capeImageImageBytes",
+            "type": "string"
+        },
+        {
+            "name": "geometryData",
+            "type": "string"
+        },
+        {
+            "name": "geometryDataEngineVersion",
+            "type": "string"
+        },
+        {
+            "name": "animationData",
+            "type": "string"
+        },
+        {
+            "name": "capeId",
+            "type": "string"
+        },
+        {
+            "name": "fullId",
+            "type": "string"
+        },
+        {
+            "name": "armSize",
+            "type": "string"
+        },
+        {
+            "name": "skinColor",
+            "type": "string"
+        },
+        {
+            "name": "personaPieces",
+            "type": [
+                "array",
+                {
+                    "countType": "u32",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "pieceId",
+                                "type": "string"
+                            },
+                            {
+                                "name": "pieceType",
+                                "type": "string"
+                            },
+                            {
+                                "name": "packId",
+                                "type": "string"
+                            },
+                            {
+                                "name": "isDefaultPiece",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "productId",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "pieceTintColors",
+            "type": [
+                "array",
+                {
+                    "countType": "u32",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "pieceType",
+                                "type": "string"
+                            },
+                            {
+                                "name": "pieceTintColors",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "u32",
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "isPersonaSkin",
+            "type": "bool"
+        },
+        {
+            "name": "isPersonaCapeOnClassicSkin",
+            "type": "bool"
+        },
+        {
+            "name": "isPrimaryUser",
+            "type": "bool"
+        },
+        {
+            "name": "mOverridesPlayerAppearance",
+            "type": "bool"
+        }
+    ]
+]

@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "dimensionId",
+            "type": [
+                "mapper",
+                {
+                    "mappings": {
+                        "0": "Overworld",
+                        "1": "Nether",
+                        "2": "The End",
+                        "-1": "Undefined"
+                    },
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "respawn",
+            "type": "bool"
+        }
+    ]
+]

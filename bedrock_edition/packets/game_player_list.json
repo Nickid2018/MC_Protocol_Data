@@ -1,0 +1,126 @@
+[
+    "container",
+    [
+        {
+            "name": "action",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "player_list_packet_type",
+                        "type": "i8"
+                    }
+                ],
+                "action"
+            ]
+        },
+        {
+            "name": "addPlayerList",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "Add": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "uuid",
+                                            "type": "uuid"
+                                        },
+                                        {
+                                            "name": "targetActorId",
+                                            "type": [
+                                                "reference",
+                                                "actor_unique_id"
+                                            ]
+                                        },
+                                        {
+                                            "name": "playerName",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "xboxLiveXUID",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "platformChatId",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "buildPlatform",
+                                            "type": [
+                                                "mapper",
+                                                {
+                                                    "source": "build_platform",
+                                                    "type": "i32"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "serializedSkin",
+                                            "type": [
+                                                "reference",
+                                                "serialized_skin"
+                                            ]
+                                        },
+                                        {
+                                            "name": "isTeacher",
+                                            "type": "bool"
+                                        },
+                                        {
+                                            "name": "isHost",
+                                            "type": "bool"
+                                        },
+                                        {
+                                            "name": "isSubClient",
+                                            "type": "bool"
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "isTrustedSkin",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "Add": "bool"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "removePlayerList",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "Remove": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": "uuid"
+                            }
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

@@ -242,6 +242,26 @@
         {
             "key": "level_chunk",
             "name": "Level Chunk"
+        },
+        {
+            "key": "set_commands_enabled",
+            "name": "Set Commands Enabled"
+        },
+        {
+            "key": "set_difficulty",
+            "name": "Set Difficulty"
+        },
+        {
+            "key": "change_dimension",
+            "name": "Change Dimension"
+        },
+        {
+            "key": "set_player_game_type",
+            "name": "Set Player Game Type"
+        },
+        {
+            "key": "player_list",
+            "name": "Player List"
         }
     ]
 }
