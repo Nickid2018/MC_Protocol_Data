@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "xpValue",
+            "type": "zigzag32"
+        }
+    ]
+]

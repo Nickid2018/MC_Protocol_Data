@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "playerRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "creditsState",
+            "type": [
+                "mapper",
+                {
+                    "source": "show_credits_packet_credits_state",
+                    "type": "zigzag32"
+                }
+            ]
+        }
+    ]
+]

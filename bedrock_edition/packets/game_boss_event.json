@@ -1,0 +1,107 @@
+[
+    "container",
+    [
+        {
+            "name": "targetActorId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "eventType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "boss_event_update_type",
+                        "type": "i32"
+                    }
+                ],
+                "eventType"
+            ]
+        },
+        {
+            "name": "eventData",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "eventType",
+                    "fields": {
+                        "Add": [
+                            "container",
+                            [
+                                {
+                                    "name": "name",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "heartPercent",
+                                    "type": "f32"
+                                },
+                                {
+                                    "name": "darkenScreen",
+                                    "type": "u16"
+                                },
+                                {
+                                    "name": "color",
+                                    "type": "varint"
+                                },
+                                {
+                                    "name": "overlay",
+                                    "type": "varint"
+                                }
+                            ]
+                        ],
+                        "PlayerAdded": [
+                            "reference",
+                            "actor_unique_id"
+                        ],
+                        "PlayerRemoved": [
+                            "reference",
+                            "actor_unique_id"
+                        ],
+                        "Update_Percent": "f32",
+                        "Update_Name": "string",
+                        "Update_Properties": [
+                            "container",
+                            [
+                                {
+                                    "name": "darkenScreen",
+                                    "type": "u16"
+                                },
+                                {
+                                    "name": "color",
+                                    "type": "varint"
+                                },
+                                {
+                                    "name": "overlay",
+                                    "type": "varint"
+                                }
+                            ]
+                        ],
+                        "Update_Style": [
+                            "container",
+                            [
+                                {
+                                    "name": "color",
+                                    "type": "varint"
+                                },
+                                {
+                                    "name": "overlay",
+                                    "type": "varint"
+                                }
+                            ]
+                        ],
+                        "Query": [
+                            "reference",
+                            "actor_unique_id"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

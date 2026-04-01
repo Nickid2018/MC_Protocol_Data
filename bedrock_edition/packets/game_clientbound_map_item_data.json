@@ -1,0 +1,197 @@
+[
+    "container",
+    [
+        {
+            "name": "mapId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "typeFlags",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 5,
+                        "signed": false
+                    },
+                    {
+                        "name": "creation",
+                        "saveName": "creation",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "decorationUpdate",
+                        "saveName": "decorationUpdate",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "textureUpdate",
+                        "saveName": "textureUpdate",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "dimension",
+            "type": "i8"
+        },
+        {
+            "name": "isLockedMap",
+            "type": "bool"
+        },
+        {
+            "name": "mapOrigin",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "mapIdList",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "creation",
+                    "fields": {
+                        "1": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": [
+                                    "reference",
+                                    "actor_unique_id"
+                                ]
+                            }
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "scale",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "creation",
+                    "fields": {
+                        "1": "i8"
+                    },
+                    "default": [
+                        "switch",
+                        {
+                            "compareTo": "decorationUpdate",
+                            "fields": {
+                                "1": "i8"
+                            },
+                            "default": [
+                                "switch",
+                                {
+                                    "compareTo": "textureUpdate",
+                                    "fields": {
+                                        "1": "i8"
+                                    },
+                                    "default": "void"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "decorations",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "decorationUpdate",
+                    "fields": {
+                        "1": [
+                            "container",
+                            [
+                                {
+                                    "name": "actorIds",
+                                    "type": [
+                                        "array",
+                                        {
+                                            "countType": "varint",
+                                            "type": [
+                                                "reference",
+                                                "map_item_tracked_actor_unique_id"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "decorationList",
+                                    "type": [
+                                        "array",
+                                        {
+                                            "countType": "varint",
+                                            "type": [
+                                                "reference",
+                                                "map_decoration"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "decorations",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "decorationUpdate",
+                    "fields": {
+                        "1": [
+                            "container",
+                            [
+                                {
+                                    "name": "textureWidth",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "textureHeight",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "xTexCoordinate",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "yTexCoordinate",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "pixels",
+                                    "type": [
+                                        "array",
+                                        {
+                                            "countType": "varint",
+                                            "type": "varint"
+                                        }
+                                    ]
+                                }
+                            ]
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "rulesData",
+            "type": [
+                "reference",
+                "game_rules_changed_packet_data"
+            ]
+        }
+    ]
+]

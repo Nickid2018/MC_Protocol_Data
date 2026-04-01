@@ -1,0 +1,34 @@
+[
+    "container",
+    [
+        {
+            "name": "mapUniqueId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "clientPixelList",
+            "type": [
+                "array",
+                {
+                    "countType": "u32",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "pixel",
+                                "type": "u32"
+                            },
+                            {
+                                "name": "index",
+                                "type": "u16"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,35 @@
+[
+    "container",
+    [
+        {
+            "name": "mapDecorationType",
+            "type": [
+                "mapper",
+                {
+                    "source": "map_decoration_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "rotation",
+            "type": "i8"
+        },
+        {
+            "name": "x",
+            "type": "i8"
+        },
+        {
+            "name": "y",
+            "type": "i8"
+        },
+        {
+            "name": "label",
+            "type": "string"
+        },
+        {
+            "name": "colorARGB",
+            "type": "varint"
+        }
+    ]
+]

@@ -1,0 +1,51 @@
+[
+    "container",
+    [
+        {
+            "name": "type",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "map_item_tracked_actor_type",
+                        "type": "i32"
+                    }
+                ],
+                "type"
+            ]
+        },
+        {
+            "name": "uniqueId",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "type",
+                    "fields": {
+                        "Entity": [
+                            "reference",
+                            "actor_unique_id"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "blockPosition",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "type",
+                    "fields": {
+                        "BlockEntity": [
+                            "reference",
+                            "network_block_position"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

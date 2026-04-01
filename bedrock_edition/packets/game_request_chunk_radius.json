@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "chunkRadius",
+            "type": "zigzag32"
+        },
+        {
+            "name": "maxChunkRadius",
+            "type": "i8"
+        }
+    ]
+]

@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "type",
+            "type": [
+                "mapper",
+                {
+                    "source": "simple_event_packet_sub_type",
+                    "type": "u16"
+                }
+            ]
+        }
+    ]
+]

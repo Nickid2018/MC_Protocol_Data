@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "cameraId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "targetPlayerId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        }
+    ]
+]
