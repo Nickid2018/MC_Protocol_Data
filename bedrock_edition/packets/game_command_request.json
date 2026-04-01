@@ -1,0 +1,24 @@
+[
+    "container",
+    [
+        {
+            "name": "command",
+            "type": "string"
+        },
+        {
+            "name": "commandOrigin",
+            "type": [
+                "reference",
+                "command_origin_data"
+            ]
+        },
+        {
+            "name": "isInternalSource",
+            "type": "bool"
+        },
+        {
+            "name": "version",
+            "type": "zigzag32"
+        }
+    ]
+]

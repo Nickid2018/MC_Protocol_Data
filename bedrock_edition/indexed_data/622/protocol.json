@@ -262,6 +262,71 @@
         {
             "key": "player_list",
             "name": "Player List"
+        },
+        {
+            "key": "simple_event",
+            "name": "Simple Event"
+        },
+        {
+            "key": "legacy_telemetry_event",
+            "name": "Legacy Telemetry Event"
+        },
+        {
+            "key": "spawn_experience_orb",
+            "name": "Spawn Experience Orb"
+        },
+        {
+            "key": "clientbound_map_item_data",
+            "name": "Clientbound Map Item Data"
+        },
+        {
+            "key": "map_info_request",
+            "name": "Map Info Request"
+        },
+        {
+            "key": "request_chunk_radius",
+            "name": "Request Chunk Radius"
+        },
+        {
+            "key": "chunk_radius_updated",
+            "name": "Chunk Radius Updated"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "game_rules_changed",
+            "name": "Game Rules Changed"
+        },
+        {
+            "key": "camera",
+            "name": "Camera"
+        },
+        {
+            "key": "boss_event",
+            "name": "Boss Event"
+        },
+        {
+            "key": "show_credits",
+            "name": "Show Credits"
+        },
+        {
+            "key": "available_commands",
+            "name": "Available Commands"
+        },
+        {
+            "key": "command_request",
+            "name": "Command Request"
+        },
+        {
+            "key": "command_block_update",
+            "name": "Command Block Update"
+        },
+        {
+            "key": "command_output",
+            "name": "Command Output"
         }
     ]
 }

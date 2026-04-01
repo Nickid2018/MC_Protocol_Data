@@ -1,0 +1,95 @@
+[
+    "container",
+    [
+        {
+            "name": "isBlock",
+            "type": [
+                "save",
+                "bool",
+                "isBlock"
+            ]
+        },
+        {
+            "name": "targetRuntimeId",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "isBlock",
+                    "fields": {
+                        "true": "void",
+                        "false": [
+                            "reference",
+                            "actor_runtime_id"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "blockData",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "isBlock",
+                    "fields": {
+                        "true": [
+                            "container",
+                            [
+                                {
+                                    "name": "blockPosition",
+                                    "type": [
+                                        "reference",
+                                        "network_block_position"
+                                    ]
+                                },
+                                {
+                                    "name": "commandBlockMode",
+                                    "type": [
+                                        "mapper",
+                                        {
+                                            "source": "command_block_mode",
+                                            "type": "varint"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "redstoneMode",
+                                    "type": "bool"
+                                },
+                                {
+                                    "name": "isConditional",
+                                    "type": "bool"
+                                }
+                            ]
+                        ],
+                        "false": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "command",
+            "type": "string"
+        },
+        {
+            "name": "lastOutput",
+            "type": "string"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "trackOutput",
+            "type": "bool"
+        },
+        {
+            "name": "tickDelay",
+            "type": "u32"
+        },
+        {
+            "name": "shouldExecuteOnFirstTick",
+            "type": "bool"
+        }
+    ]
+]

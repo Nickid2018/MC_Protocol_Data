@@ -1,0 +1,75 @@
+[
+    "container",
+    [
+        {
+            "name": "originData",
+            "type": [
+                "reference",
+                "command_origin_data"
+            ]
+        },
+        {
+            "name": "outputType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "command_output_type",
+                        "type": "i8"
+                    }
+                ],
+                "outputType"
+            ]
+        },
+        {
+            "name": "successCount",
+            "type": "varint"
+        },
+        {
+            "name": "outputMessages",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "successful",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "messageId",
+                                "type": "string"
+                            },
+                            {
+                                "name": "parameters",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "dataSet",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "outputType",
+                    "fields": {
+                        "DataSet": "string"
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,41 @@
+[
+    "container",
+    [
+        {
+            "name": "commandType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "command_origin_type",
+                        "type": "varint"
+                    }
+                ],
+                "commandType"
+            ]
+        },
+        {
+            "name": "commandUUID",
+            "type": "uuid"
+        },
+        {
+            "name": "requestId",
+            "type": "string"
+        },
+        {
+            "name": "playerId",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "commandType",
+                    "fields": {
+                        "DevConsole": "zigzag64",
+                        "Test": "zigzag64"
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

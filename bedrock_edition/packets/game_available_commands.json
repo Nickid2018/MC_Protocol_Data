@@ -1,0 +1,279 @@
+[
+    "container",
+    [
+        {
+            "name": "enumValuesLen",
+            "type": [
+                "save",
+                "varint",
+                "enumValuesLen"
+            ]
+        },
+        {
+            "name": "enumValues",
+            "type": [
+                "array",
+                {
+                    "count": "enumValuesLen",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "chainedSubcommandValues",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "postFixes",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "enumData",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "name": "values",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": [
+                                            "switch",
+                                            {
+                                                "compareTo": "enumValuesLen",
+                                                "ranges": {
+                                                    "0~256": "u8",
+                                                    "256~65537": "u16"
+                                                },
+                                                "default": "u32"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "chainedSubcommandData",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "subCommandName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "subCommandValues",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": [
+                                            "container",
+                                            [
+                                                {
+                                                    "name": "subCommandFirstValue",
+                                                    "type": "u16"
+                                                },
+                                                {
+                                                    "name": "subCommandSecondValue",
+                                                    "type": "u16"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "commands",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "name",
+                                "type": "string"
+                            },
+                            {
+                                "name": "description",
+                                "type": "string"
+                            },
+                            {
+                                "name": "flags",
+                                "type": "u16"
+                            },
+                            {
+                                "name": "permissionLevel",
+                                "type": [
+                                    "mapper",
+                                    {
+                                        "source": "command_permission_level",
+                                        "type": "i8"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "aliasEnum",
+                                "type": "i32"
+                            },
+                            {
+                                "name": "commandDataChainedSubcommandIndexes",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": "u16"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "overloads",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": [
+                                            "container",
+                                            [
+                                                {
+                                                    "name": "isChaining",
+                                                    "type": "bool"
+                                                },
+                                                {
+                                                    "name": "parameterData",
+                                                    "type": [
+                                                        "array",
+                                                        {
+                                                            "countType": "varint",
+                                                            "type": [
+                                                                "container",
+                                                                [
+                                                                    {
+                                                                        "name": "name",
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "name": "parseSymbol",
+                                                                        "type": "u32"
+                                                                    },
+                                                                    {
+                                                                        "name": "isOptional",
+                                                                        "type": "bool"
+                                                                    },
+                                                                    {
+                                                                        "name": "options",
+                                                                        "type": "i8"
+                                                                    }
+                                                                ]
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "softEnums",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "enumName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "enumOptions",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "constraints",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "enumValueSymbol",
+                                "type": "u32"
+                            },
+                            {
+                                "name": "enumSymbol",
+                                "type": "u32"
+                            },
+                            {
+                                "name": "constraintIndices",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": "i8"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]
