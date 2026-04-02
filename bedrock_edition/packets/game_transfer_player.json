@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "serverAddress",
+            "type": "string"
+        },
+        {
+            "name": "serverPort",
+            "type": "u16"
+        }
+    ]
+]

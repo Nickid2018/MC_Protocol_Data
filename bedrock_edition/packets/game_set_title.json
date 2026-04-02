@@ -1,0 +1,39 @@
+[
+    "container",
+    [
+        {
+            "name": "titleType",
+            "type": [
+                "mapper",
+                {
+                    "source": "set_title_packet_title_type",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "titleText",
+            "type": "string"
+        },
+        {
+            "name": "fadeInTime",
+            "type": "zigzag32"
+        },
+        {
+            "name": "stayTime",
+            "type": "zigzag32"
+        },
+        {
+            "name": "fadeOutTime",
+            "type": "zigzag32"
+        },
+        {
+            "name": "xuid",
+            "type": "string"
+        },
+        {
+            "name": "platformOnlineId",
+            "type": "string"
+        }
+    ]
+]

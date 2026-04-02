@@ -1,0 +1,103 @@
+[
+    "container",
+    [
+        {
+            "name": "action",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "book_edit_action",
+                        "type": "i8"
+                    }
+                ],
+                "action"
+            ]
+        },
+        {
+            "name": "pageIndex",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "ReplacePage": "i8",
+                        "AddPage": "i8",
+                        "DeletePage": "i8"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "textA",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "ReplacePage": "string",
+                        "AddPage": "string",
+                        "Finalize": "string"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "textB",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "ReplacePage": "string",
+                        "AddPage": "string",
+                        "Finalize": "string"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "pageIndexA",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "SwapPages": "i8"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "pageIndexB",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "SwapPages": "i8"
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "xuid",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "action",
+                    "fields": {
+                        "Finalize": "string"
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

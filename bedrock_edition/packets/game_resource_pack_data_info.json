@@ -1,0 +1,39 @@
+[
+    "container",
+    [
+        {
+            "name": "resourceName",
+            "type": "string"
+        },
+        {
+            "name": "chunkSize",
+            "type": "u32"
+        },
+        {
+            "name": "numberOfChunks",
+            "type": "u32"
+        },
+        {
+            "name": "fileSize",
+            "type": "u54"
+        },
+        {
+            "name": "fileHash",
+            "type": "string"
+        },
+        {
+            "name": "isPremiumPack",
+            "type": "bool"
+        },
+        {
+            "name": "packType",
+            "type": [
+                "mapper",
+                {
+                    "source": "pack_type",
+                    "type": "i8"
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "productId",
+            "type": "string"
+        },
+        {
+            "name": "redirectType",
+            "type": [
+                "mapper",
+                {
+                    "source": "show_store_offer_redirect_type",
+                    "type": "i8"
+                }
+            ]
+        }
+    ]
+]

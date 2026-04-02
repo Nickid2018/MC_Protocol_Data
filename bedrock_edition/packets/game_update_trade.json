@@ -1,0 +1,63 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_id",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "containerType",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "size",
+            "type": "zigzag32"
+        },
+        {
+            "name": "tradeTier",
+            "type": "zigzag32"
+        },
+        {
+            "name": "targetActorId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "lastTradingPlayerId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "displayName",
+            "type": "string"
+        },
+        {
+            "name": "useNewTradeUI",
+            "type": "bool"
+        },
+        {
+            "name": "usingEconomyTrade",
+            "type": "bool"
+        },
+        {
+            "name": "dataTags",
+            "type": "bnbt"
+        }
+    ]
+]

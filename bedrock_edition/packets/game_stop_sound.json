@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "soundName",
+            "type": "string"
+        },
+        {
+            "name": "stopAllSounds",
+            "type": "bool"
+        }
+    ]
+]

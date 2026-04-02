@@ -1,0 +1,40 @@
+[
+    "container",
+    [
+        {
+            "name": "containerId",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_id",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "containerType",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "size",
+            "type": "zigzag32"
+        },
+        {
+            "name": "targetActorId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "dataTags",
+            "type": "bnbt"
+        }
+    ]
+]

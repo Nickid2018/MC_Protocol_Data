@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "formId",
+            "type": "varint"
+        },
+        {
+            "name": "jsonResponse",
+            "type": [
+                "option",
+                "string"
+            ]
+        },
+        {
+            "name": "formCancelReason",
+            "type": [
+                "option",
+                [
+                    "mapper",
+                    {
+                        "source": "modal_form_cancel_reason",
+                        "type": "i8"
+                    }
+                ]
+            ]
+        }
+    ]
+]

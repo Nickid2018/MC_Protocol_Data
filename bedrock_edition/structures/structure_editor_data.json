@@ -1,0 +1,48 @@
+[
+    "container",
+    [
+        {
+            "name": "structureName",
+            "type": "string"
+        },
+        {
+            "name": "dataField",
+            "type": "string"
+        },
+        {
+            "name": "shouldPlayersBeIncluded",
+            "type": "bool"
+        },
+        {
+            "name": "shouldShowBoundingBox",
+            "type": "bool"
+        },
+        {
+            "name": "structureBlockType",
+            "type": [
+                "mapper",
+                {
+                    "source": "structure_block_type",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "structureSettings",
+            "type": [
+                "reference",
+                "structure_settings"
+            ]
+        },
+        {
+            "name": "redstoneSaveMode",
+            "type": [
+                "mapper",
+                {
+                    "source": "structure_redstone_save_mode",
+                    "type": "zigzag32"
+                }
+            ]
+        }
+    ]
+]

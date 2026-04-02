@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "formId",
+            "type": "varint"
+        },
+        {
+            "name": "formUIJSON",
+            "type": "string"
+        }
+    ]
+]

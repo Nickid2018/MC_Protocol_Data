@@ -1,0 +1,91 @@
+[
+    "container",
+    [
+        {
+            "name": "structurePaletteName",
+            "type": "string"
+        },
+        {
+            "name": "shouldIgnoreEntities",
+            "type": "bool"
+        },
+        {
+            "name": "shouldIgnoreBlocks",
+            "type": "bool"
+        },
+        {
+            "name": "shouldAllowNonTickingPlayerAndTickingAreaChunks",
+            "type": "bool"
+        },
+        {
+            "name": "structureSize",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "structureOffset",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "lastEditPlayer",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "rotation",
+            "type": [
+                "mapper",
+                {
+                    "source": "rotation",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "mirror",
+            "type": [
+                "mapper",
+                {
+                    "source": "mirror",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "animationMode",
+            "type": [
+                "mapper",
+                {
+                    "source": "animation_mode",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "animationSeconds",
+            "type": "f32"
+        },
+        {
+            "name": "integrityValue",
+            "type": "f32"
+        },
+        {
+            "name": "integritySeed",
+            "type": "u32"
+        },
+        {
+            "name": "rotationPivot",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        }
+    ]
+]

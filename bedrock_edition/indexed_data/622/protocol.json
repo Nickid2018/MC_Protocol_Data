@@ -327,6 +327,103 @@
         {
             "key": "command_output",
             "name": "Command Output"
+        },
+        {
+            "key": "update_trade",
+            "name": "Update Trade"
+        },
+        {
+            "key": "update_equip",
+            "name": "Update Equip"
+        },
+        {
+            "key": "resource_pack_data_info",
+            "name": "Resource Pack Data Info"
+        },
+        {
+            "key": "resource_pack_chunk_data",
+            "name": "Resource Pack Chunk Data"
+        },
+        {
+            "key": "resource_pack_chunk_request",
+            "name": "Resource Pack Chunk Request"
+        },
+        {
+            "key": "transfer_player",
+            "name": "Transfer Player"
+        },
+        {
+            "key": "play_sound",
+            "name": "Play Sound"
+        },
+        {
+            "key": "stop_sound",
+            "name": "Stop Sound"
+        },
+        {
+            "key": "set_title",
+            "name": "Set Title"
+        },
+        {
+            "key": "add_behavior_tree",
+            "name": "Add Behavior Tree"
+        },
+        {
+            "key": "structure_block_update",
+            "name": "Structure Block Update"
+        },
+        {
+            "key": "show_store_offer",
+            "name": "Show Store Offer"
+        },
+        {
+            "key": "purchase_receipt",
+            "name": "Purchase Receipt"
+        },
+        {
+            "key": "player_skin",
+            "name": "Player Skin"
+        },
+        {
+            "key": "sub_client_login",
+            "name": "Sub Client Login"
+        },
+        {
+            "key": "initiate_websocket_connection",
+            "name": "Initiate WebSocket Connection"
+        },
+        {
+            "key": "set_last_hurt_by",
+            "name": "Set Last Hurt By"
+        },
+        {
+            "key": "book_edit",
+            "name": "Book Edit"
+        },
+        {
+            "key": "npc_request",
+            "name": "NPC Request"
+        },
+        {
+            "key": "photo_transfer",
+            "name": "Photo Transfer"
+        },
+        {
+            "key": "modal_form_request",
+            "name": "Modal Form Request"
+        },
+        {
+            "key": "modal_form_response",
+            "name": "Modal Form Response"
+        },
+        {
+            "key": "server_settings_request",
+            "name": "Server Settings Request",
+            "type": "void"
+        },
+        {
+            "key": "server_settings_response",
+            "name": "Server Settings Response"
         }
     ]
 }

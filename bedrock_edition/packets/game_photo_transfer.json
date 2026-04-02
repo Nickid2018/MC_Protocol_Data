@@ -1,0 +1,45 @@
+[
+    "container",
+    [
+        {
+            "name": "photoName",
+            "type": "string"
+        },
+        {
+            "name": "photoData",
+            "type": "string"
+        },
+        {
+            "name": "bookId",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": [
+                "mapper",
+                {
+                    "source": "photo_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "sourceType",
+            "type": [
+                "mapper",
+                {
+                    "source": "photo_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "ownerId",
+            "type": "i64"
+        },
+        {
+            "name": "newPhotoName",
+            "type": "string"
+        }
+    ]
+]

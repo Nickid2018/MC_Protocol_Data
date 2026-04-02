@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "webSocketData",
+            "type": [
+                "reference",
+                "web_socket_packet_data"
+            ]
+        }
+    ]
+]

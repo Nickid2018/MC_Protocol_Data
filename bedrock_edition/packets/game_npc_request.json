@@ -1,0 +1,34 @@
+[
+    "container",
+    [
+        {
+            "name": "npcRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "requestType",
+            "type": [
+                "mapper",
+                {
+                    "source": "npc_request_packet_request_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "actions",
+            "type": "string"
+        },
+        {
+            "name": "actionIndex",
+            "type": "i8"
+        },
+        {
+            "name": "sceneName",
+            "type": "string"
+        }
+    ]
+]

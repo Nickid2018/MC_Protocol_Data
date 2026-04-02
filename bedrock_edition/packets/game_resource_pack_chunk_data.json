@@ -1,0 +1,21 @@
+[
+    "container",
+    [
+        {
+            "name": "resourceName",
+            "type": "string"
+        },
+        {
+            "name": "chunkId",
+            "type": "u32"
+        },
+        {
+            "name": "byteOffset",
+            "type": "u64"
+        },
+        {
+            "name": "chunkData",
+            "type": "string"
+        }
+    ]
+]

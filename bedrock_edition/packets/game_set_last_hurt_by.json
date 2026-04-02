@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "lastHurtBy",
+            "type": [
+                "mapper",
+                {
+                    "source": "actor_type",
+                    "type": "zigzag32"
+                }
+            ]
+        }
+    ]
+]

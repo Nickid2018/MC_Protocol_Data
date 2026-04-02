@@ -1,0 +1,27 @@
+[
+    "container",
+    [
+        {
+            "name": "blockPosition",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "structureData",
+            "type": [
+                "reference",
+                "structure_editor_data"
+            ]
+        },
+        {
+            "name": "trigger",
+            "type": "bool"
+        },
+        {
+            "name": "isWaterlogged",
+            "type": "bool"
+        }
+    ]
+]

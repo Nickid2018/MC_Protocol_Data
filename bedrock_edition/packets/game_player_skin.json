@@ -1,0 +1,28 @@
+[
+    "container",
+    [
+        {
+            "name": "uuid",
+            "type": "uuid"
+        },
+        {
+            "name": "serializedSkin",
+            "type": [
+                "reference",
+                "serialized_skin"
+            ]
+        },
+        {
+            "name": "newSkinName",
+            "type": "string"
+        },
+        {
+            "name": "oldSkinName",
+            "type": "string"
+        },
+        {
+            "name": "whetherSkinIsTrustedMarketplaceContent",
+            "type": "bool"
+        }
+    ]
+]

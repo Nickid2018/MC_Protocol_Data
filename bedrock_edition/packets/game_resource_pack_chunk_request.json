@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "resourceName",
+            "type": "string"
+        },
+        {
+            "name": "chunk",
+            "type": "u32"
+        }
+    ]
+]

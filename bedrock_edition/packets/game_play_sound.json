@@ -1,0 +1,24 @@
+[
+    "container",
+    [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "volume",
+            "type": "f32"
+        },
+        {
+            "name": "pitch",
+            "type": "f32"
+        }
+    ]
+]
