@@ -1,0 +1,157 @@
+[
+    "container",
+    [
+        {
+            "name": "actorRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "header",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 7,
+                        "signed": false
+                    },
+                    {
+                        "name": "forceMove",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "forceMove"
+                    },
+                    {
+                        "name": "teleport",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "teleport"
+                    },
+                    {
+                        "name": "onGround",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "onGround"
+                    },
+                    {
+                        "name": "hasRotZ",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "hasRotZ"
+                    },
+                    {
+                        "name": "hasRotY",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "hasRotY"
+                    },
+                    {
+                        "name": "hasRotX",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "hasRotX"
+                    },
+                    {
+                        "name": "hasZ",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "hasZ"
+                    },
+                    {
+                        "name": "hasY",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "hasY"
+                    },
+                    {
+                        "name": "hasX",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "hasX"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "newPositionX",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "hasX",
+                    "fields": {
+                        "1": "f32",
+                        "0": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "newPositionY",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "hasY",
+                    "fields": {
+                        "1": "f32",
+                        "0": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "newPositionZ",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "hasZ",
+                    "fields": {
+                        "1": "f32",
+                        "0": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "rotationX",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "hasRotX",
+                    "fields": {
+                        "1": "i8",
+                        "0": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "rotationY",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "hasRotY",
+                    "fields": {
+                        "1": "i8",
+                        "0": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "rotationYHead",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "hasRotZ",
+                    "fields": {
+                        "1": "i8",
+                        "0": "void"
+                    }
+                }
+            ]
+        }
+    ]
+]

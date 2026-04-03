@@ -424,6 +424,38 @@
         {
             "key": "server_settings_response",
             "name": "Server Settings Response"
+        },
+        {
+            "key": "show_profile",
+            "name": "Show Profile"
+        },
+        {
+            "key": "set_default_game_type",
+            "name": "Set Default Game Type"
+        },
+        {
+            "key": "remove_objective",
+            "name": "Remove Objective"
+        },
+        {
+            "key": "set_display_objective",
+            "name": "Set Display Objective"
+        },
+        {
+            "key": "set_score",
+            "name": "Set Score"
+        },
+        {
+            "key": "lab_table",
+            "name": "Lab Table"
+        },
+        {
+            "key": "update_block_synced",
+            "name": "Update Block Synced"
+        },
+        {
+            "key": "move_actor_delta",
+            "name": "Move Actor Delta"
         }
     ]
 }

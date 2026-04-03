@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "displaySlotName",
+            "type": "string"
+        },
+        {
+            "name": "objectiveName",
+            "type": "string"
+        },
+        {
+            "name": "objectiveDisplayName",
+            "type": "string"
+        },
+        {
+            "name": "criteriaName",
+            "type": "string"
+        },
+        {
+            "name": "sortOrder",
+            "type": [
+                "mapper",
+                {
+                    "source": "objective_sort_order",
+                    "type": "i8"
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,38 @@
+[
+    "container",
+    [
+        {
+            "name": "blockPosition",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "blockRuntimeId",
+            "type": "varint"
+        },
+        {
+            "name": "flags",
+            "type": "varint"
+        },
+        {
+            "name": "layer",
+            "type": "varint"
+        },
+        {
+            "name": "uniqueActorId",
+            "type": "zigzag64"
+        },
+        {
+            "name": "actorSyncMessage",
+            "type": [
+                "mapper",
+                {
+                    "source": "actor_block_sync_message_message_id",
+                    "type": "zigzag64"
+                }
+            ]
+        }
+    ]
+]

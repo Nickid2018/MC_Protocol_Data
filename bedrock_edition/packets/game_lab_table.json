@@ -1,0 +1,32 @@
+[
+    "container",
+    [
+        {
+            "name": "type",
+            "type": [
+                "mapper",
+                {
+                    "source": "lab_table_packet_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "reaction",
+            "type": [
+                "mapper",
+                {
+                    "source": "lab_table_reaction_type",
+                    "type": "i8"
+                }
+            ]
+        }
+    ]
+]

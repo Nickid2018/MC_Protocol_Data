@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "playerXUID",
+            "type": "string"
+        }
+    ]
+]

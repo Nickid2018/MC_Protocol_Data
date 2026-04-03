@@ -1,0 +1,114 @@
+[
+    "container",
+    [
+        {
+            "name": "scorePacketType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "score_packet_type",
+                        "type": "i8"
+                    }
+                ],
+                "scorePacketType"
+            ]
+        },
+        {
+            "name": "packetInfo",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "id",
+                                "type": "string"
+                            },
+                            {
+                                "name": "scoreValue",
+                                "type": "i32"
+                            },
+                            {
+                                "name": "changeData",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "scorePacketType",
+                                        "fields": {
+                                            "Change": [
+                                                "container",
+                                                [
+                                                    {
+                                                        "name": "identityDefinitionType",
+                                                        "type": [
+                                                            "save",
+                                                            [
+                                                                "mapper",
+                                                                {
+                                                                    "source": "identity_definition_type",
+                                                                    "type": "i8"
+                                                                }
+                                                            ],
+                                                            "identityDefinitionType"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "playerUniqueId",
+                                                        "type": [
+                                                            "switch",
+                                                            {
+                                                                "compareTo": "identityDefinitionType",
+                                                                "fields": {
+                                                                    "Player": "zigzag64"
+                                                                },
+                                                                "default": "void"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "actorId",
+                                                        "type": [
+                                                            "switch",
+                                                            {
+                                                                "compareTo": "identityDefinitionType",
+                                                                "fields": {
+                                                                    "Entity": [
+                                                                        "reference",
+                                                                        "actor_unique_id"
+                                                                    ]
+                                                                },
+                                                                "default": "void"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "fakePlayerName",
+                                                        "type": [
+                                                            "switch",
+                                                            {
+                                                                "compareTo": "identityDefinitionType",
+                                                                "fields": {
+                                                                    "FakePlayer": "string"
+                                                                },
+                                                                "default": "void"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            ]
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]
