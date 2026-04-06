@@ -72,7 +72,8 @@
                         "type": "i32r"
                     }
                 ]
-            ]
+            ],
+            "specialMark": "request_network_settings"
         }
     ]
 }

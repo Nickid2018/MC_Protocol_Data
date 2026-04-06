@@ -14,17 +14,6 @@
                 "bitfield",
                 [
                     {
-                        "name": "unused",
-                        "size": 7,
-                        "signed": false
-                    },
-                    {
-                        "name": "forceMove",
-                        "size": 1,
-                        "signed": false,
-                        "saveName": "forceMove"
-                    },
-                    {
                         "name": "teleport",
                         "size": 1,
                         "signed": false,
@@ -71,6 +60,17 @@
                         "size": 1,
                         "signed": false,
                         "saveName": "hasX"
+                    },
+                    {
+                        "name": "unused",
+                        "size": 7,
+                        "signed": false
+                    },
+                    {
+                        "name": "forceMove",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "forceMove"
                     }
                 ]
             ]
