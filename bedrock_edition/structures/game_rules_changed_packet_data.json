@@ -32,7 +32,7 @@
                     "type": [
                         "switch",
                         {
-                            "comaperTo": "ruleType",
+                            "compareTo": "ruleType",
                             "fields": {
                                 "Bool": "bool",
                                 "Int": "zigzag32",

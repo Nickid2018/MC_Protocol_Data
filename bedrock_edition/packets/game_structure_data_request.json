@@ -1,0 +1,33 @@
+[
+    "container",
+    [
+        {
+            "name": "structureName",
+            "type": "string"
+        },
+        {
+            "name": "structurePosition",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "structure_settings",
+            "type": [
+                "reference",
+                "structure_settings"
+            ]
+        },
+        {
+            "name": "requestedOperation",
+            "type": [
+                "mapper",
+                {
+                    "source": "structure_template_request_operation",
+                    "type": "i8"
+                }
+            ]
+        }
+    ]
+]

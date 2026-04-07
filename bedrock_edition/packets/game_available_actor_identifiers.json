@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "actorInfoList",
+            "type": "bnbt"
+        }
+    ]
+]

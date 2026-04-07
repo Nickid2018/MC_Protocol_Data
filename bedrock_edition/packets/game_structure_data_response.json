@@ -1,0 +1,40 @@
+[
+    "container",
+    [
+        {
+            "name": "structureName",
+            "type": "string"
+        },
+        {
+            "name": "success",
+            "type": [
+                "save",
+                "bool",
+                "success"
+            ]
+        },
+        {
+            "name": "structureNBT",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "success",
+                    "fields": {
+                        "true": "bnbt",
+                        "false": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "responseType",
+            "type": [
+                "mapper",
+                {
+                    "source": "structure_template_response_type",
+                    "type": "i8"
+                }
+            ]
+        }
+    ]
+]

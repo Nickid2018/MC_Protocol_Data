@@ -1,0 +1,34 @@
+[
+    "container",
+    [
+        {
+            "name": "dimensionId",
+            "type": "i8"
+        },
+        {
+            "name": "actorId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "effectName",
+            "type": "string"
+        },
+        {
+            "name": "molangVariables",
+            "type": [
+                "option",
+                "molang_variable_map"
+            ]
+        }
+    ]
+]

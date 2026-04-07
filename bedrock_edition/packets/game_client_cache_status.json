@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "isCachedSupported",
+            "type": "bool"
+        }
+    ]
+]

@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "creationTime",
+            "type": "u64"
+        },
+        {
+            "name": "isFromServer",
+            "type": "bool"
+        }
+    ]
+]

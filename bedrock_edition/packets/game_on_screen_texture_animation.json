@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "effectId",
+            "type": "u32"
+        }
+    ]
+]

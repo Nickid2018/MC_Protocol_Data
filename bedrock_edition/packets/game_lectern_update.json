@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "newPageToShow",
+            "type": "i8"
+        },
+        {
+            "name": "totalPages",
+            "type": "i8"
+        },
+        {
+            "name": "positionOfLecternToUpdate",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,38 @@
+[
+    "container",
+    [
+        {
+            "name": "eventId",
+            "type": [
+                "mapper",
+                {
+                    "source": "puv_legacy_level_sound_event",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "data",
+            "type": "zigzag32"
+        },
+        {
+            "name": "actorIdentifier",
+            "type": "string"
+        },
+        {
+            "name": "babyMob",
+            "type": "bool"
+        },
+        {
+            "name": "global",
+            "type": "bool"
+        }
+    ]
+]

@@ -456,6 +456,99 @@
         {
             "key": "move_actor_delta",
             "name": "Move Actor Delta"
+        },
+        {
+            "key": "set_scoreboard_identity",
+            "name": "Set Scoreboard Identity"
+        },
+        {
+            "key": "set_local_player_as_initialized",
+            "name": "Set Local Player as Initialized"
+        },
+        {
+            "key": "update_soft_enum",
+            "name": "Update Soft Enum"
+        },
+        {
+            "key": "ping",
+            "name": "Ping"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "spawn_particle_effect",
+            "name": "Spawn Particle Effect"
+        },
+        {
+            "key": "available_actor_identifiers",
+            "name": "Available Actor Identifiers"
+        },
+        {
+            "key": "level_sound_event_v2",
+            "name": "Level Sound Event (v2)"
+        },
+        {
+            "key": "network_chunk_publisher_update",
+            "name": "Network Chunk Publisher Update"
+        },
+        {
+            "key": "biome_definition_list",
+            "name": "Biome Definition List"
+        },
+        {
+            "key": "level_sound_event",
+            "name": "Level Sound Event"
+        },
+        {
+            "key": "level_event_generic",
+            "name": "Level Event Generic"
+        },
+        {
+            "key": "lectern_update",
+            "name": "Lectern Update"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "client_cache_status",
+            "name": "Client Cache Status"
+        },
+        {
+            "key": "on_screen_texture_animation",
+            "name": "On-Screen Texture Animation"
+        },
+        {
+            "key": "create_locked_map",
+            "name": "Create Locked Map"
+        },
+        {
+            "key": "structure_data_request",
+            "name": "Structure Data Request"
+        },
+        {
+            "key": "structure_data_response",
+            "name": "Structure Data Response"
         }
     ]
 }

@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "playerId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        }
+    ]
+]

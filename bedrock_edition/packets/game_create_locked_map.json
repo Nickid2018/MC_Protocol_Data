@@ -2,17 +2,17 @@
     "container",
     [
         {
-            "name": "targetRuntimeId",
+            "name": "originalMapId",
             "type": [
                 "reference",
-                "actor_runtime_id"
+                "actor_unique_id"
             ]
         },
         {
-            "name": "motion",
+            "name": "newMapId",
             "type": [
                 "reference",
-                "vec3"
+                "actor_unique_id"
             ]
         }
     ]

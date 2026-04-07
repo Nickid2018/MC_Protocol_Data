@@ -1,0 +1,53 @@
+[
+    "container",
+    [
+        {
+            "name": "scoreboardIdentityPacketType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "scoreboard_identity_packet_type",
+                        "type": "i8"
+                    }
+                ],
+                "scoreboardIdentityPacketType"
+            ]
+        },
+        {
+            "name": "identityInfo",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "scoreboardId",
+                                "type": [
+                                    "reference",
+                                    "scoreboard_id"
+                                ]
+                            },
+                            {
+                                "name": "playerUniqueId",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "scoreboardIdentityPacketType",
+                                        "fields": {
+                                            "Remove": "zigzag64"
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

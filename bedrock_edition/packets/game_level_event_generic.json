@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "eventId",
+            "type": [
+                "mapper",
+                {
+                    "source": "level_event",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "eventData",
+            "type": "bnbt"
+        }
+    ]
+]

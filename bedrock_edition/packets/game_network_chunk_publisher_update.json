@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "newPositionForView",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "newRadiusForView",
+            "type": "varint"
+        },
+        {
+            "name": "serverBuiltChunksList",
+            "type": [
+                "array",
+                {
+                    "countType": "u32",
+                    "type": [
+                        "reference",
+                        "chunk_pos"
+                    ]
+                }
+            ]
+        }
+    ]
+]

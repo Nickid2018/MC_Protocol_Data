@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "enumName",
+            "type": "string"
+        },
+        {
+            "name": "values",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "updateType",
+            "type": [
+                "mapper",
+                {
+                    "source": "soft_enum_update_type",
+                    "type": "i32"
+                }
+            ]
+        }
+    ]
+]
