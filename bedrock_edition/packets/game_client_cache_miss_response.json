@@ -1,0 +1,27 @@
+[
+    "container",
+    [
+        {
+            "name": "missingBlobs",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "blobId",
+                                "type": "u64"
+                            },
+                            {
+                                "name": "blobData",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

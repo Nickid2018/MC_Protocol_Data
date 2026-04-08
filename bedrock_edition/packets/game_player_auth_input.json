@@ -1,0 +1,297 @@
+[
+    "container",
+    [
+        {
+            "name": "playerRotation",
+            "type": [
+                "reference",
+                "vec2"
+            ]
+        },
+        {
+            "name": "playerPosition",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "moveVector",
+            "type": [
+                "reference",
+                "vec2"
+            ]
+        },
+        {
+            "name": "playerHeadRotation",
+            "type": "f32"
+        },
+        {
+            "name": "inputData",
+            "type": [
+                "bitflags",
+                {
+                    "type": "varlong",
+                    "flags": [
+                        "Ascend",
+                        "Descend",
+                        "NorthJump",
+                        "JumpDown",
+                        "SprintDown",
+                        "ChangeHeight",
+                        "Jumping",
+                        "AutoJumpingInWater",
+                        "Sneaking",
+                        "SneakDown",
+                        "Up",
+                        "Down",
+                        "Left",
+                        "Right",
+                        "UpLeft",
+                        "UpRight",
+                        "WantUp",
+                        "WantDown",
+                        "WantDownSlow",
+                        "WantUpSlow",
+                        "Sprinting",
+                        "AscendBlock",
+                        "DescendBlock",
+                        "SneakToggleDown",
+                        "PersistSneak",
+                        "StartSprinting",
+                        "StopSprinting",
+                        "StartSneaking",
+                        "StopSneaking",
+                        "StartSwimming",
+                        "StopSwimming",
+                        "StartJumping",
+                        "StartGliding",
+                        "StopGliding",
+                        "PerformItemInteraction",
+                        "PerformBlockActions",
+                        "PerformItemStackRequest",
+                        "HandledTeleport",
+                        "Emoting",
+                        "MissedSwing",
+                        "StartCrawling",
+                        "StopCrawling",
+                        "StartFlying",
+                        "StopFlying",
+                        "ClientAckServerData",
+                        "IsInClientPredictedVehicle",
+                        "PaddlingLeft",
+                        "PaddlingRight"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "inputMode",
+            "type": [
+                "mapper",
+                {
+                    "source": "input_mode",
+                    "type": "varint"
+                }
+            ]
+        },
+        {
+            "name": "playMode",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "client_play_mode",
+                        "type": "varint"
+                    }
+                ],
+                "playMode"
+            ]
+        },
+        {
+            "name": "newInteractionModel",
+            "type": [
+                "mapper",
+                {
+                    "source": "new_interaction_model",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "VRGazeDirection",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "playMode",
+                    "fields": {
+                        "Reality": [
+                            "reference",
+                            "vec3"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "clientTick",
+            "type": "varlong"
+        },
+        {
+            "name": "posDelta",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "itemUseTransaction",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "PerformItemInteraction",
+                    "fields": {
+                        "true": [
+                            "reference",
+                            "packed_item_use_legacy_inventory_transaction"
+                        ],
+                        "false": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "itemStackRequest",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "PerformItemStackRequest",
+                    "fields": {
+                        "true": [
+                            "container",
+                            [
+                                {
+                                    "name": "clientRequestId",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "actions",
+                                    "type": [
+                                        "array",
+                                        {
+                                            "countType": "varint",
+                                            "type": [
+                                                "container",
+                                                [
+                                                    {
+                                                        "name": "actionType",
+                                                        "type": [
+                                                            "mapper",
+                                                            {
+                                                                "source": "item_stack_request_action_type",
+                                                                "type": "i8"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "amount",
+                                                        "type": "i8"
+                                                    },
+                                                    {
+                                                        "name": "source",
+                                                        "type": [
+                                                            "reference",
+                                                            "item_stack_request_slot_info"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "destination",
+                                                        "type": [
+                                                            "reference",
+                                                            "item_stack_request_slot_info"
+                                                        ]
+                                                    }
+                                                ]
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "stringsToFilter",
+                                    "type": [
+                                        "array",
+                                        {
+                                            "countType": "varint",
+                                            "type": "string"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "stringsToFilterOrigin",
+                                    "type": "i32"
+                                }
+                            ]
+                        ],
+                        "false": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "playerBlockActions",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "PerformBlockActions",
+                    "fields": {
+                        "true": [
+                            "reference",
+                            "player_block_actions"
+                        ],
+                        "false": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "vehicleData",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "IsInClientPredictedVehicle",
+                    "fields": {
+                        "true": [
+                            "container",
+                            [
+                                {
+                                    "name": "vehicleRotation",
+                                    "type": [
+                                        "reference",
+                                        "vec2"
+                                    ]
+                                },
+                                {
+                                    "name": "clientPredictedVehicle",
+                                    "type": [
+                                        "reference",
+                                        "actor_unique_id"
+                                    ]
+                                }
+                            ]
+                        ],
+                        "false": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "analogMoveVector",
+            "type": [
+                "reference",
+                "vec2"
+            ]
+        }
+    ]
+]

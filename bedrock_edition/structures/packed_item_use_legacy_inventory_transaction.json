@@ -1,0 +1,121 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": [
+                "save",
+                "zigzag32",
+                "id"
+            ]
+        },
+        {
+            "name": "containerSlots",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "id",
+                    "fields": {
+                        "0": "void"
+                    },
+                    "default": [
+                        "array",
+                        {
+                            "countType": "varint",
+                            "type": [
+                                "container",
+                                [
+                                    {
+                                        "name": "containerEnumName",
+                                        "type": [
+                                            "mapper",
+                                            {
+                                                "source": "container_enum_name",
+                                                "type": "i8"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "slots",
+                                        "type": [
+                                            "array",
+                                            {
+                                                "countType": "varint",
+                                                "type": [
+                                                    "container",
+                                                    [
+                                                        {
+                                                            "name": "slot",
+                                                            "type": "i8"
+                                                        }
+                                                    ]
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "actions",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "inventory_action"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "actionType",
+            "type": "varint"
+        },
+        {
+            "name": "position",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "face",
+            "type": "zigzag32"
+        },
+        {
+            "name": "slot",
+            "type": "zigzag32"
+        },
+        {
+            "name": "item",
+            "type": [
+                "reference",
+                "network_item_stack_descriptor"
+            ]
+        },
+        {
+            "name": "fromPosition",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "clickPosition",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "targetBlockId",
+            "type": "varint"
+        }
+    ]
+]

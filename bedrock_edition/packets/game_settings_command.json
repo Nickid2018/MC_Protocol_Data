@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "command",
+            "type": "string"
+        },
+        {
+            "name": "suppressOutput",
+            "type": "bool"
+        }
+    ]
+]

@@ -1,0 +1,10 @@
+[
+    "array",
+    {
+        "countType": "zigzag32",
+        "type": [
+            "reference",
+            "player_block_action_data"
+        ]
+    }
+]

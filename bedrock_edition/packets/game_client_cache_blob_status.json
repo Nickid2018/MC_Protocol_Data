@@ -1,0 +1,41 @@
+[
+    "container",
+    [
+        {
+            "name": "numberOfMissingBlobs",
+            "type": [
+                "save",
+                "varint",
+                "missings"
+            ]
+        },
+        {
+            "name": "numberOfObtainedBlobs",
+            "type": [
+                "save",
+                "varint",
+                "obtains"
+            ]
+        },
+        {
+            "name": "missingBlobs",
+            "type": [
+                "array",
+                {
+                    "count": "missings",
+                    "type": "u64"
+                }
+            ]
+        },
+        {
+            "name": "obtainedBlobs",
+            "type": [
+                "array",
+                {
+                    "count": "obtains",
+                    "type": "u64"
+                }
+            ]
+        }
+    ]
+]

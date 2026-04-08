@@ -1,0 +1,73 @@
+[
+    "container",
+    [
+        {
+            "name": "playerActionType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "player_action_type",
+                        "type": "zigzag32"
+                    }
+                ],
+                "action"
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "switch",
+                {
+                    "comapreTo": "action",
+                    "fields": {
+                        "PredictDestroyBlock": [
+                            "reference",
+                            "block_pos"
+                        ],
+                        "StartDestroyBlock": [
+                            "reference",
+                            "block_pos"
+                        ],
+                        "AbortDestroyBlock": [
+                            "reference",
+                            "block_pos"
+                        ],
+                        "CrackBlock": [
+                            "reference",
+                            "block_pos"
+                        ],
+                        "ContinueDestroyBlock": [
+                            "reference",
+                            "block_pos"
+                        ],
+                        "StopDestroyBlock": [
+                            "reference",
+                            "block_pos"
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        },
+        {
+            "name": "facing",
+            "type": [
+                "switch",
+                {
+                    "comapreTo": "action",
+                    "fields": {
+                        "PredictDestroyBlock": "zigzag32",
+                        "StartDestroyBlock": "zigzag32",
+                        "AbortDestroyBlock": "zigzag32",
+                        "CrackBlock": "zigzag32",
+                        "ContinueDestroyBlock": "zigzag32",
+                        "StopDestroyBlock": "zigzag32"
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

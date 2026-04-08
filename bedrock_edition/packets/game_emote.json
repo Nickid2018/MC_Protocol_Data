@@ -1,0 +1,47 @@
+[
+    "container",
+    [
+        {
+            "name": "actorRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "emoteId",
+            "type": "string"
+        },
+        {
+            "name": "xuid",
+            "type": "string"
+        },
+        {
+            "name": "platformId",
+            "type": "string"
+        },
+        {
+            "name": "flags",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 6,
+                        "signed": false
+                    },
+                    {
+                        "name": "muteEmoteChat",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "serverSide",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        }
+    ]
+]

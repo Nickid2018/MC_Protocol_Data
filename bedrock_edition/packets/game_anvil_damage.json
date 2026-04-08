@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "damageAmount",
+            "type": "i8"
+        },
+        {
+            "name": "blockPosition",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        }
+    ]
+]

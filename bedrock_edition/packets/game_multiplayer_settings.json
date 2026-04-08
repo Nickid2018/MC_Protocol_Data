@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "type",
+            "type": [
+                "mapper",
+                {
+                    "source": "multiplayer_settings_packet_type",
+                    "type": "zigzag32"
+                }
+            ]
+        }
+    ]
+]

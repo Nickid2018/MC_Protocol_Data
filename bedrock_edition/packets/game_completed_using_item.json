@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "itemId",
+            "type": "i16"
+        },
+        {
+            "name": "itemUseMethod",
+            "type": [
+                "mapper",
+                {
+                    "source": "item_use_method",
+                    "type": "i32"
+                }
+            ]
+        }
+    ]
+]

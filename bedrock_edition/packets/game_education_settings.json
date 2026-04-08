@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "educationLevelSettings",
+            "type": [
+                "reference",
+                "education_level_settings"
+            ]
+        }
+    ]
+]

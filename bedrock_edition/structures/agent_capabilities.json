@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "canModifyBlocks",
+            "type": "bool"
+        }
+    ]
+]

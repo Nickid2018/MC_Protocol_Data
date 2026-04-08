@@ -549,6 +549,52 @@
         {
             "key": "structure_data_response",
             "name": "Structure Data Response"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "client_cache_blob_status",
+            "name": "Client Cache Blob Status"
+        },
+        {
+            "key": "client_cache_miss_response",
+            "name": "Client Cache Miss Response"
+        },
+        {
+            "key": "education_settings",
+            "name": "Education Settings"
+        },
+        {
+            "key": "emote",
+            "name": "Emote"
+        },
+        {
+            "key": "multiplayer_settings",
+            "name": "Multiplayer Settings"
+        },
+        {
+            "key": "settings_command",
+            "name": "Settings Command"
+        },
+        {
+            "key": "anvil_damage",
+            "name": "Anvil Damage"
+        },
+        {
+            "key": "completed_using_item",
+            "name": "Completed Using Item"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "player_auth_input",
+            "name": "Player Auth Input"
         }
     ]
 }

@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "openContainerNetId",
+            "type": [
+                "mapper",
+                {
+                    "source": "container_enum_name",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "slot",
+            "type": "i8"
+        },
+        {
+            "name": "rawId",
+            "type": "zigzag32"
+        }
+    ]
+]

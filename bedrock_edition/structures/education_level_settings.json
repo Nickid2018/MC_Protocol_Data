@@ -1,0 +1,60 @@
+[
+    "container",
+    [
+        {
+            "name": "codeBuilderDefaultURI",
+            "type": "string"
+        },
+        {
+            "name": "codeBuilderTitle",
+            "type": "string"
+        },
+        {
+            "name": "canResizeCodeBuilder",
+            "type": "bool"
+        },
+        {
+            "name": "disableLegacyTitleBar",
+            "type": "bool"
+        },
+        {
+            "name": "postProcessFilter",
+            "type": "string"
+        },
+        {
+            "name": "screenShotBorderResourcePath",
+            "type": "string"
+        },
+        {
+            "name": "agentCapabilities",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "agent_capabilities"
+                ]
+            ]
+        },
+        {
+            "name": "codeBuilderOverrideUri",
+            "type": [
+                "option",
+                "string"
+            ]
+        },
+        {
+            "name": "indicatesIfTheWorldHasAQuizAttachedToIt",
+            "type": "bool"
+        },
+        {
+            "name": "externalLinkSettings",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "external_link_settings"
+                ]
+            ]
+        }
+    ]
+]
