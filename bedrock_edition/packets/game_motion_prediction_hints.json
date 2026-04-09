@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "mRuntimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "mMotion",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "mOnGround",
+            "type": "bool"
+        }
+    ]
+]

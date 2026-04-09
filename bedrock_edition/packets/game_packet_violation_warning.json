@@ -1,0 +1,39 @@
+[
+    "container",
+    [
+        {
+            "name": "violationType",
+            "type": [
+                "mapper",
+                {
+                    "source": "packet_violation_type",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "violationSeverity",
+            "type": [
+                "mapper",
+                {
+                    "source": "packet_violation_severity",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "violatingPacketId",
+            "type": [
+                "mapper",
+                {
+                    "source": "minecraft_packet_ids",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "violationContext",
+            "type": "string"
+        }
+    ]
+]

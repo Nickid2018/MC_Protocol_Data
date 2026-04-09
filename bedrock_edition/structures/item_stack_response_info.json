@@ -1,0 +1,45 @@
+[
+    "container",
+    [
+        {
+            "name": "result",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "item_stack_net_result",
+                        "type": "i8"
+                    }
+                ],
+                "result"
+            ]
+        },
+        {
+            "name": "clientRequestId",
+            "type": "zigzag32"
+        },
+        {
+            "name": "containers",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "result",
+                    "fields": {
+                        "Success": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": [
+                                    "reference",
+                                    "item_stack_response_container_info"
+                                ]
+                            }
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

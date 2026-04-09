@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "runtimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        },
+        {
+            "name": "emotePiecesIds",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "uuid"
+                }
+            ]
+        }
+    ]
+]

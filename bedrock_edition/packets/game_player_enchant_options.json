@@ -1,0 +1,38 @@
+[
+    "container",
+    [
+        {
+            "name": "options",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "cost",
+                                "type": "varint"
+                            },
+                            {
+                                "name": "enchants",
+                                "type": [
+                                    "reference",
+                                    "item_enchants"
+                                ]
+                            },
+                            {
+                                "name": "enchantName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "enchantNetId",
+                                "type": "zigzag32"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

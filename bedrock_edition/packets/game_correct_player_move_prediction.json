@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "posDelta",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        },
+        {
+            "name": "onGround",
+            "type": "bool"
+        },
+        {
+            "name": "tick",
+            "type": "varlong"
+        },
+        {
+            "name": "predictionType",
+            "type": "i8"
+        }
+    ]
+]

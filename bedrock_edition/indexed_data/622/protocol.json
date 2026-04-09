@@ -595,6 +595,88 @@
         {
             "key": "player_auth_input",
             "name": "Player Auth Input"
+        },
+        {
+            "key": "creative_content",
+            "name": "Creative Content"
+        },
+        {
+            "key": "player_enchant_options",
+            "name": "Player Enchant Options"
+        },
+        {
+            "key": "item_stack_request",
+            "name": "Item Stack Request"
+        },
+        {
+            "key": "item_stack_response",
+            "name": "Item Stack Response"
+        },
+        {
+            "key": "player_armor_damage",
+            "name": "Player Armor Damage"
+        },
+        {
+            "key": "code_builder",
+            "name": "Code Builder"
+        },
+        {
+            "key": "update_palyer_game_type",
+            "name": "Update Player Game Type"
+        },
+        {
+            "key": "emote_list",
+            "name": "Emote List"
+        },
+        {
+            "key": "position_tracing_db_server_broadcast",
+            "name": "Position Tracing DB Server Broadcast"
+        },
+        {
+            "key": "position_tracing_db_client_request",
+            "name": "Position Tracing DB Client Request"
+        },
+        {
+            "key": "debug_info",
+            "name": "Debug Info"
+        },
+        {
+            "key": "packet_violation_warning",
+            "name": "Packet Violation Warning"
+        },
+        {
+            "key": "motion_prediction_hints",
+            "name": "Motion Prediction Hints"
+        },
+        {
+            "key": "animate_entity",
+            "name": "Animate Entity"
+        },
+        {
+            "key": "camera_shake",
+            "name": "Camera Shake"
+        },
+        {
+            "key": "player_fog",
+            "name": "Player Fog"
+        },
+        {
+            "key": "correct_player_move_prediction",
+            "name": "Correct Player Move Prediction"
+        },
+        {
+            "key": "item_component",
+            "name": "Item Component",
+            "type": "void",
+            "__comment": "this packet is too complex to make wireshark dissect it"
+        },
+        {
+            "key": "filter_text",
+            "name": "Filter Text"
+        },
+        {
+            "key": "clientbound_debug_renderer",
+            "name": "Clientbound Debug Renderer"
         }
     ]
 }

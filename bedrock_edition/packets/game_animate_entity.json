@@ -1,0 +1,42 @@
+[
+    "container",
+    [
+        {
+            "name": "mAnimation",
+            "type": "string"
+        },
+        {
+            "name": "mNextState",
+            "type": "string"
+        },
+        {
+            "name": "mStopExpression",
+            "type": "string"
+        },
+        {
+            "name": "stopExpressionMolangVersion",
+            "type": "i32"
+        },
+        {
+            "name": "mController",
+            "type": "string"
+        },
+        {
+            "name": "mBlendOutTime",
+            "type": "f32"
+        },
+        {
+            "name": "mRuntimeIds",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "actor_runtime_id"
+                    ]
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,33 @@
+[
+    "container",
+    [
+        {
+            "name": "intensity",
+            "type": "f32"
+        },
+        {
+            "name": "seconds",
+            "type": "f32"
+        },
+        {
+            "name": "shakeType",
+            "type": [
+                "mapper",
+                {
+                    "source": "camera_shake_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "shakeAction",
+            "type": [
+                "mapper",
+                {
+                    "source": "camera_shake_action",
+                    "type": "i8"
+                }
+            ]
+        }
+    ]
+]

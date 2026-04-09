@@ -1,0 +1,27 @@
+[
+    "container",
+    [
+        {
+            "name": "items",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "componentItemType",
+                                "type": "string"
+                            },
+                            {
+                                "name": "componentData",
+                                "type": "bnbt"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "text",
+            "type": "string"
+        },
+        {
+            "name": "fromServer",
+            "type": "bool"
+        }
+    ]
+]

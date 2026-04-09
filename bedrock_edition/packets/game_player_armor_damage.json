@@ -1,0 +1,94 @@
+[
+    "container",
+    [
+        {
+            "name": "slotsBitset",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 4,
+                        "signed": false
+                    },
+                    {
+                        "name": "feet",
+                        "size": 1,
+                        "saveName": "feet",
+                        "signed": false
+                    },
+                    {
+                        "name": "legs",
+                        "size": 1,
+                        "saveName": "legs",
+                        "signed": false
+                    },
+                    {
+                        "name": "chest",
+                        "size": 1,
+                        "saveName": "chest",
+                        "signed": false
+                    },
+                    {
+                        "name": "head",
+                        "size": 1,
+                        "saveName": "head",
+                        "signed": false
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "damageForSlotHead",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "head",
+                    "type": {
+                        "1": "zigzag32",
+                        "0": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "damageForSlotChest",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "chest",
+                    "type": {
+                        "1": "zigzag32",
+                        "0": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "damageForSlotLegs",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "legs",
+                    "type": {
+                        "1": "zigzag32",
+                        "0": "void"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "damageForSlotFeet",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "feet",
+                    "type": {
+                        "1": "zigzag32",
+                        "0": "void"
+                    }
+                }
+            ]
+        }
+    ]
+]

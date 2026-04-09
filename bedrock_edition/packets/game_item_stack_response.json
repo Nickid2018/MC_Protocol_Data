@@ -1,0 +1,18 @@
+[
+    "container",
+    [
+        {
+            "name": "responses",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "item_stack_response_info"
+                    ]
+                }
+            ]
+        }
+    ]
+]

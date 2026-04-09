@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "playerGameType",
+            "type":[
+                "mapper",
+                {
+                    "source": "game_type",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "targetPlayer",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,67 @@
+[
+    "container",
+    [
+        {
+            "name": "debugMarkerType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "clientbound_debug_renderer_packet_type",
+                        "type": "varint"
+                    }
+                ],
+                "type"
+            ]
+        },
+        {
+            "name": "debugMarkerData",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "type",
+                    "fields": {
+                        "AddDebugMarkerCube": [
+                            "container",
+                            [
+                                {
+                                    "name": "debugMarkerText",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "debugMarkerPosition",
+                                    "type": [
+                                        "reference",
+                                        "vec3"
+                                    ]
+                                },
+                                {
+                                    "name": "debugMarkerColorRed",
+                                    "type": "f32"
+                                },
+                                {
+                                    "name": "debugMarkerColorGreen",
+                                    "type": "f32"
+                                },
+                                {
+                                    "name": "debugMarkerColorBlue",
+                                    "type": "f32"
+                                },
+                                {
+                                    "name": "debugMarkerColorAlpha",
+                                    "type": "f32"
+                                },
+                                {
+                                    "name": "debugMarkerDurationMilliseconds",
+                                    "type": "u64"
+                                }
+                            ]
+                        ]
+                    },
+                    "default": "void"
+                }
+            ]
+        }
+    ]
+]

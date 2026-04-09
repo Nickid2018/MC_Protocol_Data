@@ -1,0 +1,85 @@
+[
+    "container",
+    [
+        {
+            "name": "requests",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name":  "clientRequestId",
+                                "type": "zigzag32"
+                            },
+                            {
+                                "name": "actions",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": [
+                                            "container",
+                                            [
+                                                {
+                                                    "name": "actionType",
+                                                    "type": [
+                                                        "mapper",
+                                                        {
+                                                            "source": "item_stack_request_action_type",
+                                                            "type":  "i8"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "amount",
+                                                    "type": "i8"
+                                                },
+                                                {
+                                                    "name": "source",
+                                                    "type": [
+                                                        "reference",
+                                                        "item_stack_request_slot_info"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "destination",
+                                                    "type": [
+                                                        "reference",
+                                                        "item_stack_request_slot_info"
+                                                    ]
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "stringsToFilter",
+                                "type": [
+                                    "array",
+                                    {
+                                        "countType": "varint",
+                                        "type": "string"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "stringsToFilterOrigin",
+                                "type": [
+                                    "mapper",
+                                    {
+                                        "source": "text_processing_event_origin",
+                                        "type": "i32"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

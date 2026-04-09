@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "requestSlot",
+            "type": "i8"
+        },
+        {
+            "name": "slot",
+            "type": "i8"
+        },
+        {
+            "name": "amount",
+            "type": "i8"
+        },
+        {
+            "name": "itemStackNetId",
+            "type": "zigzag32"
+        },
+        {
+            "name": "customName",
+            "type": "string"
+        },
+        {
+            "name": "durabilityCorrection",
+            "type": "zigzag32"
+        }
+    ]
+]

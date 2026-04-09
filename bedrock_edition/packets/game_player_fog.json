@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "fogStack",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+]

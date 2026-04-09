@@ -1,0 +1,30 @@
+[
+    "container",
+    [
+        {
+            "name": "writeEntries",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "creativeNetId",
+                                "type": "zigzag32"
+                            },
+                            {
+                                "name": "itemInstance",
+                                "type": [
+                                    "reference",
+                                    "network_item_instance_descriptor"
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

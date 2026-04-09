@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "openContainerNetId",
+            "type": "i8"
+        },
+        {
+            "name": "slots",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "reference",
+                        "item_stack_response_slot_info"
+                    ]
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,93 @@
+[
+    "container",
+    [
+        {
+            "name": "slot",
+            "type": "i32"
+        },
+        {
+            "name": "itemEnchantsForGivenActivationEquip",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "enchantType",
+                                "type": [
+                                    "mapper",
+                                    {
+                                        "source": "enchant_type",
+                                        "type": "i8"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "enchantLevel",
+                                "type": "i8"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "itemEnchantsForGivenActivationHeld",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "enchantType",
+                                "type": [
+                                    "mapper",
+                                    {
+                                        "source": "enchant_type",
+                                        "type": "i8"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "enchantLevel",
+                                "type": "i8"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "itemEnchantsForGivenActivationSelf",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "enchantType",
+                                "type": [
+                                    "mapper",
+                                    {
+                                        "source": "enchant_type",
+                                        "type": "i8"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "enchantLevel",
+                                "type": "i8"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

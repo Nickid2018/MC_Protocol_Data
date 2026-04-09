@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "action",
+            "type": [
+                "mapper",
+                {
+                    "source": "position_tracing_db_client_request_packet_action",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "type": [
+                "reference",
+                "position_tracking_id"
+            ]
+        }
+    ]
+]
