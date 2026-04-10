@@ -91,7 +91,7 @@
                                 "type": [
                                     "switch",
                                     {
-                                        "comapreTo": "heightMapType",
+                                        "compareTo": "heightMapType",
                                         "fields": {
                                             "HasData": [
                                                 "fix_buffer",
