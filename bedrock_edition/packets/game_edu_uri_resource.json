@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "eduSharedURIResource",
+            "type": [
+                "reference",
+                "edu_shared_uri_resource"
+            ]
+        }
+    ]
+]

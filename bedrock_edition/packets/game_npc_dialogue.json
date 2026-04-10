@@ -1,0 +1,35 @@
+[
+    "container",
+    [
+        {
+            "name": "npcIdRawId",
+            "type": "u64"
+        },
+        {
+            "name": "npcDialogueActionType",
+            "type": [
+                "mapper",
+                {
+                    "source": "npc_dialogue_packet_npc_dialogue_action_type",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "dialogue",
+            "type": "string"
+        },
+        {
+            "name": "sceneName",
+            "type": "string"
+        },
+        {
+            "name": "npcName",
+            "type": "string"
+        },
+        {
+            "name": "actionJSON",
+            "type": "string"
+        }
+    ]
+]

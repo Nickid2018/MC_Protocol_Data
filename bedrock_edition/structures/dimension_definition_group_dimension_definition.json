@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "heightMaximum",
+            "type": "zigzag32"
+        },
+        {
+            "name": "heightMinimum",
+            "type": "zigzag32"
+        },
+        {
+            "name": "generatorType",
+            "type": "zigzag32"
+        }
+    ]
+]

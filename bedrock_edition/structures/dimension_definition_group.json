@@ -1,0 +1,22 @@
+[
+    "array",
+    {
+        "countType": "varint",
+        "type": [
+            "container",
+            [
+                {
+                    "name": "nameString",
+                    "type": "string"
+                },
+                {
+                    "name": "dimensionDefinition",
+                    "type": [
+                        "reference",
+                        "dimension_definition_group_dimension_definition"
+                    ]
+                }
+            ]
+        ]
+    }
+]

@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "operation",
+            "type": [
+                "mapper",
+                {
+                    "source": "code_builder_storage_query_options_operation",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "category",
+            "type": [
+                "mapper",
+                {
+                    "source": "code_builder_storage_query_options_category",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "value",
+            "type": "string"
+        }
+    ]
+]

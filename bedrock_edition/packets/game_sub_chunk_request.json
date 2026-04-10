@@ -1,0 +1,29 @@
+[
+    "container",
+    [
+        {
+            "name": "dimensionType",
+            "type": "zigzag32"
+        },
+        {
+            "name": "centerPos",
+            "type": [
+                "reference",
+                "sub_chunk_pos"
+            ]
+        },
+        {
+            "name": "subChunkPosOffsetList",
+            "type": [
+                "array",
+                {
+                    "countType": "u32",
+                    "type": [
+                        "reference",
+                        "sub_chunk_packet_sub_chunk_pos_offset"
+                    ]
+                }
+            ]
+        }
+    ]
+]

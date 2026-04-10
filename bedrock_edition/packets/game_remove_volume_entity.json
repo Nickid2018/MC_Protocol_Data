@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "entityNetworkId",
+            "type": [
+                "reference",
+                "entity_net_id"
+            ]
+        },
+        {
+            "name": "dimensionType",
+            "type": "zigzag32"
+        }
+    ]
+]

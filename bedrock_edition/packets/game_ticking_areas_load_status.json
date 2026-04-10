@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "waiteForPreload",
+            "type": "bool"
+        }
+    ]
+]

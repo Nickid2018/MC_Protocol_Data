@@ -1,0 +1,124 @@
+[
+    "container",
+    [
+        {
+            "name": "cacheEnabled",
+            "type": [
+                "save",
+                "bool",
+                "cacheEnabled"
+            ]
+        },
+        {
+            "name": "dimensionType",
+            "type": "zigzag32"
+        },
+        {
+            "name": "centerPos",
+            "type": [
+                "reference",
+                "sub_chunk_pos"
+            ]
+        },
+        {
+            "name": "subChunkDataList",
+            "type": [
+                "array",
+                {
+                    "countType": "u32",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "subChunkPosOffset",
+                                "type": [
+                                    "reference",
+                                    "sub_chunk_packet_sub_chunk_offset"
+                                ]
+                            },
+                            {
+                                "name": "subChunkRequestResult",
+                                "type": [
+                                    "save",
+                                    [
+                                        "mapper",
+                                        {
+                                            "source": "sub_chunk_packet_sub_chunk_request_result",
+                                            "type": "i8"
+                                        }
+                                    ],
+                                    "reqResult"
+                                ]
+                            },
+                            {
+                                "name": "serializedSubChunk",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "cacheEnabled",
+                                        "fields": {
+                                            "true": "string",
+                                            "false": [
+                                                "switch",
+                                                {
+                                                    "compareTo": "reqResult",
+                                                    "fields": {
+                                                        "SuccessAllAir": "void"
+                                                    },
+                                                    "default": "void"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "heightMapDataType",
+                                "type": [
+                                    "save",
+                                    [
+                                        "mapper",
+                                        {
+                                            "source": "sub_chunk_packet_height_map_data_type",
+                                            "type": "i8"
+                                        }
+                                    ],
+                                    "heightMapType"
+                                ]
+                            },
+                            {
+                                "name": "subChunkHeightMap",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "comapreTo": "heightMapType",
+                                        "fields": {
+                                            "HasData": [
+                                                "fix_buffer",
+                                                256
+                                            ]
+                                        },
+                                        "default": "void"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "blobId",
+                                "type": [
+                                    "switch",
+                                    {
+                                        "compareTo": "cacheEnabled",
+                                        "fields": {
+                                            "true": "u64",
+                                            "false": "void"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

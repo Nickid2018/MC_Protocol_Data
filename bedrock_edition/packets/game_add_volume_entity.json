@@ -1,0 +1,46 @@
+[
+    "container",
+    [
+        {
+            "name": "entityNetworkId",
+            "type": [
+                "reference",
+                "entity_net_id"
+            ]
+        },
+        {
+            "name": "components",
+            "type": "bnbt"
+        },
+        {
+            "name": "jsonIdentifier",
+            "type": "string"
+        },
+        {
+            "name": "instanceName",
+            "type": "string"
+        },
+        {
+            "name": "minBounds",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "maxBounds",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "dimensionType",
+            "type": "zigzag32"
+        },
+        {
+            "name": "engineVersion",
+            "type": "string"
+        }
+    ]
+]

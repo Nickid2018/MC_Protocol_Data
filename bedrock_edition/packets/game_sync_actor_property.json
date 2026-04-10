@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "propertyData",
+            "type": "bnbt"
+        }
+    ]
+]

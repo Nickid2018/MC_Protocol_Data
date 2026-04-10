@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "simType",
+            "type": [
+                "mapper",
+                {
+                    "source": "simulation_type",
+                    "type": "i8"
+                }
+            ]
+        }
+    ]
+]

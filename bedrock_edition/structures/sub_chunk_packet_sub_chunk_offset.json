@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "offsetX",
+            "type": "i8"
+        },
+        {
+            "name": "offsetY",
+            "type": "i8"
+        },
+        {
+            "name": "offsetZ",
+            "type": "i8"
+        }
+    ]
+]

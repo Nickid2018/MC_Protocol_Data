@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "messageId",
+            "type": "string"
+        },
+        {
+            "name": "messageValue",
+            "type": "string"
+        }
+    ]
+]

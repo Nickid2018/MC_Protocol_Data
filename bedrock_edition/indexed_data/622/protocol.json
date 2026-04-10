@@ -677,6 +677,71 @@
         {
             "key": "clientbound_debug_renderer",
             "name": "Clientbound Debug Renderer"
+        },
+        {
+            "key": "sync_actor_property",
+            "name": "Sync Actor Property"
+        },
+        {
+            "key": "add_volume_entity",
+            "name": "Add Volume Entity"
+        },
+        {
+            "key": "remove_volume_entity",
+            "name": "Remove Volume Entity"
+        },
+        {
+            "key": "simulation_type",
+            "name": "Simulation Type"
+        },
+        {
+            "key": "npc_dialogue",
+            "name": "NPC Dialogue"
+        },
+        {
+            "key": "edu_uri_resource",
+            "name": "Edu URI Resource"
+        },
+        {
+            "key": "create_photo",
+            "name": "Create Photo"
+        },
+        {
+            "key": "update_sub_chunk_blocks",
+            "name": "Update Sub Chunk Blocks"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "sub_chunk",
+            "name": "Sub Chunk"
+        },
+        {
+            "key": "sub_chunk_request",
+            "name": "Sub Chunk Request"
+        },
+        {
+            "key": "player_start_item_cooldown",
+            "name": "Player Start Item Cooldown"
+        },
+        {
+            "key": "script_message",
+            "name": "Script Message"
+        },
+        {
+            "key": "code_builder_source",
+            "name": "Code Builder Source"
+        },
+        {
+            "key": "ticking_areas_load_status",
+            "name": "Ticking Areas Load Status"
+        },
+        {
+            "key": "dimension_data",
+            "name": "Dimension Data"
         }
     ]
 }

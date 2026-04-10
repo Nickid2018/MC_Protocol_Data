@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "dimensionDefinitionGroup",
+            "type": [
+                "reference",
+                "dimension_definition_group"
+            ]
+        }
+    ]
+]

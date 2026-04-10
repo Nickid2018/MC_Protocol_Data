@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "itemCategory",
+            "type": "string"
+        },
+        {
+            "name": "durationTicks",
+            "type": "zigzag32"
+        }
+    ]
+]

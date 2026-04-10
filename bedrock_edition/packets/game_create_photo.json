@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "rawId",
+            "type": "u64"
+        },
+        {
+            "name": "photoName",
+            "type": "string"
+        },
+        {
+            "name": "photoItemName",
+            "type": "string"
+        }
+    ]
+]

@@ -1,0 +1,98 @@
+[
+    "container",
+    [
+        {
+            "name": "subChunkBlockPosition",
+            "type": [
+                "reference",
+                "network_block_position"
+            ]
+        },
+        {
+            "name": "blocksChangedStandards",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "pos",
+                                "type": [
+                                    "reference",
+                                    "network_block_position"
+                                ]
+                            },
+                            {
+                                "name": "runtimeId",
+                                "type": "varint"
+                            },
+                            {
+                                "name": "updateFlags",
+                                "type": "varint"
+                            },
+                            {
+                                "name": "syncMessageEntityUniqueId",
+                                "type": "varlong"
+                            },
+                            {
+                                "name": "syncMessageMessage",
+                                "type": [
+                                    "mapper",
+                                    {
+                                        "source": "actor_block_sync_message_message_id",
+                                        "type": "varint"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "blocksChangedExtras",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "pos",
+                                "type": [
+                                    "reference",
+                                    "network_block_position"
+                                ]
+                            },
+                            {
+                                "name": "runtimeId",
+                                "type": "varint"
+                            },
+                            {
+                                "name": "updateFlags",
+                                "type": "varint"
+                            },
+                            {
+                                "name": "syncMessageEntityUniqueId",
+                                "type": "varlong"
+                            },
+                            {
+                                "name": "syncMessageMessage",
+                                "type": [
+                                    "mapper",
+                                    {
+                                        "source": "actor_block_sync_message_message_id",
+                                        "type": "varint"
+                                    }
+                                ]
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]
