@@ -33,7 +33,7 @@
                                 "name": "subChunkPosOffset",
                                 "type": [
                                     "reference",
-                                    "sub_chunk_packet_sub_chunk_offset"
+                                    "sub_chunk_packet_sub_chunk_pos_offset"
                                 ]
                             },
                             {
