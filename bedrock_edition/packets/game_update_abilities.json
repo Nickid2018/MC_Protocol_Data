@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "data",
+            "type": [
+                "reference",
+                "serialized_abilities_data"
+            ]
+        }
+    ]
+]

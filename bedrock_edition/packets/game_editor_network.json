@@ -1,0 +1,9 @@
+[
+    "container",
+    [
+        {
+            "name": "binaryPayload",
+            "type": "bnbt"
+        }
+    ]
+]

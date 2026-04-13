@@ -1,0 +1,72 @@
+[
+    "container",
+    [
+        {
+            "name": "targetPlayerIdRawId",
+            "type": "i64"
+        },
+        {
+            "name": "playerPermissionLevel",
+            "type": [
+                "mapper",
+                {
+                    "source": "player_permission_level",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "customPermissionFlags",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "teleport",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "operator",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "attack_mobs",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "attack_players",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "open_containers",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "doors_and_switches",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "mine",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "build",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "unused",
+                        "size": 8,
+                        "signed": false
+                    }
+                ]
+            ]
+        }
+    ]
+]

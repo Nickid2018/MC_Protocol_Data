@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "packetType",
+            "type": "u32"
+        },
+        {
+            "name": "unlockedRecipeList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+]

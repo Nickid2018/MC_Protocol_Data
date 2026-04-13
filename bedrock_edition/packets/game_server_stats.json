@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "serverTime",
+            "type": "f32"
+        },
+        {
+            "name": "networkTime",
+            "type": "f32"
+        }
+    ]
+]

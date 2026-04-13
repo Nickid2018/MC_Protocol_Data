@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "content",
+            "type": "string"
+        }
+    ]
+]

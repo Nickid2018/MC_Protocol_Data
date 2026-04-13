@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "cameraPresets",
+            "type": [
+                "reference",
+                "camera_presets"
+            ]
+        }
+    ]
+]

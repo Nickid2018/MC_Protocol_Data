@@ -1,0 +1,17 @@
+[
+    "container",
+    [
+        {
+            "name": "succeeded",
+            "type": "bool"
+        },
+        {
+            "name": "error",
+            "type": "string"
+        },
+        {
+            "name": "testName",
+            "type": "string"
+        }
+    ]
+]

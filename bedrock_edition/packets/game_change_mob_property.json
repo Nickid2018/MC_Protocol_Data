@@ -1,0 +1,32 @@
+[
+    "container",
+    [
+        {
+            "name": "actorId",
+            "type": [
+                "reference",
+                "actor_unique_id"
+            ]
+        },
+        {
+            "name": "propertyName",
+            "type": "string"
+        },
+        {
+            "name": "boolComponentValue",
+            "type": "bool"
+        },
+        {
+            "name": "stringComponentValue",
+            "type": "string"
+        },
+        {
+            "name": "intComponentValue",
+            "type": "zigzag32"
+        },
+        {
+            "name": "floatComponentValue",
+            "type": "f32"
+        }
+    ]
+]

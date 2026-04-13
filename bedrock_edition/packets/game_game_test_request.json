@@ -1,0 +1,42 @@
+[
+    "container",
+    [
+        {
+            "name": "maxTestsPerBatch",
+            "type": "zigzag32"
+        },
+        {
+            "name": "repeatCount",
+            "type": "zigzag32"
+        },
+        {
+            "name": "rotation",
+            "type": [
+                "mapper",
+                {
+                    "source": "rotation",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "stopOnFailure",
+            "type": "bool"
+        },
+        {
+            "name": "testPos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "testPerRow",
+            "type": "zigzag32"
+        },
+        {
+            "name": "testName",
+            "type": "string"
+        }
+    ]
+]

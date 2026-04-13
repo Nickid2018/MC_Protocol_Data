@@ -1,0 +1,27 @@
+[
+    "container",
+    [
+        {
+            "name": "featuresDataList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "featureName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "binaryJSONOutput",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

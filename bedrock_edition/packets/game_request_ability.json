@@ -1,0 +1,33 @@
+[
+    "container",
+    [
+        {
+            "name": "ability",
+            "type": [
+                "mapper",
+                {
+                    "source": "abilities_index",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "valueType",
+            "type": [
+                "mapper",
+                {
+                    "source": "request_ability_packet_type",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "boolValue",
+            "type": "bool"
+        },
+        {
+            "name": "floatValue",
+            "type": "f32"
+        }
+    ]
+]

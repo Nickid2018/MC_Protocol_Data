@@ -1,0 +1,19 @@
+[
+    "container",
+    [
+        {
+            "name": "deathCauseAttackName",
+            "type": "string"
+        },
+        {
+            "name": "deathVauseMessageList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,60 @@
+[
+    "container",
+    [
+        {
+            "name": "inputLockComponentData",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "rotation",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "dismount",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "mount",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "sneak",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "jump",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "move",
+                        "size": 1,
+                        "signed": false
+                    },
+                    {
+                        "name": "unused",
+                        "size": 1,
+                        "signed": false
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "serverPos",
+            "type": [
+                "reference",
+                "vec3"
+            ]
+        }
+    ]
+]

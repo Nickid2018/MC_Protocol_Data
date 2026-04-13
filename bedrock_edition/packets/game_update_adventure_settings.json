@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "adventureSettings",
+            "type": [
+                "reference",
+                "adventure_settings"
+            ]
+        }
+    ]
+]

@@ -1,0 +1,25 @@
+[
+    "container",
+    [
+        {
+            "name": "noPvM",
+            "type": "bool"
+        },
+        {
+            "name": "noMvP",
+            "type": "bool"
+        },
+        {
+            "name": "immutableWorld",
+            "type": "bool"
+        },
+        {
+            "name": "showNameTags",
+            "type": "bool"
+        },
+        {
+            "name": "autoJump",
+            "type": "bool"
+        }
+    ]
+]

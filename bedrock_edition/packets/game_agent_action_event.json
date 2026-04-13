@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "requestId",
+            "type": "string"
+        },
+        {
+            "name": "requestType",
+            "type": [
+                "mapper",
+                {
+                    "source": "agent_action_type",
+                    "type": "i32"
+                }
+            ]
+        },
+        {
+            "name": "response",
+            "type": "string"
+        }
+    ]
+]

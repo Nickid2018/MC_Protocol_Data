@@ -1,0 +1,68 @@
+[
+    "container",
+    [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "inheritFrom",
+            "type": "string"
+        },
+        {
+            "name": "posX",
+            "type": [
+                "option",
+                "f32"
+            ]
+        },
+        {
+            "name": "posY",
+            "type": [
+                "option",
+                "f32"
+            ]
+        },
+        {
+            "name": "posZ",
+            "type": [
+                "option",
+                "f32"
+            ]
+        },
+        {
+            "name": "rotX",
+            "type": [
+                "option",
+                "f32"
+            ]
+        },
+        {
+            "name": "rotY",
+            "type": [
+                "option",
+                "f32"
+            ]
+        },
+        {
+            "name": "listener",
+            "type": [
+                "option",
+                [
+                    "mapper",
+                    {
+                        "source": "camera_preset_audio_listener",
+                        "type": "i8"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "playerEffects",
+            "type": [
+                "option",
+                "bool"
+            ]
+        }
+    ]
+]

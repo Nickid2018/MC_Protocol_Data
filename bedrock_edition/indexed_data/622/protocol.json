@@ -742,6 +742,84 @@
         {
             "key": "dimension_data",
             "name": "Dimension Data"
+        },
+        {
+            "key": "agent_action_event",
+            "name": "Agent Action Event"
+        },
+        {
+            "key": "change_mob_property",
+            "name": "Change Mob Property"
+        },
+        {
+            "key": "lesson_progress",
+            "name": "Lesson Progress"
+        },
+        {
+            "key": "request_ability",
+            "name": "Request Ability"
+        },
+        {
+            "key": "request_permissions",
+            "name": "Request Permissions"
+        },
+        {
+            "key": "toast_request",
+            "name": "Toast Request"
+        },
+        {
+            "key": "update_abilities",
+            "name": "Update Abilities"
+        },
+        {
+            "key": "update_adventure_settings",
+            "name": "Update Adventure Settings"
+        },
+        {
+            "key": "death_info",
+            "name": "Death Info"
+        },
+        {
+            "key": "editor_network",
+            "name": "Editor Network"
+        },
+        {
+            "key": "feature_registry",
+            "name": "Feature Registry"
+        },
+        {
+            "key": "server_stats",
+            "name": "Server Stats"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "game_test_request",
+            "name": "Game Test Request"
+        },
+        {
+            "key": "game_test_results",
+            "name": "Game Test Results"
+        },
+        {
+            "key": "update_client_input_locks",
+            "name": "Update Client Input Locks"
+        },
+        {
+            "key": "_skip",
+            "name": "_skip",
+            "type": "void"
+        },
+        {
+            "key": "camera_presets",
+            "name": "Camera Presets"
+        },
+        {
+            "key": "unlocked_recipes",
+            "name": "Unlocked Recipes"
         }
     ]
 }

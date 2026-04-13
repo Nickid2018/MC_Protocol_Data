@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "lessonAction",
+            "type": [
+                "mapper",
+                {
+                    "source": "lesson_action",
+                    "type": "i8"
+                }
+            ]
+        },
+        {
+            "name": "score",
+            "type": "zigzag32"
+        },
+        {
+            "name": "activityId",
+            "type": "string"
+        }
+    ]
+]
