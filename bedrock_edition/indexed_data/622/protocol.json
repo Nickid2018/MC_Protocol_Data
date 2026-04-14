@@ -820,6 +820,52 @@
         {
             "key": "unlocked_recipes",
             "name": "Unlocked Recipes"
+        },
+        {
+            "key": "camera_instruction",
+            "name": "Camera Instruction",
+            "id": 300
+        },
+        {
+            "key": "compressed_biome_definition_list",
+            "name": "Compressed Biome Definition List",
+            "id": 301
+        },
+        {
+            "key": "trim_data",
+            "name": "Trim Data",
+            "id": 302
+        },
+        {
+            "key": "open_sign",
+            "name": "Open Sign",
+            "id": 303
+        },
+        {
+            "key": "agent_animation",
+            "name": "Agent Animation",
+            "id": 304
+        },
+        {
+            "key": "refresh_entitlements",
+            "name": "Refresh Entitlements",
+            "id": 305,
+            "type": "void"
+        },
+        {
+            "key": "player_toggle_crafter_slot_request",
+            "name": "Player Toggle Crafter Slot Request",
+            "id": 306
+        },
+        {
+            "key": "set_player_inventory_options",
+            "name": "Set Player Inventory Options",
+            "id": 307
+        },
+        {
+            "key": "set_hud",
+            "name": "Set HUD",
+            "id": 308
         }
     ]
 }

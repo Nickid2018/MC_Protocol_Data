@@ -1,0 +1,53 @@
+[
+    "container",
+    [
+        {
+            "name": "trimPatternList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "itemName",
+                                "type": "string"
+                            },
+                            {
+                                "name": "patternId",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "trimMaterialList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "materialId",
+                                "type": "string"
+                            },
+                            {
+                                "name": "color",
+                                "type": "string"
+                            },
+                            {
+                                "name": "itemName",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

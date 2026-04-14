@@ -1,0 +1,31 @@
+[
+    "container",
+    [
+        {
+            "name": "hudElementList",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "mapper",
+                        {
+                            "source": "hud_element",
+                            "type": "zigzag32"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "isHudVisible",
+            "type": [
+                "mapper",
+                {
+                    "source": "hud_visibility",
+                    "type": "zigzag32"
+                }
+            ]
+        }
+    ]
+]

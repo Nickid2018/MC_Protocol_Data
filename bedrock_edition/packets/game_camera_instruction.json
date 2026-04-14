@@ -1,0 +1,12 @@
+[
+    "container",
+    [
+        {
+            "name": "cameraInstruction",
+            "type": [
+                "reference",
+                "camera_instruction"
+            ]
+        }
+    ]
+]

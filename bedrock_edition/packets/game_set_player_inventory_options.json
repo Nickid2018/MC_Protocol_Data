@@ -1,0 +1,49 @@
+[
+    "container",
+    [
+        {
+            "name": "leftInventoryTab",
+            "type": [
+                "mapper",
+                {
+                    "source": "inventory_left_tab_index",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "rightInventoryTab",
+            "type": [
+                "mapper",
+                {
+                    "source": "inventory_right_tab_index",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "filtering",
+            "type": "bool"
+        },
+        {
+            "name": "layoutInv",
+            "type": [
+                "mapper",
+                {
+                    "source": "inventory_layout",
+                    "type": "zigzag32"
+                }
+            ]
+        },
+        {
+            "name": "layoutCraft",
+            "type": [
+                "mapper",
+                {
+                    "source": "inventory_layout",
+                    "type": "zigzag32"
+                }
+            ]
+        }
+    ]
+]

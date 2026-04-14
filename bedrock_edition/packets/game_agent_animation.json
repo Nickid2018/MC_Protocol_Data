@@ -1,0 +1,16 @@
+[
+    "container",
+    [
+        {
+            "name": "agentAnimation",
+            "type": "i8"
+        },
+        {
+            "name": "runtimeId",
+            "type": [
+                "reference",
+                "actor_runtime_id"
+            ]
+        }
+    ]
+]

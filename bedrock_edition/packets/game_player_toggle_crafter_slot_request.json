@@ -1,0 +1,25 @@
+[
+    "container",
+    [
+        {
+            "name": "posX",
+            "type": "i32"
+        },
+        {
+            "name": "posY",
+            "type": "i32"
+        },
+        {
+            "name": "posZ",
+            "type": "i32"
+        },
+        {
+            "name": "slotIndex",
+            "type": "i8"
+        },
+        {
+            "name": "isDisabled",
+            "type": "bool"
+        }
+    ]
+]
