@@ -9,14 +9,10 @@
             ]
         },
         {
-            "name": "dimensionId",
-            "type": "zigzag32"
-        },
-        {
             "name": "subChunksCount",
             "type": [
                 "save",
-                "varint",
+                "zigzag32",
                 "subChunksCount"
             ]
         },
@@ -26,10 +22,10 @@
                 "switch",
                 {
                     "compareTo": "subChunksCount",
-                    "ranges": {
-                        "~0": "void"
+                    "fields": {
+                        "2147483647": "u16"
                     },
-                    "default": "u16"
+                    "default": "void"
                 }
             ]
         },

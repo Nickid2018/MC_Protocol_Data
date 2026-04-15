@@ -27,7 +27,7 @@
             "type": [
                 "switch",
                 {
-                    "comapreTo": "action",
+                    "compareTo": "action",
                     "fields": {
                         "RowRight": "f32",
                         "RowLeft": "f32"

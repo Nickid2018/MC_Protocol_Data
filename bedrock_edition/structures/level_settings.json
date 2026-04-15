@@ -182,6 +182,10 @@
             "type": "bool"
         },
         {
+            "name": "hasLockedTexturePack",
+            "type": "bool"
+        },
+        {
             "name": "isFromLockedTemplate",
             "type": "bool"
         },

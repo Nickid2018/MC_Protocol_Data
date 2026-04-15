@@ -14,10 +14,6 @@
             "type": "bool"
         },
         {
-            "name": "forceServerPacksEnabled",
-            "type": "bool"
-        },
-        {
             "name": "behaviorPacks",
             "type": [
                 "array",
@@ -94,6 +90,10 @@
                             },
                             {
                                 "name": "hasScripts",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "isAddon",
                                 "type": "bool"
                             },
                             {
