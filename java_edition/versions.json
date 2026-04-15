@@ -1,5 +1,30 @@
 [
     {
+        "version": "26.2-snapshot-3",
+        "protocol_version": 1073742133,
+        "data_version": 4886
+    },
+    {
+        "version": "26.2-snapshot-2",
+        "protocol_version": 1073742132,
+        "data_version": 4884
+    },
+    {
+        "version": "26.2-snapshot-1",
+        "protocol_version": 1073742130,
+        "data_version": 4883
+    },
+    {
+        "version": "26.1.2",
+        "protocol_version": 775,
+        "data_version": 4790
+    },
+    {
+        "version": "26.1.2-rc-1",
+        "protocol_version": 1073742131,
+        "data_version": 4789
+    },
+    {
         "version": "26.1.1",
         "protocol_version": 775,
         "data_version": 4788
