@@ -125,8 +125,8 @@
             "name": "Update Attributes"
         },
         {
-            "key": "inventory_transcation",
-            "name": "Inventory Transcation"
+            "key": "inventory_transaction",
+            "name": "Inventory Transaction"
         },
         {
             "key": "mob_equipment",
@@ -218,9 +218,8 @@
             "name": "Crafting Data"
         },
         {
-            "key": "_skip",
-            "name": "_skip",
-            "type": "void"
+            "key": "crafting_event",
+            "name": "Crafting Event"
         },
         {
             "key": "gui_data_pick_item",

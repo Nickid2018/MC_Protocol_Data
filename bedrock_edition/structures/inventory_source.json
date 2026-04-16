@@ -40,6 +40,20 @@
                     "default": "void"
                 }
             ]
+        },
+        {
+            "name": "action",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "sourceType",
+                    "fields": {
+                        "GlobalInventory": "varint",
+                        "CreativeInventory": "varint"
+                    },
+                    "default": "void"
+                }
+            ]
         }
     ]
 ]

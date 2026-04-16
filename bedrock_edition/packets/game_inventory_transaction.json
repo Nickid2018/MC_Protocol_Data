@@ -1,0 +1,226 @@
+[
+    "container",
+    [
+        {
+            "name": "rawId",
+            "type": [
+                "save",
+                "zigzag32",
+                "rawId"
+            ]
+        },
+        {
+            "name": "legacySetItemSlots",
+            "type": [
+                "switch",
+                {
+                    "compareTO": "rawId",
+                    "fields": {
+                        "0": "void"
+                    },
+                    "default": [
+                        "array",
+                        {
+                            "countType": "varint",
+                            "type": [
+                                "container",
+                                [
+                                    {
+                                        "name": "containerEnum",
+                                        "type": "i8"
+                                    },
+                                    {
+                                        "name": "slotVector",
+                                        "type": [
+                                            "array",
+                                            {
+                                                "countType": "varint",
+                                                "type": "i8"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "transcationType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "complex_transcation_type",
+                        "type": "varint"
+                    }
+                ],
+                "transcationType"
+            ]
+        },
+        {
+            "name": "mTransaction",
+            "type": [
+                "reference",
+                "inventory_transaction"
+            ]
+        },
+        {
+            "name": "transactionData",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "transcationType",
+                    "fields": {
+                        "NormalTransaction": "void",
+                        "InventoryMismatch": "void",
+                        "ItemUseTransaction": [
+                            "container",
+                            [
+                                {
+                                    "name": "actionType",
+                                    "type": [
+                                        "mapper",
+                                        {
+                                            "type": "varint",
+                                            "mappings": {
+                                                "0": "ClickBlock",
+                                                "1": "ClickAir",
+                                                "2": "BreakBlock"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "blockPosition",
+                                    "type": [
+                                        "reference",
+                                        "network_block_position"
+                                    ]
+                                },
+                                {
+                                    "name": "face",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "hotbarSlot",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "heldItem",
+                                    "type": [
+                                        "reference",
+                                        "network_item_stack_descriptor"
+                                    ]
+                                },
+                                {
+                                    "name": "playerPos",
+                                    "type": [
+                                        "reference",
+                                        "vec3"
+                                    ]
+                                },
+                                {
+                                    "name": "clickPos",
+                                    "type": [
+                                        "reference",
+                                        "vec3"
+                                    ]
+                                },
+                                {
+                                    "name": "blockRuntimeId",
+                                    "type": "varint"
+                                }
+                            ]
+                        ],
+                        "ItemUseOnEntityTransaction": [
+                            "container",
+                            [
+                                {
+                                    "name": "entityRuntimeId",
+                                    "type": "varlong"
+                                },
+                                {
+                                    "name": "actionType",
+                                    "type": [
+                                        "mapper",
+                                        {
+                                            "type": "varint",
+                                            "mappings": {
+                                                "0": "Interact",
+                                                "1": "Attack"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "hotbarSlot",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "heldItem",
+                                    "type": [
+                                        "reference",
+                                        "network_item_stack_descriptor"
+                                    ]
+                                },
+                                {
+                                    "name": "playerPos",
+                                    "type": [
+                                        "reference",
+                                        "vec3"
+                                    ]
+                                },
+                                {
+                                    "name": "clickPos",
+                                    "type": [
+                                        "reference",
+                                        "vec3"
+                                    ]
+                                }
+                            ]
+                        ],
+                        "ItemReleaseTransaction": [
+                            "container",
+                            [
+                                {
+                                    "name": "actionType",
+                                    "type": [
+                                        "mapper",
+                                        {
+                                            "type": "varint",
+                                            "mappings": {
+                                                "0": "Release",
+                                                "1": "Consume"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "hotbarSlot",
+                                    "type": "zigzag32"
+                                },
+                                {
+                                    "name": "heldItem",
+                                    "type": [
+                                        "reference",
+                                        "network_item_stack_descriptor"
+                                    ]
+                                },
+                                {
+                                    "name": "headPos",
+                                    "type": [
+                                        "reference",
+                                        "vec3"
+                                    ]
+                                }
+                            ]
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+]
