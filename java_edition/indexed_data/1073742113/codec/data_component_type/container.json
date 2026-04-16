@@ -1,0 +1,13 @@
+[
+    "array",
+    {
+        "countType": "varint",
+        "type": [
+            "option",
+            [
+                "reference",
+                "item_stack_template"
+            ]
+        ]
+    }
+]
