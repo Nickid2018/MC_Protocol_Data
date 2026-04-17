@@ -33,10 +33,6 @@
         {
             "name": "effectDurationTicks",
             "type": "zigzag32"
-        },
-        {
-            "name": "tick",
-            "type": "u64"
         }
     ]
 ]

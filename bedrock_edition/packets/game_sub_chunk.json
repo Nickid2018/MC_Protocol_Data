@@ -57,15 +57,15 @@
                                     {
                                         "compareTo": "cacheEnabled",
                                         "fields": {
-                                            "true": "string",
-                                            "false": [
+                                            "false": "buffer",
+                                            "true": [
                                                 "switch",
                                                 {
                                                     "compareTo": "reqResult",
                                                     "fields": {
                                                         "SuccessAllAir": "void"
                                                     },
-                                                    "default": "void"
+                                                    "default": "buffer"
                                                 }
                                             ]
                                         }

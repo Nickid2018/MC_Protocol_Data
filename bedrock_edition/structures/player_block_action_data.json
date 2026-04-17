@@ -41,10 +41,6 @@
                         "ContinueDestroyBlock": [
                             "reference",
                             "block_pos"
-                        ],
-                        "StopDestroyBlock": [
-                            "reference",
-                            "block_pos"
                         ]
                     },
                     "default": "void"
@@ -62,8 +58,7 @@
                         "StartDestroyBlock": "zigzag32",
                         "AbortDestroyBlock": "zigzag32",
                         "CrackBlock": "zigzag32",
-                        "ContinueDestroyBlock": "zigzag32",
-                        "StopDestroyBlock": "zigzag32"
+                        "ContinueDestroyBlock": "zigzag32"
                     },
                     "default": "void"
                 }

@@ -183,37 +183,344 @@
                                         {
                                             "countType": "varint",
                                             "type": [
-                                                "container",
-                                                [
-                                                    {
-                                                        "name": "actionType",
-                                                        "type": [
-                                                            "mapper",
+                                                "array",
+                                                {
+                                                    "countType": "varint",
+                                                    "type": [
+                                                        "container",
+                                                        [
                                                             {
-                                                                "source": "item_stack_request_action_type",
-                                                                "type": "i8"
+                                                                "name": "actionType",
+                                                                "type": [
+                                                                    "save",
+                                                                    [
+                                                                        "mapper",
+                                                                        {
+                                                                            "source": "item_stack_request_action_type",
+                                                                            "type": "i8"
+                                                                        }
+                                                                    ],
+                                                                    "type"
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "actionData",
+                                                                "type": [
+                                                                    "switch",
+                                                                    {
+                                                                        "compareTo": "type",
+                                                                        "fields": {
+                                                                            "Take": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "amount",
+                                                                                        "type": "i8"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "source",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "destination",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "Place": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "amount",
+                                                                                        "type": "i8"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "source",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "destination",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "PlaceInItemContainer": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "amount",
+                                                                                        "type": "i8"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "source",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "destination",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "TakeFromItemContainer": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "amount",
+                                                                                        "type": "i8"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "source",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "destination",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "Swap": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "source",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "destination",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "Drop": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "amount",
+                                                                                        "type": "i8"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "source",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "random",
+                                                                                        "type": "bool"
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "Destroy": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "amount",
+                                                                                        "type": "i8"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "source",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "Consume": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "amount",
+                                                                                        "type": "i8"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "source",
+                                                                                        "type": [
+                                                                                            "reference",
+                                                                                            "item_stack_request_slot_info"
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "Create": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "resultSlotId",
+                                                                                        "type": "i8"
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "ScreenBeaconPayment": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "primaryEffect",
+                                                                                        "type": "zigzag32"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "secondaryEffect",
+                                                                                        "type": "zigzag32"
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "ScreenHUDMineBlock": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "hotbarSlot",
+                                                                                        "type": "zigzag32"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "predictedDurability",
+                                                                                        "type": "zigzag32"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "networkId",
+                                                                                        "type": "zigzag32"
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "CraftRecipe": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "networkId",
+                                                                                        "type": "varint"
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "CraftRecipeAuto": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "networkId",
+                                                                                        "type": "varint"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "timeCrafted",
+                                                                                        "type": "i8"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "ingredients",
+                                                                                        "type": [
+                                                                                            "array",
+                                                                                            {
+                                                                                                "countType": "varint",
+                                                                                                "type": [
+                                                                                                    "reference",
+                                                                                                    "recipe_ingredient"
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "CraftCreative": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "itemId",
+                                                                                        "type": "varint"
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "CraftRecipeOptional": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "itemId",
+                                                                                        "type": "varint"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "filteredStringIndex",
+                                                                                        "type": "i32"
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "CraftRepairAndDisenchant": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "itemId",
+                                                                                        "type": "varint"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "cost",
+                                                                                        "type": "varint"
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "CraftLoom": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "pattern",
+                                                                                        "type": "string"
+                                                                                    }
+                                                                                ]
+                                                                            ],
+                                                                            "CraftResults_DEPRECATEDASKTYLAING": [
+                                                                                "container",
+                                                                                [
+                                                                                    {
+                                                                                        "name": "resultItems",
+                                                                                        "type": [
+                                                                                            "array",
+                                                                                            {
+                                                                                                "countType": "varint",
+                                                                                                "type": [
+                                                                                                    "reference",
+                                                                                                    "network_item_instance_descriptor"
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "timeCrafted",
+                                                                                        "type": "i8"
+                                                                                    }
+                                                                                ]
+                                                                            ]
+                                                                        },
+                                                                        "default": "void"
+                                                                    }
+                                                                ]
                                                             }
                                                         ]
-                                                    },
-                                                    {
-                                                        "name": "amount",
-                                                        "type": "i8"
-                                                    },
-                                                    {
-                                                        "name": "source",
-                                                        "type": [
-                                                            "reference",
-                                                            "item_stack_request_slot_info"
-                                                        ]
-                                                    },
-                                                    {
-                                                        "name": "destination",
-                                                        "type": [
-                                                            "reference",
-                                                            "item_stack_request_slot_info"
-                                                        ]
-                                                    }
-                                                ]
+                                                    ]
+                                                }
                                             ]
                                         }
                                     ]

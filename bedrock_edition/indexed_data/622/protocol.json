@@ -665,9 +665,7 @@
         },
         {
             "key": "item_component",
-            "name": "Item Component",
-            "type": "void",
-            "__comment": "this packet is too complex to make wireshark dissect it"
+            "name": "Item Component"
         },
         {
             "key": "filter_text",
