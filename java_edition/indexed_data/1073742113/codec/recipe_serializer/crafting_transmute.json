@@ -2,8 +2,8 @@
     "container",
     [
         {
-            "name": "showNotification",
-            "type": "bool"
+            "name": "group",
+            "type": "string"
         },
         {
             "name": "category",
@@ -21,28 +21,17 @@
             ]
         },
         {
-            "name": "group",
-            "type": "string"
-        },
-        {
-            "name": "width",
-            "type": "varint"
-        },
-        {
-            "name": "height",
-            "type": "varint"
-        },
-        {
-            "name": "ingredients",
+            "name": "input",
             "type": [
-                "array",
-                {
-                    "countType": "varint",
-                    "type": [
-                        "reference",
-                        "ingredient"
-                    ]
-                }
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "material",
+            "type": [
+                "reference",
+                "ingredient"
             ]
         },
         {

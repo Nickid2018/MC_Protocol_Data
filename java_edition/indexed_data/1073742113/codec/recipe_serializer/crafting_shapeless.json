@@ -2,8 +2,8 @@
     "container",
     [
         {
-            "name": "showNotification",
-            "type": "bool"
+            "name": "group",
+            "type": "string"
         },
         {
             "name": "category",
@@ -21,16 +21,11 @@
             ]
         },
         {
-            "name": "group",
-            "type": "string"
-        },
-        {
-            "name": "width",
-            "type": "varint"
-        },
-        {
-            "name": "height",
-            "type": "varint"
+            "name": "result",
+            "type": [
+                "reference",
+                "item_stack_template"
+            ]
         },
         {
             "name": "ingredients",
@@ -43,13 +38,6 @@
                         "ingredient"
                     ]
                 }
-            ]
-        },
-        {
-            "name": "result",
-            "type": [
-                "reference",
-                "item_stack_template"
             ]
         }
     ]

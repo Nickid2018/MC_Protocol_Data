@@ -16,7 +16,7 @@
             "name": "result",
             "type": [
                 "reference",
-                "item_stack"
+                "item_stack_template"
             ]
         }
     ]

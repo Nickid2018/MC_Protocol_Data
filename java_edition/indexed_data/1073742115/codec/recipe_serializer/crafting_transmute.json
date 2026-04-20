@@ -100,7 +100,7 @@
             "name": "result",
             "type": [
                 "reference",
-                "transmute_result"
+                "item_stack_template"
             ]
         },
         {

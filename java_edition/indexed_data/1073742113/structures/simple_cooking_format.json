@@ -2,8 +2,8 @@
     "container",
     [
         {
-            "name": "showNotification",
-            "type": "bool"
+            "name": "group",
+            "type": "string"
         },
         {
             "name": "category",
@@ -12,27 +12,15 @@
                 {
                     "type": "varint",
                     "mappings": {
-                        "0": "Building",
-                        "1": "Redstone",
-                        "2": "Equipment",
+                        "0": "Food",
+                        "1": "Blocks",
                         "3": "Misc"
                     }
                 }
             ]
         },
         {
-            "name": "group",
-            "type": "string"
-        },
-        {
-            "name": "target",
-            "type": [
-                "reference",
-                "ingredient"
-            ]
-        },
-        {
-            "name": "dye",
+            "name": "ingredient",
             "type": [
                 "reference",
                 "ingredient"
@@ -44,6 +32,14 @@
                 "reference",
                 "item_stack_template"
             ]
+        },
+        {
+            "name": "experience",
+            "type": "f32"
+        },
+        {
+            "name": "cookingTime",
+            "type": "varint"
         }
     ]
 ]

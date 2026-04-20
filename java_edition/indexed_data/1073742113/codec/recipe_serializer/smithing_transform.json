@@ -2,14 +2,21 @@
     "container",
     [
         {
-            "name": "banner",
+            "name": "template",
             "type": [
                 "reference",
                 "ingredient"
             ]
         },
         {
-            "name": "target",
+            "name": "base",
+            "type": [
+                "reference",
+                "ingredient"
+            ]
+        },
+        {
+            "name": "addition",
             "type": [
                 "reference",
                 "ingredient"
