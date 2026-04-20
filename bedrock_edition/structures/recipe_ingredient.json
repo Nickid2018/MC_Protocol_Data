@@ -4,10 +4,80 @@
         {
             "name": "internalType",
             "type": [
-                "mapper",
+                "save",
+                [
+                    "mapper",
+                    {
+                        "source": "item_descriptor_internal_type",
+                        "type": "i8"
+                    }
+                ],
+                "type"
+            ]
+        },
+        {
+            "name": "data",
+            "type": [
+                "switch",
                 {
-                    "source": "item_descriptor_internal_type",
-                    "type": "i8"
+                    "compareTo": "type",
+                    "fields": {
+                        "Default": [
+                            "container",
+                            [
+                                {
+                                    "name": "networkId",
+                                    "type": [
+                                        "save",
+                                        "i16",
+                                        "id"
+                                    ]
+                                },
+                                {
+                                    "name": "metadata",
+                                    "type": [
+                                        "switch",
+                                        {
+                                            "compareTo": "id",
+                                            "fields": {
+                                                "0": "void"
+                                            },
+                                            "default": "i16"
+                                        }
+                                    ]
+                                }
+                            ]
+                        ],
+                        "Molang": [
+                            "container",
+                            [
+                                {
+                                    "name": "expression",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "version",
+                                    "type": "u8"
+                                }
+                            ]
+                        ],
+                        "ItemTag": "string",
+                        "Deferred": [
+                            "container",
+                            [
+                                {
+                                    "name": "name",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "metadata",
+                                    "type": "i16"
+                                }
+                            ]
+                        ],
+                        "ComplexAlias": "string"
+                    },
+                    "default": "void"
                 }
             ]
         },
