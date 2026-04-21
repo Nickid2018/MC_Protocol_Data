@@ -58,7 +58,7 @@
         },
         {
             "name": "serializedChunkData",
-            "type": "string"
+            "type": "buffer"
         }
     ]
 ]

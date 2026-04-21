@@ -59,7 +59,7 @@
                             },
                             {
                                 "name": "userDataBuffer",
-                                "type": "string"
+                                "type": "buffer"
                             }
                         ]
                     ]

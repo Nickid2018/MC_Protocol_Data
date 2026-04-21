@@ -16,7 +16,7 @@
                             },
                             {
                                 "name": "blobData",
-                                "type": "string"
+                                "type": "buffer"
                             }
                         ]
                     ]
