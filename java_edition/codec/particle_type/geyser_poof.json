@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "waterBlocks",
+            "type": "i32"
+        },
+        {
+            "name": "burstImpulseBase",
+            "type": "f32"
+        }
+    ]
+]

@@ -47,26 +47,17 @@
                                 ]
                             },
                             {
-                                "name": "options",
+                                "name": "playerPrefix",
                                 "type": [
-                                    "bitfield",
-                                    [
-                                        {
-                                            "name": "unused",
-                                            "size": 6,
-                                            "signed": false
-                                        },
-                                        {
-                                            "name": "canSeeFriendlyInvisibles",
-                                            "size": 1,
-                                            "signed": false
-                                        },
-                                        {
-                                            "name": "isAllowFriendlyFire",
-                                            "size": 1,
-                                            "signed": false
-                                        }
-                                    ]
+                                    "reference",
+                                    "component"
+                                ]
+                            },
+                            {
+                                "name": "playerSuffix",
+                                "type": [
+                                    "reference",
+                                    "component"
                                 ]
                             },
                             {
@@ -102,48 +93,54 @@
                             {
                                 "name": "color",
                                 "type": [
-                                    "mapper",
-                                    {
-                                        "type": "varint",
-                                        "mappings": {
-                                            "0": "BLACK",
-                                            "1": "DARK_BLUE",
-                                            "2": "DARK_GREEN",
-                                            "3": "DARK_AQUA",
-                                            "4": "DARK_RED",
-                                            "5": "DARK_PURPLE",
-                                            "6": "GOLD",
-                                            "7": "GRAY",
-                                            "8": "DARK_GRAY",
-                                            "9": "BLUE",
-                                            "10": "GREEN",
-                                            "11": "AQUA",
-                                            "12": "RED",
-                                            "13": "LIGHT_PURPLE",
-                                            "14": "YELLOW",
-                                            "15": "WHITE",
-                                            "16": "OBFUSCATED",
-                                            "17": "BOLD",
-                                            "18": "STRIKETHROUGH",
-                                            "19": "UNDERLINE",
-                                            "20": "ITALIC",
-                                            "21": "RESET"
+                                    "option",
+                                    [
+                                        "mapper",
+                                        {
+                                            "type": "varint",
+                                            "mappings": {
+                                                "0": "BLACK",
+                                                "1": "DARK_BLUE",
+                                                "2": "DARK_GREEN",
+                                                "3": "DARK_AQUA",
+                                                "4": "DARK_RED",
+                                                "5": "DARK_PURPLE",
+                                                "6": "GOLD",
+                                                "7": "GRAY",
+                                                "8": "DARK_GRAY",
+                                                "9": "BLUE",
+                                                "10": "GREEN",
+                                                "11": "AQUA",
+                                                "12": "RED",
+                                                "13": "LIGHT_PURPLE",
+                                                "14": "YELLOW",
+                                                "15": "WHITE"
+                                            }
                                         }
-                                    }
+                                    ]
                                 ]
                             },
                             {
-                                "name": "playerPrefix",
+                                "name": "options",
                                 "type": [
-                                    "reference",
-                                    "component"
-                                ]
-                            },
-                            {
-                                "name": "playerSuffix",
-                                "type": [
-                                    "reference",
-                                    "component"
+                                    "bitfield",
+                                    [
+                                        {
+                                            "name": "unused",
+                                            "size": 6,
+                                            "signed": false
+                                        },
+                                        {
+                                            "name": "canSeeFriendlyInvisibles",
+                                            "size": 1,
+                                            "signed": false
+                                        },
+                                        {
+                                            "name": "isAllowFriendlyFire",
+                                            "size": 1,
+                                            "signed": false
+                                        }
+                                    ]
                                 ]
                             }
                         ]
