@@ -1,0 +1,24 @@
+[
+    "either",
+    "string",
+    [
+        "direct_holder",
+        "trim_material",
+        [
+            "container",
+            [
+                {
+                    "name": "paletteId",
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "type": [
+                        "reference",
+                        "component"
+                    ]
+                }
+            ]
+        ]
+    ]
+]

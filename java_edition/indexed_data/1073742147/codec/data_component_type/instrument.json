@@ -1,0 +1,39 @@
+[
+    "either",
+    "string",
+    [
+        "direct_holder",
+        "instrument",
+        [
+            "container",
+            [
+                {
+                    "name": "soundEvent",
+                    "type": [
+                        "reference",
+                        "sound_event"
+                    ]
+                },
+                {
+                    "name": "useDuration",
+                    "type": "f32"
+                },
+                {
+                    "name": "range",
+                    "type": "f32"
+                },
+                {
+                    "name": "durabilityDamage",
+                    "type": "varint"
+                },
+                {
+                    "name": "description",
+                    "type": [
+                        "reference",
+                        "component"
+                    ]
+                }
+            ]
+        ]
+    ]
+]
