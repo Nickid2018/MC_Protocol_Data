@@ -1,0 +1,101 @@
+[
+    "array",
+    {
+        "countType": "varint",
+        "type": [
+            "container",
+            [
+                {
+                    "name": "blockStateProvider",
+                    "type": "nbt"
+                },
+                {
+                    "name": "sound",
+                    "type": [
+                        "reference",
+                        "sound_event"
+                    ]
+                },
+                {
+                    "name": "particle",
+                    "type": [
+                        "mapper",
+                        {
+                            "type": "varint",
+                            "mappings": {
+                                "0": "None",
+                                "1": "Scrape",
+                                "2": "Wax On",
+                                "3": "Wax Off"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "disallowedFaces",
+                    "type": [
+                        "array",
+                        {
+                            "countType": "varint",
+                            "type": [
+                                "mapper",
+                                {
+                                    "type": "varint",
+                                    "mappings": {
+                                        "0": "Down",
+                                        "1": "Up",
+                                        "2": "North",
+                                        "3": "South",
+                                        "4": "West",
+                                        "5": "East"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "loot",
+                    "type": [
+                        "option",
+                        "string"
+                    ]
+                },
+                {
+                    "name": "dropStrategy",
+                    "type": [
+                        "mapper",
+                        {
+                            "type": "varint",
+                            "mappings": {
+                                "0": "Clicked Face",
+                                "1": "From Middle"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "transformType",
+                    "type": [
+                        "mapper",
+                        {
+                            "type": "varint",
+                            "mappings": {
+                                "0": "Single Block",
+                                "1": "Copper Chest"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "consumeOnUse",
+                    "type": "bool"
+                },
+                {
+                    "name": "itemDamagePerUse",
+                    "type": "varint"
+                }
+            ]
+        ]
+    }
+]
