@@ -1,0 +1,21 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "onGround",
+            "type": "bool"
+        },
+        {
+            "name": "yRot",
+            "type": "i8"
+        },
+        {
+            "name": "xRot",
+            "type": "i8"
+        }
+    ]
+]

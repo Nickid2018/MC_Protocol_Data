@@ -1,0 +1,83 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "properties",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "stepCount",
+                        "signed": false,
+                        "saveName": "step_count",
+                        "size": 7
+                    },
+                    {
+                        "name": "onGround",
+                        "signed": false,
+                        "size": 1
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "deltas",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "step_count",
+                    "fields": {
+                        "0": [
+                            "container",
+                            [
+                                {
+                                    "name": "xa",
+                                    "type": "i16"
+                                },
+                                {
+                                    "name": "ya",
+                                    "type": "i16"
+                                },
+                                {
+                                    "name": "za",
+                                    "type": "i16"
+                                }
+                            ]
+                        ]
+                    },
+                    "default": [
+                        "array",
+                        {
+                            "count": "step_count",
+                            "type": [
+                                "container",
+                                [
+                                    {
+                                        "name": "ticks",
+                                        "type": "varint"
+                                    },
+                                    {
+                                        "name": "xa",
+                                        "type": "i16"
+                                    },
+                                    {
+                                        "name": "ya",
+                                        "type": "i16"
+                                    },
+                                    {
+                                        "name": "za",
+                                        "type": "i16"
+                                    }
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

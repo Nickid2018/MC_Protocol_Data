@@ -1,0 +1,63 @@
+[
+    "container",
+    [
+        {
+            "name": "id",
+            "type": "varint"
+        },
+        {
+            "name": "positionType",
+            "type": [
+                "save",
+                [
+                    "mapper",
+                    {
+                        "type": "varint",
+                        "mappings": {
+                            "0": "Linear",
+                            "1": "Stepped"
+                        }
+                    }
+                ],
+                "position_type"
+            ]
+        },
+        {
+            "name": "position",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "position_type",
+                    "fields": {
+                        "Linear": [
+                            "reference",
+                            "vec3f64"
+                        ],
+                        "Stepped": [
+                            "array",
+                            {
+                                "countType": "varint",
+                                "type": [
+                                    "reference",
+                                    "vec3f64"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "yRot",
+            "type": "f32"
+        },
+        {
+            "name": "xRot",
+            "type": "f32"
+        },
+        {
+            "name": "onGround",
+            "type": "bool"
+        }
+    ]
+]

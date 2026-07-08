@@ -1,0 +1,15 @@
+[
+    "container",
+    [
+        {
+            "name": "postEffects",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,133 @@
+[
+    "container",
+    [
+        {
+            "name": "input",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "ingredient",
+                        "type": [
+                            "reference",
+                            "ingredient"
+                        ]
+                    },
+                    {
+                        "name": "potions",
+                        "type": [
+                            "option",
+                            [
+                                "container",
+                                [
+                                    {
+                                        "name": "potions",
+                                        "type": [
+                                            "option",
+                                            [
+                                                "switch",
+                                                {
+                                                    "compareTo": "count",
+                                                    "fields": {
+                                                        "0": "string"
+                                                    },
+                                                    "default": [
+                                                        "array",
+                                                        {
+                                                            "count": "count",
+                                                            "offset": "-1",
+                                                            "type": [
+                                                                "registry",
+                                                                "potion"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        ]
+                                    },
+                                    {
+                                        "name": "effects",
+                                        "type": [
+                                            "option",
+                                            "nbt"
+                                        ]
+                                    }
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "reagent",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "ingredient",
+                        "type": [
+                            "reference",
+                            "ingredient"
+                        ]
+                    },
+                    {
+                        "name": "potions",
+                        "type": [
+                            "option",
+                            [
+                                "container",
+                                [
+                                    {
+                                        "name": "potions",
+                                        "type": [
+                                            "option",
+                                            [
+                                                "switch",
+                                                {
+                                                    "compareTo": "count",
+                                                    "fields": {
+                                                        "0": "string"
+                                                    },
+                                                    "default": [
+                                                        "array",
+                                                        {
+                                                            "count": "count",
+                                                            "offset": "-1",
+                                                            "type": [
+                                                                "registry",
+                                                                "potion"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        ]
+                                    },
+                                    {
+                                        "name": "effects",
+                                        "type": [
+                                            "option",
+                                            "nbt"
+                                        ]
+                                    }
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "output",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "item_stack_template"
+                ]
+            ]
+        }
+    ]
+]
