@@ -1,0 +1,13 @@
+[
+    "container",
+    [
+        {
+            "name": "uses",
+            "type": "string"
+        },
+        {
+            "name": "speedMultiplier",
+            "type": "string"
+        }
+    ]
+]

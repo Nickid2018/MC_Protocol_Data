@@ -1,0 +1,32 @@
+[
+    "container",
+    [
+        {
+            "name": "targetingEntityTypes",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "count",
+                    "fields": {
+                        "0": "string"
+                    },
+                    "default": [
+                        "array",
+                        {
+                            "count": "count",
+                            "offset": "-1",
+                            "type": [
+                                "registry",
+                                "entity_type"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "visibility",
+            "type": "f32"
+        }
+    ]
+]

@@ -1,0 +1,39 @@
+[
+    "container",
+    [
+        {
+            "name": "messages",
+            "type": [
+                "array",
+                {
+                    "count": 4,
+                    "type": "nbt"
+                }
+            ]
+        },
+        {
+            "name": "filteredMessagesForSerialization",
+            "type": [
+                "option",
+                [
+                    "array",
+                    {
+                        "count": 4,
+                        "type": "nbt"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "color",
+            "type": [
+                "reference",
+                "dye_color"
+            ]
+        },
+        {
+            "name": "hasGlowingText",
+            "type": "bool"
+        }
+    ]
+]

@@ -1,0 +1,25 @@
+[
+    "container",
+    [
+        {
+            "name": "pos",
+            "type": [
+                "reference",
+                "block_pos"
+            ]
+        },
+        {
+            "name": "slot",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Back",
+                        "1": "Front"
+                    }
+                }
+            ]
+        }
+    ]
+]
