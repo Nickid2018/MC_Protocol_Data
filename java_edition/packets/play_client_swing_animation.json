@@ -1,0 +1,47 @@
+[
+    "container",
+    [
+        {
+            "name": "entityId",
+            "type": "varint"
+        },
+        {
+            "name": "hand",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Mainhand",
+                        "1": "Offhand"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "animation",
+            "type": [
+                "container",
+                [
+                    {
+                        "name": "type",
+                        "type": [
+                            "mapper",
+                            {
+                                "type": "varint",
+                                "mappings": {
+                                    "0": "Wrack",
+                                    "1": "Stab"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "duration",
+                        "type": "varint"
+                    }
+                ]
+            ]
+        }
+    ]
+]

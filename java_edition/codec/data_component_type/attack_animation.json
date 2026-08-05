@@ -1,0 +1,22 @@
+[
+    "container",
+    [
+        {
+            "name": "type",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Wrack",
+                        "1": "Stab"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "duration",
+            "type": "varint"
+        }
+    ]
+]

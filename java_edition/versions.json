@@ -1,5 +1,15 @@
 [
     {
+        "version": "26.3-snapshot-7",
+        "protocol_version": 1073742153,
+        "data_version": 5009
+    },
+    {
+        "version": "26.3-snapshot-6",
+        "protocol_version": 1073742152,
+        "data_version": 5005
+    },
+    {
         "version": "26.3-snapshot-5",
         "protocol_version": 1073742151,
         "data_version": 5004

@@ -1,0 +1,26 @@
+[
+    "container",
+    [
+        {
+            "name": "either",
+            "type": [
+                "save",
+                "bool",
+                "either"
+            ]
+        },
+        {
+            "name": "resolvableNumber",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "either",
+                    "fields": {
+                        "true": "f32",
+                        "false": "string"
+                    }
+                }
+            ]
+        }
+    ]
+]

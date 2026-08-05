@@ -3,11 +3,17 @@
     [
         {
             "name": "burnTime",
-            "type": "string"
+            "type": [
+                "reference",
+                "resolvable_number"
+            ]
         },
         {
             "name": "speedMultiplier",
-            "type": "string"
+            "type": [
+                "reference",
+                "resolvable_number"
+            ]
         }
     ]
 ]
