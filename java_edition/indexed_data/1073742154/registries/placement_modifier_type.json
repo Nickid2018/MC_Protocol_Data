@@ -1,0 +1,20 @@
+[
+    "block_predicate_filter",
+    "rarity_filter",
+    "random_chance",
+    "surface_relative_threshold_filter",
+    "surface_water_depth_filter",
+    "biome",
+    "count",
+    "noise_based_count",
+    "noise_threshold_count",
+    "count_on_every_layer",
+    "cuboid",
+    "environment_scan",
+    "heightmap",
+    "height_range",
+    "in_square",
+    "offset",
+    "randomly_selected",
+    "fixed_placement"
+]
