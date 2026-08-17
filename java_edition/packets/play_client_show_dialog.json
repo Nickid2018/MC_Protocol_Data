@@ -1,5 +1,13 @@
 [
-    "direct_holder",
-    "dialog",
-    "nbt"
+    "container",
+    [
+        {
+            "name": "dialog",
+            "type": [
+                "direct_holder",
+                "dialog",
+                "nbt"
+            ]
+        }
+    ]
 ]

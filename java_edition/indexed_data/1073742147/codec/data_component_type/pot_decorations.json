@@ -1,0 +1,45 @@
+[
+    "container",
+    [
+        {
+            "name": "back",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "item_stack_template"
+                ]
+            ]
+        },
+        {
+            "name": "left",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "item_stack_template"
+                ]
+            ]
+        },
+        {
+            "name": "right",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "item_stack_template"
+                ]
+            ]
+        },
+        {
+            "name": "front",
+            "type": [
+                "option",
+                [
+                    "reference",
+                    "item_stack_template"
+                ]
+            ]
+        }
+    ]
+]
