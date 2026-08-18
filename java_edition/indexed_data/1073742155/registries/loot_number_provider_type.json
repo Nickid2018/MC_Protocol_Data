@@ -1,0 +1,17 @@
+[
+    "constant",
+    "uniform",
+    "binomial",
+    "score",
+    "storage",
+    "sum",
+    "product",
+    "minimum",
+    "maximum",
+    "average",
+    "enchantment_level",
+    "weighted_list",
+    "conditional",
+    "number_dispatcher",
+    "environment_attribute"
+]
