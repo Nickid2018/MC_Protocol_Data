@@ -1,0 +1,12 @@
+[
+    "empty",
+    "structure_starts",
+    "structure_references",
+    "biomes",
+    "terrain",
+    "features",
+    "initialize_light",
+    "light",
+    "spawn",
+    "full"
+]
