@@ -1,0 +1,21 @@
+[
+    "container",
+    [
+        {
+            "name": "burnTime",
+            "type": [
+                "either",
+                "i32",
+                "string"
+            ]
+        },
+        {
+            "name": "speedMultiplier",
+            "type": [
+                "either",
+                "f32",
+                "string"
+            ]
+        }
+    ]
+]

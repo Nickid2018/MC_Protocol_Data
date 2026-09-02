@@ -1,0 +1,21 @@
+[
+    "container",
+    [
+        {
+            "name": "uses",
+            "type": [
+                "either",
+                "i32",
+                "string"
+            ]
+        },
+        {
+            "name": "speedMultiplier",
+            "type": [
+                "either",
+                "f32",
+                "string"
+            ]
+        }
+    ]
+]
