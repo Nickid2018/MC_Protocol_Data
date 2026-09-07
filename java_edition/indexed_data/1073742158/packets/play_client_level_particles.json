@@ -1,0 +1,74 @@
+[
+    "container",
+    [
+        {
+            "name": "particle",
+            "type": [
+                "reference",
+                "particle"
+            ]
+        },
+        {
+            "name": "overrideLimiter",
+            "type": "bool"
+        },
+        {
+            "name": "alwaysShow",
+            "type": "bool"
+        },
+        {
+            "name": "x",
+            "type": "f64"
+        },
+        {
+            "name": "y",
+            "type": "f64"
+        },
+        {
+            "name": "z",
+            "type": "f64"
+        },
+        {
+            "name": "xDist",
+            "type": "f32"
+        },
+        {
+            "name": "yDist",
+            "type": "f32"
+        },
+        {
+            "name": "zDist",
+            "type": "f32"
+        },
+        {
+            "name": "xMaxSpeed",
+            "type": "f32"
+        },
+        {
+            "name": "yMaxSpeed",
+            "type": "f32"
+        },
+        {
+            "name": "zMaxSpeed",
+            "type": "f32"
+        },
+        {
+            "name": "count",
+            "type": "varint"
+        },
+        {
+            "name": "randomizationType",
+            "type": [
+                "mapper",
+                {
+                    "type": "varint",
+                    "mappings": {
+                        "0": "Default",
+                        "1": "Alternative",
+                        "2": "Alternative with Speed"
+                    }
+                }
+            ]
+        }
+    ]
+]
