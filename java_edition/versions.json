@@ -1,5 +1,10 @@
 [
     {
+        "version": "26.3-rc-3",
+        "protocol_version": 1073742162,
+        "data_version": 5022
+    },
+    {
         "version": "26.3-rc-2",
         "protocol_version": 1073742161,
         "data_version": 5021
