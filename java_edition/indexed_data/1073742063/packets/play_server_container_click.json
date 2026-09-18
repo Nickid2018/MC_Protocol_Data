@@ -42,78 +42,81 @@
                 {
                     "countType": "varint",
                     "type": [
-                        {
-                            "name": "slot",
-                            "type": "i16"
-                        },
-                        {
-                            "name": "itemStack",
-                            "type": [
-                                "option",
-                                [
-                                    "container",
+                        "container",
+                        [ 
+                            {
+                                "name": "slot",
+                                "type": "i16"
+                            },
+                            {
+                                "name": "itemStack",
+                                "type": [
+                                    "option",
                                     [
-                                        {
-                                            "name": "item",
-                                            "type": [
-                                                "registry",
-                                                "item"
-                                            ]
-                                        },
-                                        {
-                                            "name": "count",
-                                            "type": "varint"
-                                        },
-                                        {
-                                            "name": "components",
-                                            "type": [
-                                                "container",
-                                                [
-                                                    {
-                                                        "name": "addedComponents",
-                                                        "type": [
-                                                            "array",
-                                                            {
-                                                                "countType": "varint",
-                                                                "type": [
-                                                                    "container",
-                                                                    [
-                                                                        {
-                                                                            "name": "componentType",
-                                                                            "type": [
-                                                                                "registry",
-                                                                                "data_component_type"
-                                                                            ]
-                                                                        },
-                                                                        {
-                                                                            "name": "hash",
-                                                                            "type": "i32"
-                                                                        }
-                                                                    ]
-                                                                ]
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        "name": "removedComponents",
-                                                        "type": [
-                                                            "array",
-                                                            {
-                                                                "countType": "varint",
-                                                                "type": [
-                                                                    "registry",
-                                                                    "data_component_type"
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
+                                        "container",
+                                        [
+                                            {
+                                                "name": "item",
+                                                "type": [
+                                                    "registry",
+                                                    "item"
                                                 ]
-                                            ]
-                                        }
+                                            },
+                                            {
+                                                "name": "count",
+                                                "type": "varint"
+                                            },
+                                            {
+                                                "name": "components",
+                                                "type": [
+                                                    "container",
+                                                    [
+                                                        {
+                                                            "name": "addedComponents",
+                                                            "type": [
+                                                                "array",
+                                                                {
+                                                                    "countType": "varint",
+                                                                    "type": [
+                                                                        "container",
+                                                                        [
+                                                                            {
+                                                                                "name": "componentType",
+                                                                                "type": [
+                                                                                    "registry",
+                                                                                    "data_component_type"
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "name": "hash",
+                                                                                "type": "i32"
+                                                                            }
+                                                                        ]
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "removedComponents",
+                                                            "type": [
+                                                                "array",
+                                                                {
+                                                                    "countType": "varint",
+                                                                    "type": [
+                                                                        "registry",
+                                                                        "data_component_type"
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                ]
+                                            }
+                                        ]
                                     ]
                                 ]
-                            ]
-                        }
+                            }
+                        ]
                     ]
                 }
             ]

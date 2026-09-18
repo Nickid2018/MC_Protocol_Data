@@ -1,0 +1,28 @@
+{
+    "name": "tools",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "check-java": "node index.js ../java_edition"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "12.4.2",
+            "onFail": "download"
+        }
+    },
+    "packageManager": "pnpm@12.4.2",
+    "type": "module",
+    "devDependencies": {
+        "@types/cli-progress": "^3.11.6",
+        "prettier": "^3.9.6"
+    },
+    "dependencies": {
+        "cli-progress": "^3.12.0",
+        "csv-parse": "^7.0.2"
+    }
+}

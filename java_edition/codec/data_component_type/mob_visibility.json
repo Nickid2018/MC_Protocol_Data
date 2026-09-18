@@ -2,6 +2,14 @@
     "container",
     [
         {
+            "name": "count",
+            "type": [
+                "save",
+                "varint",
+                "count"
+            ]
+        },
+        {
             "name": "targetingEntityTypes",
             "type": [
                 "switch",

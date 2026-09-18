@@ -42,17 +42,20 @@
                 {
                     "countType": "varint",
                     "type": [
-                        {
-                            "name": "slot",
-                            "type": "i16"
-                        },
-                        {
-                            "name": "item",
-                            "type": [
-                                "reference",
-                                "item_stack"
-                            ]
-                        }
+                        "container",
+                        [
+                            {
+                                "name": "slot",
+                                "type": "i16"
+                            },
+                            {
+                                "name": "item",
+                                "type": [
+                                    "reference",
+                                    "item_stack"
+                                ]
+                            }
+                        ]
                     ]
                 }
             ]
