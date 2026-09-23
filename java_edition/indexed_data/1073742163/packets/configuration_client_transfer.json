@@ -1,0 +1,35 @@
+[
+    "container",
+    [
+        {
+            "name": "host",
+            "type": "string"
+        },
+        {
+            "name": "port",
+            "type": "varint"
+        },
+        {
+            "name": "properties",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": [
+                        "container",
+                        [
+                            {
+                                "name": "key",
+                                "type": "string"
+                            },
+                            {
+                                "name": "value",
+                                "type": "string"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+]

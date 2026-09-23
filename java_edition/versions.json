@@ -1,5 +1,10 @@
 [
     {
+        "version": "26.4-snapshot-1",
+        "protocol_version": 1073742163,
+        "data_version": 5119
+    },
+    {
         "version": "26.3",
         "protocol_version": 777,
         "data_version": 5023
