@@ -33,7 +33,28 @@
                 {
                     "compareTo": "scaleLow2Bits",
                     "fields": {
-                        "0": "void"
+                        "0": [
+                            "switch",
+                            {
+                                "compareTo": "continousBit",
+                                "fields": {
+                                    "0": "void"
+                                },
+                                "default": [
+                                    "container",
+                                    [
+                                        {
+                                            "name": "packedXMiddle8Bits",
+                                            "type": "u8"
+                                        },
+                                        {
+                                            "name": "packedXHigh2BitsYZ",
+                                            "type": "u32"
+                                        }
+                                    ]
+                                ]
+                            }
+                        ]
                     },
                     "default": [
                         "container",
