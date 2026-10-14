@@ -2,12 +2,12 @@
     "container",
     [
         {
-            "name": "packedPosPart1",
+            "name": "packedPart1",
             "type": [
                 "bitfield",
                 [
                     {
-                        "name": "packedPosXLow5Bits",
+                        "name": "packedXLow5Bits",
                         "size": 5,
                         "signed": false
                     },
@@ -27,7 +27,7 @@
             ]
         },
         {
-            "name": "packedPosPart2",
+            "name": "packedPart2",
             "type": [
                 "switch",
                 {
@@ -36,22 +36,15 @@
                         "0": "void"
                     },
                     "default": [
-                        "bitfield",
+                        "container",
                         [
                             {
-                                "name": "packedPosZ",
-                                "size": 15,
-                                "signed": false
+                                "name": "packedXMiddle8Bits",
+                                "type": "u8"
                             },
                             {
-                                "name": "packedPosY",
-                                "size": 15,
-                                "signed": false
-                            },
-                            {
-                                "name": "packedPosXHigh10Bits",
-                                "size": 10,
-                                "signed": false
+                                "name": "packedXHigh2BitsYZ",
+                                "type": "u32"
                             }
                         ]
                     ]
