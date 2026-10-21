@@ -1,0 +1,41 @@
+[
+    "container",
+    [
+        {
+            "name": "gameProfile",
+            "type": [
+                "reference",
+                "game_profile"
+            ]
+        },
+        {
+            "name": "sessionId",
+            "type": "uuid"
+        },
+        {
+            "name": "options",
+            "type": [
+                "bitfield",
+                [
+                    {
+                        "name": "unused",
+                        "size": 6,
+                        "signed": false
+                    },
+                    {
+                        "name": "compression",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "compression"
+                    },
+                    {
+                        "name": "encryption",
+                        "size": 1,
+                        "signed": false,
+                        "saveName": "encryption"
+                    }
+                ]
+            ]
+        }
+    ]
+]

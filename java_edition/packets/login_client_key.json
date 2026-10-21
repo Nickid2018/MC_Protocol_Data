@@ -1,0 +1,25 @@
+[
+    "container",
+    [
+        {
+            "name": "serverId",
+            "type": "string"
+        },
+        {
+            "name": "publicKey",
+            "type": "buffer"
+        },
+        {
+            "name": "challenge",
+            "type": [
+                "global_save",
+                "buffer",
+                "#key_challenge"
+            ]
+        },
+        {
+            "name": "shouldAuthenticate",
+            "type": "bool"
+        }
+    ]
+]

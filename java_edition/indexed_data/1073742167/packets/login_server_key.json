@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "encryptedSecretKey",
+            "type": "buffer"
+        },
+        {
+            "name": "encryptedChallenge",
+            "type": "buffer"
+        },
+        {
+            "name": "foundKey",
+            "type": [
+                "func",
+                "find_encryption_key"
+            ]
+        }
+    ]
+]

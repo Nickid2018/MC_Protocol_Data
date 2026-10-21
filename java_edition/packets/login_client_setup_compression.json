@@ -1,0 +1,20 @@
+[
+    "container",
+    [
+        {
+            "name": "compressionThreshold",
+            "type": [
+                "global_save",
+                "varint",
+                "#compression"
+            ]
+        },
+        {
+            "name": "compression",
+            "type": [
+                "func",
+                "update_compression"
+            ]
+        }
+    ]
+]
