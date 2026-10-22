@@ -1,0 +1,36 @@
+[
+    "container",
+    [
+        {
+            "name": "count",
+            "type": [
+                "save",
+                "varint",
+                "count"
+            ]
+        },
+        {
+            "name": "set",
+            "type": [
+                "switch",
+                {
+                    "compareTo": "count",
+                    "fields": {
+                        "0": "string"
+                    },
+                    "default": [
+                        "array",
+                        {
+                            "count": "count",
+                            "offset": "-1",
+                            "type": [
+                                "registry",
+                                "item"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

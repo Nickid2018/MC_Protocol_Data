@@ -1,0 +1,49 @@
+[
+    "container",
+    [
+        {
+            "name": "x",
+            "type": "varint"
+        },
+        {
+            "name": "z",
+            "type": "varint"
+        },
+        {
+            "name": "skyYMask",
+            "type": "buffer"
+        },
+        {
+            "name": "blockYMask",
+            "type": "buffer"
+        },
+        {
+            "name": "emptySkyYMask",
+            "type": "buffer"
+        },
+        {
+            "name": "emptyBlockYMask",
+            "type": "buffer"
+        },
+        {
+            "name": "skyUpdates",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "buffer"
+                }
+            ]
+        },
+        {
+            "name": "blockUpdates",
+            "type": [
+                "array",
+                {
+                    "countType": "varint",
+                    "type": "buffer"
+                }
+            ]
+        }
+    ]
+]

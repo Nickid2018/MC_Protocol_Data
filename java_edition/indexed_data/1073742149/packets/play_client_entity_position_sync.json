@@ -38,8 +38,20 @@
                             {
                                 "countType": "varint",
                                 "type": [
-                                    "reference",
-                                    "vec3f64"
+                                    "container",
+                                    [
+                                        {
+                                            "name": "position",
+                                            "type": [
+                                                "reference",
+                                                "vec3f64"
+                                            ]
+                                        },
+                                        {
+                                            "name": "tickOffset",
+                                            "type": "varint"
+                                        }
+                                    ]
                                 ]
                             }
                         ]
