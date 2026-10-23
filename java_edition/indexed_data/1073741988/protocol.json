@@ -130,11 +130,13 @@
         },
         {
             "key": "add_entity",
-            "name": "Client Add Entity"
+            "name": "Client Add Entity",
+            "specialMark": "require_preload"
         },
         {
             "key": "add_experience_orb",
-            "name": "Client Add Experience Orb"
+            "name": "Client Add Experience Orb",
+            "specialMark": "require_preload"
         },
         {
             "key": "animate",

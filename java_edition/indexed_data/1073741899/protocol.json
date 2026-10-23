@@ -43,23 +43,28 @@
     "play_client": [
         {
             "key": "add_entity",
-            "name": "Client Add Entity"
+            "name": "Client Add Entity",
+            "specialMark": "require_preload"
         },
         {
             "key": "add_experience_orb",
-            "name": "Client Add Experience Orb"
+            "name": "Client Add Experience Orb",
+            "specialMark": "require_preload"
         },
         {
             "key": "add_mob",
-            "name": "Client Add Mob"
+            "name": "Client Add Mob",
+            "specialMark": "require_preload"
         },
         {
             "key": "add_painting",
-            "name": "Client Add Painting"
+            "name": "Client Add Painting",
+            "specialMark": "require_preload"
         },
         {
             "key": "add_player",
-            "name": "Client Add Player"
+            "name": "Client Add Player",
+            "specialMark": "require_preload"
         },
         {
             "key": "animate",
@@ -191,7 +196,8 @@
         },
         {
             "key": "login",
-            "name": "Client Login"
+            "name": "Client Login",
+            "specialMark": "require_preload"
         },
         {
             "key": "map_item_data",

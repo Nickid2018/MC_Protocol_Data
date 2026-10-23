@@ -184,7 +184,8 @@
         },
         {
             "key": "add_entity",
-            "name": "Client Add Entity"
+            "name": "Client Add Entity",
+            "specialMark": "require_preload"
         },
         {
             "key": "animate",

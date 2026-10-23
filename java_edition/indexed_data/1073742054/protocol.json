@@ -175,11 +175,13 @@
         },
         {
             "key": "add_entity",
-            "name": "Client Add Entity"
+            "name": "Client Add Entity",
+            "specialMark": "require_preload"
         },
         {
             "key": "animate",
-            "name": "Client Animation"
+            "name": "Client Animation",
+            "specialMark": "require_preload"
         },
         {
             "key": "award_stats",
