@@ -9,13 +9,14 @@
                     {
                         "name": "packedXLow5Bits",
                         "size": 5,
-                        "signed": false
+                        "signed": false,
+                        "saveName": "packedXLow5Bits"
                     },
                     {
-                        "name": "continousBit",
+                        "name": "continuousBit",
                         "size": 1,
                         "signed": false,
-                        "saveName": "continousBit"
+                        "saveName": "continuousBit"
                     },
                     {
                         "name": "scaleLow2Bits",
@@ -36,7 +37,7 @@
                         "0": [
                             "switch",
                             {
-                                "compareTo": "continousBit",
+                                "compareTo": "continuousBit",
                                 "fields": {
                                     "0": "void"
                                 },
@@ -45,11 +46,19 @@
                                     [
                                         {
                                             "name": "packedXMiddle8Bits",
-                                            "type": "u8"
+                                            "type": [
+                                                "save",
+                                                "u8",
+                                                "packedXMiddle8Bits"
+                                            ]
                                         },
                                         {
                                             "name": "packedXHigh2BitsYZ",
-                                            "type": "u32"
+                                            "type": [
+                                                "save",
+                                                "u32",
+                                                "packedXHigh2BitsYZ"
+                                            ]
                                         }
                                     ]
                                 ]
@@ -61,11 +70,19 @@
                         [
                             {
                                 "name": "packedXMiddle8Bits",
-                                "type": "u8"
+                                "type": [
+                                    "save",
+                                    "u8",
+                                    "packedXMiddle8Bits"
+                                ]
                             },
                             {
                                 "name": "packedXHigh2BitsYZ",
-                                "type": "u32"
+                                "type": [
+                                    "save",
+                                    "u32",
+                                    "packedXHigh2BitsYZ"
+                                ]
                             }
                         ]
                     ]
@@ -77,12 +94,23 @@
             "type": [
                 "switch",
                 {
-                    "compareTo": "continousBit",
+                    "compareTo": "continuousBit",
                     "fields": {
                         "0": "void",
-                        "1": "varint"
+                        "1": [
+                            "save",
+                            "varint",
+                            "scaleHighBits"
+                        ]
                     }
                 }
+            ]
+        },
+        {
+            "name": "resolve",
+            "type": [
+                "func",
+                "resolve_lpvec3"
             ]
         }
     ]
