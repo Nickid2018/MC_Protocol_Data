@@ -1,0 +1,23 @@
+[
+    "container",
+    [
+        {
+            "name": "clientKey",
+            "type": "buffer"
+        },
+        {
+            "name": "signature",
+            "type": [
+                "fix_buffer",
+                32
+            ]
+        },
+        {
+            "name": "foundKey",
+            "type": [
+                "func",
+                "find_encryption_key"
+            ]
+        }
+    ]
+]
